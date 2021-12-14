@@ -82,7 +82,7 @@ var Popover = function() {
 						n = document.getElementById("navbar-logo"),
 						i = n.getAttribute("src").split("/"),
 						s = i[i.length - 1];
-					a.classList.contains("header-transparent") || (e = "dark" == t ? (o.classList.remove("navbar-light", "bg-white"), o.classList.add("navbar-dark", "bg-dark"), n.getAttribute("src").replace(s, "moi_logo.png")) : (o.classList.remove("navbar-dark", "bg-dark"), o.classList.add("navbar-light", "bg-white"), n.getAttribute("src").replace(s, "moi_logo.png")), n.setAttribute("src", e))
+					a.classList.contains("header-transparent") || (e = "dark" == t ? (o.classList.remove("navbar-light", "bg-white"), o.classList.add("navbar-dark", "bg-dark"), n.getAttribute("src").replace(s, "moi_logo.png")) : (o.classList.remove("navbar-dark", "bg-dark"), o.classList.add("navbar-dark", "bg-dark"), n.getAttribute("src").replace(s, "moi_logo.png")), n.setAttribute("src", e))
 				}(t), e && e()
 			}
 		}

@@ -33,3 +33,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Scrolling End */
+.list-brand-icon {
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+}
+.img-start:before {
+	background-color: rgba(51, 94, 234, .8);
+	border-radius: inherit;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0
+}
