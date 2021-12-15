@@ -15678,8 +15678,8 @@ textarea[resize=horizontal] {
 	height: 2rem
 }
 .icon-shape.icon-lg {
-	width: 4rem;
-	height: 4rem
+	width: 6rem;
+	height: 7.5rem
 }
 .icon-shape.icon-lg i {
 	font-size: 1.75rem
@@ -16789,7 +16789,7 @@ textarea[resize=horizontal] {
 	font-weight: 700
 }
 .navbar {
-	position: relative;
+	/* position: relative; */
 	z-index: 101
 }
 .navbar .container {
@@ -18957,10 +18957,7 @@ article p {
 	height: 12px;
 	width: 12px
 }
-.navbar {
-	position: relative;
-	z-index: 101
-}
+
 .navbar .container {
 	position: relative;
 	margin: 0 auto;
@@ -21676,7 +21673,7 @@ article p {
 	font-size: 1.25rem
 }
 section.slice {
-	background-color: #fff
+	background-color: #f1f4f8;
 }
 .slice {
 	position: relative;
@@ -21767,7 +21764,7 @@ section.slice {
 }
 .shape-container svg {
 	display: block;
-	fill: #fff;
+	fill: #f1f4f8;
 	pointer-events: none;
 	vertical-align: baseline
 }

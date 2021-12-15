@@ -1,7 +1,9 @@
 /* Scrolling Start */
 
 /*! Firefox */
-
+body {
+    background-image: url(../img/pattern/pattern.gif);
+}
 html {
     scrollbar-color: #080808 #a6a7a8;
 }
@@ -33,6 +35,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Scrolling End */
+/* text resize */
+#lnkIncrease{
+    font-size:14px !important;
+}
+#lnkNormal{
+    font-size:12px !important;
+}
+#lnkDecrease{
+    font-size:10px !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    #lnkDecrease, #lnkNormal, #lnkIncrease{
+        display: none;
+    }
+}
 .list-brand-icon {
     height: 64px;
     width: 64px;
@@ -47,4 +66,17 @@ body::-webkit-scrollbar-thumb {
 	position: absolute;
 	right: 0;
 	top: 0
+}
+.top-bar {
+    padding: 10px 0;
+    background-image: url(../img/Khanjar.png);
+    border-bottom: 1px solid #00078c;
+    line-height: 25px;
+}
+.card-border {
+    border: solid 1px #BFC6CF;
+}
+.card-border-moi {
+    border-top: 2px solid rgb(200, 16, 46);
+    border-bottom: 2px solid rgb(0, 154, 68);
 }

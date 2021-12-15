@@ -54,6 +54,10 @@ body {
 	text-align: left;
 	background-color: #1f2d3d
 }
+body {
+    background-image: url(../img/bg-pattern-dark.png) !important;
+	background-size: contain;
+}
 [tabindex="-1"]:focus:not(:focus-visible) {
 	outline: 0!important
 }
@@ -15678,8 +15682,8 @@ textarea[resize=horizontal] {
 	height: 2rem
 }
 .icon-shape.icon-lg {
-	width: 4rem;
-	height: 4rem
+	width: 6rem;
+	height: 7.5rem
 }
 .icon-shape.icon-lg i {
 	font-size: 1.75rem
@@ -16789,7 +16793,7 @@ textarea[resize=horizontal] {
 	font-weight: 700
 }
 .navbar {
-	position: relative;
+	/* position: relative; */
 	z-index: 101
 }
 .navbar .container {
@@ -18956,10 +18960,6 @@ article p {
 .nav-dots .nav-link.active:before, .nav-dots .nav-link:hover:before {
 	height: 12px;
 	width: 12px
-}
-.navbar {
-	position: relative;
-	z-index: 101
 }
 .navbar .container {
 	position: relative;

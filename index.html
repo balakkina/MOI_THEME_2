@@ -64,234 +64,268 @@
 			<span class="sr-only">Loading...</span>
 		</div>
 	</div>
-	<div aria-hidden="true" aria-labelledby="modal-cookies" class="modal fade" data-backdrop="false"
-		id="modal-cookies-disabled" role="dialog" tabindex="-1">
-		<div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
-			<div class="modal-content bg-dark-dark">
-				<div class="modal-body">
-					<p class="text-sm text-white mb-3">We use cookies so that our themes work for you. By using our
-						website, you agree to our use of cookies.</p><a class="btn btn-sm btn-white" href="#!"
-						target="_blank">Learn more</a> <button class="btn btn-sm btn-primary mr-2" data-dismiss="modal"
-						type="button">OK</button>
+	<!-- header -->
+	<header class="fixed-top">
+		<div class="container mt-3">
+			<div class="row">
+				<div class="col-10">
+					<marquee behavior="scroll" direction="left">
+						<a class="dap-tw-item text-white" href="#!">
+							<span class="dap-tw-name"> <i class="fad fa-megaphone fa-lg"></i> </span>
+							<span class="dap-tw-text">Sound management of water resources and emphasize the role of
+								municipalities in
+								the development process on the national and local level in accordance with the set
+								standards of quality
+								and adequacy through better institutional and regulative capabilities</span>
+						</a>
+						<a class="dap-tw-item text-white" href="#!"> <span class="dap-tw-name"> <i
+									class="fad fa-megaphone fa-lg"></i> </span>
+							<span class="dap-tw-text">Expansion in the application of modern technologies, encouragement
+								of creative
+								initiatives and positive activation of the partnership of the society and private sector
+								in the
+								development on the local level.</span> </a>
+						<a class="dap-tw-item text-white" href="#!"> <span class="dap-tw-name"> <i
+									class="fad fa-megaphone fa-lg"></i> </span>
+							<span class="dap-tw-text">Achieve a continues development and progress in municipal and
+								water services to
+								insure a sound and healthy environment</span> </a>
+						<a class="dap-tw-item text-white" href="#!"> <span class="dap-tw-name"> <i
+									class="fad fa-megaphone fa-lg"></i> </span>
+							<span class="dap-tw-text">Balanced construction development and active participation in
+								enhancing
+								infrastructure and public services.</span>
+						</a>
+					</marquee>
+				</div>
+				<div class="col-2 d-flex justify-content-end">
+					<ul class="d-flex list-unstyled">
+						<li class="mr-3"><a class="font-change text-white" id="lnkDecrease" title="Zoomout" href="#!">A-</a></li>
+						<li class="mr-3"><a class="font-change text-white" id="lnkNormal" title="Normalview"
+								href="javascript:window.location.reload();">A</a></li>
+						<li><a class="font-change text-white" id="lnkIncrease" title="Zoomin" href="#!">A+</a></li>
+					</ul>
+				</div>
+			</div> <!-- /.row -->
+		</div> <!-- /. container -->
+	</header>
+
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark fixed-top pt-5" id="navbar-main"
+		style="background-image: url(img/new-01-01.png);">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img alt="MOI Logo" id="navbar-logo" src="img/moi_logo.png"></a>
+			<button aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation"
+				class="navbar-toggler" data-target="#navbar-main-collapse" data-toggle="collapse" type="button"><span
+					class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse navbar-collapse-overlay" id="navbar-main-collapse">
+				<div class="position-relative">
+					<button aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation"
+						class="navbar-toggler" data-target="#navbar-main-collapse" data-toggle="collapse"
+						type="button"><i data-feather="x"></i></button>
+				</div>
+				<ul class="navbar-nav ml-lg-auto">
+					<li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
+						<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#"
+							role="button">About MOI</a>
+						<div class="dropdown-menu dropdown-menu-md p-0">
+							<ul class="list-group list-group-flush px-lg-4">
+								<li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
+									<a aria-expanded="false" aria-haspopup="true"
+										class="list-group-item list-group-item-action dropdown-toggle"
+										data-toggle="dropdown" href="#" role="button">
+										<div class="media d-flex">
+											<figure style="width:20px">
+												<img alt="" class="svg-inject img-fluid" src="img/svg/Secure_Files.svg"
+													style="height:20px">
+											</figure>
+											<div class="media-body ml-2">
+												<h6 class="heading mb-0">Services</h6>
+												<p class="mb-0">Examples for any scenario.</p>
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-menu">
+										<!-- <a class="dropdown-item" href="#!">Vision & Mission </a> -->
+										<!-- <a class="dropdown-item" href="#!">Specialties </a> -->
+										<!-- <a class="dropdown-item" href="#!">Future Effort </a> -->
+										<a class="dropdown-item" href="#!">Organization </a>
+										<div class="dropdown-divider"></div>
+										<!-- <a class="dropdown-item" href="#!">Month </a> -->
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#!">Annual Reports </a>
+										<a class="dropdown-item" href="#!">News Letters </a>
+									</div>
+								</li>
+								<li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
+									<a aria-expanded="false" aria-haspopup="true"
+										class="list-group-item list-group-item-action dropdown-toggle"
+										data-toggle="dropdown" href="#" role="button">
+										<div class="media d-flex">
+											<figure style="width:20px">
+												<img alt="Image placeholder" class="svg-inject img-fluid"
+													src="img/svg/Task.svg" style="height:20px">
+											</figure>
+											<div class="media-body ml-2">
+												<h6 class="heading mb-0">Contact Us</h6>
+												<p class="mb-0">Contact Us management made cool.</p>
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#!">Contact </a>
+										<!-- <a class="dropdown-item" href="#!">Telephone Directory</a> -->
+										<a class="dropdown-item" href="#!">Suggestion</a>
+										<!-- <a class="dropdown-item" href="#!">Hotline</a> -->
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#!">Sanad</a>
+										<a class="dropdown-item" href="#!">Contact Information</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
+						<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown"
+							href="#">Media Center</a>
+						<div class="dropdown-menu dropdown-menu-xl p-0">
+							<div class="row no-gutters">
+								<div class="col-12 col-lg-6 order-lg-2">
+									<div class="dropdown-body dropdown-body-right bg-dropdown-secondary h-100">
+										<h6 class="dropdown-header">Entertainment</h6>
+										<div class="list-group list-group-flush">
+											<!-- <div class="list-group-item bg-transparent border-0 px-0 py-2">
+												<div class="media d-flex">
+													<span class="h6"><i data-feather="music"></i></span>
+													<div class="media-body ml-2">
+														<a class="d-block h6 mb-0" href="#!">Music</a>
+														<small class="text-sm text-muted mb-0">Quick's most
+															important
+															features</small>
+													</div>
+												</div>
+											</div> -->
+											<div class="list-group-item bg-transparent border-0 px-0 py-2">
+												<div class="media d-flex">
+													<span class="h6"><i data-feather="video"></i></span>
+													<div class="media-body ml-2">
+														<a class="d-block h6 mb-0" href="#!">Video</a>
+														<small class="text-sm text-muted mb-0">Quick's most
+															important
+															features</small>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6 order-lg-1 mt-4 mt-lg-0">
+									<div class="dropdown-body">
+										<h6 class="dropdown-header">Gallery</h6>
+										<div class="list-group list-group-flush">
+											<!-- <div class="list-group-item bg-transparent border-0 px-0 py-2">
+												<div class="media d-flex">
+													<span class="h6"><i data-feather="layout"></i></span>
+													<div class="media-body ml-2">
+														<a class="d-block heading h6 mb-0" href="#!">Press Print</a>
+														<small class="text-sm text-muted mb-0">Quick's most
+															important features</small>
+													</div>
+												</div>
+											</div> -->
+											<div class="list-group-item bg-transparent border-0 px-0 py-2">
+												<div class="media d-flex">
+													<span class="h6"><i data-feather="image"></i></span>
+													<div class="media-body ml-2">
+														<a class="d-block h6 mb-0" href="#!">Photo Gallery</a>
+														<small class="text-sm text-muted mb-0">Quick's most
+															important
+															features</small>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item nav-item-spaced d-none d-lg-block">
+						<a class="nav-link" href="#!">Announcement</a>
+					</li>
+					<li class="nav-item nav-item-spaced d-none d-lg-block">
+						<a class="nav-link" href="#!">Download</a>
+					</li>
+					<li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
+						<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#"
+							role="button">Knowledge Hub</a>
+						<div class="dropdown-menu dropdown-menu-md p-0">
+							<div class="list-group list-group-flush px-lg-4">
+								<a class="list-group-item list-group-item-action" href="#!" role="button">
+									<div class="d-flex">
+										<span class="h6"><i data-feather="code"></i></span>
+										<div class="ml-3">
+											<h6 class="heading mb-0">Open Data</h6>
+										</div>
+									</div>
+								</a>
+								<a class="list-group-item list-group-item-action" href="#" role="button">
+									<div class="d-flex">
+										<span class="h6"><i data-feather="file-text"></i></span>
+										<div class="ml-3">
+											<h6 class="heading mb-0">Emerging Technologies</h6>
+										</div>
+									</div>
+								</a>
+								<a class="list-group-item list-group-item-action" href="#!" role="button">
+									<div class="d-flex">
+										<span class="h6"><i data-feather="code"></i></span>
+										<div class="ml-3">
+											<h6 class="heading mb-0">E-Participation</h6>
+										</div>
+									</div>
+								</a>
+								<!-- <a class="list-group-item list-group-item-action" href="#" role="button">
+									<div class="d-flex">
+										<span class="h6"><i data-feather="file-text"></i></span>
+										<div class="ml-3">
+											<h6 class="heading mb-0">Sustainable Development Goals</h6>
+										</div>
+									</div>
+								</a> -->
+								<a class="list-group-item list-group-item-action" href="#!" role="button">
+									<div class="d-flex">
+										<span class="h6"><i data-feather="code"></i></span>
+										<div class="ml-3">
+											<h6 class="heading mb-0">User Manuals</h6>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#!"><i class="fad fa-sign-in-alt fa-fw fa-lg"></i> Log in</a>
+					</li>
+					<li class="nav-item">
+						<a class="btn btn-sm btn-primary btn-icon ml-3" href="#!">
+							<span class="btn-inner--icon"><i class="fad fa-language fa-fw fa-lg"></i></span>
+							<span class="btn-inner--text">
+								<?xml version="1.0" encoding="ISO-8859-1" ?>
+								&#1593;&#1585;&#1576;&#1610;
+							</span></a>
+					</li>
+				</ul>
+				<div class="d-lg-none px-4 text-center">
+					<a class="btn btn-block btn-sm btn-primary" href="#!">&#1593;&#1585;&#1576;&#1610;</a>
 				</div>
 			</div>
 		</div>
-	</div>
-	<header class="" id="header-main">
-		<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar-main" style="background-image: url(img/bg_header.png);">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img alt="MOI Logo" id="navbar-logo" src="img/moi_logo.png"></a>
-				<button aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation"
-					class="navbar-toggler" data-target="#navbar-main-collapse" data-toggle="collapse"
-					type="button"><span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse navbar-collapse-overlay" id="navbar-main-collapse">
-					<div class="position-relative">
-						<button aria-controls="navbar-main-collapse" aria-expanded="false"
-							aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar-main-collapse"
-							data-toggle="collapse" type="button"><i data-feather="x"></i></button>
-					</div>
-					<ul class="navbar-nav ml-lg-auto">
-						<li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
-							<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown"
-								href="#" role="button">About MOI</a>
-							<div class="dropdown-menu dropdown-menu-md p-0">
-								<ul class="list-group list-group-flush px-lg-4">
-									<li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
-										<a aria-expanded="false" aria-haspopup="true"
-											class="list-group-item list-group-item-action dropdown-toggle"
-											data-toggle="dropdown" href="#" role="button">
-											<div class="media d-flex">
-												<figure style="width:20px">
-													<img alt="" class="svg-inject img-fluid"
-														src="img/svg/Secure_Files.svg" style="height:20px">
-												</figure>
-												<div class="media-body ml-2">
-													<h6 class="heading mb-0">Services</h6>
-													<p class="mb-0">Examples for any scenario.</p>
-												</div>
-											</div>
-										</a>
-										<div class="dropdown-menu">
-											<a class="dropdown-item" href="#!">Vision & Mission </a>
-											<a class="dropdown-item" href="#!">Specialties </a>
-											<a class="dropdown-item" href="#!">Future Effort </a>
-											<a class="dropdown-item" href="#!">Organization </a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="#!">Month </a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="#!">Annual Reports </a>
-											<a class="dropdown-item" href="#!">News Letters </a>
-										</div>
-									</li>
-									<li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
-										<a aria-expanded="false" aria-haspopup="true"
-											class="list-group-item list-group-item-action dropdown-toggle"
-											data-toggle="dropdown" href="#" role="button">
-											<div class="media d-flex">
-												<figure style="width:20px">
-													<img alt="Image placeholder" class="svg-inject img-fluid"
-														src="img/svg/Task.svg" style="height:20px">
-												</figure>
-												<div class="media-body ml-2">
-													<h6 class="heading mb-0">Contact Us</h6>
-													<p class="mb-0">Contact Us management made cool.</p>
-												</div>
-											</div>
-										</a>
-										<div class="dropdown-menu">
-											<a class="dropdown-item" href="#!">Contact </a>
-											<a class="dropdown-item" href="#!">Telephone Directory</a>
-											<a class="dropdown-item" href="#!">Suggestion</a>
-											<a class="dropdown-item" href="#!">Hotline</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="#!">Sanad</a>
-											<a class="dropdown-item" href="#!">Contact Information</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
-							<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown"
-								href="#">Media Center</a>
-							<div class="dropdown-menu dropdown-menu-xl p-0">
-								<div class="row no-gutters">
-									<div class="col-12 col-lg-6 order-lg-2">
-										<div class="dropdown-body dropdown-body-right bg-dropdown-secondary h-100">
-											<h6 class="dropdown-header">Entertainment</h6>
-											<div class="list-group list-group-flush">
-												<div class="list-group-item bg-transparent border-0 px-0 py-2">
-													<div class="media d-flex">
-														<span class="h6"><i data-feather="music"></i></span>
-														<div class="media-body ml-2">
-															<a class="d-block h6 mb-0" href="#!">Music</a>
-															<small class="text-sm text-muted mb-0">Quick's most
-																important
-																features</small>
-														</div>
-													</div>
-												</div>
-												<div class="list-group-item bg-transparent border-0 px-0 py-2">
-													<div class="media d-flex">
-														<span class="h6"><i data-feather="video"></i></span>
-														<div class="media-body ml-2">
-															<a class="d-block h6 mb-0" href="#!">Video</a>
-															<small class="text-sm text-muted mb-0">Quick's most
-																important
-																features</small>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-12 col-lg-6 order-lg-1 mt-4 mt-lg-0">
-										<div class="dropdown-body">
-											<h6 class="dropdown-header">Gallery</h6>
-											<div class="list-group list-group-flush">
-												<div class="list-group-item bg-transparent border-0 px-0 py-2">
-													<div class="media d-flex">
-														<span class="h6"><i data-feather="layout"></i></span>
-														<div class="media-body ml-2">
-															<a class="d-block heading h6 mb-0" href="#!">Press Print</a>
-															<small class="text-sm text-muted mb-0">Quick's most
-																important features</small>
-														</div>
-													</div>
-												</div>
-												<div class="list-group-item bg-transparent border-0 px-0 py-2">
-													<div class="media d-flex">
-														<span class="h6"><i data-feather="image"></i></span>
-														<div class="media-body ml-2">
-															<a class="d-block h6 mb-0" href="#!">Photo Gallery</a>
-															<small class="text-sm text-muted mb-0">Quick's most
-																important
-																features</small>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="nav-item nav-item-spaced d-none d-lg-block">
-							<a class="nav-link" href="#!">Announcement</a>
-						</li>
-						<li class="nav-item nav-item-spaced d-none d-lg-block">
-							<a class="nav-link" href="#!">Download</a>
-						</li>
-						<li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
-							<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown"
-								href="#" role="button">Knowledge Hub</a>
-							<div class="dropdown-menu dropdown-menu-md p-0">
-								<div class="list-group list-group-flush px-lg-4">
-									<a class="list-group-item list-group-item-action" href="#!" role="button">
-										<div class="d-flex">
-											<span class="h6"><i data-feather="code"></i></span>
-											<div class="ml-3">
-												<h6 class="heading mb-0">Open Data</h6>
-											</div>
-										</div>
-									</a>
-									<a class="list-group-item list-group-item-action" href="#" role="button">
-										<div class="d-flex">
-											<span class="h6"><i data-feather="file-text"></i></span>
-											<div class="ml-3">
-												<h6 class="heading mb-0">Emerging Technologies</h6>
-											</div>
-										</div>
-									</a>
-									<a class="list-group-item list-group-item-action" href="#!" role="button">
-										<div class="d-flex">
-											<span class="h6"><i data-feather="code"></i></span>
-											<div class="ml-3">
-												<h6 class="heading mb-0">E-Participation</h6>
-											</div>
-										</div>
-									</a>
-									<a class="list-group-item list-group-item-action" href="#" role="button">
-										<div class="d-flex">
-											<span class="h6"><i data-feather="file-text"></i></span>
-											<div class="ml-3">
-												<h6 class="heading mb-0">Sustainable Development Goals</h6>
-											</div>
-										</div>
-									</a>
-									<a class="list-group-item list-group-item-action" href="#!" role="button">
-										<div class="d-flex">
-											<span class="h6"><i data-feather="code"></i></span>
-											<div class="ml-3">
-												<h6 class="heading mb-0">User Manuals</h6>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#!">Log in</a>
-						</li>
-						<li class="nav-item">
-							<a class="btn btn-sm btn-primary btn-icon ml-3" href="#!">
-								<span class="btn-inner--icon"><i class="fad fa-language fa-fw fa-lg"></i></span>
-								<span class="btn-inner--text">
-									<?xml version="1.0" encoding="ISO-8859-1" ?>
-									&#1593;&#1585;&#1576;&#1610;
-								</span></a>
-						</li>
-					</ul>
-					<div class="d-lg-none px-4 text-center">
-						<a class="btn btn-block btn-sm btn-primary" href="#!">&#1593;&#1585;&#1576;&#1610;</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
+	</nav>
+
 	<!-- search -->
 	<div class="omnisearch" id="omnisearch">
 		<div class="container">
@@ -338,334 +372,357 @@
 		</div>
 	</div>
 
-	<section class="slice slice-lg bg-dark pb-10 img-start" style="background-image: url(img/about-large.jpg), url(img/Rop_login_2.jpg);">
-		<div class="container pt-5 pt-lg-7 pb-lg-9 pb-7">
-			<!-- <div class="row align-items-center justify-content-center">
-				<div class="col-lg-7 text-center">
-					<h1 class="text-white">Everything you need in <strong>one place</strong></h1>
-					<p class="lead text-white opacity-8">Plan, build and launch beautiful and consistent user interfaces
-						for the web that drives meaningful engagement and growth for your brand.</p>
-					<div class="mt-5">
-						<a class="btn btn-lg btn-warning btn-icon"
-							href="#!" target="_blank"><span
-								class="btn-inner--text">Get Quick</span> <span class="btn-inner--icon"><i
-									data-feather="arrow-right"></i></span></a> <a class="btn btn-lg btn-white"
-							href="#">Learn more</a>
+	<div class="container bg-white shadow-lg p-0">
+		<section class="slice slice-lg bg-dark pb-10" style="margin-top: 2.3rem;">
+			<div class="" style="height: 250px;">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active img-start1">
+							<img src="img/Slides/bg1.png" class="img-fluid w-100" alt="...">
+						</div>
+						<div class="carousel-item img-start1">
+							<img src="img/Slides/bg2.png" class="img-fluid w-100" alt="...">
+						</div>
+						<div class="carousel-item img-start1">
+							<img src="img/Slides/Oman.png" class="img-fluid w-100" alt="...">
+						</div>
 					</div>
 				</div>
-			</div> -->
-		</div>
-		<div class="shape-container shape-position-bottom">
-			<svg preserveaspectratio="none" viewbox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
-				<path d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
-			</svg>
-		</div>
-	</section>
+			</div>
+			<div class="shape-container shape-position-bottom">
+				<svg preserveaspectratio="none" viewbox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+					<path d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
+				</svg>
+			</div>
+		</section>
 
-	<section class="slice pt-0">
-		<div class="container position-relative zindex-100">
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-sm-6 mt-n10">
-					<div class="card hover-translate-y-n10 hover-shadow-lg">
-						<div class="card-body">
-							<div class="pb-4 text-center">
-								<div class="icon-lg text-white rounded-circle icon-shape shadow">
-									<!-- <i data-feather="droplet"></i> -->
-									<img src="img/Services/ts.svg" alt="Technical Services">
+		<section class="slice pt-0">
+			<div class="container position-relative zindex-100">
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-sm-6 mt-n10">
+						<div class="card hover-translate-y-n10 hover-shadow-lg card-border">
+							<div class="card-body">
+								<div class="pb-4 text-center">
+									<div class="icon-lg text-white rounded-circle icon-shape shadow">
+										<!-- <i data-feather="droplet"></i> -->
+										<img src="img/Services/ts.svg" alt="Technical Services">
+									</div>
+								</div>
+								<div class="pt-2 pb-3">
+									<h5 class="text-center" style="color: rgb(184, 150, 87);">Technical Services</h5>
+									<p class="text-muted mb-0">Services provided for the citizens and residents to
+										obtain
+										building permits and construction related services.</p>
 								</div>
 							</div>
-							<div class="pt-2 pb-3">
-								<h5>Technical Services</h5>
-								<p class="text-muted mb-0">Services provided for the citizens and residents to obtain
-									building permits and construction related services.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 mt-sm-n10">
+						<div class="card hover-translate-y-n10 hover-shadow-lg card-border">
+							<div class="card-body">
+								<div class="pb-4 text-center">
+									<div class="icon-lg text-white rounded-circle icon-shape shadow">
+										<!-- <i data-feather="image"></i> -->
+										<img src="img/Services/hs.svg" alt="">
+									</div>
+								</div>
+								<div class="pt-2 pb-3">
+									<h5 class="text-center" style="color: rgb(61, 199, 83);">Health Services</h5>
+									<p class="text-muted mb-0">Services provided for the citizens and residents to
+										obtain
+										municipal licenses, lease contracts and food safety permits.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 mt-sm-n10">
+						<div class="card card-border">
+							<div class="card-body">
+								<div class="">
+									<h5 class="text-center" style="color: #b429cc;">Find Services</h5>
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<div class="form-group">
+												<select name="Category" id="Category" onchange="" class="form-control">
+													<option value="0" selected>Service Type</option>
+													<option value="1">Technical Services</option>
+													<option value="2">Water Services</option>
+													<option value="3">Health Services</option>
+												</select>
+												<span class="glyphicon1 form-control-feedback"
+													aria-hidden="true"></span>
+												<span class="help-block with-errors"></span>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<div class="form-group">
+												<select name="Municipality" id="Municipality" class="form-control">
+													<option value="1000">Service Category</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<div class="form-group">
+												<select name="Service" id="Service" class="form-control">
+													<option value="1000">Service Name</option>
+												</select>
+											</div>
+										</div>
+									</div> <!-- /.row -->
+
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<button type="button" class="btn btn-primary btn-lg btn-block border-0"
+												style="background: linear-gradient(to right, #6f18a0, #b429cc)"
+												onclick="categorySearch()">Find Services</button>
+										</div>
+									</div> <!-- /.row -->
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-sm-6 mt-sm-n10">
-					<div class="card hover-translate-y-n10 hover-shadow-lg">
-						<div class="card-body">
-							<div class="pb-4 text-center">
-								<div class="icon-lg text-white rounded-circle icon-shape shadow">
-									<!-- <i data-feather="image"></i> -->
-									<img src="img/Services/hs.svg" alt="">
-								</div>
+			</div>
+		</section>
+		<section class="slice slice-lg">
+			<div class="container">
+				<div class="row mb-5 justify-content-center text-center">
+					<div class="col-12 col-md-7 col-lg-6">
+						<h2 class="mt-4">Our Categories</h2>
+						<div class="mt-2">
+							<p class="lead lh-180">Now it's easy to boost your online image by creating a website using
+								our theme without having to worry about the quality of the end result.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-5 col-lg-6">
+						<img alt="Image placeholder" class="img-fluid img-thumbnail rounded-lg"
+							src="img/about-large.jpg">
+					</div>
+				</div>
+				<div class="row mt-5 flickity-viewport-visible">
+					<div class="col-sm-4">
+						<div class="card shadow-lg rounded-lg floating-sm card-border-moi">
+							<div class="card-body">
+								<i class="fad fa-city fa-2x d-flex justify-content-center"></i>
+								<h5 class="font-weight-bold text-center mb-0"> Municipal Council Affairs</h5>
+								<p class="text-center mb-0">Receive and classify minutes of meetings and various topics
+									send by municipal Council.</p>
 							</div>
-							<div class="pt-2 pb-3">
-								<h5>Health Services</h5>
-								<p class="text-muted mb-0">Services provided for the citizens and residents to obtain
-									municipal licenses, lease contracts and food safety permits.</p>
+						</div>
+					</div>
+					<div class="col-sm-4" hidden>
+						<div class="card shadow-lg rounded-lg floating-sm card-border-moi">
+							<div class="card-body">
+								<i class="fad fa-angel fa-2x d-flex justify-content-center"></i>
+								<h5 class="font-weight-bold text-center mb-0"> Kids Corner</h5>
+								<p class="text-center mb-0">Section allows the children to participate in online games,
+									Instructions to children’s, Kids stories
+									for download, Awareness campaigns details.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card shadow-lg rounded-lg floating-sm card-border-moi">
+							<div class="card-body">
+								<i class="fad fa-poll-people fa-2x d-flex justify-content-center"></i>
+								<h5 class="font-weight-bold text-center mb-0"> Survey</h5>
+								<p class="text-center mb-0">Do awareness campaigns have contributed to deliver its
+									message
+									to the community ?</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card shadow-lg rounded-lg floating-lg card-border-moi">
+							<div class="card-body">
+								<i class="fad fa-gavel fa-2x d-flex justify-content-center"></i>
+								<h5 class="font-weight-bold text-center mb-0"> Rules &amp; Regulations</h5>
+								<p class="text-center mb-0">Laws and legislations are used by the ministry to control
+									municipal and water resources work in the
+									Sultanate.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4" hidden>
+						<div class="card shadow-lg rounded-lg floating-sm card-border-moi">
+							<div class="card-body">
+								<i class="fad fa-book-reader fa-2x d-flex justify-content-center"></i>
+								<h5 class="font-weight-bold text-center mb-0"> Planning &amp; Studies</h5>
+								<p class="text-center mb-0">Scientific planning is one of the main pillars of the
+									Ministry's
+									work and the supporting fields in
+									municipal.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4" hidden>
+						<div class="card shadow-lg rounded-lg floating-lg card-border-moi">
+							<div class="card-body">
+								<i class="fad fa-vials fa-2x d-flex justify-content-center"></i>
+								<h5 class="font-weight-bold text-center mb-0"> Food &amp; Water Laboratory</h5>
+								<p class="text-center mb-0">The FWLC was formed in 2001 by merging of already well
+									established two laboratories – Water Quality
+									Laboratory and Food and Environment Laboratory.</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-sm-6 mt-sm-n10">
-					<div class="card ">
-						<div class="card-body">
-							<div class="pt-2">
-								<h5 class="text-center" style="color: #b429cc;">Find Services</h5>
-								<div class="row">
-									<div class="col-xs-12 col-sm-12 col-md-12">
-										<div class="form-group">
-											<select name="Category" id="Category" onchange="" class="form-control">
-												<option value="0" selected>Service Type</option>
-												<option value="1">Technical Services</option>
-												<option value="2">Water Services</option>
-												<option value="3">Health Services</option>
-											</select>
-											<span class="glyphicon1 form-control-feedback" aria-hidden="true"></span>
-											<span class="help-block with-errors"></span>
+			</div>
+		</section>
+
+		<!-- <section class="slice slice-lg">
+			<div class="container">
+				<div class="row row-grid justify-content-around align-items-center">
+					<div class="col-lg-5">
+						<h5 class="h2">Advertisements</h5>
+						<p class="lead my-4">With Quick you get components and examples, including tons of variables that
+							will help you customize this theme with ease.</p>
+						<ul class="list-unstyled mb-0">
+							<li class="py-2">
+								<div class="d-flex align-items-center">
+									<div>
+										<div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+											<i class="fas fa-file-invoice"></i>
 										</div>
 									</div>
-									<div class="col-xs-12 col-sm-12 col-md-12">
-										<div class="form-group">
-											<select name="Municipality" id="Municipality" class="form-control">
-												<option value="1000">Service Category</option>
-											</select>
+									<div>
+										<span class="h6 mb-0">Perfect for modern startups</span>
+									</div>
+								</div>
+							</li>
+							<li class="py-2">
+								<div class="d-flex align-items-center">
+									<div>
+										<div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
+											<i class="fas fa-store-alt"></i>
 										</div>
 									</div>
-									<div class="col-xs-12 col-sm-12 col-md-12">
-										<div class="form-group">
-											<select name="Service" id="Service" class="form-control">
-												<option value="1000">Service Name</option>
-											</select>
-										</div>
+									<div>
+										<span class="h6 mb-0">Ready to be customized</span>
 									</div>
-								</div> <!-- /.row -->
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6"><img alt="Image placeholder" class="img-fluid"
+							src="img/illustration/illustration-10.svg"></div>
+				</div>
+			</div>
+		</section> -->
 
-								<div class="row">
-									<div class="col-xs-12 col-sm-12 col-md-12">
-										<button type="button" class="btn btn-primary btn-lg btn-block"
-											onclick="categorySearch()">Find</button>
+		<section class="slice slice-lg">
+			<div class="container">
+				<div class="row mb-6 justify-content-center text-center">
+					<div class="col-lg-8 col-md-10">
+						<h3 class="mt-4">Latest news</h3>
+						<div class="mt-3">
+							<p class="lead lh-180">Thousands of developers around the world have already made Quick the
+								main
+								tool for building websites.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new1.png)">
+							<span class="mask bg-dark opacity-5"></span>
+							<div class="card-body pt-10 mt-auto position-relative">
+								<a class="d-block h5 mb-3 text-white stretched-link" href="#">How to start a business
+									with
+									Quick</a>
+								<p class="mb-0 text-white">Some quick example text tod make up the bulk of the card's
+									content.</p>
+							</div>
+							<div class="card-body position-relative delimiter-top">
+								<div class="d-flex align-items-center">
+									<div>
+										<a class="avatar avatar-sm rounded-circle d-inline-block" href="#">
+											<img alt="Image placeholder" src="img/Khanjar.png"></a>
 									</div>
-								</div> <!-- /.row -->
+									<div class="pl-3">
+										<a class="h6 stretched-link text-white text-sm" href="#">Michael White</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new2.png)">
+							<span class="mask bg-dark opacity-5"></span>
+							<div class="card-body pt-10 mt-auto position-relative">
+								<a class="d-block h5 mb-3 text-white stretched-link" href="#">Learn how to use Boostrap
+									like
+									a Pro</a>
+								<p class="mb-0 text-white">Some quick example text tod make up the bulk of the card's
+									content.</p>
+							</div>
+							<div class="card-body position-relative delimiter-top">
+								<div class="d-flex align-items-center">
+									<div>
+										<a class="avatar avatar-sm rounded-circle d-inline-block" href="#">
+											<img alt="Image placeholder" src="img/Khanjar.png"></a>
+									</div>
+									<div class="pl-3">
+										<a class="h6 stretched-link text-white text-sm" href="#">Betty Mavis</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new4.png)">
+							<span class="mask bg-dark opacity-5"></span>
+							<div class="card-body pt-10 mt-auto position-relative">
+								<a class="d-block h5 mb-3 text-white stretched-link" href="#">Change the world with
+									small
+									things</a>
+								<p class="mb-0 text-white">Some quick example text tod make up the bulk of the card's
+									content.</p>
+							</div>
+							<div class="card-body position-relative delimiter-top">
+								<div class="d-flex align-items-center">
+									<div>
+										<a class="avatar avatar-sm rounded-circle d-inline-block" href="#"><img
+												alt="Image placeholder" src="img/Khanjar.png"></a>
+									</div>
+									<div class="pl-3">
+										<a class="h6 stretched-link text-white text-sm" href="#">Jarvis Owen</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="slice slice-lg">
-		<div class="container">
-			<div class="row mb-5 justify-content-center text-center">
-				<div class="col-lg-8 col-md-10">
-					<h2 class="mt-4">Build the perfect website with our hand-crafted components and pages</h2>
-					<div class="mt-2">
-						<p class="lead lh-180">Now it's easy to boost your online image by creating a website using our
-							theme without having to worry about the quality of the end result.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center mb-5">
-				<div class="col-lg-8">
-					<img alt="Image placeholder" class="img-fluid img-thumbnail rounded-lg" src="img/about-large.jpg">
-				</div>
-			</div>
-			<div class="row mt-5">
-				<div class="col-sm-4">
-					<div class="card border-0 shadow-lg rounded-lg floating-sm">
-						<div class="card-body">
-							<i class="fad fa-city fa-2x d-flex justify-content-center" style="color: #152c5b"></i>
-							<h5 class="font-weight-bold text-center mb-0"> Municipalities Sector</h5>
-							<p class="text-center mb-0">The municipalities sector endeavors to implement many vital
-								projects aimed at maintenance of public
-								sanitation.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card border-0 shadow-lg rounded-lg floating-sm">
-						<div class="card-body">
-							<i class="fad fa-angel fa-2x d-flex justify-content-center" style="color: #152c5b"></i>
-							<h5 class="font-weight-bold text-center mb-0"> Kids Corner</h5>
-							<p class="text-center mb-0">Section allows the children to participate in online games,
-								Instructions to children’s, Kids stories
-								for download, Awareness campaigns details.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card border-0 shadow-lg rounded-lg floating-sm">
-						<div class="card-body">
-							<i class="fad fa-poll-people fa-2x d-flex justify-content-center"
-								style="color: #152c5b"></i>
-							<h5 class="font-weight-bold text-center mb-0"> Survey</h5>
-							<p class="text-center mb-0">Do awareness campaigns have contributed to deliver its message
-								to the community ?</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card border-0 shadow-lg rounded-lg floating-lg">
-						<div class="card-body">
-							<i class="fad fa-gavel fa-2x d-flex justify-content-center" style="color: #152c5b"></i>
-							<h5 class="font-weight-bold text-center mb-0"> Rules &amp; Regulations</h5>
-							<p class="text-center mb-0">Laws and legislations are used by the ministry to control
-								municipal and water resources work in the
-								Sultanate.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card border-0 shadow-lg rounded-lg floating-sm">
-						<div class="card-body">
-							<i class="fad fa-book-reader fa-2x d-flex justify-content-center"
-								style="color: #152c5b"></i>
-							<h5 class="font-weight-bold text-center mb-0"> Planning &amp; Studies</h5>
-							<p class="text-center mb-0">Scientific planning is one of the main pillars of the Ministry's
-								work and the supporting fields in
-								municipal.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card border-0 shadow-lg rounded-lg floating-lg">
-						<div class="card-body">
-							<i class="fad fa-vials fa-2x d-flex justify-content-center" style="color: #152c5b"></i>
-							<h5 class="font-weight-bold text-center mb-0"> Food &amp; Water Laboratory</h5>
-							<p class="text-center mb-0">The FWLC was formed in 2001 by merging of already well
-								established two laboratories – Water Quality
-								Laboratory and Food and Environment Laboratory.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+		</section>
+	</div>
+	<!--/.container-->
 
-	<section class="slice slice-lg">
+	<!-- <div class="top-bar">
 		<div class="container">
-			<div class="row row-grid justify-content-around align-items-center">
-				<div class="col-lg-5">
-					<h5 class="h2">Advertisements</h5>
-					<p class="lead my-4">With Quick you get components and examples, including tons of variables that
-						will help you customize this theme with ease.</p>
-					<ul class="list-unstyled mb-0">
-						<li class="py-2">
-							<div class="d-flex align-items-center">
-								<div>
-									<div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
-										<i class="fas fa-file-invoice"></i>
-									</div>
-								</div>
-								<div>
-									<span class="h6 mb-0">Perfect for modern startups</span>
-								</div>
-							</div>
-						</li>
-						<li class="py-2">
-							<div class="d-flex align-items-center">
-								<div>
-									<div class="icon icon-shape bg-primary text-white icon-sm rounded-circle mr-3">
-										<i class="fas fa-store-alt"></i>
-									</div>
-								</div>
-								<div>
-									<span class="h6 mb-0">Ready to be customized</span>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-6"><img alt="Image placeholder" class="img-fluid"
-						src="img/illustration/illustration-10.svg"></div>
-			</div>
-		</div>
-	</section>
-
-	<section class="slice slice-lg">
-		<div class="container">
-			<div class="row mb-6 justify-content-center text-center">
-				<div class="col-lg-8 col-md-10">
-					<h3 class="mt-4">Latest news</h3>
-					<div class="mt-3">
-						<p class="lead lh-180">Thousands of developers around the world have already made Quick the main
-							tool for building websites.</p>
-					</div>
-				</div>
-			</div>
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new1.png)">
-						<span class="mask bg-dark opacity-5"></span>
-						<div class="card-body pt-10 mt-auto position-relative">
-							<a class="d-block h5 mb-3 text-white stretched-link" href="#">How to start a business with
-								Quick</a>
-							<p class="mb-0 text-white">Some quick example text tod make up the bulk of the card's
-								content.</p>
-						</div>
-						<div class="card-body position-relative delimiter-top">
-							<div class="d-flex align-items-center">
-								<div>
-									<a class="avatar avatar-sm rounded-circle d-inline-block" href="#">
-										<img alt="Image placeholder" src="img/Khanjar.png"></a>
-								</div>
-								<div class="pl-3">
-									<a class="h6 stretched-link text-white text-sm" href="#">Michael White</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new2.png)">
-						<span class="mask bg-dark opacity-5"></span>
-						<div class="card-body pt-10 mt-auto position-relative">
-							<a class="d-block h5 mb-3 text-white stretched-link" href="#">Learn how to use Boostrap like
-								a Pro</a>
-							<p class="mb-0 text-white">Some quick example text tod make up the bulk of the card's
-								content.</p>
-						</div>
-						<div class="card-body position-relative delimiter-top">
-							<div class="d-flex align-items-center">
-								<div>
-									<a class="avatar avatar-sm rounded-circle d-inline-block" href="#">
-										<img alt="Image placeholder" src="img/Khanjar.png"></a>
-								</div>
-								<div class="pl-3">
-									<a class="h6 stretched-link text-white text-sm" href="#">Betty Mavis</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new4.png)">
-						<span class="mask bg-dark opacity-5"></span>
-						<div class="card-body pt-10 mt-auto position-relative">
-							<a class="d-block h5 mb-3 text-white stretched-link" href="#">Change the world with small
-								things</a>
-							<p class="mb-0 text-white">Some quick example text tod make up the bulk of the card's
-								content.</p>
-						</div>
-						<div class="card-body position-relative delimiter-top">
-							<div class="d-flex align-items-center">
-								<div>
-									<a class="avatar avatar-sm rounded-circle d-inline-block" href="#"><img
-											alt="Image placeholder" src="img/Khanjar.png"></a>
-								</div>
-								<div class="pl-3">
-									<a class="h6 stretched-link text-white text-sm" href="#">Jarvis Owen</a>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="col-lg-12">
+
 				</div>
 			</div>
-		</div>
-	</section>
+		</div> /.container
+	</div> -->
 
-	<footer class="position-relative" id="footer-main">
-		<div class="footer pt-lg-7 footer-dark bg-dark">
-			<div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+	<div class="row">
+		<img src="img/pattern/pattern-2.png" class="img-fluid w-100" alt="">
+	</div> <!-- /.row -->
+
+	<footer id="footer-main">
+		<div class="footer-dark bg-dark"
+			style="background-image: url(img/new-01-01.png); background-color: #09171c !important;">
+			<!-- <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
 				<svg class="" height="100px" preserveaspectratio="none" style="enable-background:new 0 0 2560 100"
 					viewbox="0 0 2560 100" width="2560px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
 					<polygon points="2560 0 2560 100 0 100"></polygon>
 				</svg>
-			</div>
-			<div class="container ">
-				<hr class="divider divider-fade divider-dark my-5">
+			</div> -->
+			<div class="container pt-3">
+				<!-- <hr class="divider divider-fade divider-dark my-5"> -->
 				<div class="row">
 					<div class="col-lg-3 mb-5 mb-lg-0">
 						<a href="index.html">
@@ -706,7 +763,7 @@
 					<div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-lg-0">
 						<h6 class="heading mb-3">Services</h6>
 						<ul class="list-unstyled">
-							<li>
+							<!-- <li>
 								<a href="#">Vision & Mission</a>
 							</li>
 							<li>
@@ -714,7 +771,7 @@
 							</li>
 							<li>
 								<a href="#">Future Effort</a>
-							</li>
+							</li> -->
 							<li>
 								<a href="#">Organization</a>
 							</li>
@@ -852,7 +909,8 @@
 						data-toggle="tooltip" title="Close Customizer" type="button"><span
 							aria-hidden="true">&times;</span></button>
 					<div class="text-center mx-auto mt-4 mb-5" style="width:80px">
-						<img alt="Click.svg" class="svg-inject img-fluid" src="img/svg/Click.svg"></div>
+						<img alt="Click.svg" class="svg-inject img-fluid" src="img/svg/Click.svg">
+					</div>
 					<h5 class="text-center mb-2">Customize Quick</h5>
 					<p class="text-center mb-4">Customize your preview experience by selecting skin colors and modes.
 					</p>
@@ -892,8 +950,17 @@
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/quick-website.js"></script>
-	<script>feather.replace({ width: "1em", height: "1em" })</script>
-	<script>!function (e, t, a, n, g) { e[n] = e[n] || [], e[n].push({ "gtm.start": (new Date).getTime(), event: "gtm.js" }); var m = t.getElementsByTagName(a)[0], r = t.createElement(a); r.async = !0, r.src = "https://www.googletagmanager.com/gtm.js?id=GTM-MF4DZVH", m.parentNode.insertBefore(r, m) }(window, document, "script", "dataLayer")</script>
+	<script src="js/main.js"></script>
+	<script>
+		var highestBox = 0;
+		$('.flickity-viewport-visible .card').each(function () {
+			if ($(this).height() > highestBox) {
+				highestBox = $(this).height();
+			}
+		});
+		$('.flickity-viewport-visible .card').height(highestBox);
+	</script>
+
 </body>
 
 </html>
