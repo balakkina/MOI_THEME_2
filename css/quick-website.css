@@ -21678,7 +21678,7 @@ section.slice {
 .slice {
 	position: relative;
 	padding-top: 4rem;
-	padding-bottom: 4rem
+	padding-bottom: 0rem
 }
 .slice-xl {
 	padding-top: 8rem;
@@ -21686,7 +21686,7 @@ section.slice {
 }
 .slice-lg {
 	padding-top: 6rem;
-	padding-bottom: 6rem
+	padding-bottom: 0rem
 }
 .slice-sm {
 	padding-top: 2rem;

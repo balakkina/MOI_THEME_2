@@ -80,3 +80,16 @@ body::-webkit-scrollbar-thumb {
     border-top: 2px solid rgb(200, 16, 46);
     border-bottom: 2px solid rgb(0, 154, 68);
 }
+.service-menu {
+    background: url(../img/menu-back.png) no-repeat;
+    min-height: 140px;
+    border-radius: 4px;
+}
+.footer-bg {
+    background-image: url(../img/pattern/letters-bg.png);
+    background-repeat: repeat-y;
+    background-position: left bottom;
+}
+.contact-widget {
+    background: transparent url(../img/pattern/world.png) no-repeat 50% 65%;
+}
