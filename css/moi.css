@@ -2,7 +2,9 @@
 
 /*! Firefox */
 body {
-    background-image: url(../img/pattern/pattern.gif);
+    background-color: rgb(215 231 255);
+    background-image: url(../img/pattern/pattern-4.png), url(../img/pattern/bg.svg);
+    background-position: bottom, bottom left;
 }
 html {
     scrollbar-color: #080808 #a6a7a8;
@@ -80,10 +82,15 @@ body::-webkit-scrollbar-thumb {
     border-top: 2px solid rgb(200, 16, 46);
     border-bottom: 2px solid rgb(0, 154, 68);
 }
+.navbar-bg {
+    background-image: url(../img/pattern.png);
+    background-color: rgb(191, 163, 90);
+}
 .service-menu {
     background: url(../img/menu-back.png) no-repeat;
     min-height: 140px;
-    border-radius: 4px;
+    height: 159px;
+    /* border-radius: 4px; */
 }
 .footer-bg {
     background-image: url(../img/pattern/letters-bg.png);
@@ -93,3 +100,261 @@ body::-webkit-scrollbar-thumb {
 .contact-widget {
     background: transparent url(../img/pattern/world.png) no-repeat 50% 65%;
 }
+.categorie-bg {
+    background: transparent url(../img/pattern/bg.svg) no-repeat 39% 95%;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.position-absolute.absolute-centered {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+.absolute-centered {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.fs-6 {
+    font-size: 3.8147rem!important;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+.social-w-40 {
+    height: 40px;
+    width: 40px;
+}
+.sticky {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /* position: absolute; */
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+    background-color: rgb(215 231 255);
+    color: #080808;
+}
+.fixed-header {
+    position: fixed!important;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* 
+---------------------------------------------
+Features Style
+--------------------------------------------- 
+*/
+
+.features-content {
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  }
+  
+  .features-item {
+    text-align: center;
+    padding: 30px;
+    border-radius: 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(105deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+  }
+  
+  .features-item:hover {
+    background: rgb(51,204,197);
+    background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
+  }
+  
+  .features-item:hover h4 {
+    color: #fff;
+  }
+  
+  .features-item:hover p {
+    color: #fff;
+  }
+  
+  .features-item:hover .line-dec {
+    background-color: rgba(255,255,255,0.3);
+  }
+  
+  .features-item .number h6 {
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 69px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 69px;
+    margin-top: -65px;
+    margin-bottom: 30px;
+  }
+  
+  .features-item .first-number h6 {
+    background-image: url(../img/shapes/features-number-01.png);
+  }
+  
+  .features-item .second-number h6 {
+    background-image: url(../img/shapes/features-number-02.png);
+  }
+  
+  .features-item .third-number h6 {
+    background-image: url(../img/shapes/features-number-03.png);
+  }
+  
+  .features-item .fourth-number h6 {
+    background-image: url(../img/shapes/features-number-04.png);
+  }
+
+  
+  .features-item .icon {
+    width: 63px;
+    height: 63px;
+    margin: 0 auto;
+    transition: all 0.5s;
+  }
+  
+  .features-item h4 {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #2a2a2a;
+    position: relative;
+    transition: all 0.5s;
+  }
+  
+  .features-item .line-dec {
+    width: 100px;
+    height: 2px;
+    background-color: rgba(51,204,197,0.3);
+    margin: 30px auto;
+    transition: all 0.5s;
+  }
+  
+  .features-item p {
+    position: relative;
+    margin-top: 0px;
+    transition: all 0.5s;
+  }
+  
+  .skills-content {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -50px;
+    background-color: #ffffff;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 10px 0px 85px 0px;
+  }
+  
+  .skill-item {
+    text-align: center;
+  }
+  
+  .progress {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+  }
+  .progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .progress .progress-left {
+    left: 0;
+  }
+  .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    border-color: #fd6a54;
+  }
+  .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+  }
+  .progress .progress-right {
+    right: 0;
+  }
+  .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+  }
+  .progress .progress-value {
+    text-align: center;
+    color: #2a2a2a;
+    display: flex;
+    width: 100%;
+    border-radius: 50%;
+    font-size: 32px;
+    text-align: center;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 700;
+  }
+  .progress .progress-value div {
+    margin-top: 10px;
+  }
+  .progress .progress-value span {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
