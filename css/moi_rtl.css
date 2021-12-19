@@ -1,0 +1,17 @@
+.modal.fixed-right .modal-vertical {
+    margin-right: auto;
+    margin-left: 0;
+}
+.modal-header .close {
+    margin: -1rem auto -1rem -1rem;
+}
+.fs-radius {
+    background: linear-gradient(to right, #6f18a0, #b429cc);
+    border-radius: 20px 0px 0px 20px;
+}
+.fs-cancel {
+    border-radius: 0 20px 20px 0;
+}
+.fa-search {
+    right: 50%;
+}

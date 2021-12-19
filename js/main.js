@@ -34,17 +34,3 @@ $('.flickity-viewport-visible .card').each(function () {
     }
 });
 $('.flickity-viewport-visible .card').height(highestBox);
-$(window).scroll(function () {
-    var sticky = $('.sticky'),
-        scroll = $(window).scrollTop();
-
-    if (scroll >= 100) {
-        sticky.addClass('fixed-header');
-        $(".img-show").show();
-        $(".img-hide").hide();
-    } else {
-        sticky.removeClass('fixed-header');
-        $(".img-show").hide();
-        $(".img-hide").show();
-    }
-});

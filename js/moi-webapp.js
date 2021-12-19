@@ -76,7 +76,7 @@ var Popover = function() {
 			if (t) {
 				var a, o = s.getAttribute("href").split("/"),
 					n = o[o.length - 1];
-				a = "dark" == t ? "quick-website-dark.css" : "quick-website.css", a = s.getAttribute("href").replace(n, a), s.setAttribute("href", a), localStorage.setItem("mode", t), "dark" == t ? (i.classList.add("text-warning"), i.setAttribute("data-mode", "light")) : (i.classList.remove("text-warning"), i.setAttribute("data-mode", "dark")), document.getElementById("header-main") && function(t) {
+				a = "dark" == t ? "moi-webapp-dark.css" : "moi-webapp.css", a = s.getAttribute("href").replace(n, a), s.setAttribute("href", a), localStorage.setItem("mode", t), "dark" == t ? (i.classList.add("text-warning"), i.setAttribute("data-mode", "light")) : (i.classList.remove("text-warning"), i.setAttribute("data-mode", "dark")), document.getElementById("header-main") && function(t) {
 					var e, a = document.getElementById("header-main"),
 						o = document.getElementById("navbar-main"),
 						n = document.getElementById("navbar-logo"),
