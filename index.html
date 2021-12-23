@@ -55,6 +55,7 @@
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.css"> -->
 	<link rel="stylesheet" href="css/moi.css">
 	<link rel="stylesheet" href="css/ticker.css">
+	<link rel="stylesheet" href="css/marquee.css">
 </head>
 
 <body>
@@ -88,7 +89,8 @@
 						<li class="mr-3"><a class="font-change text-dark" id="lnkIncrease" title="Zoomin" href="#!"><i
 									class="fal fa-print fa-fw"></i></a></li>
 						<li class="nav-item">
-							<a class="nav-link text-dark" href="#!"><i class="fad fa-user-lock fa-fw fa-lg"></i> Log in</a>
+							<a class="nav-link text-dark" href="#!"><i class="fad fa-user-lock fa-fw fa-lg"></i> Log
+								in</a>
 						</li>
 						<li class="nav-item">
 							<a class="btn btn-sm btn-outline-dark btn-icon ml-3" href="index_ar.html">
@@ -389,7 +391,33 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-12 d-flex align-items-center p-0">
-						<div class="ticker-container bg-dark">
+						<div class="twitter-scroll bg-dark">
+							<div class="dap-tw-logo"> Announcement </div>
+							<a class="dap-tw-item" href="#!">
+								<span class="dap-tw-name"> <i class="fal fa-megaphone fa-fw fa-lg"></i> </span>
+								<span class="dap-tw-text">Sound management
+									of water resources and emphasize the role of municipalities in the development
+									process on the national and local level in accordance with the set standards of
+									quality and adequacy through better institutional and regulative capabilities</span>
+							</a>
+							<a class="dap-tw-item" href="#!"> <span class="dap-tw-name">
+									<i class="fal fa-megaphone fa-fw fa-lg"></i> </span>
+								<span class="dap-tw-text">Expansion in the
+									application of modern technologies, encouragement of creative initiatives and
+									positive activation of the partnership of the society and private sector in the
+									development on the local level.</span> </a>
+							<a class="dap-tw-item" href="#!">
+								<span class="dap-tw-name"> <i class="fal fa-megaphone fa-fw fa-lg"></i> </span>
+								<span class="dap-tw-text">Achieve a continues development and progress in municipal and
+									water services to insure a sound and healthy environment</span> </a>
+							<a class="dap-tw-item" href="#!"> <span class="dap-tw-name">
+									<i class="fal fa-megaphone fa-fw fa-lg"></i> </span>
+								<span class="dap-tw-text">Balanced
+									construction development and active participation in enhancing infrastructure and
+									public services.</span> </a>
+						</div>
+						<!-- twitter-scroll  -->
+						<!-- <div class="ticker-container bg-dark">
 							<div class="ticker-caption">
 								<p>Announcement</p>
 							</div>
@@ -410,7 +438,7 @@
 									<li><span>Breaking News 5 &ndash; <a href="#">read more</a></span></li>
 								</div>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 				</div> <!-- /.row -->
 			</div> <!-- /. container -->
@@ -474,7 +502,7 @@
 						</p>
 					</div>
 				</div>
-				
+
 			</div>
 		</section>
 
@@ -904,10 +932,25 @@
 
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/svg-injector.min.js"></script>
+	<!-- <script src="js/svg-injector.min.js"></script> -->
 	<script src="js/moi-webapp.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/ticker.js"></script>
+	<script src="js/jquery.marquee.min.js"></script>
+	<script>
+		$('.twitter-scroll').marquee({
+			//speed in milliseconds of the marquee
+			duration: 30000,
+			//gap in pixels between the tickers
+			gap: 150,
+			//time in milliseconds before the marquee will start animating
+			delayBeforeStart: 0,
+			direction: 'left',
+			//true or false - should the marquee be duplicated to show an effect of continues flow
+			duplicated: true,
+			pauseOnHover: true
+		});
+	</script>
 </body>
 
 </html>

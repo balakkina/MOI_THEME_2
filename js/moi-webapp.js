@@ -43,15 +43,15 @@ var Popover = function() {
 			}
 		}
 	}(),
-	SvgInjector = function() {
-		var t = document.querySelectorAll("img.svg-inject"),
-			e = !1;
-		return t.length && SVGInjector(t, {}, function() {
-			e = !0
-		}), {
-			status: e
-		}
-	}(),
+	// SvgInjector = function() {
+	// 	var t = document.querySelectorAll("img.svg-inject"),
+	// 		e = !1;
+	// 	return t.length && SVGInjector(t, {}, function() {
+	// 		e = !0
+	// 	}), {
+	// 		status: e
+	// 	}
+	// }(),
 	Tooltip = function() {
 		var t = $('[data-toggle="tooltip"]');
 		t.length && t.tooltip()

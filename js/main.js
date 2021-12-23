@@ -34,3 +34,4 @@ $('.flickity-viewport-visible .card').each(function () {
     }
 });
 $('.flickity-viewport-visible .card').height(highestBox);
+
