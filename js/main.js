@@ -1,3 +1,8 @@
+window.addEventListener("load", function() {
+	setTimeout(function() {
+		document.querySelector("body").classList.add("loaded")
+	}, 300)
+});
 // Text-Resize - Start here
 $(document).ready(function () {
     var originalSize = $('div,ul li,a,h1,h2,h3,h4,h5,h6,p,span,legend,input,.form-control,.btn').css('font-size');

@@ -7,54 +7,14 @@
 	<meta name=description content="MOI">
 	<meta name=author content="MOI">
 	<title>:: Home ::</title>
-	<style>
-		@keyframes hidePreloader {
-			0% {
-				width: 100%;
-				height: 100%
-			}
 
-			100% {
-				width: 0;
-				height: 0
-			}
-		}
-
-		body>div.preloader {
-			position: fixed;
-			background: #fff;
-			width: 100%;
-			height: 100%;
-			z-index: 1071;
-			opacity: 0;
-			transition: opacity .5s ease;
-			overflow: hidden;
-			pointer-events: none;
-			display: flex;
-			align-items: center;
-			justify-content: center
-		}
-
-		body:not(.loaded)>div.preloader {
-			opacity: 1
-		}
-
-		body:not(.loaded) {
-			overflow: hidden
-		}
-
-		body.loaded>div.preloader {
-			animation: hidePreloader .5s linear .5s forwards
-		}
-	</style>
-	<script>window.addEventListener("load", function () { setTimeout(function () { document.querySelector("body").classList.add("loaded") }, 300) })</script>
 	<link rel=icon href="img/Khanjar.png" type=image/png>
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
 	<link rel=stylesheet href="css/moi-webapp.css" id=stylesheet>
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.css"> -->
 	<link rel="stylesheet" href="css/moi.css">
-	<link rel="stylesheet" href="css/ticker.css">
+	<!-- <link rel="stylesheet" href="css/ticker.css"> -->
 	<link rel="stylesheet" href="css/marquee.css">
 </head>
 
@@ -170,6 +130,7 @@
 							role="button">About MOI</a>
 						<div class="dropdown-menu dropdown-menu-md p-0">
 							<ul class="list-group list-group-flush px-lg-4">
+
 								<li class="dropdown dropdown-animate dropdown-submenu" data-toggle="hover">
 									<a aria-expanded="false" aria-haspopup="true"
 										class="list-group-item list-group-item-action dropdown-toggle"
@@ -188,11 +149,11 @@
 									<div class="dropdown-menu">
 										<!-- <a class="dropdown-item" href="#!">Vision & Mission </a> -->
 										<!-- <a class="dropdown-item" href="#!">Specialties </a> -->
-										<!-- <a class="dropdown-item" href="#!">Future Effort </a> -->
-										<a class="dropdown-item" href="#!">Organization </a>
+										<a class="dropdown-item" href="#!">About MOI</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="www.google.com">Organization </a>
 										<div class="dropdown-divider"></div>
 										<!-- <a class="dropdown-item" href="#!">Month </a> -->
-										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#!">Annual Reports </a>
 										<a class="dropdown-item" href="#!">News Letters </a>
 									</div>
@@ -250,9 +211,8 @@
 													<span class="h6"><i data-feather="video"></i></span>
 													<div class="media-body ml-2">
 														<a class="d-block h6 mb-0" href="#!">Video</a>
-														<small class="text-sm text-muted mb-0">Quick's most
-															important
-															features</small>
+														<small class="text-sm text-muted mb-0">
+															Quick's most important features</small>
 													</div>
 												</div>
 											</div>
@@ -278,9 +238,8 @@
 													<span class="h6"><i data-feather="image"></i></span>
 													<div class="media-body ml-2">
 														<a class="d-block h6 mb-0" href="#!">Photo Gallery</a>
-														<small class="text-sm text-muted mb-0">Quick's most
-															important
-															features</small>
+														<small class="text-sm text-muted mb-0">
+															Quick's most important features</small>
 													</div>
 												</div>
 											</div>
@@ -291,7 +250,7 @@
 						</div>
 					</li>
 					<li class="nav-item nav-item-spaced d-none d-lg-block">
-						<a class="nav-link" href="#!">Announcement</a>
+						<a class="nav-link" href="https://www.google.com">Announcement</a>
 					</li>
 					<li class="nav-item nav-item-spaced d-none d-lg-block">
 						<a class="nav-link" href="#!">Download</a>
@@ -454,36 +413,43 @@
 
 				<div class="row justify-content-center text-center">
 					<div class="col-10 col-sm-6 col-lg-4 my-4">
-						<div class="position-relative mb-2"><img src="img/shapes/7.svg" alt="1" style="height: 180px">
-							<!-- <svg class="svg-inline--fa fa-columns fa-w-16 absolute-centered position-absolute fs-6 text-white"
+						<a href="#!" class="text-gray">
+							<div class="position-relative mb-2">
+								<img src="img/shapes/7.svg" alt="1" style="height: 180px">
+								<!-- <svg class="svg-inline--fa fa-columns fa-w-16 absolute-centered position-absolute fs-6 text-white"
 								aria-hidden="true" data-prefix="fas" data-icon="columns" role="img"
 								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
 								<path fill="currentColor"
 									d="M464 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM224 416H64V160h160v256zm224 0H288V160h160v256z">
 								</path>
 							</svg> -->
-							<!-- <img src="img/Services/ts.svg" class="absolute-centered position-absolute fs-6 text-white fas fa-columns" alt="Technical Services"> -->
-							<span
-								class="absolute-centered position-absolute fs-6 text-white fad fa-construction"></span>
-						</div>
-						<h4 class="mb-3 px-xl-5" style="color: rgb(184, 150, 87);">Technical Services</h4>
-						<p class="mb-0 px-sm-3">Services provided for the citizens and residents to obtain building
-							permits and construction related services.</p>
+								<!-- <img src="img/Services/ts.svg" class="absolute-centered position-absolute fs-6 text-white fas fa-columns" alt="Technical Services"> -->
+								<span
+									class="absolute-centered position-absolute fs-6 text-white fad fa-construction"></span>
+							</div>
+							<h4 class="mb-3 px-xl-5" style="color: rgb(184, 150, 87);">Technical Services</h4>
+							<p class="mb-0 px-sm-3">Services provided for the citizens and residents to obtain building
+								permits and construction related services.</p>
+						</a>
 					</div>
 					<div class="col-10 col-sm-6 col-lg-4 my-4">
-						<div class="position-relative mb-2"><img src="img/shapes/2.svg" alt="2" style="height: 180px">
-							<!-- <svg class="svg-inline--fa fa-apple fa-w-12 absolute-centered position-absolute fs-6 text-white"
+						<a href="#!" class="text-gray">
+							<div class="position-relative mb-2">
+								<img src="img/shapes/2.svg" alt="2" style="height: 180px">
+								<!-- <svg class="svg-inline--fa fa-apple fa-w-12 absolute-centered position-absolute fs-6 text-white"
 								aria-hidden="true" data-prefix="fab" data-icon="apple" role="img"
 								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 512" data-fa-i2svg="">
 								<path fill="currentColor"
 									d="M314.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C59.3 141.2 0 184.8 0 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
 								</path>
 							</svg> -->
-							<span class="absolute-centered position-absolute fs-6 text-white fad fa-microscope"></span>
-						</div>
-						<h4 class="mb-3 px-xl-5" style="color: rgb(61, 199, 83);">Health Services</h4>
-						<p class="mb-0 px-sm-3">Services provided for the citizens and residents to obtain municipal
-							licenses, lease contracts and food safety permits.</p>
+								<span
+									class="absolute-centered position-absolute fs-6 text-white fad fa-microscope"></span>
+							</div>
+							<h4 class="mb-3 px-xl-5" style="color: rgb(61, 199, 83);">Health Services</h4>
+							<p class="mb-0 px-sm-3">Services provided for the citizens and residents to obtain municipal
+								licenses, lease contracts and food safety permits.</p>
+						</a>
 					</div>
 					<div class="col-10 col-sm-6 col-lg-4 my-4">
 						<a class="position-relative mb-2" data-toggle="modal" href="#modal-products">
@@ -525,66 +491,75 @@
 					<div class="col-sm-4">
 						<div class="card shadow-lg rounded-lg floating-sm card-border-moi">
 							<div class="card-body">
-								<i class="fad fa-city fa-2x d-flex justify-content-center"></i>
-								<h5 class="font-weight-bold text-center mb-0"> Municipal Council Affairs</h5>
-								<p class="text-center mb-0">Receive and classify minutes of meetings and various topics
-									send by municipal Council.</p>
+								<a href="#!" class="text-gray">
+									<i class="fad fa-city fa-2x d-flex justify-content-center"></i>
+									<h5 class="font-weight-bold text-center mb-0"> Municipal Council Affairs</h5>
+									<p class="text-center mb-0">
+										Receive and classify minutes of meetings and various
+										topics send by municipal Council.</p>
+								</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-4" hidden>
 						<div class="card shadow-lg rounded-lg floating-sm card-border-moi">
 							<div class="card-body">
-								<i class="fad fa-angel fa-2x d-flex justify-content-center"></i>
-								<h5 class="font-weight-bold text-center mb-0"> Kids Corner</h5>
-								<p class="text-center mb-0">Section allows the children to participate in online games,
-									Instructions to children’s, Kids stories
-									for download, Awareness campaigns details.</p>
+								<a href="#!" class="text-gray">
+									<i class="fad fa-angel fa-2x d-flex justify-content-center"></i>
+									<h5 class="font-weight-bold text-center mb-0"> Kids Corner</h5>
+									<p class="text-center mb-0">Section allows the children to participate in online
+										games, Instructions to children’s, Kids stories
+										for download, Awareness campaigns details.</p>
+								</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="card shadow-lg rounded-lg floating-sm card-border-moi">
 							<div class="card-body">
-								<i class="fad fa-poll-people fa-2x d-flex justify-content-center"></i>
-								<h5 class="font-weight-bold text-center mb-0"> Survey</h5>
-								<p class="text-center mb-0">Do awareness campaigns have contributed to deliver its
-									message
-									to the community ?</p>
+								<a href="#!" class="text-gray">
+									<i class="fad fa-poll-people fa-2x d-flex justify-content-center"></i>
+									<h5 class="font-weight-bold text-center mb-0"> Survey</h5>
+									<p class="text-center mb-0">Do awareness campaigns have contributed to deliver its
+										message to the community ?</p>
+								</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="card shadow-lg rounded-lg floating-lg card-border-moi">
 							<div class="card-body">
-								<i class="fad fa-gavel fa-2x d-flex justify-content-center"></i>
-								<h5 class="font-weight-bold text-center mb-0"> Rules &amp; Regulations</h5>
-								<p class="text-center mb-0">Laws and legislations are used by the ministry to control
-									municipal and water resources work in the
-									Sultanate.</p>
+								<a href="#!" class="text-gray">
+									<i class="fad fa-gavel fa-2x d-flex justify-content-center"></i>
+									<h5 class="font-weight-bold text-center mb-0"> Rules &amp; Regulations</h5>
+									<p class="text-center mb-0">Laws and legislations are used by the ministry to
+										control municipal and water resources work in the Sultanate.</p>
+								</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-4" hidden>
 						<div class="card shadow-lg rounded-lg floating-sm card-border-moi">
 							<div class="card-body">
-								<i class="fad fa-book-reader fa-2x d-flex justify-content-center"></i>
-								<h5 class="font-weight-bold text-center mb-0"> Planning &amp; Studies</h5>
-								<p class="text-center mb-0">Scientific planning is one of the main pillars of the
-									Ministry's
-									work and the supporting fields in
-									municipal.</p>
+								<a href="#!" class="text-gray">
+									<i class="fad fa-book-reader fa-2x d-flex justify-content-center"></i>
+									<h5 class="font-weight-bold text-center mb-0"> Planning &amp; Studies</h5>
+									<p class="text-center mb-0">Scientific planning is one of the main pillars of the
+										Ministry's work and the supporting fields in municipal.</p>
+								</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-4" hidden>
 						<div class="card shadow-lg rounded-lg floating-lg card-border-moi">
 							<div class="card-body">
-								<i class="fad fa-vials fa-2x d-flex justify-content-center"></i>
-								<h5 class="font-weight-bold text-center mb-0"> Food &amp; Water Laboratory</h5>
-								<p class="text-center mb-0">The FWLC was formed in 2001 by merging of already well
-									established two laboratories – Water Quality
-									Laboratory and Food and Environment Laboratory.</p>
+								<a href="#!" class="text-gray">
+									<i class="fad fa-vials fa-2x d-flex justify-content-center"></i>
+									<h5 class="font-weight-bold text-center mb-0"> Food &amp; Water Laboratory</h5>
+									<p class="text-center mb-0">The FWLC was formed in 2001 by merging of already well
+										established two laboratories – Water Quality
+										Laboratory and Food and Environment Laboratory.</p>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -605,13 +580,12 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new1.png)">
 							<span class="mask bg-dark opacity-5"></span>
 							<div class="card-body pt-10 mt-auto position-relative">
 								<a class="d-block h5 mb-3 text-white stretched-link" href="#">How to start a business
-									with
-									Quick</a>
+									with Quick</a>
 								<p class="mb-0 text-white">Some quick example text tod make up the bulk of the card's
 									content.</p>
 							</div>
@@ -622,13 +596,13 @@
 											<img alt="Image placeholder" src="img/Khanjar.png"></a>
 									</div>
 									<div class="pl-3">
-										<a class="h6 stretched-link text-white text-sm" href="#">Michael White</a>
+										<a class="h6 stretched-link text-white text-sm" href="#">More...</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new2.png)">
 							<span class="mask bg-dark opacity-5"></span>
 							<div class="card-body pt-10 mt-auto position-relative">
@@ -645,13 +619,36 @@
 											<img alt="Image placeholder" src="img/Khanjar.png"></a>
 									</div>
 									<div class="pl-3">
-										<a class="h6 stretched-link text-white text-sm" href="#">Betty Mavis</a>
+										<a class="h6 stretched-link text-white text-sm" href="#">More...</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-3">
+						<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new3.png)">
+							<span class="mask bg-dark opacity-5"></span>
+							<div class="card-body pt-10 mt-auto position-relative">
+								<a class="d-block h5 mb-3 text-white stretched-link" href="#">Change the world with
+									small
+									things</a>
+								<p class="mb-0 text-white">Some quick example text tod make up the bulk of the card's
+									content.</p>
+							</div>
+							<div class="card-body position-relative delimiter-top">
+								<div class="d-flex align-items-center">
+									<div>
+										<a class="avatar avatar-sm rounded-circle d-inline-block" href="#"><img
+												alt="Image placeholder" src="img/Khanjar.png"></a>
+									</div>
+									<div class="pl-3">
+										<a class="h6 stretched-link text-white text-sm" href="#">More...</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
 						<div class="card bg-cover bg-size--cover" style="background-image:url(img/news/new4.png)">
 							<span class="mask bg-dark opacity-5"></span>
 							<div class="card-body pt-10 mt-auto position-relative">
@@ -668,7 +665,7 @@
 												alt="Image placeholder" src="img/Khanjar.png"></a>
 									</div>
 									<div class="pl-3">
-										<a class="h6 stretched-link text-white text-sm" href="#">Jarvis Owen</a>
+										<a class="h6 stretched-link text-white text-sm" href="#">More...</a>
 									</div>
 								</div>
 							</div>
@@ -935,7 +932,7 @@
 	<!-- <script src="js/svg-injector.min.js"></script> -->
 	<script src="js/moi-webapp.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/ticker.js"></script>
+	<!-- <script src="js/ticker.js"></script> -->
 	<script src="js/jquery.marquee.min.js"></script>
 	<script>
 		$('.twitter-scroll').marquee({
