@@ -15,3 +15,7 @@
 .fa-search {
     right: 50%;
 }
+.navbar-nav .nav-link i, .navbar-nav .nav-link img, .navbar-nav .nav-link svg {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
