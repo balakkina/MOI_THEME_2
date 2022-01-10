@@ -15387,10 +15387,11 @@ svg {
 	color: #a0aec0
 }
 .footer-dark .heading {
-	color: #eaecf3
+	color: #a0aec0;
 }
 .footer-dark .footer-link, .footer-dark .list-unstyled li a, .footer-dark .nav .nav-item .nav-link {
-	color: #a0aec0
+	/* color: #a0aec0; */
+	color: rgb(255, 255, 255);
 }
 .footer-dark .footer-link:hover, .footer-dark .list-unstyled li a:hover, .footer-dark .nav .nav-item .nav-link:hover {
 	color: #fff
