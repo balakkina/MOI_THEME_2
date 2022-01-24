@@ -16653,7 +16653,7 @@ textarea[resize=horizontal] {
 }
 .nav-link {
 	color: #8492a6;
-	font-size: .875rem
+	font-size: 1rem;
 }
 .nav-link:hover {
 	color: #273444

@@ -46,9 +46,23 @@
 								href="#!">A+</a></li>
 						<li class="mr-3"><a class="font-change text-dark" id="lnkIncrease" title="Zoomin" href="#!">
 								<i class="fal fa-print fa-fw"></i></a></li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="#!"><i class="fad fa-user-lock fa-fw fa-lg"></i> Log
-								in</a>
+						<li class="nav-item userlogin">
+							<div class="dropdown">
+                                <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+                                    <span class="logged-name hidden-md-down">Sridhar Talluri</span> 
+                                    <img src="img/svg/avatar.svg" class="ht-32 rounded-circle" alt="">
+                                    <span class="square-10 bg-success"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-header wd-200">
+                                    <ul class="list-unstyled user-profile-nav">
+                                        <li><a href="#!"><i class="icon fal fa-chalkboard" aria-hidden="true"></i> My Request</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#logOut"><i class="icon fal fa-power-off" aria-hidden="true"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                                <!-- dropdown-menu -->
+                            </div>
+                            <!-- dropdown -->
 						</li>
 						<li class="nav-item">
 							<a class="btn btn-sm btn-laguage btn-icon ml-3" href="sr_ar.html">
@@ -916,7 +930,20 @@
 			id="btnSwitchMode" type="button"><i class="fas fa-moon"></i></button>
 	</div>
 
-
+    <!-- logout Modal -->
+    <div class="modal fade contest_input_modal" id="logOut" tabindex="-1" aria-labelledby="logOutLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center font-weight-bold" style="color:#4E5969">
+                    Are you sure you want to logout <strong class="ml-2" style="color: #9f7816"> Sridhar Talluri</strong> ?
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn sw-btn-prev justify-content-center d-block" data-dismiss="modal" style="min-width:100px; display:block !important">No</button>
+                    <a href="index.html"><button type="button" class="btn btn-chartreuse justify-content-center" style="min-width:100px">Yes</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/moi-webapp.js"></script>

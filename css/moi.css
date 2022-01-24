@@ -839,3 +839,65 @@ legend {
 #checkout-form .form-group {
   margin-bottom: 0.5rem;
 }
+.userlogin .dropdown:last-child .dropdown-menu {
+  padding: 0 10px 10px;
+}
+.wd-200 {
+  width: 200px;
+}
+.ht-32 {
+  height: 32px !important;
+}
+.dropdown-menu-header {
+  position: relative;
+  border-top: 0;
+  margin-top: 1px;
+  padding: 10px 20px 20px;
+  box-shadow: 0 1px 4px 0px rgb(0 0 0 / 16%);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  left: auto !important;
+  right: -1px !important;
+  top: 55px !important;
+  transform: none !important;
+  will-change: unset !important;
+}
+.dropdown-menu-header::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -2px;
+  right: 0;
+  height: 4px;
+  background-color: #fff;
+  z-index: 1040;
+}
+.user-profile-nav {
+  margin: 0;
+  font-size: 1rem;
+}
+.user-profile-nav a {
+  display: block;
+  padding: 7px 10px;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+  color: #868e96;
+}
+.user-profile-nav .icon {
+  display: inline-block;
+  width: 20px;
+  line-height: 0;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  color: rgb(159 120 22);
+  top: 2px;
+  margin-right: 5px;
+}
+.contest_input_modal .modal-body {
+  padding: 40px !important;
+}
+.contest_input_modal .sw-btn-prev {
+  color: #9f7816;
+  border: solid 1px #9f7816;
+}
