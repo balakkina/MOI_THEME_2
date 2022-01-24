@@ -2948,11 +2948,11 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #a0aec0;
+	color: #495057;
 	text-align: center;
 	white-space: nowrap;
-	background-color: #fafbfe;
-	border: 1px solid #e2e8f0;
+	background-color: #e9ecef;
+    border: 1px solid #ced4da;
 	border-radius: .375rem
 }
 .input-group-text input[type=checkbox], .input-group-text input[type=radio] {
@@ -23863,5 +23863,11 @@ span.flatpickr-weekday {
 }
 .bootstrap-tagsinput .badge:hover [data-role=remove] {
 	opacity: 1
+}
+[type="radio"]:checked+label, [type="radio"]:not(:checked)+label {
+	color: #1C1D1D !important;
+}
+#checkout-form label {
+	color: #1a51a0;
 }
 /*# sourceMappingURL=quick-website.css.map */

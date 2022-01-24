@@ -2956,8 +2956,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	color: #c0ccda;
 	text-align: center;
 	white-space: nowrap;
-	background-color: #f9fafc;
-	border: 1px solid #223244;
+	background-color: #2c4056;
+    border: 1px solid #ced4da;
 	border-radius: .375rem
 }
 .input-group-text input[type=checkbox], .input-group-text input[type=radio] {
