@@ -284,12 +284,10 @@
                                     <div class="form-group col-sm-6 col-md-4">
                                         <label class="required">Civil ID</label>
                                         <div class="input-group">
-                                            <input type="search" id="civilId" name="" placeholder="Civil ID No" autocomplete="off" class="form-control">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-info" type="button" id="civilIdSearchbtnId">
-                                                    <i class="fal fa-search" aria-hidden="true"></i>
-                                                </button>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fal fa-address-card fa-fw fa-lg" aria-hidden="true"></i></span>
                                             </div>
+                                            <input type="text" id="civilId" name="" placeholder="Civil ID" autocomplete="off" class="form-control" />
                                         </div>
                                     </div>
                 
@@ -387,14 +385,7 @@
                                 <diV class="row">
                                     <div class="form-group col-sm-6 col-md-4">
                                         <label for="requestNo" class="label">Service Request No</label>
-                                        <div class="input-group">
-                                            <input type="search" id="requestNo"name="" placeholder="Service Request No" autocomplete="off" class="form-control">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-info" type="button" id="requestNumberSearchbtnId">
-                                                    <i class="fal fa-search" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                        </div>
+                                        <input type="text" id="requestNo"name="" placeholder="Service Request No" autocomplete="off" class="form-control" />
                                     </div>
                                     <div class="form-group col-sm-6 col-md-4">
                                         <label for="caseTypeId" class="label">Service Category</label>
@@ -514,11 +505,11 @@
 
                     <div class="row mt-3">
                         <div class="col-sm-12 d-flex align-items-center justify-content-end btn-bottom">
-                            <button type="reset" value="Reset Button" class="btn btn-text" data-toggle="modal" data-target="#Clear" id='clearButtonId' style="width:auto; margin-left:0; color:#868700">
+                            <button type="reset" value="Reset Button" class="btn btn-outline-info btn-height" data-toggle="modal" data-target="#Clear" id='clearButtonId' style="min-width:135px   ; margin-left:0;">
                                 <i class="fal fa-paint-brush fa-fw" aria-hidden="true"></i>&nbsp;
                                 Clear
                             </button>
-                            <button type="button" class="btn btn-laguage btn-height pull-up" onclick="doAction()" id="form1Submit" style="min-width:135px">
+                            <button type="button" class="btn btn-laguage btn-height" onclick="doAction()" id="form1Submit" style="min-width:135px;">
                                 <i class="fal fa-copy fa-fw" aria-hidden="true"></i>&nbsp;
                                 Submit
                             </button>
