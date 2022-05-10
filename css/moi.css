@@ -1,6 +1,9 @@
 /* Scrolling Start */
 
 /*! Firefox */
+
+@charset "UTF-8";
+
 body {
   background-color: rgb(225, 226, 228);
   background-image: url(../img/pattern/pattern-4.png), url(../img/pattern/bg.svg);
@@ -827,27 +830,35 @@ legend {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
 #checkout-form label {
   margin-bottom: 0px;
 }
+
 #checkout-form .input-group-text {
   padding: 0.5rem;
 }
+
 .pd-rt-non {
   padding-right: 0px;
 }
+
 #checkout-form .form-group {
   margin-bottom: 0.5rem;
 }
+
 .userlogin .dropdown:last-child .dropdown-menu {
   padding: 0 10px 10px;
 }
+
 .wd-200 {
   width: 200px;
 }
+
 .ht-32 {
   height: 32px !important;
 }
+
 .dropdown-menu-header {
   position: relative;
   border-top: 0;
@@ -862,6 +873,7 @@ legend {
   transform: none !important;
   will-change: unset !important;
 }
+
 .dropdown-menu-header::before {
   content: '';
   position: absolute;
@@ -872,10 +884,12 @@ legend {
   background-color: #fff;
   z-index: 1040;
 }
+
 .user-profile-nav {
   margin: 0;
   font-size: 1rem;
 }
+
 .user-profile-nav a {
   display: block;
   padding: 7px 10px;
@@ -883,6 +897,7 @@ legend {
   transition: all 0.2s ease-in-out;
   color: #868e96;
 }
+
 .user-profile-nav .icon {
   display: inline-block;
   width: 20px;
@@ -894,9 +909,11 @@ legend {
   top: 2px;
   margin-right: 5px;
 }
+
 .contest_input_modal .modal-body {
   padding: 40px !important;
 }
+
 .contest_input_modal .sw-btn-prev {
   color: #9f7816;
   border: solid 1px #9f7816;
