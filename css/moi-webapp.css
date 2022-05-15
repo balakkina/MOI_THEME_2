@@ -15189,7 +15189,8 @@ svg {
 		left: auto
 	}
 	.dropdown-menu-md {
-		min-width: 22rem!important;
+		/* min-width: 22rem!important; */
+		min-width: 14rem!important;
 		border-radius: .375rem
 	}
 	.dropdown-menu-lg {
@@ -15197,7 +15198,8 @@ svg {
 		border-radius: .375rem
 	}
 	.dropdown-menu-xl {
-		min-width: 46rem!important;
+		/* min-width: 46rem!important; */
+		min-width: 26rem!important;
 		border-radius: .375rem
 	}
 }
