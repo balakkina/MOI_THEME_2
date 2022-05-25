@@ -275,7 +275,7 @@ template {
 	font-family: inherit;
 	font-weight: 600;
 	line-height: 1.5;
-	color: #152c5b
+	color: #ab452f;
 }
 .h1, h1 {
 	font-size: 2.5rem
@@ -5494,7 +5494,9 @@ a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover
 .bg-dark {
 	/* background-color: #171347!important; */
 	/* background-color: rgba(206, 161, 45) !important; */
-	background-color: rgb(159 120 22) !important;
+	/* background-color: rgb(159 120 22) !important; */
+	/* New change on 25/05/2022 */
+	background-color: rgb(206 161 44) !important;
 }
 a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 	background-color: #0a081f!important
@@ -15369,9 +15371,6 @@ svg {
 .footer-dark p {
 	color: rgba(255, 255, 255, .8)
 }
-.footer-dark .heading {
-	color: #fff
-}
 .footer-dark .list-unstyled li a {
 	color: rgba(255, 255, 255, .8)
 }
@@ -15389,7 +15388,9 @@ svg {
 	color: #a0aec0
 }
 .footer-dark .heading {
-	color: #a0aec0;
+	color: #eff2f7;
+	font-weight: 700;
+	font-size: 1.2rem;
 }
 .footer-dark .footer-link, .footer-dark .list-unstyled li a, .footer-dark .nav .nav-item .nav-link {
 	/* color: #a0aec0; */
@@ -19102,7 +19103,8 @@ article p {
 	border-top: 0;
 	box-shadow: 0 1rem 3rem rgba(31, 45, 61, .125);
 	transition: all .2s ease;
-	background-color: rgb(255, 255, 255);
+	/* New change on 25/05/2022 */
+	background-color: rgb(206 161 44);
 }
 @media (prefers-reduced-motion:reduce) {
 	.navbar-sticky.sticky {
@@ -21694,9 +21696,9 @@ article p {
 .progress-circle.progress-lg .progressbar-text {
 	font-size: 1.25rem
 }
-section.slice {
+/* section.slice {
 	background-color: #f1f4f8;
-}
+} */
 .slice {
 	position: relative;
 	padding-top: 4rem;
@@ -21787,6 +21789,7 @@ section.slice {
 .shape-container svg {
 	display: block;
 	fill: #f1f4f8;
+	fill: rgb(236, 231, 227);
 	pointer-events: none;
 	vertical-align: baseline
 }

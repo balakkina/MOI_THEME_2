@@ -27,35 +27,36 @@
 		</div>
 	</div>
 	<!-- header -->
-	<header class="navbar-sticky sticky-bg">
+	<header class="navbar-sticky sticky-bg dark bg-dark">
 		<div class="container p-2">
 			<div class="row">
 				<div class="col-6">
 					<nav class="navbar p-0">
 						<div class="container">
 							<a class="navbar-brand" href="#">
-								<img alt="MOI Logo" id="navbar-logo" src="img/moi_logo.png"></a>
+								<img alt="MOI Logo" id="navbar-logo" src="img/moi-logo-white.png"></a>
 							</a>
 						</div>
 					</nav>
 				</div>
 				<div class="col-6 d-flex justify-content-end">
 					<ul class="d-flex align-items-center list-unstyled mb-0">
-						<li class="mr-3"><a class="font-change text-dark" id="lnkDecrease" title="Zoomout"
+						<li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkDecrease" title="Zoomout"
 								href="#!">A-</a></li>
-						<li class="mr-3"><a class="font-change text-dark" id="lnkNormal" title="Normalview"
+						<li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkNormal" title="Normalview"
 								href="javascript:window.location.reload();">A</a></li>
-						<li class="mr-3"><a class="font-change text-dark" id="lnkIncrease" title="Zoomin"
+						<li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkIncrease" title="Zoomin"
 								href="#!">A+</a></li>
-						<li class="mr-3"><a class="font-change text-dark" id="lnkIncrease" title="Zoomin" href="#!"><i
-									class="fal fa-print fa-fw"></i></a></li>
+						<!-- <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkIncrease" title="Zoomin" href="#!"><i
+									class="fal fa-print fa-fw"></i></a></li> -->
 						<li class="nav-item">
-							<a class="nav-link text-dark" href="#!"><i class="fad fa-user-lock fa-fw fa-lg"></i> Log in</a>
+							<a class="nav-link text-white font-weight-bolder" href="#!">
+								<i class="fal fa-user-lock fa-fw fa-lg"></i> تسجيل الدخول</a>
 						</li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a class="btn btn-sm btn-fs" data-toggle="modal" href="#modal-products">
 								<i class="fal fa-search fa-fw fa-lg"></i> Find Services</a>
-						</li>
+						</li> -->
 						<li class="nav-item">
 							<a class="btn btn-sm btn-laguage btn-icon mr-3" href="index.html">
 								<span class="btn-inner--icon"><i class="fal fa-globe fa-fw fa-lg"></i></span>
@@ -114,9 +115,9 @@
 		</div>
 	</div>
 
-	<div class="container bg-white shadow-lg p-0">
+	<div class="container p-0">
 		<!-- NAVBAR -->
-		<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark p-0" id="navbar-main">
+		<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark p-0 d-none" id="navbar-main">
 			<!-- <a class="navbar-brand img-hide" href="index.html">
 				<img alt="MOI Logo" id="navbar-logo" src="img/moi_logo.png"></a> -->
 			<button aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation"
@@ -403,7 +404,7 @@
 
 		<!-- Carousel -->
 		<section class="slice slice-lg p-0">
-			<div class="" style="height: 349px;">
+			<div class="">
 				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active img-start1">
@@ -426,7 +427,7 @@
 		</section>
 
 		<!-- Announcement -->
-		<section class="slice p-0" style="margin-top: -3rem;z-index: 99;">
+		<section class="slice p-0 d-none" style="margin-top: -3rem;z-index: 99;">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-12 d-flex align-items-center p-0">
@@ -483,16 +484,28 @@
 		</section>
 
 		<!-- eSevices -->
-		<section class="slice pt-0 pb-5">
+		<section class="slice pt-0">
 			<div class="container position-relative zindex-100">
 				<div class="row">
 					<div class="col-12">
-						<h3 class="mt-2 text-center">eSevices</h3>
+						<h3 class="mb-0 text-center font-weight-bolder">الخدمات الإلكترونية</h3>
 					</div> <!-- /.col-12 -->
 				</div> <!-- /.row -->
 
 				<div class="row justify-content-center text-center">
-					<div class="col-10 col-sm-6 col-lg-4 my-4">
+					<div class="position-relative">
+						<img src="img/svg/center-logo.svg" alt="" style="width: 39rem;" />
+						<a href="">
+							<img src="img/Services/SR@2x.png" class="sr-logo" alt="" />
+						</a>
+						<a href="">
+							<img src="img/Services/TS@2x.png" class="ts-logo" alt="" />
+						</a>
+						<a href="">
+							<img src="img/Services/HS@2x.png" class="hs-logo" alt="">
+						</a>
+					</div>
+					<div class="col-10 col-sm-6 col-lg-4 my-4 d-none">
 						<div class="position-relative mb-2"><img src="img/shapes/7.svg" alt="1" style="height: 180px">
 							<!-- <svg class="svg-inline--fa fa-columns fa-w-16 absolute-centered position-absolute fs-6 text-white"
 								aria-hidden="true" data-prefix="fas" data-icon="columns" role="img"
@@ -509,7 +522,7 @@
 						<p class="mb-0 px-sm-3">Services provided for the citizens and residents to obtain building
 							permits and construction related services.</p>
 					</div>
-					<div class="col-10 col-sm-6 col-lg-4 my-4">
+					<div class="col-10 col-sm-6 col-lg-4 my-4 d-none">
 						<div class="position-relative mb-2"><img src="img/shapes/2.svg" alt="2" style="height: 180px">
 							<!-- <svg class="svg-inline--fa fa-apple fa-w-12 absolute-centered position-absolute fs-6 text-white"
 								aria-hidden="true" data-prefix="fab" data-icon="apple" role="img"
@@ -524,7 +537,7 @@
 						<p class="mb-0 px-sm-3">Services provided for the citizens and residents to obtain municipal
 							licenses, lease contracts and food safety permits.</p>
 					</div>
-					<div class="col-10 col-sm-6 col-lg-4 my-4">
+					<div class="col-10 col-sm-6 col-lg-4 my-4 d-none">
 						<a href="sr_ar.html" class="text-gray">
 							<div class="position-relative mb-2">
 								<img src="img/shapes/6.svg" alt="2" style="height: 180px">
@@ -565,7 +578,7 @@
 		</section>
 
 		<!-- Our Categories -->
-		<section class="slice slice-lg">
+		<section class="slice slice-lg d-none">
 			<div class="container">
 				<div class="row mb-5 justify-content-center text-center categorie-bg">
 					<div class="col-12 col-md-7 col-lg-6">
@@ -656,7 +669,7 @@
 			<div class="container">
 				<div class="row mb-6 justify-content-center text-center">
 					<div class="col-lg-8 col-md-10">
-						<h3 class="mt-4">Latest news</h3>
+						<h3 class="mb-0 font-weight-bolder">رصف طرق داخلية بمختلف ولايات محافظة مسندم</h3>
 					</div>
 				</div>
 				<div class="row">
@@ -757,9 +770,9 @@
 
 	</div> <!--/.container-->
 
-	<div class="row">
+	<!-- <div class="row">
 		<img src="img/pattern/pattern-6.png" class="img-fluid w-100" alt="">
-	</div> <!-- /.row -->
+	</div> /.row -->
 
 	<footer id="footer-main">
 		<div class="position-relative footer-dark bg-dark footer-bg">
@@ -774,10 +787,30 @@
 				<div class="row">
 					<div class="col-lg-3 mb-5 mb-lg-0 contact-widget">
 						<a href="index.html">
-							<img alt="Tedad2020 Final Logo" id="footer-logo" class="img-fluid mb-2"
-								src="img/Tedad2020_Final_Logo.png"></a>
-						<p class="mt-4 text-sm opacity-8 pr-lg-4">A better way to build.</p>
-						<ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+							<img alt="oman-vision" id="footer-logo" class="img-fluid mb-2"
+								src="img/oman-vision-white.png"></a>
+						<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+							<li class="list-inline-item list-social-item me-3">
+								<a href="https://www.facebook.com/mrmwr/" target="_blank">
+									<i class="fab fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item list-social-item me-3">
+								<a href="https://www.instagram.com/mrmwr/" target="_blank">
+									<i class="fab fa-instagram"></i></a>
+							</li>
+							<li class="list-inline-item list-social-item me-3">
+								<a href="https://www.youtube.com/user/youtubmrmwr" target="_blank">
+									<i class="fab fa-youtube"></i></a>
+							</li>
+							<li class="list-inline-item list-social-item me-3">
+								<a href="https://twitter.com/mrmwroman/" target="_blank">
+									<i class="fab fa-twitter"></i></a>
+							</li>
+							<li class="list-inline-item list-social-item me-3">
+								<a href="#"><i class="fal fa-rss"></i></a>
+							</li>
+						</ul>
+						<ul class="list-unstyled list-inline list-social mb-6 mb-md-0" hidden>
 							<li class="list-inline-item list-social-item me-3">
 								<a href="#!" class="text-decoration-none">
 									<img src="img/social/instagram.svg" class="list-social-icon social-w-40" alt="...">
@@ -808,8 +841,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-lg-0">
-						<h6 class="heading mb-3">Services</h6>
+					<div class="col-lg-2 col-6 col-sm-4 mr-lg-auto mb-lg-0">
+						<h6 class="heading mb-3">خدمات</h6>
 						<ul class="list-unstyled">
 							<!-- <li>
 								<a href="#">Vision & Mission</a>
@@ -821,63 +854,45 @@
 								<a href="#">Future Effort</a>
 							</li> -->
 							<li>
-								<a href="#">Organization</a>
+								<a href="#">الهيكل التنظيمي</a>
 							</li>
-							<li>
+							<!-- <li>
 								<a href="#">Month</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0">
-						<h6 class="heading mb-3">Useful Links</h6>
+						<h6 class="heading mb-3">روابط مفيدة</h6>
 						<ul class="list-unstyled">
-							<li>
-								<a href="#">FAQ</a>
-							</li>
-							<li>
-								<a href="#">Useful Links</a>
-							</li>
-							<li>
-								<a href="#">Sitemap</a>
-							</li>
-							<li>
-								<a href="#">Website Policies</a>
-							</li>
-							<li>
-								<a href="#">Terms &amp; Condition</a>
-							</li>
-							<li>
-								<a href="#">Contact</a>
-							</li>
+							<ul class="list-unstyled"> 
+								<li> <a href="">التعليمات</a> </li> 
+								<li> <a href="">روابط مفيدة</a> </li> 
+								<li> <a href="">خريطة الموقع</a> </li> 
+								<li> <a href="">سياسات موقع الويب</a> </li> 
+								<li> <a href="">الأحكام والشروط</a> </li> 
+								<li> <a href="">اتصل بنا</a> </li> 
+							</ul>
 						</ul>
 					</div>
-					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0">
-						<h6 class="heading mb-3">Legal</h6>
-						<ul class="list-unstyled">
-							<li>
-								<a href="http://www.sai.gov.om/en/AntiCorruption.aspx" target="_blank">Anti-Corruption
-									Policy</a>
-							</li>
-							<li>
-								<a href="#">eParticipation Policy</a>
-							</li>
-							<li>
-								<a href="#">eAccessibility Policy</a>
-							</li>
-							<li>
-								<a href="#">eTransformation Policy</a>
-							</li>
-							<li>
-								<a href="https://ita.gov.om/ITAPortal/ITA/default.aspx" target="_blank">eOman</a>
-							</li>
-						</ul>
+					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0"> 
+						<h6 class="heading mb-3">قانوني</h6> 
+						<ul class="list-unstyled"> 
+							<li> <a href="http://www.sai.gov.om/en/AntiCorruption.aspx" target="_blank">سياسة مكافحة الفساد</a> </li> 
+							<li> <a href="/web/moi/eparticipation-policy">سياسة المشاركة الإلكترونية</a> </li> 
+							<li> <a href="/web/moi/eaccessibility-policy">سياسة الوصول</a> </li> 
+							<li> <a href="/web/moi/etransformation-policy">سياسة التحويل الإلكتروني</a> </li> 
+							<li> <a href="/web/moi/disability-employment-policy-odep">سياسة توظيف ذوي الاحتياجات الخاصة </a> </li> 
+							<li> <a href="/web/moi/building-policy">سياسة البناء</a> </li> 
+							<li> <a href="https://ita.gov.om/ITAPortal/ITA/default.aspx" target="_blank">عمان الرقمية</a> </li> 
+						</ul> 
 					</div>
 				</div>
 				<hr class="divider divider-fade divider-dark my-4">
 				<div class="row align-items-center justify-content-md-between pb-4">
 					<div class="col-md-6">
-						<div class="copyright text-sm font-weight-bold text-center text-md-left">
-							&copy; 2021 <a class="font-weight-bold" href="https://www.moi.gov.om"
+						<div class="copyright text-sm font-weight-bolder text-white">
+							&copy; <script>document.write(new Date().getFullYear())</script> 
+							<a class="text-dark" href="https://www.moi.gov.om"
 								target="_blank">Copyright &copy; Ministry of Interior</a>, All Rights Reserved.
 						</div>
 					</div>

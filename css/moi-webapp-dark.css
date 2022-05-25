@@ -15372,9 +15372,6 @@ svg {
 .footer-dark p {
 	color: rgba(255, 255, 255, .8)
 }
-.footer-dark .heading {
-	color: #fff
-}
 .footer-dark .list-unstyled li a {
 	color: rgba(255, 255, 255, .8)
 }
@@ -15392,10 +15389,12 @@ svg {
 	color: #d3dce6
 }
 .footer-dark .heading {
-	color: #eff2f7
+	color: #eff2f7;
+	font-weight: 700;
+	font-size: 1.2rem;
 }
 .footer-dark .footer-link, .footer-dark .list-unstyled li a, .footer-dark .nav .nav-item .nav-link {
-	color: #d3dce6
+	color: #d3dce6;
 }
 .footer-dark .footer-link:hover, .footer-dark .list-unstyled li a:hover, .footer-dark .nav .nav-item .nav-link:hover {
 	color: #fff
@@ -19103,7 +19102,8 @@ article p {
 	border-top: 0;
 	box-shadow: 0 1rem 3rem rgba(31, 45, 61, .125);
 	transition: all .2s ease;
-	background-color: rgb(255, 255, 255);
+	/* New color change on 25/05/2022 */
+	background-color: rgb(206 161 44);
 }
 @media (prefers-reduced-motion:reduce) {
 	.navbar-sticky.sticky {
@@ -21695,9 +21695,9 @@ article p {
 .progress-circle.progress-lg .progressbar-text {
 	font-size: 1.25rem
 }
-section.slice {
+/* section.slice {
 	background-color: #1f2d3d
-}
+} */
 .slice {
 	position: relative;
 	padding-top: 4rem;
@@ -21789,7 +21789,7 @@ section.slice {
 	display: block;
 	fill: #1f2d3d;
 	pointer-events: none;
-	vertical-align: baseline
+	vertical-align: baseline;
 }
 .shape-position-top {
 	top: 0;
