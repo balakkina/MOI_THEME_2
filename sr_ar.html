@@ -24,31 +24,31 @@
 		</div>
 	</div>
 	<!-- header -->
-	<header class="navbar-sticky sticky-bg">
+	<header class="navbar-sticky sticky-bg dark bg-dark">
 		<div class="container p-2">
 			<div class="row">
 				<div class="col-6">
 					<nav class="navbar p-0">
 						<div class="container">
 							<a class="navbar-brand" href="#">
-								<img alt="MOI Logo" id="navbar-logo" src="img/moi_logo.png"></a>
+								<img alt="MOI Logo" id="navbar-logo" src="img/moi-logo-white.png"></a>
 							</a>
 						</div>
 					</nav>
 				</div>
 				<div class="col-6 d-flex justify-content-end">
 					<ul class="d-flex align-items-center list-unstyled mb-0">
-						<li class="mr-3"><a class="font-change text-dark" id="lnkDecrease" title="Zoomout"
+						<li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkDecrease" title="Zoomout"
 								href="#!">A-</a></li>
-						<li class="mr-3"><a class="font-change text-dark" id="lnkNormal" title="Normalview"
+						<li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkNormal" title="Normalview"
 								href="javascript:window.location.reload();">A</a></li>
-						<li class="mr-3"><a class="font-change text-dark" id="lnkIncrease" title="Zoomin"
+						<li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkIncrease" title="Zoomin"
 								href="#!">A+</a></li>
-						<li class="mr-3"><a class="font-change text-dark" id="lnkIncrease" title="Zoomin" href="#!">
-								<i class="fal fa-print fa-fw"></i></a></li>
+						<!-- <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkIncrease" title="Zoomin" href="#!">
+								<i class="fal fa-print fa-fw"></i></a></li> -->
 						<li class="nav-item userlogin">
 							<div class="dropdown">
-								<a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+								<a href="" class="nav-link nav-link-profile text-white font-weight-bolder" data-toggle="dropdown">
 									<span class="logged-name hidden-md-down">Sridhar Talluri</span> 
 									<img src="img/svg/avatar.svg" class="ht-32 rounded-circle" alt="">
 									<span class="square-10 bg-success"></span>
@@ -77,9 +77,9 @@
 		</div> <!-- /. container -->
 	</header>
 
-	<div class="container bg-white shadow-lg p-0">
+	<div class="container bg-white shadow-lg p-0 mb-5">
 		<!-- NAVBAR -->
-		<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark p-0" id="navbar-main">
+		<nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark p-0 d-none" id="navbar-main">
 			<!-- <a class="navbar-brand img-hide" href="index_ar.html">
 				<img alt="MOI Logo" id="navbar-logo" src="img/moi_logo.png"></a> -->
 			<button aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation"
@@ -268,7 +268,7 @@
 			<div class="container position-relative zindex-100">
 				<div class="row pb-3 shadow-lg">
 					<div class="col mr-3 mt-3 pb-3 d-flex align-items-center p-0 border-bottom">
-                        <a href="index_ar.html" class="text-dark" style="margin-left:15px;" title="Back to home">
+                        <a href="index_ar.html" class="text-white font-weight-bolder" style="margin-left:15px;" title="Back to home">
                             <img src="img/svg/left-arrow.svg" style="    transform: rotate(180deg);">
                         </a>
 						<h4 class="mb-0">Service Request</h4>
@@ -521,20 +521,25 @@
 
 	</div> <!--/.container-->
 
-	<div class="row">
+	<!-- <div class="row">
 		<img src="img/pattern/pattern-6.png" class="img-fluid w-100" alt="">
-	</div> <!-- /.row -->
+	</div> /.row -->
 
 	<footer id="footer-main">
 		<div class="position-relative footer-dark bg-dark footer-bg">
+			<!-- <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+				<svg class="" height="100px" preserveaspectratio="none" style="enable-background:new 0 0 2560 100"
+					viewbox="0 0 2560 100" width="2560px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+					<polygon points="2560 0 2560 100 0 100"></polygon>
+				</svg>
+			</div> -->
 			<div class="container pt-3">
 				<!-- <hr class="divider divider-fade divider-dark my-5"> -->
 				<div class="row">
 					<div class="col-lg-3 mb-5 mb-lg-0 contact-widget">
-						<a href="index_ar.html">
-							<img alt="Tedad2020 Final Logo" id="footer-logo" class="img-fluid mb-2"
-								src="img/Tedad2020_Final_Logo.png"></a>
-						<p class="mt-4 text-sm opacity-8 pr-lg-4">A better way to build.</p>
+						<a href="index.html">
+							<img alt="oman-vision" id="footer-logo" class="img-fluid mb-2"
+								src="img/oman-vision-white.png"></a>
 						<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
 							<li class="list-inline-item list-social-item me-3">
 								<a href="https://www.facebook.com/mrmwr/" target="_blank">
@@ -587,67 +592,58 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-lg-0">
-						<h6 class="heading mb-3">Services</h6>
+					<div class="col-lg-2 col-6 col-sm-4 mr-lg-auto mb-lg-0">
+						<h6 class="heading mb-3">خدمات</h6>
 						<ul class="list-unstyled">
-							<li>
-								<a href="#">Organization</a>
+							<!-- <li>
+								<a href="#">Vision & Mission</a>
 							</li>
 							<li>
+								<a href="#">Specialties</a>
+							</li>
+							<li>
+								<a href="#">Future Effort</a>
+							</li> -->
+							<li>
+								<a href="#">الهيكل التنظيمي</a>
+							</li>
+							<!-- <li>
 								<a href="#">Month</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0">
-						<h6 class="heading mb-3">Useful Links</h6>
+						<h6 class="heading mb-3">روابط مفيدة</h6>
 						<ul class="list-unstyled">
-							<li>
-								<a href="#">FAQ</a>
-							</li>
-							<li>
-								<a href="#">Useful Links</a>
-							</li>
-							<li>
-								<a href="#">Sitemap</a>
-							</li>
-							<li>
-								<a href="#">Website Policies</a>
-							</li>
-							<li>
-								<a href="#">Terms &amp; Condition</a>
-							</li>
-							<li>
-								<a href="#">Contact</a>
-							</li>
+							<ul class="list-unstyled"> 
+								<li> <a href="">التعليمات</a> </li> 
+								<li> <a href="">روابط مفيدة</a> </li> 
+								<li> <a href="">خريطة الموقع</a> </li> 
+								<li> <a href="">سياسات موقع الويب</a> </li> 
+								<li> <a href="">الأحكام والشروط</a> </li> 
+								<li> <a href="">اتصل بنا</a> </li> 
+							</ul>
 						</ul>
 					</div>
-					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0">
-						<h6 class="heading mb-3">Legal</h6>
-						<ul class="list-unstyled">
-							<li>
-								<a href="http://www.sai.gov.om/en/AntiCorruption.aspx" target="_blank">Anti-Corruption
-									Policy</a>
-							</li>
-							<li>
-								<a href="#">eParticipation Policy</a>
-							</li>
-							<li>
-								<a href="#">eAccessibility Policy</a>
-							</li>
-							<li>
-								<a href="#">eTransformation Policy</a>
-							</li>
-							<li>
-								<a href="https://ita.gov.om/ITAPortal/ITA/default.aspx" target="_blank">eOman</a>
-							</li>
-						</ul>
+					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0"> 
+						<h6 class="heading mb-3">قانوني</h6> 
+						<ul class="list-unstyled"> 
+							<li> <a href="http://www.sai.gov.om/en/AntiCorruption.aspx" target="_blank">سياسة مكافحة الفساد</a> </li> 
+							<li> <a href="/web/moi/eparticipation-policy">سياسة المشاركة الإلكترونية</a> </li> 
+							<li> <a href="/web/moi/eaccessibility-policy">سياسة الوصول</a> </li> 
+							<li> <a href="/web/moi/etransformation-policy">سياسة التحويل الإلكتروني</a> </li> 
+							<li> <a href="/web/moi/disability-employment-policy-odep">سياسة توظيف ذوي الاحتياجات الخاصة </a> </li> 
+							<li> <a href="/web/moi/building-policy">سياسة البناء</a> </li> 
+							<li> <a href="https://ita.gov.om/ITAPortal/ITA/default.aspx" target="_blank">عمان الرقمية</a> </li> 
+						</ul> 
 					</div>
 				</div>
 				<hr class="divider divider-fade divider-dark my-4">
 				<div class="row align-items-center justify-content-md-between pb-4">
 					<div class="col-md-6">
-						<div class="copyright text-sm font-weight-bold text-center text-md-left">
-							&copy; 2021 <a class="font-weight-bold" href="https://www.moi.gov.om"
+						<div class="copyright text-sm font-weight-bolder text-white">
+							&copy; <script>document.write(new Date().getFullYear())</script> 
+							<a class="text-dark" href="https://www.moi.gov.om"
 								target="_blank">Copyright &copy; Ministry of Interior</a>, All Rights Reserved.
 						</div>
 					</div>
@@ -696,7 +692,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
     <script>
         $(document).ready(function () {
-        bsCustomFileInput.init()
+        	bsCustomFileInput.init()
         });
     </script>
 </body>
