@@ -21797,7 +21797,8 @@ article p {
 }
 .shape-position-bottom {
 	bottom: 0;
-	margin-bottom: -1px
+	/* margin-bottom: -1px; */
+	margin-bottom: -4rem;
 }
 .shape-orientation-inverse {
 	transform: rotate(180deg)
