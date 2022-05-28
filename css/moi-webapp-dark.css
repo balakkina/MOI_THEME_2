@@ -23868,4 +23868,9 @@ span.flatpickr-weekday {
 .bootstrap-tagsinput .badge:hover [data-role=remove] {
 	opacity: 1
 }
+.sr-logo , .ts-logo, .hs-logo,
+.sr-logo .media-body h5, .ts-logo .media-body h5, .hs-logo .media-body h5 {
+  font-weight: 700;
+  color: #fff !important;
+}
 /*# sourceMappingURL=quick-website-dark.css.map */
