@@ -5314,7 +5314,9 @@ a.close.disabled {
 	color: #fff;
 	text-align: center;
 	opacity: .5;
-	transition: opacity .15s ease
+	transition: opacity .15s ease;
+	background: transparent;
+    border: 0;
 }
 @media (prefers-reduced-motion:reduce) {
 	.carousel-control-next, .carousel-control-prev {
@@ -23870,7 +23872,6 @@ span.flatpickr-weekday {
 }
 .sr-logo , .ts-logo, .hs-logo,
 .sr-logo .media-body h5, .ts-logo .media-body h5, .hs-logo .media-body h5 {
-  font-weight: 700;
   color: #fff !important;
 }
 /*# sourceMappingURL=quick-website-dark.css.map */

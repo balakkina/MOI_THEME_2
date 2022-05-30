@@ -5309,7 +5309,9 @@ a.close.disabled {
 	color: #fff;
 	text-align: center;
 	opacity: .5;
-	transition: opacity .15s ease
+	transition: opacity .15s ease;
+	background: transparent;
+    border: 0;
 }
 @media (prefers-reduced-motion:reduce) {
 	.carousel-control-next, .carousel-control-prev {
