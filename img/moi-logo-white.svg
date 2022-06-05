@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1266" height="480" viewBox="0 0 1266 480">
   <defs>
     <style>
-      .cls-1, .cls-7, .cls-8 {
+      .cls-1, .cls-7 {
         fill: #fff;
       }
 
@@ -37,15 +37,8 @@
 
       .cls-7 {
         font-size: 175px;
-      }
-
-      .cls-7, .cls-8 {
-        font-family: TanseekModernProArabic-Bold, TanseekModernProArabic ☞;
+        font-family: TanseekModProArabic-Bold, Tanseek Modern Pro Arabic;
         font-weight: 700;
-      }
-
-      .cls-8 {
-        font-size: 160px;
       }
     </style>
     <clipPath id="clip-path">
@@ -59,7 +52,7 @@
     </clipPath>
   </defs>
   <g id="moi-logo-white" class="cls-2">
-    <g id="khanjar" transform="translate(796.368 18.711)">
+    <g id="khanjar" transform="translate(796.368 19.711)">
       <path id="Path_1" data-name="Path 1" class="cls-3" d="M106.351-154.4a6.732,6.732,0,0,0-4.533,3.19,5.551,5.551,0,0,1-5.015,2.3s-3.1-1.394-2.872,1.591a1.975,1.975,0,0,1-1.682,1.783s-7.415,4.566-9.312,10c0,0-6,3.19-3.815,7.947,0,0,.728,2.492,5.025.709,0,0,8.84-1.16,11.712,10.851,0,0,2.615,22.92,1.2,32.222,0,0,1.877,11.783-18.409,27.444l-.257,76.477" transform="translate(126.391 175.008)"/>
       <path id="Path_2" data-name="Path 2" class="cls-3" d="M89.043-154.4a6.652,6.652,0,0,1,4.533,3.19s1.938,2.759,5.025,2.3c0,0,3.107-1.394,2.871,1.591a1.968,1.968,0,0,0,1.651,1.783s7.435,4.566,9.332,10.011c0,0,5.929,3.179,3.805,7.937,0,0-.718,2.492-4.984.709,0,0-8.82-1.16-11.722,10.851,0,0-2.615,22.92-1.221,32.222,0,0-1.877,11.783,18.419,27.444l.226,76.477" transform="translate(143.559 175.008)"/>
       <path id="Path_3" data-name="Path 3" class="cls-3" d="M79.766-146.961s3.077,1.835,2.154,7.979" transform="translate(128.661 187.104)"/>
@@ -525,9 +518,9 @@
       <path id="Path_461" data-name="Path 461" class="cls-1" d="M74.717,100.766l-.913,3.292.841,3.66.81-3.66-.739-3.292" transform="translate(119.048 163.086)"/>
       <path id="Path_462" data-name="Path 462" class="cls-6" d="M74.717-61.664,73.8-58.372l.841,3.661.81-3.661Zm0,0" transform="translate(119.048 325.516)"/>
     </g>
-    <g id="Group_4" data-name="Group 4" transform="translate(10.847 8.125)">
-      <text id="سلطنة_عمان" data-name="سلطنة عمان" class="cls-7" transform="translate(49.153 162.875)"><tspan x="0" y="0">سلطنة عمان</tspan></text>
-      <text id="وزارة_الداخلية" data-name="وزارة الداخلية" class="cls-8" transform="translate(23.153 396.875)"><tspan x="0" y="0">وزارة الداخلية</tspan></text>
+    <g id="Group_4" data-name="Group 4" transform="translate(-40.153 7.125)">
+      <text id="سلطنة_عمان" data-name="سلطنة عمان" class="cls-7" transform="translate(49.153 185.875)"><tspan x="0" y="0">سلطنة عمان</tspan></text>
+      <text id="وزارة_الداخلية" data-name="وزارة الداخلية" class="cls-7" transform="translate(40.153 395.875)"><tspan x="0" y="0">وزارة الداخلية</tspan></text>
     </g>
   </g>
 </svg>

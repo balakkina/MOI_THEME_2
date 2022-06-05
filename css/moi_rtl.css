@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
     text-align: right;
 }
@@ -58,4 +59,24 @@ body {
     left: auto;
     right: 50%;
     transform: translateX(50%);
+}
+.btn-laguage {
+    font-family: "Nunito Sans", sans-serif;
+}
+@media (min-width: 1400px) {
+    .sr-logo .media-body h5, .ts-logo .media-body h5, .hs-logo .media-body h5 {
+        font-size: 1.5rem;
+    }
+    .sr-logo .media-body p, .ts-logo .media-body p, .hs-logo .media-body p {
+        font-size: 1.25rem;
+    }
+    h3.mb-0.text-center.font-weight-bolder {
+        font-size: 2rem;
+    }
+}
+
+.sr-logo .media-body h5, .ts-logo .media-body h5, .hs-logo .media-body h5,
+.sr-logo .media-body p, .ts-logo .media-body p, .hs-logo .media-body p,
+h3.mb-0.text-center.font-weight-bolder {
+    font-family: 'Tanseek Mod Pro Arabic';
 }

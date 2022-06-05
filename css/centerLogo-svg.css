@@ -135,8 +135,8 @@
   }
   .sr-logo {
     position: absolute;
-    left: -16.85rem;
-    top: 35px;
+    left: -16.8rem;
+    top: 43px;
     /* width: 6rem; */
   }
   .sr-logo .media-body {
@@ -155,7 +155,7 @@
   .ts-logo {
     position: absolute;
     right: -16.5rem;
-    top: 4.25rem;
+    top: 4.625rem;
     /* width: 5.5rem; */
   }
   .ts-logo .media-body {
@@ -175,7 +175,7 @@
   .hs-logo {
     position: absolute;
     left: -16.5rem;
-    top: 119px;
+    top: 125px;
     /* width: 5rem; */
   }
   .hs-logo .media-body {
@@ -213,7 +213,7 @@
   .sr-logo {
     position: absolute;
     left: -14.5rem;
-    top: 74px;
+    top: 83px;
     /* width: 6rem; */
   }
   .sr-logo .media-body {
@@ -232,7 +232,7 @@
   .ts-logo {
     position: absolute;
     right: -13.875rem;
-    top: 8.37rem;
+    top: 8.7rem;
     /* width: 5.5rem; */
   }
   .ts-logo .media-body {
@@ -250,8 +250,8 @@
   }
   .hs-logo {
     position: absolute;
-    left: -13.5rem;
-    top: 231px;
+    left: -13.2rem;
+    top: 235px;
     /* width: 5rem; */
   }
   .hs-logo .media-body {
@@ -288,14 +288,14 @@
   }
   .sr-logo {
     position: absolute;
-    left: -8rem;
-    top: 75px;
+    left: -7.925rem;
+    top: 83px;
     /* width: 6rem; */
   }
   .sr-logo .media-body {
-    width: 13.5rem;
+    width: 10.5rem;
     position: absolute;
-    left: 13.5rem;
+    left: 16rem;
   }
   .sr-logo a {
     width: 6rem;
@@ -327,7 +327,7 @@
   .hs-logo {
     position: absolute;
     left: -5.85rem;
-    top: 229px;
+    top: 236px;
     /* width: 5rem; */
   }
   .hs-logo .media-body {
@@ -351,8 +351,8 @@
   }
   .sr-logo {
     position: absolute;
-    left: -5.5rem;
-    top: 112px;
+    left: -5rem;
+    top: 130px;
     /* width: 6rem; */
   }
   .sr-logo .media-body {
@@ -370,8 +370,8 @@
   }
   .ts-logo {
     position: absolute;
-    right: -4rem;
-    top: 219px;
+    right: -4.55rem;
+    top: 230px;
     /* width: 5.5rem; */
   }
   .ts-logo .media-body {
@@ -389,8 +389,8 @@
   }
   .hs-logo {
     position: absolute;
-    left: -2.35rem;
-    top: 353px;
+    left: -2rem;
+    top: 364px;
     /* width: 5rem; */
   }
   .hs-logo .media-body {
@@ -415,8 +415,8 @@
   }
   .sr-logo {
     position: absolute;
-    left: 0.25rem;
-    top: 117px;
+    left: 0.5rem;
+    top: 125px;
     /* width: 6rem; */
   }
   .sr-logo .media-body {
@@ -434,8 +434,8 @@
   }
   .ts-logo {
     position: absolute;
-    right: 30px;
-    top: 215px;
+    right: 20px;
+    top: 225px;
     /* width: 5.5rem; */
   }
   .ts-logo .media-body {
@@ -454,7 +454,7 @@
   .hs-logo {
     position: absolute;
     left: 3.27rem;
-    top: 355px;
+    top: 365px;
     /* width: 5rem; */
   }
   .hs-logo .media-body {
