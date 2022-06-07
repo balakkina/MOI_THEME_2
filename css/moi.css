@@ -170,7 +170,6 @@ svg:not(:root).svg-inline--fa {
   background-color: rgb(206 161 44);
   color: #080808;
 }
-
 .fixed-header {
   position: fixed !important;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
@@ -940,7 +939,7 @@ legend {
 }
 /* New logo change on 25/05/2022 */
 img#navbar-logo {
-  width: 12.45rem;
+  width: 10rem;
 }
 /* .sr-logo {
   position: absolute;

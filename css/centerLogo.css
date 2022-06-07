@@ -410,19 +410,23 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) {
+  header.sticky-bg{
+    height: 5rem;
+  }
   img.center-logo {
-    width: 39rem;
+    width: 29rem;
   }
   .sr-logo {
     position: absolute;
-    left: 0.25rem;
-    top: 117px;
+    left: 3rem;
+    top: 85px;
     /* width: 6rem; */
   }
   .sr-logo .media-body {
-    width: 10rem;
+    width: 15rem;
     position: absolute;
-    left: 12.5rem;
+    left: 9rem;
+    top: -2rem;
   }
   .sr-logo a {
     width: 6rem;
@@ -430,18 +434,19 @@
     position: absolute;
   }
   .sr-logo a img {
-    width: 6rem;
+    width: 4rem;
   }
   .ts-logo {
     position: absolute;
-    right: 30px;
-    top: 215px;
+    right: 68px;
+    top: 149px;
     /* width: 5.5rem; */
   }
   .ts-logo .media-body {
-    width: 15rem;
+    width: 17rem;
     position: absolute;
     right: 6rem;
+    top: -2rem;
   }
   .ts-logo a {
     width: 6rem;
@@ -449,12 +454,12 @@
     position: absolute;
   }
   .ts-logo a img {
-    width: 5.5rem;
+    width: 5rem;
   }
   .hs-logo {
     position: absolute;
-    left: 3.27rem;
-    top: 355px;
+    left: 5.27rem;
+    top: 258px;
     /* width: 5rem; */
   }
   .hs-logo .media-body {
@@ -468,7 +473,7 @@
     position: absolute;
   }
   .hs-logo a img {
-    width: 5rem;
+    width: 4rem;
   }
 }
 .position-relative .media a img.align-self-center {
