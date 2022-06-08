@@ -38,6 +38,7 @@
             font-size: 100%;
             vertical-align: baseline;
             background: transparent;
+            position: relative;
         }
 
         body {
@@ -45,6 +46,8 @@
             padding: 0;
             margin: 0;
             font-family: "Nunito Sans", sans-serif;
+            background-color: rgb(236, 231, 227);
+            background-image: url(https://msp.moi.gov.om/o/mrmwr-default-theme/images/custom/pattern/pattern-4.png);
         }
 
         #wrapper {
@@ -54,13 +57,17 @@
 
         .header {
             margin: 0px;
-            background: linear-gradient(221deg, #c62052 0, #280071 100%) no-repeat padding-box;
-            height: 40px;
+            /* background: linear-gradient(221deg, #c62052 0, #280071 100%) no-repeat padding-box; */
+            background: rgb(206, 161, 44) no-repeat padding-box;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: end;
         }
 
         .logo {
             width: 25%;
-            margin: 0px 0px 15px 0px;
+            margin: 10px 0px;
         }
 
         h1 {
@@ -76,7 +83,7 @@
         }
 
         .blue-head {
-            color: #008ae6;
+            color: rgb(215 86 61);
         }
 
         .container {
@@ -117,14 +124,19 @@
         }
 
         .yellow-bg {
-            background: #f1bb00;
-            margin: 15px 0px 50px 0px;
+            background: rgb(215 86 61);
+            margin: 50px 0px 50px 0px;
             padding: 10px;
+            color: #fff;
+            border-radius: 0.5rem;
         }
-
+        .yellow-bg a {
+            color: #fff;
+        }
         .txt-highlight {
-            font-size: 14px;
+            font-size: 1rem;
             text-align: center;
+            text-transform: uppercase;
         }
 
         .bolded-txt {
@@ -142,7 +154,9 @@
 
         .footer {
             width: 100%;
-            margin: 20px 0px;
+            /* margin: 20px 0px; */
+            position: fixed;
+            bottom: 0;
         }
 
         .copy {
@@ -192,12 +206,14 @@
 
 <body>
     <div id="wrapper">
-        <div class="header"></div>
+        <div class="header">
+            <div class="logo">
+                <img src="https://msp.moi.gov.om/o/mrmwr-default-theme/images/custom/moi-logo-white.png" alt="Logo" style="width: 10rem;" />
+            </div>
+        </div>
         <div class="container">
             <div class="heading">
-                <div class="logo">
-                    <img src="img/moi_logo.png" alt="Logo">
-                </div>
+                
                 <div class=""></div>
             </div>
             <div class="right-column-mobile">
@@ -215,15 +231,17 @@
                         required to be enhanced or improved, we have to shut down the application. This results in our
                         website not being available to our users.</p>
                     <div class="yellow-bg">
-                        <p class="txt-highlight">Will be back at
+                        <!-- <p class="txt-highlight">Will be back at
                             <span class="bolded-txt">10:00 hrs</span> on
                             <span class="bolded-txt">10-May-2022</span> to serve you better
+                        </p> -->
+                        <p class="txt-highlight">Back to
+                            <a href="https://www.moi.gov.om/ar-om"><span class="bolded-txt">Ministry of Interior</span></a> to serve you better
                         </p>
                     </div>
                     <div>
-                        <p class="">If you see this maintenance page even after the service has been resumed, please
-                            press
-                            <span class="bolded-blue">Ctrl+F5</span> to refresh your browser's cache.
+                        <p class="">If you see this maintenance page even after the service has been resumed, please press
+                            <a href=""><span class="bolded-blue">Ctrl+F5</span></a> to refresh your browser's cache.
                         </p>
                     </div>
                 </div>
