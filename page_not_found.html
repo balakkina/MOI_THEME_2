@@ -6,10 +6,11 @@
 	<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 	<meta name=description content="MOI">
 	<meta name=author content="MOI">
-    <title>Ministry of Interior</title>
+    <title>Page Not Found</title>
     <link rel=icon href="img/Khanjar.png" type=image/png />
-    <style>
+    <style type="text/css">
         @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700,800&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);
         html,
         body,
         div,
@@ -71,10 +72,15 @@
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 32px;
             font-weight: bold;
             padding: 10px 0px;
-            line-height: 40px;
+            line-height: 3.5rem;
+            font-family: 'Courgette', cursive;
+            display: inline-block;
+            z-index: 2;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px #d3d3d3;
         }
 
         .heading {
@@ -98,6 +104,7 @@
 
         .left-column {
             width: 70%;
+            margin: auto;
         }
 
         .right-column-desktop {
@@ -105,9 +112,9 @@
             float: right;
         }
 
-        .left-column {
+        /* .left-column {
             float: left;
-        }
+        } */
 
         .time-img {
             width: 100%;
@@ -124,7 +131,8 @@
         }
 
         .yellow-bg {
-            background: rgb(215 86 61);
+            /* background: rgb(215 86 61); */
+            background-color: #566F7A;
             margin: 50px 0px 50px 0px;
             padding: 10px;
             color: #fff;
@@ -157,14 +165,13 @@
             /* margin: 20px 0px; */
             position: fixed;
             bottom: 0;
+            background: #cea12d;
         }
 
         .copy {
             padding: 0.925rem 1.25rem;
-            background: #cea12d;
             color: #ffffff;
         }
-
         @media only screen and (max-width: 767px) {
             body {
                 text-align: center;
@@ -216,45 +223,50 @@
                 
                 <div class=""></div>
             </div>
-            <div class="right-column-mobile">
+            <!-- <div class="right-column-mobile">
                 <div class="time-img">
-                    <img src="img/sand_clock_pm.png" alt="Maintenance">
+                    <img src="https://pngpress.com/wp-content/uploads/2020/08/uploads_hourglass_hourglass_PNG24.png" alt="Page Not Found">
                 </div>
-            </div>
+            </div> -->
             <div class="left-column">
                 <div class="content">
-                    <h1>SITE UNDER
-                        <span class="blue-head">MAINTENANCE</span>
-                    </h1>
-                    <p>Why Do We Have To Shut Down Our Site?: At the backend, we have a number of software applications
-                        which together give the experience of portal. Whenever any of these application is
-                        required to be enhanced or improved, we have to shut down the application. This results in our
-                        website not being available to our users.</p>
-                    <div class="yellow-bg">
-                        <!-- <p class="txt-highlight">Will be back at
-                            <span class="bolded-txt">10:00 hrs</span> on
-                            <span class="bolded-txt">10-May-2022</span> to serve you better
-                        </p> -->
-                        <p class="txt-highlight">Back to
-                            <a href="https://www.moi.gov.om/ar-om"><span class="bolded-txt">Ministry of Interior</span></a> to serve you better
-                        </p>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <h1 style="border-right: 2px dashed #6090b0;">“Requested page was not found.
+                            <span class="blue-head">Please try Again”</span>
+                        </h1>
+
+                        <h1 style="direction: rtl;">”الصفحة المطلوبة غير متواجدة
+                            <span class="blue-head">حاول مرة اخرى“</span>
+                        </h1>
+
                     </div>
-                    <div>
-                        <p class="">If you see this maintenance page even after the service has been resumed, please press
-                            <a href=""><span class="bolded-blue">Ctrl+F5</span></a> to refresh your browser's cache.
-                        </p>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div class="yellow-bg">
+                            <p class="txt-highlight">Back to&nbsp; 
+                                <a href="https://www.moi.gov.om/ar-om"><span class="bolded-txt">Ministry of Interior</span></a>
+                            </p>
+                        </div>
+                        <div class="yellow-bg" style="direction: rtl;">
+                            <p class="txt-highlight">ارجع الى&nbsp; 
+                                <a href="https://www.moi.gov.om/ar-om"><span class="bolded-txt"> وزارة الداخلية</span></a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="right-column-desktop">
+            <!-- <div class="right-column-desktop">
                 <div class="time-img">
-                    <img src="img/sand_clock_pm.png" alt="Maintenance">
+                    <img src="https://pngpress.com/wp-content/uploads/2020/08/uploads_hourglass_hourglass_PNG24.png" alt="Page Not Found">
                 </div>
-            </div>
+            </div> -->
             <div class="clearfix"></div>
         </div>
         <div class="footer">
-            <p class="copy"><script>document.write(new Date().getFullYear())</script> Copyright &copy; Ministry of Interior</p>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <p class="copy"><script>document.write(new Date().getFullYear())</script> Copyright &copy; Ministry of Interior</p>
+                <p class="copy"><script>document.write(new Date().getFullYear())</script> حقوق النشر ©️ وزارة الداخلية، كل الحقوق محفوظة</p>
+            </div>
+            
         </div>
     </div>
 </body>
