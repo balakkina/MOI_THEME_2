@@ -3,6 +3,196 @@
   font-weight: 700;
   color: #000000;
 }
+@media (max-width: 375.98px) {
+  img#navbar-logo {
+    width: 6rem;
+  }
+  .nav-item .nav-link {
+      padding: 0;
+      font-size: .525rem;
+  }
+  .btn-laguage {
+    font-size: .625rem;
+    width: 6.1875rem;
+    margin: 0 0.25rem;
+  }
+  .btn-icon .btn-inner--text:not(:first-child) {
+      margin: 0;
+  }
+  .nav-link {
+    font-size: .825rem;
+  }
+  .h3, h3 {
+      font-size: calc(1rem + .6vw);
+  }
+  .shape-position-bottom {
+    margin-bottom: -1px;
+  }
+  img.center-logo {
+    width: 13rem;
+  }
+  .media-body h5 {
+    font-size: .675rem;
+    margin: 0;
+  }
+  .media-body p {
+    font-size: 0.425rem;
+  }
+  .sr-logo {
+    position: absolute;
+    left: -22rem;
+    top: 39px;
+    /* width: 6rem; */
+  }
+  .sr-logo .media-body {
+    width: 5rem;
+    position: absolute;
+    left: 22.35rem;
+    top: -10px;
+  }
+  .sr-logo a {
+    width: 6rem;
+    left: 26.8rem;
+    position: absolute;
+  }
+  .sr-logo a img {
+    width: 2rem;
+  }
+  .ts-logo {
+    position: absolute;
+    right: -21.6rem;
+    top: 4.5rem;
+    /* width: 5.5rem; */
+  }
+  .ts-logo .media-body {
+    width: 5rem;
+    position: absolute;
+    right: 21.9rem;
+    top: -0.5rem;
+  }
+  .ts-logo a {
+    width: 6rem;
+    right: 26.8rem;
+    position: absolute;
+  }
+  .ts-logo a img {
+    width: 2rem;
+  }
+  .hs-logo {
+    position: absolute;
+    left: -21.95rem;
+    top: 121px;
+    /* width: 5rem; */
+  }
+  .hs-logo .media-body {
+    width: 6rem;
+    position: absolute;
+    left: 22.125rem;
+  }
+  .hs-logo a {
+    width: 6rem;
+    left: 27.5rem;
+    position: absolute;
+  }
+  .hs-logo a img {
+    width: 1.5rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  img#navbar-logo {
+    width: 6rem;
+  }
+  .nav-item .nav-link {
+      padding: 0;
+      font-size: .525rem;
+  }
+  .btn-laguage {
+      font-size: .625rem;
+      width: 6.1875rem;
+  }
+  .btn-icon .btn-inner--text:not(:first-child) {
+      margin: 0;
+  }
+  .nav-link {
+    font-size: .825rem;
+  }
+  .h3, h3 {
+      font-size: calc(1rem + .6vw);
+  }
+  .shape-position-bottom {
+    margin-bottom: -1px;
+  }
+  img.center-logo {
+    width: 13rem;
+  }
+  .media-body h5 {
+    font-size: .675rem;
+    margin: 0;
+  }
+  .media-body p {
+    font-size: 0.425rem;
+  }
+  .sr-logo {
+    position: absolute;
+    left: -16.85rem;
+    top: 35px;
+    /* width: 6rem; */
+  }
+  .sr-logo .media-body {
+    width: 8rem;
+    position: absolute;
+    left: 19.75rem;
+  }
+  .sr-logo a {
+    width: 6rem;
+    left: 26.8rem;
+    position: absolute;
+  }
+  .sr-logo a img {
+    width: 2rem;
+  }
+  .ts-logo {
+    position: absolute;
+    right: -16.5rem;
+    top: 4.25rem;
+    /* width: 5.5rem; */
+  }
+  .ts-logo .media-body {
+    width: 6rem;
+    position: absolute;
+    right: 21rem;
+    top: -0.3rem;
+  }
+  .ts-logo a {
+    width: 6rem;
+    right: 26.8rem;
+    position: absolute;
+  }
+  .ts-logo a img {
+    width: 2rem;
+  }
+  .hs-logo {
+    position: absolute;
+    left: -16.5rem;
+    top: 119px;
+    /* width: 5rem; */
+  }
+  .hs-logo .media-body {
+    width: 7rem;
+    position: absolute;
+    left: 21.25rem;
+  }
+  .hs-logo a {
+    width: 6rem;
+    left: 27.5rem;
+    position: absolute;
+  }
+  .hs-logo a img {
+    width: 1.5rem;
+  }
+}
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   img#navbar-logo {
