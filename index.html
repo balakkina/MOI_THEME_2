@@ -823,7 +823,7 @@
 						<a href="index.html">
 							<img alt="oman-vision" id="footer-logo" class="img-fluid mb-2"
 								src="img/oman-vision-white.png"></a>
-						<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+						<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-none">
 							
 							<li class="list-inline-item list-social-item me-3">
 								<a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
@@ -848,7 +848,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-lg-0">
+					<div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-lg-0 d-none">
 						<h6 class="heading mb-3">Services</h6>
 						<ul class="list-unstyled">
 							<!-- <li>
@@ -868,7 +868,7 @@
 							</li> -->
 						</ul>
 					</div>
-					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0">
+					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0 d-none">
 						<h6 class="heading mb-3">Useful Links</h6>
 						<ul class="list-unstyled">
 							<li>
@@ -891,7 +891,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0">
+					<div class="col-lg-2 col-6 col-sm-4 mb-lg-0 d-none">
 						<h6 class="heading mb-3">Legal</h6>
 						<ul class="list-unstyled">
 							<li>
@@ -923,7 +923,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+						<!-- <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
 							<li class="nav-item list-social-item">
 								<a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
 									<img src="img/app/app_store.svg" class="list-brand-icon" alt="app_store">
@@ -932,6 +932,29 @@
 							<li class="nav-item list-social-item">
 								<a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
 									<img src="img/app/google_play.svg" class="list-brand-icon" alt="google_play">
+								</a>
+							</li>
+						</ul> -->
+						<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-flex justify-content-end mt-3 mt-md-0">
+							<li class="list-inline-item list-social-item me-3">
+								<a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
+									<img src="img/social/instagram-logo.svg" class="list-social-icon social-w-40" alt="">
+								</a>
+							</li>
+							<li class="list-inline-item list-social-item me-3">
+								<a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
+									<i class="fab fa-twitter"></i></a>
+							</li>
+
+							<!-- brand -->
+							<li class="list-inline-item list-social-item me-3 lift">
+								<a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+									<img src="img/eoman_logo.png" class="list-brand-icon" alt="...">
+								</a>
+							</li>
+							<li class="list-inline-item list-social-item me-3 lift">
+								<a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+									<img src="img/w3c-logo.png" class="list-brand-icon" alt="...">
 								</a>
 							</li>
 						</ul>
@@ -1038,6 +1061,28 @@
 		</div>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="mociError" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="mociErrorLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down modal-fullscreen-md-down">
+		<div class="modal-content">
+			<div class="modal-header p-0 border-0 align-items-center">
+					<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+						<span class="text-danger" aria-hidden="true" style="font-size: 2rem;">&times;</span>
+					</button>
+				</div>
+			<div class="modal-body p-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<img src="img/MOCI-Error.jpeg" alt="" class="img-fluid rounded" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
 	<script src="js/jquery-3.6.0.js"></script>
 	<script src="js/bootstrap.bundle.js"></script>
 	<!-- <script src="js/svg-injector.min.js"></script> -->
@@ -1057,6 +1102,10 @@
 			//true or false - should the marquee be duplicated to show an effect of continues flow
 			duplicated: true,
 			pauseOnHover: true
+		});
+		$(window).on('load', function() {
+			$('#mociError').modal('show');
+			//$('#modal-products').modal('show');
 		});
 	</script>
 </body>
