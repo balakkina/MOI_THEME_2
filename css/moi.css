@@ -82,6 +82,15 @@ body::-webkit-scrollbar-thumb {
     width: 40px;
     border-radius: 8px;
 }
+.brand-icon {
+    /* height: 3.75rem; */
+    width: 9.75rem;
+    /* border-radius: 0.5rem; */
+    /* background-color: #ffffff; */
+}
+.appStore {
+    width: 8.75rem;
+}
 
 .img-start:before {
     background-color: rgba(51, 94, 234, .8);
@@ -984,7 +993,7 @@ legend {
 /* New logo change on 25/05/2022 */
 
 img#navbar-logo {
-    width: 10rem;
+    width: 4.8rem;
 }
 
 
