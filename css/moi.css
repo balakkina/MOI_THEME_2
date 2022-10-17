@@ -991,11 +991,12 @@ legend {
 
 
 /* New logo change on 25/05/2022 */
-
 img#navbar-logo {
     width: 4.8rem;
 }
-
+#footer-logo {
+    width: 12rem;
+}
 
 /* .sr-logo {
   position: absolute;
@@ -1015,3 +1016,119 @@ img#navbar-logo {
   top: 366px;
   width: 5rem;
 } */
+.panel-head-services {
+	padding: 4px 10px;
+	border-bottom: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	background: none;
+	margin-left: -10px;
+	margin-right: -10px;
+	background-repeat: repeat-x;
+	background-color: rgb(40, 113, 149);
+	color: #FFF;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	border: medium none;
+    border-radius: 3px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.11);
+    height: 3.75rem;
+}
+.panel-head-services:hover {
+	background-color: rgb(40, 113, 149);
+}
+.panel-head-services img {
+	height: 39px;
+}
+.panel-title, .helprint {
+    color: #fff !important;
+}
+.header-hs, .hs-thead{
+    color: #fff;
+    border-color: transparent !important;
+    background-color: rgb(86, 111, 122) !important;
+}
+.header-ts, .ts-thead {
+	color: #fff;
+	border-color: transparent !important;
+	background-color: rgb(213, 184, 111) !important;
+}
+.header-ts:hover {
+	color: #fff;
+	border-color: transparent !important;
+	background-color: rgb(209, 170, 100) !important;
+}
+.btn-ts {
+	color: #fff;
+	background: rgb(213, 184, 111);
+	border-color: rgb(213, 184, 111);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.btn-ts:hover {
+	color: #fff;
+	background-color: rgb(209, 161, 100);
+	border-color:rgb(209, 161, 100);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.btn-hs {
+    color: #fff;
+    background: rgb(86, 111, 122);
+    border-color: rgb(86, 111, 122);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 18%), 0 2px 5px 0 rgb(0 0 0 / 15%) !important;
+}
+.btn-hs:hover {
+	color: #fff;
+	background-color: rgb(86, 111, 122);
+	border-color: rgb(86, 111, 122);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+.header-hs button, .header-ts button{
+    color: #fff;
+}
+.card-header {
+    padding: 0.625rem 0.9375rem;
+}
+.card-title {
+    font-size: 1em;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 0;
+}
+.list-group-item {
+    padding: 0.5rem 0.75rem;
+}
+.Termsofuse {
+    border: 1px solid #ddd;
+    height: 320px;
+    overflow: auto;
+    padding: 0.625rem;
+}
+/*.....tabs navigation.......*/
+.nav-tabs > li > a {
+    color: #3894c2;
+    border: 2px solid transparent;
+    height: 33px;
+	padding: 0px !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    cursor: default;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 2px solid rgb(86, 165, 78);
+    color: rgb(86, 165, 78);
+}
+.list-group-item.active a {
+	color: #555;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+	z-index: 2;
+	color: #fff;
+	background-color: #e2e2e2;
+	border-color: #e2e2e2;
+}

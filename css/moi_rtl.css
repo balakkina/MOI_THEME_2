@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    text-align: right;
+    text-align: right !important;
 }
 .modal.fixed-right .modal-vertical {
     margin-right: auto;
@@ -79,4 +79,61 @@ body {
 .sr-logo .media-body p, .ts-logo .media-body p, .hs-logo .media-body p,
 h3.mb-0.text-center.font-weight-bolder {
     font-family: 'Tanseek Mod Pro Arabic';
+}
+select.form-control {
+    background-position: left .5em center !important;
+}
+[type="radio"]:checked+label, [type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-right: 28px;
+    padding-left: 0px !important;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    font-size: 1rem;
+    white-space: inherit;
+}
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: auto !important;
+    right: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(86, 111, 122);
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked+label:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(86, 111, 122);
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked+label:after, [type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: rgb(86, 111, 122);
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    left: auto;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.list-inline-item:not(:last-child) {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+.float-right {
+    float: left !important;
 }

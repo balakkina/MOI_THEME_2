@@ -3342,7 +3342,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-    color: #0061b3;
+    color: #fff;
     text-decoration: none
 }
 
@@ -18934,7 +18934,7 @@ svg {
 }
 
 .accordion .card-header:after {
-    content: '+';
+    content: '';
     position: absolute;
     right: 1.5rem;
     top: 50%;
@@ -18944,11 +18944,11 @@ svg {
 }
 
 .accordion .card-header[aria-expanded=false]:after {
-    content: '+'
+    content: ''
 }
 
 .accordion .card-header[aria-expanded=true]:after {
-    content: '-'
+    content: ''
 }
 
 .accordion .card-header[aria-expanded=true] .heading {
@@ -22523,7 +22523,7 @@ textarea[resize=horizontal] {
 
 .page-item .page-link,
 .page-item>span {
-    margin: 0 3px;
+    margin: 0px;
     border-radius: .2rem;
     text-align: center;
     font-size: .875rem;
@@ -23888,29 +23888,6 @@ article p {
     position: relative;
     cursor: pointer
 }
-
-.accordion .card-header:after {
-    content: '+';
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 700
-}
-
-.accordion .card-header[aria-expanded=false]:after {
-    content: '+'
-}
-
-.accordion .card-header[aria-expanded=true]:after {
-    content: '-'
-}
-
-.accordion .card-header[aria-expanded=true] .heading {
-    color: #008aff
-}
-
 .accordion-spaced .card {
     margin-bottom: 1.5rem;
     border-radius: .75rem!important
@@ -30071,6 +30048,9 @@ span.flatpickr-weekday {
 
 #checkout-form label {
     color: #1a51a0;
+}
+.list-group a {
+    color: #000;
 }
 
 

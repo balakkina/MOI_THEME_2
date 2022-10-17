@@ -3348,7 +3348,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-    color: #0047bf;
+    color: #fff;
     text-decoration: none
 }
 
@@ -18936,7 +18936,7 @@ svg {
 }
 
 .accordion .card-header:after {
-    content: '+';
+    content: '';
     position: absolute;
     right: 1.5rem;
     top: 50%;
@@ -18946,11 +18946,11 @@ svg {
 }
 
 .accordion .card-header[aria-expanded=false]:after {
-    content: '+'
+    content: ''
 }
 
 .accordion .card-header[aria-expanded=true]:after {
-    content: '-'
+    content: ''
 }
 
 .accordion .card-header[aria-expanded=true] .heading {
@@ -22524,7 +22524,7 @@ textarea[resize=horizontal] {
 
 .page-item .page-link,
 .page-item>span {
-    margin: 0 3px;
+    margin: 0px;
     border-radius: .2rem;
     text-align: center;
     font-size: .875rem;
@@ -23888,28 +23888,6 @@ article p {
 .accordion .card-header {
     position: relative;
     cursor: pointer
-}
-
-.accordion .card-header:after {
-    content: '+';
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 700
-}
-
-.accordion .card-header[aria-expanded=false]:after {
-    content: '+'
-}
-
-.accordion .card-header[aria-expanded=true]:after {
-    content: '-'
-}
-
-.accordion .card-header[aria-expanded=true] .heading {
-    color: #0c66ff
 }
 
 .accordion-spaced .card {
@@ -30071,6 +30049,9 @@ span.flatpickr-weekday {
 .ts-logo .media-body h5,
 .hs-logo .media-body h5 {
     color: #fff !important;
+}
+.list-group a {
+    color: #fff;
 }
 
 
