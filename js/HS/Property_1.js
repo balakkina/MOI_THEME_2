@@ -10,7 +10,7 @@ $(document).ready(function() {
       'orderable': false,
       'className': 'dt-body-center',
       'render': function(data, type, full, meta) {
-        return '<input type="radio" name="id[]" value="' + $('<div/>').text(data).html() + '">';
+        return '<input type="radio" name="id[]" value="' + $('<div/>').text(data).html() + '"> <label>&nbsp;</label>';
       }
     }],
     'order': [1, 'asc']
@@ -98,7 +98,7 @@ $(document).ready(function() {
       'orderable': false,
       'className': 'dt-body-center',
       'render': function(data, type, full, meta) {
-        return '<input type="radio" name="id[]" value="' + $('<div/>').text(data).html() + '">';
+        return '<input type="radio" name="id[]" value="' + $('<div/>').text(data).html() + '"> <label>&nbsp;</label>';
       }
     }],
     'order': [1, 'asc']

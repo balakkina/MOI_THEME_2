@@ -1078,11 +1078,11 @@ img#navbar-logo {
     border-color: rgb(86, 111, 122);
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 18%), 0 2px 5px 0 rgb(0 0 0 / 15%) !important;
 }
-.btn-hs:hover {
-	color: #fff;
-	background-color: rgb(86, 111, 122);
-	border-color: rgb(86, 111, 122);
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 5px 0 rgba(0, 0, 0, 0.15) !important;
+.btn-default {
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 18%), 0 2px 5px 0 rgb(0 0 0 / 15%) !important;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
 }
 .form-group {
     margin-bottom: 5px;

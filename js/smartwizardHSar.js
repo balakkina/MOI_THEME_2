@@ -1,9 +1,6 @@
 var formNumber = $('#form_number').val();
 var formlang = $("#formlang").val();
 var AdvtType_LAdvt;
-$("#reqTypeDiv").hide();
-$("#form-step-03").hide();
-$("#renewTypeDiv").hide();
 $(document).ready(function() {
   var org_type, AppType_BND, ConsType_Value, req_type, sec_party, reqTypePSL, PrCarLNo, HealthCard_type, VIreq_type, Advtreq_type, shishareq_type, Health_Complaints;
   var stNumber = 0;
@@ -83,12 +80,12 @@ $(document).ready(function() {
     }
     if (req_type == "7218" && $("#Municipal_Shisha").val() != 1000) {
       $("#Contact_req").attr("required", "true");
-      $("#ReqType").show();
+      $("#ReqType, #renewTypeDiv").show();
       $("#form1Submit").hide();
       $("#Beneficiary_first").hide();
     } else {
       $("#Contact_req").removeAttr('required');
-      $("#ReqType").hide();
+      $("#ReqType, #renewTypeDiv, #reqTypeDiv, #form-step-03").hide();
       $("#form1Submit").show();
       $("#Beneficiary_first").show();
     }
@@ -721,7 +718,7 @@ $(function() {
 $(document).ready(function() {
   var pay_table = $('#pay_table').DataTable();
   pay_table.page.len(5).draw();
-  $(".dataTables_length").replaceWith("<div class='hidden'><label>Show</label><input type='text' class='pay_page form-control' value='5'> <label>Entries</label></div>");
+  $(".dataTables_length").replaceWith("<div class='hidden' hidden><label>Show</label><input type='text' class='pay_page form-control' value='5'> <label>Entries</label></div>");
   $(".pay_page").keyup(function() {
     pay_table.page.len(this.value).draw();
   });
@@ -729,7 +726,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   var firstParty_Table = $('#firstParty_Table').DataTable();
   firstParty_Table.page.len(5).draw();
-  $(".dataTables_length").replaceWith("<div class='hidden'><label>Show</label><input type='text' class='firstParty_page form-control' value='5'> <label>Entries</label></div>");
+  $(".dataTables_length").replaceWith("<div class='hidden' hidden><label>Show</label><input type='text' class='firstParty_page form-control' value='5'> <label>Entries</label></div>");
   $(".firstParty_page").keyup(function() {
     firstParty_Table.page.len(this.value).draw();
   });
@@ -737,7 +734,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   var Main_Muni = $('#Main_Muni').DataTable();
   Main_Muni.page.len(5).draw();
-  $(".dataTables_length").replaceWith("<div class='hidden'><label>Show</label><input type='text' class='Muni_page form-control' value='5'> <label>Entries</label></div>");
+  $(".dataTables_length").replaceWith("<div class='hidden' hidden><label>Show</label><input type='text' class='Muni_page form-control' value='5'> <label>Entries</label></div>");
   $(".Muni_page").keyup(function() {
     Main_Muni.page.len(this.value).draw();
   });

@@ -163,15 +163,15 @@
                       <legend>نوع الطلب</legend>
                       <div class="row">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="requestType" class="required">نوع الطلب</label>
+                          <label for="optradio_RT" class="required">نوع الطلب</label>
                           <div class="form-control" id="reqTypeId">
                             <div class="form-check form-check-inline">
-                              <input type="radio" name="requestType" value="7217" checked> 
-                              <label class="form-check-label" for="requestType"> جديد </label>
+                              <input type="radio" name="optradio_RT" value="7217" checked> 
+                              <label class="form-check-label" for="optradio_RT"> جديد </label>
                             </div>
                             <div class="form-check form-check-inline">
-                              <input type="radio" name="requestType" value="7218">
-                              <label class="form-check-label" for="requestType"> تجديد </label>
+                              <input type="radio" name="optradio_RT" value="7218">
+                              <label class="form-check-label" for="optradio_RT"> تجديد </label>
                             </div>
                           </div>
                         </div>
@@ -1186,7 +1186,7 @@
                               <td>سند الملكية <i class="fa fa-question-circle" aria-hidden="true" title="نسخة من سند الملكية " data-toggle="modal" data-target="#Deed"></i></td>
                               <td><input type="file" name=""></td>
                               <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
-                              <td class="text-center"><button type="button" class="btn btn-hs" id="secondparty_download"> <i class="fa fa-download fa-fw" aria-hidden="true">&nbsp;</i></button></td>
+                              <td class="text-center"><button type="button" class="btn btn-hs" id="secondparty_download"> <i class="fal fa-download fa-fw" aria-hidden="true">&nbsp;</i></button></td>
                             </tr>
                             <tr>
                               <th scope="row">2</th>
@@ -1198,12 +1198,9 @@
                             <tr>
                               <th scope="row">3</th>
                               <td>Old Lease Contract <i class="fa fa-question-circle" aria-hidden="true" title="Copy of the Old Lease Contract for verification" data-toggle="modal" data-target="#Sketch"></i></td>
-                              <td><div class="file-upload">
-                                    <label for="upload" class="file-upload-label hs"><i class="fa fa-upload" aria-hidden="true"></i> Upload</label>
-                                    <input id="upload" class="file-upload-input" type="file" name="file-upload">
-                                  </div></td>
-                              <td><a href="javascript:;" class="text-red"><i class="fal fa-trash fa-fw"></i></a></td>
-                              <td><button type="button" class="btn btn-hs" id="secondparty_download"> <i class="fa fa-download fa-fw" aria-hidden="true">&nbsp;</i></button></td>
+                              <td><input type="file" name=""></td>
+                              <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                              <td  class="text-center"><button type="button" class="btn btn-hs" id="secondparty_download"> <i class="fal fa-download fa-fw" aria-hidden="true">&nbsp;</i></button></td>
                             </tr>
                         </tbody>
                         </table>
