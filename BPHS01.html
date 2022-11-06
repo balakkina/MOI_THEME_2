@@ -1,109 +1,122 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=11" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="pragma" content="no-cache"/>
-<META name="robots" content="follow,index"/>
-<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
-<meta name="description" content="Official Portal for Oman Municipality" />
-<meta name="author" content="oman Government, oman Municipality" />
-<meta name="generator" content="ITON oman" />
-<title>Lease Contract New / Renew</title>
-<script src="js/jquery-3.6.0.js"></script>
-<link rel=icon href="img/Khanjar.png" type=image/png />
-<!-- fontawesome -->
-<link rel="stylesheet" href="css/fontawesome.5.15.4.css" />
-<link rel="stylesheet" href="css/moi-webapp.css?v.1.0" id=stylesheet>
-<link rel="stylesheet" href="css/moi.css" />
-<link rel="stylesheet" href="css/dataTables-4/dataTables.bootstrap4.css">
-<link rel="stylesheet" href="css/Datepicker/bootstrap-datepicker3.css">
-<link rel="stylesheet" href="css/smart_wizard.css">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <META name="robots" content="follow,index" />
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+  <meta name="description" content="Official Portal for Oman Municipality" />
+  <meta name="author" content="oman Government, oman Municipality" />
+  <meta name="generator" content="ITON oman" />
+  <title>Lease Contract New / Renew</title>
+  <script src="js/jquery-3.6.0.js"></script>
+  <link rel=icon href="img/Khanjar.png" type=image/png />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/fontawesome.5.15.4.css" />
+  <link rel="stylesheet" href="css/moi-webapp.css?v.1.0" id=stylesheet>
+  <link rel="stylesheet" href="css/moi.css" />
+  <link rel="stylesheet" href="css/dataTables-4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="css/Datepicker/bootstrap-datepicker3.css">
+  <link rel="stylesheet" href="css/smart_wizard.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <!--  Modified by ITON | MITECH | OMAN -->
 <!--  Modified Date 05/03/2017 -->
+
 <body>
   <div class="preloader">
     <div class="spinner-border text-primary" role="status">
-        <span class="sr-only">Loading...</span>
+      <span class="sr-only">Loading...</span>
     </div>
   </div>
   <!-- header -->
   <header class="navbar-sticky sticky-bg dark bg-dark">
     <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <nav class="navbar p-0" aria-label="">
-                    <div class="container p-0">
-                        <a class="navbar-brand m-0" href="index.html">
-                            <img alt="MOI Logo" id="navbar-logo" src="img/khanjar-white.svg" />
-                        </a>
-                    </div>
-                </nav>
+      <div class="row">
+        <div class="col-3">
+          <nav class="navbar p-0" aria-label="">
+            <div class="container p-0">
+              <a class="navbar-brand m-0" href="index.html">
+                <img alt="MOI Logo" id="navbar-logo" src="img/khanjar-white.svg" />
+              </a>
             </div>
-            <div class="col-9 d-flex justify-content-end">
-                <ul class="d-flex align-items-center list-unstyled mb-0">
-                    <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkDecrease" title="Zoomout" href="#!">A-</a></li>
-                    <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkNormal" title="Normalview" href="javascript:window.location.reload();">A</a></li>
-                    <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkIncrease" title="Zoomin" href="#!">A+</a></li>
-                    <li class="mr-3 text-white font-weight-bolder" id="date"></li>
-                    <li class="mr-3 text-white font-weight-bolder" id="time"></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-weight-bolder" href="#!"><i class="fal fa-user-lock fa-fw fa-lg"></i> Log in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-sm btn-laguage btn-icon ml-3" href="BPHS01ar.html">
-                            <span class="btn-inner--icon"><i class="fal fa-globe fa-fw fa-lg"></i></span>
-                            <span class="btn-inner--text">
-                              <?xml version="1.0" encoding="ISO-8859-1" ?> &#1593;&#1585;&#1576;&#1610;
-                          </span></a>
-                    </li>
-                </ul>
-            </div>
+          </nav>
         </div>
-        <!-- /.row -->
+        <div class="col-9 d-flex justify-content-end">
+          <ul class="d-flex align-items-center list-unstyled mb-0">
+            <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkDecrease" title="Zoomout"
+                href="#!">A-</a></li>
+            <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkNormal" title="Normalview"
+                href="javascript:window.location.reload();">A</a></li>
+            <li class="mr-3"><a class="font-change text-white font-weight-bolder" id="lnkIncrease" title="Zoomin"
+                href="#!">A+</a></li>
+            <li class="mr-3 text-white font-weight-bolder" id="date"></li>
+            <li class="mr-3 text-white font-weight-bolder" id="time"></li>
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-bolder" href="#!"><i class="fal fa-user-lock fa-fw fa-lg"></i>
+                Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-sm btn-laguage btn-icon ml-3" href="BPHS01ar.html">
+                <span class="btn-inner--icon"><i class="fal fa-globe fa-fw fa-lg"></i></span>
+                <span class="btn-inner--text">
+                  <?xml version="1.0" encoding="ISO-8859-1" ?> &#1593;&#1585;&#1576;&#1610;
+                </span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.row -->
     </div>
     <!-- /. container -->
   </header>
-  
-  <div class="container mt-6"> 
+
+  <div class="container mt-6">
     <!--Main content-->
     <div class="row transparent-white-background">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="panel panel-default panel-dm-theme">
           <div class="panel-head-services d-flex align-items-center justify-content-between header-hs">
-            <div class="panel-title mt-0 d-flex align-items-center"> 
+            <div class="panel-title mt-0 d-flex align-items-center">
               <img src="img/Services/hs.svg" class="mr-2" alt="Lease Contract New / Renew"> Lease Contract New / Renew
             </div>
             <ul class="mb-0 d-flex" style="list-style: none;">
-              <li><a href="#" class="helprint"><i class="fal fa-question-circle" aria-hidden="true"></i>Help &nbsp;</a> </li>
+              <li><a href="#" class="helprint"><i class="fal fa-question-circle" aria-hidden="true"></i>Help &nbsp;</a>
+              </li>
               <li><a class="helprint" id="btn1"><i class="fal fa-print" aria-hidden="true"></i> Print &nbsp;</a> </li>
-              <li><a href="HServices.html" class="helprint"><i class="fal fa-chevron-left" aria-hidden="true"></i> Back &nbsp;</a> </li>
+              <li><a href="HServices.html" class="helprint"><i class="fal fa-chevron-left" aria-hidden="true"></i> Back
+                  &nbsp;</a> </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <!--End Main content--> 
+    <!--End Main content-->
 
-    <!--Section start from here--> 
+    <!--Section start from here-->
     <!--Inner Pages Start -->
     <form accept-charset="utf-8" action="#" data-toggle="validator" id="BPHS01" method="post" name="BPHS01" role="form">
       <div class="inner-pages transparent-white-background">
-        <div class="row"> 
+        <div class="row">
           <!-- SmartWizard html -->
           <div id="smartwizard">
             <ul id="credit" name="credit">
-              <li data-interest = "1" class="nav-item"><a href="#ApplicantDetails"><i class="fal fa-user fa-fw"></i>Applicant Details</a></li>
-              <li data-interest = "2" class="nav-item"><a href="#SecondpartyData"><i class="fal fa-user-secret fa-fw"></i>Party Data</a></li>
-              <li data-interest = "3" class="nav-item"><a href="#BuildingsDetails"><i class="fal fa-building fa-fw"></i>Property Details</a></li>
-              <li data-interest = "4" class="nav-item"><a href="#Attachment"><i class="fal fa-paperclip fa-fw"></i>Required Documents</a></li>
-              <li data-interest = "5" class="nav-item"><a href="#Payment"><i class="fal fa-credit-card fa-fw"></i>Payments &amp; Licenses</a></li>
+              <li data-interest="1" class="nav-item"><a href="#ApplicantDetails"><i
+                    class="fal fa-user fa-fw"></i>Applicant Details</a></li>
+              <li data-interest="2" class="nav-item"><a href="#SecondpartyData"><i
+                    class="fal fa-user-secret fa-fw"></i>Party Data</a></li>
+              <li data-interest="3" class="nav-item"><a href="#BuildingsDetails"><i
+                    class="fal fa-building fa-fw"></i>Property Details</a></li>
+              <li data-interest="4" class="nav-item"><a href="#Attachment"><i
+                    class="fal fa-paperclip fa-fw"></i>Required Documents</a></li>
+              <li data-interest="5" class="nav-item"><a href="#Payment"><i class="fal fa-credit-card fa-fw"></i>Payments
+                  &amp; Licenses</a></li>
             </ul>
             <div>
               <div id="ApplicantDetails" class="">
@@ -111,50 +124,59 @@
                   <div class="form-group" id="form-step-01">
                     <div class="row">
                       <div class="padtopbot">
-                        <div id="form-step-01-err" class="Error">Please fill all required fields of Applicant Details - "<span></span>"</div>
+                        <div id="form-step-01-err" class="Error">Please fill all required fields of Applicant Details -
+                          "<span></span>"</div>
                       </div>
                       <fieldset>
                         <legend>Applicant Details</legend>
                         <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="aid" class="control-label required">Applicant ID</label>
-                            <input type="text" class="form-control" id="aid" placeholder="Applicant ID" required validate-group="form-step-01" data-error="Applicant ID" />
+                            <input type="text" class="form-control" id="aid" placeholder="Applicant ID" required
+                              validate-group="form-step-01" data-error="Applicant ID" />
                             <span class="help-block with-errors"></span>
                           </div>
                           <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
                             <label for="applcntEpiryDate" class="required">ID Expiry Date</label>
                             <div class="date">
-                              <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy" required validate-group="form-step-01" readonly />
-                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> 
+                              <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy"
+                                required validate-group="form-step-01" readonly />
+                              <span class="input-group-addon" style="display: none;"><i
+                                  class="glyphicon glyphicon-calendar"></i></span>
                             </div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="aname" class="required">Applicant Name</label>
-                            <input type="text" class="form-control" id="aname" placeholder="Applicant Name" required validate-group="form-step-01" data-error="Applicant Name" />
+                            <input type="text" class="form-control" id="aname" placeholder="Applicant Name" required
+                              validate-group="form-step-01" data-error="Applicant Name" />
                             <span class="help-block with-errors"></span>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="address_app" class="required">Address</label>
-                            <input type="text" class="form-control" id="address_app" placeholder="Address" required validate-group="form-step-01" data-error="Address" />
+                            <input type="text" class="form-control" id="address_app" placeholder="Address" required
+                              validate-group="form-step-01" data-error="Address" />
                             <span class="help-block with-errors"></span>
                           </div>
                         </div> <!-- End row -->
                         <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Phnumber_app" class="required">Mobile Number</label>
-                            <input type="text" class="form-control numeric" id="Phnumber_app" placeholder="Mobile Number" onchange="return isNumberKey(event,this)" maxlength="8" required validate-group="form-step-01"/>
+                            <input type="text" class="form-control numeric" id="Phnumber_app"
+                              placeholder="Mobile Number" onchange="return isNumberKey(event,this)" maxlength="8"
+                              required validate-group="form-step-01" />
                             <div id="Ph_Error" class="text-danger">Please Enter a 8-Digits Mobile Number</div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="eMail">Email</label>
-                            <input type="text" class="form-control" id="eMail" placeholder="Email" onchange="isValidEmail(this)">
+                            <input type="text" class="form-control" id="eMail" placeholder="Email"
+                              onchange="isValidEmail(this)">
                             <div id="email_Error" class="text-danger">Please Enter Valid Email</div>
                           </div>
                         </div> <!-- End row -->
                       </fieldset>
-                    </div> <!-- .row --> 
+                    </div> <!-- .row -->
                   </div> <!-- .form-group -->
-                  
+
                   <div class="form-group" id="form-step-02">
                     <div class="row">
                       <div class="padtopbot">
@@ -186,11 +208,12 @@
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3" id="reqTypeDiv">
                             <label for="Contact_req" class="required">Lease Contract Number</label>
-                            <input type="text" class="form-control numeric" id="Contact_req" placeholder="Lease Contract Number" validate-group="form-step-02">
+                            <input type="text" class="form-control numeric" id="Contact_req"
+                              placeholder="Lease Contract Number" validate-group="form-step-02">
                           </div>
-                        </div> <!-- .row --> 
+                        </div> <!-- .row -->
                       </fieldset>
-                    </div> <!-- .row --> 
+                    </div> <!-- .row -->
                   </div> <!-- .form-group -->
 
                   <div class="form-group" id="form-step-03">
@@ -203,7 +226,8 @@
                         <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Contact_old" class="required">Lease Contract Number</label>
-                            <input type="text" class="form-control numeric" id="Contact_old" placeholder="Lease Contract Number" validate-group="form-step-03">
+                            <input type="text" class="form-control numeric" id="Contact_old"
+                              placeholder="Lease Contract Number" validate-group="form-step-03">
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="contractType" class="required">Lease Contract Type</label>
@@ -218,30 +242,38 @@
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="issueDate_old" class="required">Lease contract Issue date</label>
                             <div class="date">
-                              <input type="text" class="form-control" id="issueDate_old" placeholder="dd/MMM/yyyy" validate-group="form-step-03" readonly>
-                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                              <input type="text" class="form-control" id="issueDate_old" placeholder="dd/MMM/yyyy"
+                                validate-group="form-step-03" readonly>
+                              <span class="input-group-addon" style="display: none;"><i
+                                  class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="expiryDate_old" class="required">Lease contract Expiry date</label>
                             <div class="date">
-                              <input type="text" class="form-control" id="expiryDate_old" placeholder="dd/MMM/yyyy" validate-group="form-step-03" readonly>
-                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                              <input type="text" class="form-control" id="expiryDate_old" placeholder="dd/MMM/yyyy"
+                                validate-group="form-step-03" readonly>
+                              <span class="input-group-addon" style="display: none;"><i
+                                  class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
                           </div>
-                        </div> <!-- .row --> 
+                        </div> <!-- .row -->
                         <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="lateFee_old" class="required">Late Fee</label>
-                            <input type="text" class="form-control numeric" id="lateFee_old" placeholder="Late Fee" validate-group="form-step-03" readonly>
+                            <input type="text" class="form-control numeric" id="lateFee_old" placeholder="Late Fee"
+                              validate-group="form-step-03" readonly>
                           </div>
                         </div> <!-- /.row -->
                       </fieldset>
-                    </div> <!-- .row --> 
+                    </div> <!-- .row -->
                   </div> <!-- .form-group -->
-                  
+
                   <div class="form-group" id="form-step-04">
                     <div class="row">
                       <div class="padtopbot">
-                        <div id="form-step-04-err" class="Error">Please fill all required fields of Beneficiary Details </div>
+                        <div id="form-step-04-err" class="Error">Please fill all required fields of Beneficiary Details
+                        </div>
                       </div>
                       <fieldset>
                         <legend>Beneficiary Details</legend>
@@ -260,11 +292,13 @@
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizationNo">
                             <label for="Authorization_No" class="required">Usufructer Number</label>
-                            <input type="text" class="form-control numeric" id="Authorization_No" placeholder="Usufructer Number" />
+                            <input type="text" class="form-control numeric" id="Authorization_No"
+                              placeholder="Usufructer Number" />
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3" id="InvestorNo">
                             <label for="Investor_No" class="required">Investment Contract Number</label>
-                            <input type="text" class="form-control numeric" id="Investor_No" placeholder="Investment Contract Number" />
+                            <input type="text" class="form-control numeric" id="Investor_No"
+                              placeholder="Investment Contract Number" />
                           </div>
                           <div class="form-group col-sm-6 col-md-4 col-lg-3 benradio1" id="benradio">
                             <label for="optradio" class="required">Beneficiary Type</label>
@@ -283,11 +317,11 @@
                             <label for="optradio3" class="required">Same as Owner</label>
                             <div class="form-control">
                               <div class="form-check form-check-inline">
-                                <input type="radio" name="optradio3" value="117" checked /> 
+                                <input type="radio" name="optradio3" value="117" checked />
                                 <label class="form-check-label" for="optradio3">Yes</label>
                               </div>
                               <div class="form-check form-check-inline">
-                                <input type="radio" name="optradio3" value="118"/> 
+                                <input type="radio" name="optradio3" value="118" />
                                 <label class="form-check-label">No</label>
                               </div>
                             </div>
@@ -300,7 +334,7 @@
                                 <label class="form-check-label">Yes </label>
                               </div>
                               <div class="form-check form-check-inline">
-                                <input type="radio" name="optradio1" value="118" checked> 
+                                <input type="radio" name="optradio1" value="118" checked>
                                 <label class="form-check-label">No</label>
                               </div>
                             </div>
@@ -310,7 +344,8 @@
                             <div class="form-control">
                               <div class="form-check form-check-inline">
                                 <input type="radio" id="gccRadio1" name="gccRadio" value="True" />
-                                <label class="form-check-label">Yes</label> </div>
+                                <label class="form-check-label">Yes</label>
+                              </div>
                               <div class="form-check form-check-inline">
                                 <input type="radio" id="gccRadio2" name="gccRadio" checked="checked" value="False" />
                                 <label class="form-check-label">No</label>
@@ -322,30 +357,37 @@
                         <div class="row" id="benType">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
                             <label for="optradio2" class="control-label">Beneficiary Type </label>
-                            <input type="text" class="form-control" id="optradio2" placeholder="Beneficiary Type" readonly>
+                            <input type="text" class="form-control" id="optradio2" placeholder="Beneficiary Type"
+                              readonly>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="BeneficiaryID" class="required">Beneficiary ID</label>
-                            <input type="text" class="form-control numeric" id="BeneficiaryID" placeholder="Beneficiary ID" required validate-group="form-step-04">
+                            <input type="text" class="form-control numeric" id="BeneficiaryID"
+                              placeholder="Beneficiary ID" required validate-group="form-step-04">
                           </div>
                           <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
                             <label for="Bendate" class="required">ID Expiry Date</label>
                             <div class="date">
-                              <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy"/>
-                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> 
+                              <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy" />
+                              <span class="input-group-addon" style="display: none;"><i
+                                  class="glyphicon glyphicon-calendar"></i></span>
                             </div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Bname">Beneficiary Name </label>
-                            <input type="text" class="form-control" id="Bname" placeholder="Beneficiary Name" required validate-group="form-step-04">
+                            <input type="text" class="form-control" id="Bname" placeholder="Beneficiary Name" required
+                              validate-group="form-step-04">
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benId">
                             <label for="Baddress" class="required">Beneficiary Address</label>
-                            <input type="text" class="form-control" id="Baddress" placeholder="Beneficiary Address" required validate-group="form-step-04">
+                            <input type="text" class="form-control" id="Baddress" placeholder="Beneficiary Address"
+                              required validate-group="form-step-04">
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Bph" class="required">Beneficiary Mobile Number</label>
-                            <input type="text" class="form-control numeric" id="Bph" placeholder="Beneficiary Mobile Number" onchange="return isNumberKey(event,this)" maxlength="8" required validate-group="form-step-03">
+                            <input type="text" class="form-control numeric" id="Bph"
+                              placeholder="Beneficiary Mobile Number" onchange="return isNumberKey(event,this)"
+                              maxlength="8" required validate-group="form-step-03">
                             <div id="Ph_BenfError" class="text-danger">Please Enter a 8-Digits Mobile Number</div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
@@ -359,71 +401,79 @@
                           </div>
                         </div> <!-- .row #Beneficiary Details-->
                         <div id="OrganizationDetails" class="row">
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="crid" class="required">Commercial Registration ID</label>
-                              <input type="text" class="form-control" id="crid" placeholder="Commercial Registration ID" validate-group="form-step-04">
-                            </div>
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="cname">Commercial Name</label>
-                              <input type="text" class="form-control" id="cname" placeholder="Commercial Name">
-                            </div>
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="Commph">Mobile Number</label>
-                              <input type="text" class="form-control numeric" id="Commph" placeholder="Mobile Number" maxlength="8">
-                              <div id="Ph_OrgError" class="text-danger">Please Enter a 8-Digits Mobile Number</div>
-                            </div>
-                            <div class="form-group  col-sm-4 col-md-4 col-lg-3">
-                              <label for="Email">Email</label>
-                              <input type="text" class="form-control" id="E-mail" placeholder="Email">
-                              <div class="col-sm-12 col-md-12 col-lg-12 text-danger" id="Cemail_Error">Please Enter Valid Email</div>
-                            </div>
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="Authorized_Pro" class="required">Authorized PRO’s</label>
-                              <select name="Authorized_Pro" id="Authorized_Pro" class="form-control">
-                                <option value="1000">Please select</option>
-                              </select>
-                            </div>
-                          </div> <!-- OrganizationDetails -->
-                          
-                          <div class="text-right">
-                            <button type="button" class="btn btn-hs" onclick="Beneficiary1()" id="form1Submit"> <i class="fal fa-plus" aria-hidden="true"></i>&nbsp;Add Beneficiary</button>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="crid" class="required">Commercial Registration ID</label>
+                            <input type="text" class="form-control" id="crid" placeholder="Commercial Registration ID"
+                              validate-group="form-step-04">
                           </div>
-                          <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                              <div class="table-responsive">
-                                <table id="Beneficiary1" class="table table-striped table-bordered" style="width: 100%;">
-                                  <thead class="hs-thead"></thead>
-                                  <tbody>
-                                  </tbody>
-                                </table>
-                              </div> <!-- End table-responsive --> 
-                            </div>
-                          </div> <!-- End row -->
-                          <div class="float-right">
-                            <button type="button" class="btn btn-hs" id="Beneficiary_first"><i class="fa fa-plus"></i>&nbsp;Add First Party(Lessor)</button>
-              							<div class="alert alert-success alert-top" id="first_success" role="alert">
-                              <strong>Success!</strong> Beneficiary have been added to First Party(Lessor) details
-                            </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="cname">Commercial Name</label>
+                            <input type="text" class="form-control" id="cname" placeholder="Commercial Name">
                           </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="Commph">Mobile Number</label>
+                            <input type="text" class="form-control numeric" id="Commph" placeholder="Mobile Number"
+                              maxlength="8">
+                            <div id="Ph_OrgError" class="text-danger">Please Enter a 8-Digits Mobile Number</div>
+                          </div>
+                          <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" id="E-mail" placeholder="Email">
+                            <div class="col-sm-12 col-md-12 col-lg-12 text-danger" id="Cemail_Error">Please Enter Valid
+                              Email</div>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="Authorized_Pro" class="required">Authorized PRO’s</label>
+                            <select name="Authorized_Pro" id="Authorized_Pro" class="form-control">
+                              <option value="1000">Please select</option>
+                            </select>
+                          </div>
+                        </div> <!-- OrganizationDetails -->
+
+                        <div class="text-right">
+                          <button type="button" class="btn btn-hs" onclick="Beneficiary1()" id="form1Submit"> <i
+                              class="fal fa-plus" aria-hidden="true"></i>&nbsp;Add Beneficiary</button>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="table-responsive">
+                              <table id="Beneficiary1" class="table table-striped table-bordered" style="width: 100%;">
+                                <thead class="hs-thead"></thead>
+                                <tbody>
+                                </tbody>
+                              </table>
+                            </div> <!-- End table-responsive -->
+                          </div>
+                        </div> <!-- End row -->
+                        <div class="float-right">
+                          <button type="button" class="btn btn-hs" id="Beneficiary_first"><i
+                              class="fa fa-plus"></i>&nbsp;Add First Party(Lessor)</button>
+                          <div class="alert alert-success alert-top" id="first_success" role="alert">
+                            <strong>Success!</strong> Beneficiary have been added to First Party(Lessor) details
+                          </div>
+                        </div>
                       </fieldset>
-                    </div> <!-- .row --> 
+                    </div> <!-- .row -->
                   </div> <!-- .form-group -->
-                  
+
                   <div class="form-group" id="form-step-05">
                     <div class="row">
                       <div class="padtopbot">
-                        <div id="form-step-05-err" class="Error">Please fill all required fields of Service Details </div>
+                        <div id="form-step-05-err" class="Error">Please fill all required fields of Service Details
+                        </div>
                       </div>
                       <fieldset>
                         <legend>Service Details</legend>
                         <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="astatus">Application Status</label>
-                            <input type="text" class="form-control" id="astatus" placeholder="Application Status" value="In Progress" readonly>
+                            <input type="text" class="form-control" id="astatus" placeholder="Application Status"
+                              value="In Progress" readonly>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="srname">Service Request Name</label>
-                            <input type="text" class="form-control" id="srname" placeholder="Service Request Name" value="Lease Contract New / Renew" readonly>
+                            <input type="text" class="form-control" id="srname" placeholder="Service Request Name"
+                              value="Lease Contract New / Renew" readonly>
                           </div>
                           <div class="form-group col-sm-6 col-md-2 col-lg-3 hidden">
                             <label for="srno">Service Request No</label>
@@ -432,8 +482,10 @@
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="srdate">Service Request Date</label>
                             <div class="date">
-                              <input type="text" class="form-control" id="srdate" placeholder="DD/MM/YYYY" disabled/>
-                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                              <input type="text" class="form-control" id="srdate" placeholder="DD/MM/YYYY" disabled />
+                              <span class="input-group-addon" style="display: none;"><i
+                                  class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
                           </div>
                         </div> <!-- .row -->
 
@@ -442,11 +494,14 @@
                             <label for="sdate">Submission Date</label>
                             <div class="date">
                               <input type="text" class="form-control" id="sdate" placeholder="DD/MM/YYYY" disabled />
-                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                              <span class="input-group-addon" style="display: none;"><i
+                                  class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="region_ser" class="required">Governorate</label>
-                            <select name="region_ser" id="region_ser" class="form-control" required validate-group="form-step-05">
+                            <select name="region_ser" id="region_ser" class="form-control" required
+                              validate-group="form-step-05">
                               <option value="1000">Please select</option>
                               <option value="1">Alshaqiya Governorate</option>
                               <option value="2">Aldhahira Governorate</option>
@@ -455,7 +510,8 @@
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Willayat_ser" class="required">Willayat</label>
-                            <select name="Willayat_ser" id="Willayat_ser" class="form-control" required validate-group="form-step-05">
+                            <select name="Willayat_ser" id="Willayat_ser" class="form-control" required
+                              validate-group="form-step-05">
                               <option value="1000">Please select</option>
                               <option value="1">Suhar</option>
                               <option value="2">Nizwa</option>
@@ -466,7 +522,8 @@
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Municiplity_ser" class="required">Municipality</label>
-                            <select name="Municiplity_ser" id="Municiplity_ser" class="form-control" required validate-group="form-step-05">
+                            <select name="Municiplity_ser" id="Municiplity_ser" class="form-control" required
+                              validate-group="form-step-05">
                               <option value="1000">Please select</option>
                               <option value="461">Sohar Municipality</option>
                               <option value="463">Saham Municipality</option>
@@ -477,29 +534,31 @@
                           </div>
                         </div>
                       </fieldset>
-                    </div> <!-- .row --> 
-                  </div> <!-- .form-group --> 
+                    </div> <!-- .row -->
+                  </div> <!-- .form-group -->
                 </div>
               </div> <!-- ApplicantDetails -->
-              
+
               <div id="BeneficiaryDetails" class=""> </div>
-              <!-- BeneficiaryDetails --> 
-              
+              <!-- BeneficiaryDetails -->
+
               <!-- ......... Secondparty Data ......... -->
-              <div id="SecondpartyData"> 
+              <div id="SecondpartyData">
                 <!-- Start Contract Details -->
                 <div data-toggle="validator" id="form-step-1" role="form">
                   <div class="form-group" id="form-step-11">
                     <div class="row">
                       <div class="padtopbot">
-                        <div id="form-step-11-err" class="Error">Please fill all required fields of Contract Details</div>
+                        <div id="form-step-11-err" class="Error">Please fill all required fields of Contract Details
+                        </div>
                       </div>
                       <fieldset>
                         <legend>Contract Details</legend>
                         <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Renttype_id" class="required">Type of Renting Contract</label>
-                            <select name="Renttype_id" id="Renttype_id" class="form-control" placeholder="Beneficiary Address" required validate-group="form-step-11">
+                            <select name="Renttype_id" id="Renttype_id" class="form-control"
+                              placeholder="Beneficiary Address" required validate-group="form-step-11">
                               <option value="1000">Please select...</option>
                               <option value="Industrial">Industrial </option>
                               <option value="Residential">Residential</option>
@@ -511,18 +570,25 @@
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="startDate_req" class="required">Start Date</label>
                             <div class="date">
-                              <input type="text" class="form-control" id="startDate_req" placeholder="Start Date" validate-group="form-step-11">
-                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                              <input type="text" class="form-control" id="startDate_req" placeholder="Start Date"
+                                validate-group="form-step-11">
+                              <span class="input-group-addon" style="display: none;"><i
+                                  class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="endDate_req" class="required">Expiry Date</label>
                             <div class="date">
-                              <input type="text" class="form-control" id="endDate_req" placeholder="Expiry Date" validate-group="form-step-11">
-                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                              <input type="text" class="form-control" id="endDate_req" placeholder="Expiry Date"
+                                validate-group="form-step-11">
+                              <span class="input-group-addon" style="display: none;"><i
+                                  class="glyphicon glyphicon-calendar"></i></span>
+                            </div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="payment_id" class="required">Rent Payment Interval</label>
-                            <select name="payment_id" id="payment_id" class="form-control" required validate-group="form-step-11">
+                            <select name="payment_id" id="payment_id" class="form-control" required
+                              validate-group="form-step-11">
                               <option value="1000">Please select</option>
                               <option value="1">Monthly</option>
                               <option value="2">Every 2 Months</option>
@@ -542,49 +608,55 @@
                         <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="paymentDay_req" class="required">Rent Payment Day</label>
-                            <input type="text" class="form-control" id="paymentDay_req" placeholder="Rent Payment Day" required validate-group="form-step-11">
+                            <input type="text" class="form-control" id="paymentDay_req" placeholder="Rent Payment Day"
+                              required validate-group="form-step-11">
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Amount_req" class="required">Amount (OMR)</label>
-                            <input type="number" class="form-control numeric" id="Amount_req" placeholder="Amount (OMR)" required validate-group="form-step-11">
+                            <input type="number" class="form-control numeric" id="Amount_req" placeholder="Amount (OMR)"
+                              required validate-group="form-step-11">
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="AmountPaid_req" class="required">Amount Paid in Advance</label>
-                            <input type="number" class="form-control numeric" id="AmountPaid_req" value="0" placeholder="Amount Paid in Advance" required validate-group="form-step-11">
+                            <input type="number" class="form-control numeric" id="AmountPaid_req" value="0"
+                              placeholder="Amount Paid in Advance" required validate-group="form-step-11">
                           </div>
                           <div class="form-group col-sm-6 col-md-12 col-lg-12">
                             <label for="comment_req" class="required">Comments</label>
-                            <textarea rows="5" class="form-control border" id="comment_req" placeholder="Comments" required validate-group="form-step-11"></textarea>
+                            <textarea rows="5" class="form-control border" id="comment_req" placeholder="Comments"
+                              required validate-group="form-step-11"></textarea>
                           </div>
                         </div> <!-- /.row -->
                       </fieldset>
-                    </div> <!-- .row --> 
-                  </div> <!-- .form-group --> 
+                    </div> <!-- .row -->
+                  </div> <!-- .form-group -->
                   <!-- End Contract Details -->
-                  
+
                   <div class="form-group">
                     <div class="row">
                       <div class="padtopbot">
-                        <div id="FirstPartyDetails_Err" class="Error">Please fill all required fields of First Party Data </div>
+                        <div id="FirstPartyDetails_Err" class="Error">Please fill all required fields of First Party
+                          Data </div>
                       </div>
                       <fieldset>
                         <legend>First Party Data (Lessor)</legend>
                         <div class="row">
                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="table-responsive">
-                              <table id="firstParty_Table" class="table table-striped table-bordered" style="width: 100%;">
+                              <table id="firstParty_Table" class="table table-striped table-bordered"
+                                style="width: 100%;">
                                 <thead class="hs-thead">
                                 </thead>
                                 <tbody>
                                 </tbody>
                               </table>
-                            </div> <!-- End table-responsive --> 
+                            </div> <!-- End table-responsive -->
                           </div>
                         </div> <!-- End row -->
                       </fieldset>
-                    </div> <!-- .row --> 
+                    </div> <!-- .row -->
                   </div> <!-- .form-group -->
-                  
+
                   <div class="form-group" id="form-step-12">
                     <div class="row">
                       <div class="padtopbot">
@@ -598,15 +670,18 @@
                             <div class="form-control">
                               <div class="form-check form-check-inline">
                                 <input type="radio" name="optradio4" value="Individual">
-                                <label class="form-check-label"> Individual </label></div>
+                                <label class="form-check-label"> Individual </label>
+                              </div>
                               <div class="form-check form-check-inline">
                                 <input type="radio" name="optradio4" value="Organization" checked>
-                                <label class="form-check-label"> Organization</label></div>
+                                <label class="form-check-label"> Organization</label>
+                              </div>
                             </div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="secondPartyID" id="Civilid" class="required">Civil ID Number</label>
-                            <input type="text" class="form-control" id="secondPartyID" placeholder="" required validate-group="form-step-12">
+                            <input type="text" class="form-control" id="secondPartyID" placeholder="" required
+                              validate-group="form-step-12">
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="sName" id="Civilname">Name</label>
@@ -614,13 +689,16 @@
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="secondPartyAddress" class="required">Address</label>
-                            <input type="text" class="form-control" id="secondPartyAddress" placeholder="Address" required validate-group="form-step-12">
+                            <input type="text" class="form-control" id="secondPartyAddress" placeholder="Address"
+                              required validate-group="form-step-12">
                           </div>
                         </div> <!-- /.row -->
                         <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="secondPartyMobileNumber" class="required">Mobile Number</label>
-                            <input type="text" class="form-control numeric" id="secondPartyMobileNumber" placeholder="Mobile Number" onchange="return isNumberKey(event,this)" maxlength="8" required validate-group="form-step-12">
+                            <input type="text" class="form-control numeric" id="secondPartyMobileNumber"
+                              placeholder="Mobile Number" onchange="return isNumberKey(event,this)" maxlength="8"
+                              required validate-group="form-step-12">
                             <div id="SParty_Error" style="color:red">Please Enter a 8-digits Mobile Number</div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
@@ -643,21 +721,24 @@
                             <label for="Sponsor_Name">Sponsor Name</label>
                             <input type="text" class="form-control" id="Sponsor_Name" placeholder="Sponsor Name">
                           </div>
-                        </div> <!-- End .row --> 
-                        
+                        </div> <!-- End .row -->
+
                         <!-- div show Only Type of Renting Contract(BeneficiaryDetails Tab) click on (Industrial/Commercial/Agriculture) otherwise div is hide only on (Second Party Type - Organization) Individual can't show Activity -->
                         <div id="ActivityType_hidden">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="license_issued" class="required">License Issued From</label>
-                            <select name="license_issued" id="license_issued" class="form-control" validate-group="form-step-11">
+                            <select name="license_issued" id="license_issued" class="form-control"
+                              validate-group="form-step-11">
                               <option value="1000">Please select</option>
                               <option value="251">MRMWR</option>
                               <option value="252">Non MRMWR</option>
                             </select>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="SecondParty_Muni" id="Municipal_label" class="required">Municipal License</label>
-                            <select name="SecondParty_Muni" id="SecondParty_Muni" class="form-control" validate-group="form-step-11">
+                            <label for="SecondParty_Muni" id="Municipal_label" class="required">Municipal
+                              License</label>
+                            <select name="SecondParty_Muni" id="SecondParty_Muni" class="form-control"
+                              validate-group="form-step-11">
                               <option value="1000">Please select</option>
                               <option value="1">050500/H/000123</option>
                               <option value="2">050500/H/000124</option>
@@ -665,11 +746,13 @@
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="muni_startdate">Issue Date</label>
-                            <input type="text" name="muni_startdate" id="muni_startdate" class="form-control" placeholder="Issue Date" readonly>
+                            <input type="text" name="muni_startdate" id="muni_startdate" class="form-control"
+                              placeholder="Issue Date" readonly>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="muni_Enddate">Expiry Date</label>
-                            <input type="text" name="muni_Enddate" id="muni_Enddate" class="form-control" placeholder="Expiry Date" readonly>
+                            <input type="text" name="muni_Enddate" id="muni_Enddate" class="form-control"
+                              placeholder="Expiry Date" readonly>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="ActivityType">Activity</label>
@@ -681,15 +764,16 @@
                               <option>Sales of Clothes</option>
                               <option>Stitching Clothes</option>
                             </select> -->
-                            <textarea class="form-control" id="ActivityType" rows="5" placeholder="list of Activity" readonly></textarea>
+                            <textarea class="form-control" id="ActivityType" rows="5" placeholder="list of Activity"
+                              readonly></textarea>
                           </div>
                         </div> <!-- /#ActivityType_hidden -->
                       </fieldset>
-                    </div> <!-- .row --> 
-                  </div> <!-- .form-group --> 
+                    </div> <!-- .row -->
+                  </div> <!-- .form-group -->
                 </div>
-              </div> <!-- End SecondpartyData --> 
-              
+              </div> <!-- End SecondpartyData -->
+
               <!-- ......... Start BuildingsDetails ......... -->
               <div id="BuildingsDetails" class="">
                 <div data-toggle="validator" id="form-step-2" role="form">
@@ -706,10 +790,11 @@
                               <legend></legend>
                               <div class="form-group col-sm-6 col-md-3 col-lg-3">
                                 <label for="Licno_Build" class="required">License Number</label>
-                                <input type="text" class="form-control numeric" id="Licno_Build" placeholder="License Number" required validate-group="form-step-21">
+                                <input type="text" class="form-control numeric" id="Licno_Build"
+                                  placeholder="License Number" required validate-group="form-step-21">
                               </div>
                             </fieldset>
-                          </div> <!-- End row --> 
+                          </div> <!-- End row -->
                         </div> <!-- End form-group -->
                         <div class="form-group">
                           <div class="row">
@@ -718,11 +803,13 @@
                               <div class="row">
                                 <div class="form-group col-sm-6 col-md-3 col-lg-3">
                                   <label for="LandSNumber_Build" class="required">Plot Serial Number</label>
-                                  <input type="text" class="form-control numeric" id="LandSNumber_Build" placeholder="Plot Serial Number" required validate-group="form-step-21">
+                                  <input type="text" class="form-control numeric" id="LandSNumber_Build"
+                                    placeholder="Plot Serial Number" required validate-group="form-step-21">
                                 </div>
                                 <div class="form-group col-sm-6 col-md-3 col-lg-3">
                                   <label for="Region_PD" class="required">Governorate</label>
-                                  <select name="region" id="Region_PD" class="form-control" required validate-group="form-step-21">
+                                  <select name="region" id="Region_PD" class="form-control" required
+                                    validate-group="form-step-21">
                                     <option value="1000">Please select...</option>
                                     <option value="1">Alshaqiya Governorate</option>
                                     <option value="2">Aldhahira Governorate</option>
@@ -731,7 +818,8 @@
                                 </div>
                                 <div class="form-group col-sm-6 col-md-3 col-lg-3">
                                   <label for="Willayat_PD" class="required">Willayat</label>
-                                  <select name="Willayat_PD" id="Willayat_PD" class="form-control" required validate-group="form-step-21">
+                                  <select name="Willayat_PD" id="Willayat_PD" class="form-control" required
+                                    validate-group="form-step-21">
                                     <option value="1000">Please select...</option>
                                     <option value="1">Suhar</option>
                                     <option value="2">Nizwa</option>
@@ -742,7 +830,8 @@
                                 </div>
                                 <div class="form-group col-sm-6 col-md-3 col-lg-3">
                                   <label for="Village_PD" class="required">Village</label>
-                                  <select name="Village_PD" id="Village_PD" class="form-control" required validate-group="form-step-21">
+                                  <select name="Village_PD" id="Village_PD" class="form-control" required
+                                    validate-group="form-step-21">
                                     <option value="1000">Please select...</option>
                                     <option value="1">Suhar</option>
                                     <option value="2">Nizwa</option>
@@ -755,22 +844,25 @@
                               <div class="row">
                                 <div class="form-group col-sm-6 col-md-3 col-lg-3">
                                   <label for="TitleDeed_PD">Ownership document ( Mulkiya ) Number</label>
-                                  <input type="text" class="form-control" id="TitleDeed_PD" placeholder="Ownership document ( Mulkiya ) Number">
+                                  <input type="text" class="form-control" id="TitleDeed_PD"
+                                    placeholder="Ownership document ( Mulkiya ) Number">
                                 </div>
                                 <div class="form-group col-sm-6 col-md-3 col-lg-3">
                                   <label for="Owner_name">Owner</label>
-                                  <textarea class="form-control" id="Owner_name" placeholder="Owner" rows="2"></textarea>
+                                  <textarea class="form-control" id="Owner_name" placeholder="Owner"
+                                    rows="2"></textarea>
                                 </div>
                               </div>
                               <div class="row">
                                 <div class="text-right">
-                                  <button type="button" class="btn btn-hs" onclick="showbuilding()" id="showbuildingid"><i class="fa fa-plus fa-fw"></i>Show Building</button>
+                                  <button type="button" class="btn btn-hs" onclick="showbuilding()"
+                                    id="showbuildingid"><i class="fa fa-plus fa-fw"></i>Show Building</button>
                                 </div>
                               </div> <!-- /.row -->
                             </fieldset>
-                          </div> <!-- End row --> 
+                          </div> <!-- End row -->
                         </div> <!-- End form-group -->
-                        
+
                         <div class="form-group" id="buildlic">
                           <div class="">
                             <fieldset>
@@ -778,11 +870,13 @@
                               <div class="row">
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="BuildingNo">Building Number <span style="color:red">*</span></label>
-                                  <input type="number" class="form-control numeric" id="BuildingNo" placeholder="Building Number" />
+                                  <input type="number" class="form-control numeric" id="BuildingNo"
+                                    placeholder="Building Number" />
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Buildingname">Building Name <span style="color:red">*</span></label>
-                                  <input type="text" class="form-control" id="Buildingname" placeholder="Building Name" />
+                                  <input type="text" class="form-control" id="Buildingname"
+                                    placeholder="Building Name" />
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Btype">Type of Use <span style="color:red">*</span></label>
@@ -808,32 +902,42 @@
 
                               <div class="row">
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="BuildingNumberofunits">Number of Units <span style="color:red">*</span></label>
-                                  <input type="number" class="form-control numeric" id="BuildingNumberofunits" placeholder="Number of Units"/>
+                                  <label for="BuildingNumberofunits">Number of Units <span
+                                      style="color:red">*</span></label>
+                                  <input type="number" class="form-control numeric" id="BuildingNumberofunits"
+                                    placeholder="Number of Units" />
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="BuildingNumberoffloors">Number of Floors <span style="color:red">*</span></label>
-                                  <input type="number" class="form-control numeric" id="BuildingNumberoffloors" placeholder="Number of Floors"/>
+                                  <label for="BuildingNumberoffloors">Number of Floors <span
+                                      style="color:red">*</span></label>
+                                  <input type="number" class="form-control numeric" id="BuildingNumberoffloors"
+                                    placeholder="Number of Floors" />
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="Buildingtotalarea">Total Buildup Area(m2) <span style="color:red">*</span></label>
-                                  <input type="number" class="form-control numeric" id="Buildingtotalarea" placeholder="Total Buildup Area(m2)"/>
+                                  <label for="Buildingtotalarea">Total Buildup Area(m2) <span
+                                      style="color:red">*</span></label>
+                                  <input type="number" class="form-control numeric" id="Buildingtotalarea"
+                                    placeholder="Total Buildup Area(m2)" />
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Footprint_ExBld">Plot Area(m2)</label>
-                                  <input type="number" class="form-control numeric" id="Footprint_ExBld" placeholder="Plot Area(m2)"/>
-                                  <div id="Total_PlotError" style="color:red">Please enter less than Total Buildup Area(m2)</div>
+                                  <input type="number" class="form-control numeric" id="Footprint_ExBld"
+                                    placeholder="Plot Area(m2)" />
+                                  <div id="Total_PlotError" style="color:red">Please enter less than Total Buildup
+                                    Area(m2)</div>
                                 </div>
                               </div> <!-- /.row -->
 
                               <div class="row">
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Powerlaod">Power Load(kW)</label>
-                                  <input type="number" class="form-control numeric" id="Powerlaod" placeholder="Power Load(kW)"/>
+                                  <input type="number" class="form-control numeric" id="Powerlaod"
+                                    placeholder="Power Load(kW)" />
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                   <label for="Carparkcapacity">Car Park Capacity</label>
-                                  <input type="number" class="form-control numeric" id="Carparkcapacity" placeholder="Car Park Capacity"/>
+                                  <input type="number" class="form-control numeric" id="Carparkcapacity"
+                                    placeholder="Car Park Capacity" />
                                   <div id="Car_Error" style="color:red">Please enter less than Plot Area(m2)</div>
                                 </div>
                                 <div class="form-group col-sm-4 col-md-4 col-lg-3">
@@ -858,16 +962,17 @@
                                   <input type="text" class="form-control" id="Alley_Exbld" placeholder="Way Number" />
                                 </div>
                                 <div class="">
-                                  <button class="btn btn-hs" onclick="addbuilding()" id="addbuildingid"><i class="fa fa-plus fa-fw"></i>Add Building </button>
+                                  <button class="btn btn-hs" onclick="addbuilding()" id="addbuildingid"><i
+                                      class="fa fa-plus fa-fw"></i>Add Building </button>
                                 </div>
                               </div> <!-- /.row -->
                             </fieldset>
-                          </div> <!-- End row --> 
+                          </div> <!-- End row -->
                         </div> <!-- End form-group -->
                       </fieldset>
-                    </div> <!-- .row --> 
+                    </div> <!-- .row -->
                   </div> <!-- .form-group -->
-                  
+
                   <div id="Building_show">
                     <div class="form-group">
                       <div class="row">
@@ -879,7 +984,8 @@
                           <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                               <div class="table-responsive">
-                                <table id="building_details_table" class="table table-striped table-bordered" style="width: 100%;">
+                                <table id="building_details_table" class="table table-striped table-bordered"
+                                  style="width: 100%;">
                                   <thead class="hs-thead">
                                   </thead>
                                   <tbody>
@@ -888,23 +994,24 @@
                               </div>
                             </div>
                           </div> <!-- row -->
-                          
+
                           <div class="row">
                             <div class="col-md-7 col-xs-12">
                               <div class="table-responsive">
-                                <table id="units_detailstable"  class="table table-hover table-bordered" style="width: 100%;">
+                                <table id="units_detailstable" class="table table-hover table-bordered"
+                                  style="width: 100%;">
                                   <thead class="hs-thead">
                                   </thead>
                                   <tbody>
                                   </tbody>
                                 </table>
-                              </div> <!-- End Units --> 
-                            </div> <!-- .col-md-6 --> 
-                            
-                            <!-- .........................* Units Modal Start *......................... --> 
+                              </div> <!-- End Units -->
+                            </div> <!-- .col-md-6 -->
+
+                            <!-- .........................* Units Modal Start *......................... -->
                             <!-- Modal for Units -->
                             <div class="modal fade" id="addunitsModal" role="dialog">
-                              <div class="modal-dialog modal-lg"> 
+                              <div class="modal-dialog modal-lg">
                                 <!-- Modal content-->
                                 <div class="modal-content">
                                   <div class="modal-header hs">
@@ -917,11 +1024,13 @@
                                       <div class="row">
                                         <div class="form-group col-sm-3">
                                           <label for="UBuildingNo">Building Number</label>
-                                          <input type="number" class="form-control" id="UBuildingNo" placeholder="Building Number" readonly>
+                                          <input type="number" class="form-control" id="UBuildingNo"
+                                            placeholder="Building Number" readonly>
                                         </div>
                                         <div class="form-group col-sm-3">
                                           <label for="unitsitmno">Unit No<span style="color:red">*</span></label>
-                                          <input type="number" class="form-control numeric" id="unitsitmno" placeholder="Unit No">
+                                          <input type="number" class="form-control numeric" id="unitsitmno"
+                                            placeholder="Unit No">
                                         </div>
                                         <div class="form-group col-sm-3">
                                           <label for="untstype">Unit Type <span style="color:red">*</span></label>
@@ -935,36 +1044,42 @@
                                         </div>
                                         <div class="form-group col-sm-3">
                                           <label for="auNumberofunits">Number of Units</label>
-                                          <input type="number" class="form-control numeric" id="auNumberofunits" placeholder="Number of Units">
+                                          <input type="number" class="form-control numeric" id="auNumberofunits"
+                                            placeholder="Number of Units">
                                         </div>
                                       </div> <!-- End row -->
                                       <div class="row">
                                         <div class="form-group col-sm-3">
-                                          <label for="auIdnumber">Identification Numbers <span style="color:red">*</span></label>
-                                          <input type="text" class="form-control" id="auIdnumber" placeholder="Identification Numbers">
+                                          <label for="auIdnumber">Identification Numbers <span
+                                              style="color:red">*</span></label>
+                                          <input type="text" class="form-control" id="auIdnumber"
+                                            placeholder="Identification Numbers">
                                         </div>
                                         <div class="form-group col-sm-3">
                                           <label for="Elecmeter">Electricity Meter Number</label>
-                                          <input type="text" class="form-control" id="Elecmeter" placeholder="Electricity Meter Number">
+                                          <input type="text" class="form-control" id="Elecmeter"
+                                            placeholder="Electricity Meter Number">
                                         </div>
                                         <div class="form-group col-sm-3">
                                           <label for="watermeter">Water Meter Number</label>
-                                          <input type="text" class="form-control" id="watermeter" placeholder="Water Meter Number">
+                                          <input type="text" class="form-control" id="watermeter"
+                                            placeholder="Water Meter Number">
                                         </div>
                                       </div> <!-- End row -->
                                     </fieldset>
                                   </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-hs" onclick="addunitsfunction()">Save</button>
-                                    <button type="button" class="btn btn-hs" onclick="addunitsfunction1()">Save &amp; Add Unit</button>
+                                    <button type="button" class="btn btn-hs" onclick="addunitsfunction1()">Save &amp;
+                                      Add Unit</button>
                                   </div>
-                                </div> <!-- Modal content--> 
-                              </div> <!-- End modal-lg --> 
-                            </div> <!-- End Modal Units --> 
-                            
+                                </div> <!-- Modal content-->
+                              </div> <!-- End modal-lg -->
+                            </div> <!-- End Modal Units -->
+
                             <!-- Modal for Edit Units -->
                             <div class="modal fade" id="editunitsModal" role="dialog">
-                              <div class="modal-dialog modal-lg"> 
+                              <div class="modal-dialog modal-lg">
                                 <!-- Modal content-->
                                 <div class="modal-content">
                                   <div class="modal-header hs">
@@ -976,11 +1091,13 @@
                                       <legend>Units</legend>
                                       <div class="form-group col-sm-3">
                                         <label for="editUBuildingNo">Building Number</label>
-                                        <input type="number" class="form-control" id="editUBuildingNo" placeholder="Building Number" readonly>
+                                        <input type="number" class="form-control" id="editUBuildingNo"
+                                          placeholder="Building Number" readonly>
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="editunitsitmno">Unit No<span style="color:red">*</span></label>
-                                        <input type="number" class="form-control numeric" id="editunitsitmno" placeholder="Unit No">
+                                        <input type="number" class="form-control numeric" id="editunitsitmno"
+                                          placeholder="Unit No">
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="edituntstype">Unit Type <span style="color:red">*</span></label>
@@ -994,45 +1111,51 @@
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="editauNumberofunits">Number of Units</label>
-                                        <input type="number" class="form-control numeric" id="editauNumberofunits" placeholder="Unit of Number">
+                                        <input type="number" class="form-control numeric" id="editauNumberofunits"
+                                          placeholder="Unit of Number">
                                       </div>
                                       <div class="form-group col-sm-3">
-                                        <label for="editauIdnumber">Identification Numbers<span style="color:red">*</span></label>
-                                        <input type="text" class="form-control" id="editauIdnumber" placeholder="Identification Numbers">
+                                        <label for="editauIdnumber">Identification Numbers<span
+                                            style="color:red">*</span></label>
+                                        <input type="text" class="form-control" id="editauIdnumber"
+                                          placeholder="Identification Numbers">
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="editElecmeter">Electricity Meter Number</label>
-                                        <input type="text" class="form-control" id="editElecmeter" placeholder="Electricity Meter Number">
+                                        <input type="text" class="form-control" id="editElecmeter"
+                                          placeholder="Electricity Meter Number">
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="editwatermeter">Water Meter Number</label>
-                                        <input type="text" class="form-control" id="editwatermeter" placeholder="Water Meter Number">
+                                        <input type="text" class="form-control" id="editwatermeter"
+                                          placeholder="Water Meter Number">
                                       </div>
                                     </fieldset>
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-hs" id="editunitsfunctionid" onclick="editunitsfunction()">Update</button>
+                                    <button type="button" class="btn btn-hs" id="editunitsfunctionid"
+                                      onclick="editunitsfunction()">Update</button>
                                   </div>
-                                </div> <!-- Modal content--> 
-                              </div> <!-- End modal-lg --> 
-                            </div> <!-- End Modal --> 
+                                </div> <!-- Modal content-->
+                              </div> <!-- End modal-lg -->
+                            </div> <!-- End Modal -->
                             <!-- .........................* Units Modal Start *......................... -->
-                            
+
                             <div class="col-md-5 col-xs-12">
                               <div class="table-responsive">
-                                <table id="storeys_table"  class="table table-hover table-bordered">
+                                <table id="storeys_table" class="table table-hover table-bordered">
                                   <thead class="hs-thead">
                                   </thead>
                                   <tbody>
                                   </tbody>
                                 </table>
-                              </div> <!-- End Storeys --> 
-                            </div> <!-- col-md-6 --> 
-                            
-                            <!-- .........................* Storey Modal Start *......................... --> 
+                              </div> <!-- End Storeys -->
+                            </div> <!-- col-md-6 -->
+
+                            <!-- .........................* Storey Modal Start *......................... -->
                             <!-- Modal for storeys-->
                             <div class="modal fade" id="addstoreysModal" role="dialog">
-                              <div class="modal-dialog modal-lg"> 
+                              <div class="modal-dialog modal-lg">
                                 <!-- Modal content-->
                                 <div class="modal-content">
                                   <div class="modal-header hs">
@@ -1044,11 +1167,13 @@
                                       <legend>Storeys</legend>
                                       <div class="form-group col-sm-3">
                                         <label for="SBuildingNo">Building Number</label>
-                                        <input type="number" class="form-control" id="SBuildingNo" placeholder="Building Number" readonly>
+                                        <input type="number" class="form-control" id="SBuildingNo"
+                                          placeholder="Building Number" readonly>
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="SstoreyNo">Storey No <span style="color:red">*</span></label>
-                                        <input type="number" class="form-control numeric" id="SstoreyNo" placeholder="Storey No">
+                                        <input type="number" class="form-control numeric" id="SstoreyNo"
+                                          placeholder="Storey No">
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="Storeytype">Storey Type <span style="color:red">*</span></label>
@@ -1061,37 +1186,41 @@
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="SurfaceM2">Storey Area(m2)</label>
-                                        <input type="number" class="form-control numeric" id="SurfaceM2" placeholder="Storey Area(m2)">
+                                        <input type="number" class="form-control numeric" id="SurfaceM2"
+                                          placeholder="Storey Area(m2)">
                                       </div>
                                     </fieldset>
                                   </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-hs" onclick="addstrfunction()">Save</button>
-                                    <button type="button" class="btn btn-hs" onclick="addstrfunction1()">Save &amp; Add Storey</button>
+                                    <button type="button" class="btn btn-hs" onclick="addstrfunction1()">Save &amp; Add
+                                      Storey</button>
                                   </div>
-                                </div> <!-- Modal content--> 
-                              </div> <!-- End modal-lg --> 
-                            </div> <!-- End Storeys Modal --> 
-                            
+                                </div> <!-- Modal content-->
+                              </div> <!-- End modal-lg -->
+                            </div> <!-- End Storeys Modal -->
+
                             <!-- Modal for Edit storeys-->
                             <div class="modal fade" tabindex="-1" id="editstoreysModal" role="dialog">
-                              <div class="modal-dialog modal-lg"> 
+                              <div class="modal-dialog modal-lg">
                                 <!-- Modal content-->
                                 <div class="modal-content">
                                   <div class="modal-header hs">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title" style="font-weight: bold;font-size: 18px;" >Edit Storeys</h4>
+                                    <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">Edit Storeys</h4>
                                   </div>
                                   <div class="modal-body">
                                     <fieldset>
                                       <legend>Storeys</legend>
                                       <div class="form-group col-sm-3">
                                         <label for="editSBuildingNo">Building Number</label>
-                                        <input type="number" class="form-control" id="editSBuildingNo"  placeholder="Building Number" readonly>
+                                        <input type="number" class="form-control" id="editSBuildingNo"
+                                          placeholder="Building Number" readonly>
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="editSstoreyNo">Storey No <span style="color:red">*</span></label>
-                                        <input type="number" class="form-control numeric" id="editSstoreyNo" placeholder="Storey No">
+                                        <input type="number" class="form-control numeric" id="editSstoreyNo"
+                                          placeholder="Storey No">
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="editStoreytype">Storey Type <span style="color:red">*</span></label>
@@ -1104,27 +1233,30 @@
                                       </div>
                                       <div class="form-group col-sm-3">
                                         <label for="editSurfaceM2">Storey Area(m2)</label>
-                                        <input type="number" class="form-control numeric" id="editSurfaceM2" placeholder="Storey Area(m2)">
+                                        <input type="number" class="form-control numeric" id="editSurfaceM2"
+                                          placeholder="Storey Area(m2)">
                                       </div>
                                     </fieldset>
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-hs" id="editstrfunctionid" onclick="editstrfunction()">Update</button>
+                                    <button type="button" class="btn btn-hs" id="editstrfunctionid"
+                                      onclick="editstrfunction()">Update</button>
                                   </div>
-                                </div> <!-- Modal content--> 
-                              </div> <!-- End modal-lg --> 
-                            </div> <!-- End Edit Storeys Modal --> 
-                            <!-- .........................* Storey Modal Start *......................... --> 
+                                </div> <!-- Modal content-->
+                              </div> <!-- End modal-lg -->
+                            </div> <!-- End Edit Storeys Modal -->
+                            <!-- .........................* Storey Modal Start *......................... -->
                           </div>
                           <!-- row -->
                           <div class="pull-right">
-                            <button class="btn btn-hs" onclick="skip_click();" id="Skip_ID"><i class="fa fa-fast-forward"></i>Skip</button>
+                            <button class="btn btn-hs" onclick="skip_click();" id="Skip_ID"><i
+                                class="fa fa-fast-forward"></i>Skip</button>
                           </div>
                         </fieldset>
-                      </div> <!-- .row --> 
-                    </div> <!-- .form-group --> 
+                      </div> <!-- .row -->
+                    </div> <!-- .form-group -->
                   </div> <!-- End Building_show -->
-                  
+
                   <div class="form-group">
                     <div class="row">
                       <fieldset>
@@ -1136,17 +1268,20 @@
                           </div>
                           <div class="form-group col-sm-4 col-md-4 col-lg-3">
                             <label for="Eastings">Eastings</label>
-                            <input type="number" class="form-control numeric" name="Eastings" id="Eastings" placeholder="Eastings" title="Please enter valid numbers" />
+                            <input type="number" class="form-control numeric" name="Eastings" id="Eastings"
+                              placeholder="Eastings" title="Please enter valid numbers" />
                           </div>
                           <div class="form-group col-sm-4 col-md-4 col-lg-3">
                             <label for="Northings">Northings</label>
-                            <input type="number" class="form-control numeric" name="Northings" id="Northings" placeholder="Northings" title="Please enter valid numbers" />
+                            <input type="number" class="form-control numeric" name="Northings" id="Northings"
+                              placeholder="Northings" title="Please enter valid numbers" />
                           </div>
                         </div> <!-- /.row -->
                         <div class="row">
                           <div class="text-right">
                             <button type="button" class="btn btn-hs" onclick="GIS()" id="GISid">Add GIS</button>
-                            <button type="button" class="btn btn-hs" id="GISGoogleMap"><i class="fa fa-map fa-fw"></i>Show Map</button>
+                            <button type="button" class="btn btn-hs" id="GISGoogleMap"><i
+                                class="fa fa-map fa-fw"></i>Show Map</button>
                           </div>
                         </div>
                         <div class="row">
@@ -1164,9 +1299,9 @@
                           </div>
                         </div> <!-- end row -->
                       </fieldset>
-                    </div> <!-- .row --> 
+                    </div> <!-- .row -->
                   </div> <!-- .form-group -->
-                  
+
                   <div class="form-group" id="building_details">
                     <div class="row">
                       <fieldset>
@@ -1174,7 +1309,8 @@
                         <div class="row">
                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="table-responsive">
-                              <table id="building_details_auto" class="table table-striped table-bordered display select" style="width: 100%;">
+                              <table id="building_details_auto"
+                                class="table table-striped table-bordered display select" style="width: 100%;">
                                 <thead class="hs-thead">
                                   <tr>
                                     <th style="width:2%;">Select</th>
@@ -1194,11 +1330,12 @@
                             </div> -->
                           </div>
                         </div> <!-- row -->
-                        
+
                         <div class="row">
                           <div class="col-md-6 col-xs-12" id="FloorID">
                             <div class="table-responsive">
-                              <table id="units_detailsauto"  class="table table-hover table-bordered" style="width: 100%;">
+                              <table id="units_detailsauto" class="table table-hover table-bordered"
+                                style="width: 100%;">
                                 <thead class="hs-thead">
                                   <tr>
                                     <th style="width:2%;">Select</th>
@@ -1214,10 +1351,10 @@
                               <button type="button" class="btn btn-hs" onclick="Floor()" id="Floor_id"><i class="fa fa-plus fa-fw"></i>&nbsp;Add Floor</button>
                             </div> -->
                           </div> <!-- .col-md-6 -->
-                          
+
                           <div class="col-md-6 col-xs-12" id="flatID">
                             <div class="table-responsive">
-                              <table id="storeys_auto"  class="table table-hover table-bordered" style="width: 100%;">
+                              <table id="storeys_auto" class="table table-hover table-bordered" style="width: 100%;">
                                 <thead class="hs-thead">
                                   <tr>
                                     <th style="width:2%;">Select</th>
@@ -1231,14 +1368,15 @@
                               </table>
                             </div> <!-- End Storeys -->
                             <div class="form-group pull-right">
-                              <button type="button" class="btn btn-hs" onclick="flat()" id="flat_ID" data-toggle="modal" data-target="#flat_Modal"><i class="fa fa-plus fa-fw"></i>&nbsp;Update Unit</button>
+                              <button type="button" class="btn btn-hs" onclick="flat()" id="flat_ID" data-toggle="modal"
+                                data-target="#flat_Modal"><i class="fa fa-plus fa-fw"></i>&nbsp;Update Unit</button>
                             </div>
-                          </div> <!-- col-md-6 --> 
+                          </div> <!-- col-md-6 -->
                         </div> <!-- row -->
                       </fieldset>
-                    </div> <!-- .row --> 
+                    </div> <!-- .row -->
                   </div> <!-- .form-group -->
-                  
+
                   <div class="form-group">
                     <div class="row margin-10">
                       <fieldset>
@@ -1251,17 +1389,18 @@
                           </table>
                         </div>
                       </fieldset>
-                    </div> <!-- row margin-10 --> 
-                  </div> <!-- .form-group --> 
+                    </div> <!-- row margin-10 -->
+                  </div> <!-- .form-group -->
                 </div>
-              </div> <!-- End BuildingsDetails --> 
+              </div> <!-- End BuildingsDetails -->
               <!-- ......... End BuildingsDetails ......... -->
-              
+
               <div id="Attachment" class="">
                 <div class="form-group">
-                  <div class="row"> 
+                  <div class="row">
                     <!-- Note message -->
-                    <div class="alert alert-success"><strong>Note :- </strong>&nbsp;Please attach only files with extension of .pdf,.jpg &amp; png. Also makes sure the each file size is not more than 1MB.</div>
+                    <div class="alert alert-success"><strong>Note :- </strong>&nbsp;Please attach only files with
+                      extension of .pdf,.jpg &amp; png. Also makes sure the each file size is not more than 1MB.</div>
                     <!-- Note message -->
                     <fieldset>
                       <legend>Required Documents</legend>
@@ -1279,32 +1418,47 @@
                           <tbody>
                             <tr>
                               <th scope="row">1</th>
-                              <td>Ownership document ( Mulkiya )<i class="fa fa-question-circle" aria-hidden="true" title="Copy of the Ownership document ( Mulkiya )" data-toggle="modal" data-target="#Deed"></i></td>
-                              <td><div class="file-upload">
-                                    <label for="upload" class="file-upload-label hs"><i class="fa fa-upload" aria-hidden="true"></i> Upload</label>
-                                    <input id="upload" class="file-upload-input" type="file" name="file-upload">
-                                  </div></td>
+                              <td>Ownership document ( Mulkiya )<i class="fa fa-question-circle" aria-hidden="true"
+                                  title="Copy of the Ownership document ( Mulkiya )" data-toggle="modal"
+                                  data-target="#Deed"></i></td>
+                              <td>
+                                <div class="file-upload">
+                                  <label for="upload" class="file-upload-label hs"><i class="fa fa-upload"
+                                      aria-hidden="true"></i> Upload</label>
+                                  <input id="upload" class="file-upload-input" type="file" name="file-upload">
+                                </div>
+                              </td>
                               <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
                               <!-- <td><button type="button" class="btn btn-hs" id="secondparty_download"> <i class="fa fa-download fa-fw" aria-hidden="true">&nbsp;</i></button></td> -->
                             </tr>
-                          
+
                             <tr>
                               <th scope="row">2</th>
-                              <td>Survey Sketch ( Krooki ) <i class="fa fa-question-circle" aria-hidden="true" title="Copy of the Survey Sketch ( Krooki ) for verification" data-toggle="modal" data-target="#Sketch"></i></td>
-                              <td><div class="file-upload">
-                                    <label for="upload" class="file-upload-label hs"><i class="fa fa-upload" aria-hidden="true"></i> Upload</label>
-                                    <input id="upload" class="file-upload-input" type="file" name="file-upload">
-                                  </div></td>
+                              <td>Survey Sketch ( Krooki ) <i class="fa fa-question-circle" aria-hidden="true"
+                                  title="Copy of the Survey Sketch ( Krooki ) for verification" data-toggle="modal"
+                                  data-target="#Sketch"></i></td>
+                              <td>
+                                <div class="file-upload">
+                                  <label for="upload" class="file-upload-label hs"><i class="fa fa-upload"
+                                      aria-hidden="true"></i> Upload</label>
+                                  <input id="upload" class="file-upload-input" type="file" name="file-upload">
+                                </div>
+                              </td>
                               <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
                               <!-- <td><button type="button" class="btn btn-hs" id="secondparty_download"> <i class="fa fa-download fa-fw" aria-hidden="true">&nbsp;</i></button></td> -->
                             </tr>
                             <tr>
                               <th scope="row">3</th>
-                              <td>Old Lease Contract <i class="fa fa-question-circle" aria-hidden="true" title="Copy of the Old Lease Contract for verification" data-toggle="modal" data-target="#Sketch"></i></td>
-                              <td><div class="file-upload">
-                                    <label for="upload" class="file-upload-label hs"><i class="fa fa-upload" aria-hidden="true"></i> Upload</label>
-                                    <input id="upload" class="file-upload-input" type="file" name="file-upload">
-                                  </div></td>
+                              <td>Old Lease Contract <i class="fa fa-question-circle" aria-hidden="true"
+                                  title="Copy of the Old Lease Contract for verification" data-toggle="modal"
+                                  data-target="#Sketch"></i></td>
+                              <td>
+                                <div class="file-upload">
+                                  <label for="upload" class="file-upload-label hs"><i class="fa fa-upload"
+                                      aria-hidden="true"></i> Upload</label>
+                                  <input id="upload" class="file-upload-input" type="file" name="file-upload">
+                                </div>
+                              </td>
                               <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
                               <!-- <td><button type="button" class="btn btn-hs" id="secondparty_download"> <i class="fa fa-download fa-fw" aria-hidden="true">&nbsp;</i></button></td> -->
                             </tr>
@@ -1312,10 +1466,10 @@
                         </table>
                       </div>
                     </fieldset>
-                  </div> <!-- .row --> 
-                </div> <!-- .form-group --> 
+                  </div> <!-- .row -->
+                </div> <!-- .form-group -->
               </div> <!-- #Attachment -->
-              
+
               <div id="Payment" class="">
                 <div class="form-group">
                   <div class="row">
@@ -1338,7 +1492,7 @@
                         </table>
                       </div> <!-- End .table-responsive -->
                     </fieldset>
-                  </div> <!-- End .row --> 
+                  </div> <!-- End .row -->
                 </div> <!-- End .form-group -->
 
                 <div class="form-group">
@@ -1346,7 +1500,7 @@
                     <fieldset>
                       <legend>Licenses</legend>
                       <div class="table-responsive">
-                        <table id="example2"  class="table table-bordered">
+                        <table id="example2" class="table table-bordered">
                           <thead class="hs-thead">
                             <tr>
                               <th>Contract Number</th>
@@ -1362,23 +1516,24 @@
                               <td></td>
                               <td></td>
                               <td></td>
-                              <td class="text-center"><button type="button" class="btn btn-default"> 
-                                <span class="glyphicon glyphicon-download"></span></button></td>
+                              <td class="text-center"><button type="button" class="btn btn-default">
+                                  <span class="glyphicon glyphicon-download"></span></button></td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
                     </fieldset>
-                  </div> <!-- End .row --> 
-                </div> <!-- End .form-group --> 
-              </div> <!-- End #Payment --> 
-              
-            </div> <!-- End Empty div --> 
-          </div> <!-- End SmartWizard html --> 
-        </div> <!-- End row --> 
-      </div> <!--End Inner Pages -->
+                  </div> <!-- End .row -->
+                </div> <!-- End .form-group -->
+              </div> <!-- End #Payment -->
+
+            </div> <!-- End Empty div -->
+          </div> <!-- End SmartWizard html -->
+        </div> <!-- End row -->
+      </div>
+      <!--End Inner Pages -->
     </form>
-  </div> <!-- End container --> 
+  </div> <!-- End container -->
   <br />
   <!-- Modal window start Here -->
   <div class="modal fade" id="flat_Modal" tabindex="-1" role="dialog" aria-labelledby="MyadvLabel" aria-hidden="true">
@@ -1393,7 +1548,8 @@
             <div class="row">
               <div class="form-group col-sm-6 col-md-6 col-lg-6">
                 <label for="Electricity_No" class="required">Electricity Account Number</label>
-                <input type="text" name="" id="Electricity_No" class="form-control" placeholder="Electricity Account Number">
+                <input type="text" name="" id="Electricity_No" class="form-control"
+                  placeholder="Electricity Account Number">
               </div>
               <div class="form-group col-sm-6 col-md-6 col-lg-6">
                 <label for="Water_No">Water Account Number</label>
@@ -1409,9 +1565,10 @@
       </div>
     </div>
   </div>
-  <!-- Modal window End Here --> 
+  <!-- Modal window End Here -->
   <!-- Modal window start Here -->
-  <div class="modal fade" id="oldRenewModal" tabindex="-1" role="dialog" aria-labelledby="oldRenewModalLabel" aria-hidden="true">
+  <div class="modal fade" id="oldRenewModal" tabindex="-1" role="dialog" aria-labelledby="oldRenewModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header hs modalHeaderSpace">
@@ -1422,7 +1579,7 @@
           <div class="form-group">
             <div class="row">
               <div class="form-group col-sm-12 col-md-12 col-lg-12">
-                <label for="">“ If you are trying to renew the lease contract generated from the old system, 
+                <label for="">“ If you are trying to renew the lease contract generated from the old system,
                   please apply for the new request instead of renew ”.</label>
               </div>
             </div> <!-- /.row -->
@@ -1434,123 +1591,129 @@
       </div>
     </div>
   </div>
-  <!-- Modal window End Here --> 
+  <!-- Modal window End Here -->
   <!-- FOOTER START -->
   <footer id="footer-main">
     <div class="position-relative footer-dark bg-dark footer-bg">
-        <div class="container pt-3">
-            <div class="row">
-                <div class="col-lg-3 mb-5 mb-lg-0 contact-widget">
-                    <a href="index.html">
-                        <img alt="oman-vision" id="footer-logo" class="img-fluid mb-2" src="img/oman-vision-white.png"></a>
-                    <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-none">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-lg-3 mb-5 mb-lg-0 contact-widget">
+            <a href="index.html">
+              <img alt="oman-vision" id="footer-logo" class="img-fluid mb-2" src="img/oman-vision-white.png"></a>
+            <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-none">
 
-                        <li class="list-inline-item list-social-item me-3">
-                            <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
-                                <img src="img/social/instagram-logo.svg" class="list-social-icon social-w-40" alt="">
-                            </a>
-                        </li>
-                        <li class="list-inline-item list-social-item me-3">
-                            <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
-                                <i class="fab fa-twitter"></i></a>
-                        </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="img/social/instagram-logo.svg" class="list-social-icon social-w-40" alt="">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
+                  <i class="fab fa-twitter"></i></a>
+              </li>
 
-                        <!-- brand -->
-                        <li class="list-inline-item list-social-item me-3 lift">
-                            <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
-                                <img src="img/eoman_logo.png" class="list-brand-icon" alt="...">
-                            </a>
-                        </li>
-                        <li class="list-inline-item list-social-item me-3 lift">
-                            <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
-                                <img src="img/w3c-logo.png" class="list-brand-icon" alt="...">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+              <!-- brand -->
+              <li class="list-inline-item list-social-item me-3 lift">
+                <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                  <img src="img/eoman_logo.png" class="list-brand-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3 lift">
+                <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                  <img src="img/w3c-logo.png" class="list-brand-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="divider divider-fade divider-dark my-4">
+        <div class="row align-items-center justify-content-md-between pb-4">
+          <div class="col-md-4">
+            <div class="copyright text-sm font-weight-bolder text-white">
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+              <a class="text-dark" href="https://www.moi.gov.om" target="_blank">Copyright &copy; Ministry of
+                Interior</a> - All Rights Reserved.
             </div>
-            <hr class="divider divider-fade divider-dark my-4">
-            <div class="row align-items-center justify-content-md-between pb-4">
-                <div class="col-md-4">
-                    <div class="copyright text-sm font-weight-bolder text-white">
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script>
-                        <a class="text-dark" href="https://www.moi.gov.om" target="_blank">Copyright &copy; Ministry of Interior</a> - All Rights Reserved.
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline d-flex justify-content-end mt-3 mt-md-0">
-                        <li class="list-inline-item list-social-item me-3">
-                            <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
-                                <img src="img/social/instagram-logo.svg" class="list-social-icon social-w-40" alt="">
-                            </a>
-                        </li>
-                        <li class="list-inline-item list-social-item me-3">
-                            <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
-                                <i class="fab fa-twitter"></i></a>
-                        </li>
+          </div>
+          <div class="col-md-4">
+            <ul
+              class="social-icons icon-circle icon-zoom list-unstyled list-inline d-flex justify-content-center mt-3 mt-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="//instagram.com/moigovom?lang=ar-om" target="_blank">
+                  <img src="img/social/instagram-logo.svg" class="list-social-icon social-w-40" alt="">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="//twitter.com/moigovom?lang=ar-om" target="_blank">
+                  <i class="fab fa-twitter"></i></a>
+              </li>
 
-                        <!-- brand -->
-                        <li class="list-inline-item list-social-item me-3 lift">
-                            <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
-                                <img src="img/eoman_logo.png" class="list-brand-icon" alt="...">
-                            </a>
-                        </li>
-                        <li class="list-inline-item list-social-item me-3 lift">
-                            <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
-                                <img src="img/w3c-logo.png" class="list-brand-icon" alt="...">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h6 class="mb-0 text-white mx-2 d-flex align-items-center justify-content-end">Download Citizen App</h6>
-                    <ul class="nav mt-3 mt-md-0 d-flex align-items-center justify-content-end">
-                      <!-- <li class="nav-item list-social-item">
+              <!-- brand -->
+              <li class="list-inline-item list-social-item me-3 lift">
+                <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
+                  <img src="img/eoman_logo.png" class="list-brand-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3 lift">
+                <a href="http://www.w3.org/" target="_blank" class="text-decoration-none">
+                  <img src="img/w3c-logo.png" class="list-brand-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="mb-0 text-white mx-2 d-flex align-items-center justify-content-end">Download Citizen App</h6>
+            <ul class="nav mt-3 mt-md-0 d-flex align-items-center justify-content-end">
+              <!-- <li class="nav-item list-social-item">
                         <a href="http://www.oman.om/" target="_blank" class="text-decoration-none">
                           <img src="img/app/appStore.svg" class="appStore" alt="app_store">
                         </a>
                       </li> -->
-                      <li class="nav-item list-social-item">
-                        <a href="https://play.google.com/store/apps/details?id=com.moi.citizen" target="_blank" class="text-decoration-none">
-                          <img src="img/app/googlePlay.svg" class="brand-icon" alt="google_play">
-                        </a>
-                      </li>
-                    </ul>
-                </div>
-            </div>
+              <li class="nav-item list-social-item">
+                <a href="https://play.google.com/store/apps/details?id=com.moi.citizen" target="_blank"
+                  class="text-decoration-none">
+                  <img src="img/app/googlePlay.svg" class="brand-icon" alt="google_play">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
-<div class="customizer">
-  <button class="btn btn-primary btn-sm btn-icon-only rounded-circle hover-scale-110 shadow-lg" data-mode="dark" id="btnSwitchMode" type="button"><i class="fas fa-moon"></i></button>
-</div>
+  </footer>
 
-<script src="js/bootstrap.bundle.js"></script>
-<!-- Date &amp; Time Live--> 
-<script src="js/Time/timejs.js"></script> 
-<!-- Date &amp; Time Live--> 
-<script src="js/Datepicker/bootstrap-datepicker.js"></script> 
-<!-- Multiselect --> 
-<script src="js/Multiselect/Multiselect.js"></script> 
-<!-- Include Data Table smartWizard source --> 
-<script src="js/dataTables-4/jquery.dataTables.js"></script> 
-<script src="js/dataTables.bootstrap4.js"></script> 
-<script src="js/dataTables.select.js"></script> 
-<script src="js/jquery.smartWizard.js"></script> 
-<!-- Include jQuery Validator plugin --> 
-<script src="js/Validator/validator.js"></script> 
-<script src="js/HS/Beneficiary.js"></script>
-<script src="js/HS/Addbuilding.js"></script> 
-<script src="js/HS/Property_1.js"></script> 
-<script src="js/builing.js"></script> 
-<script src="js/GIS.js"></script> 
-<!-- Include Smartwizard-HS plugin --> 
-<script src="js/smartwizardHS.js"></script> 
-<script src="js/validations.js"></script>
+  <div class="customizer">
+    <button class="btn btn-primary btn-sm btn-icon-only rounded-circle hover-scale-110 shadow-lg" data-mode="dark"
+      id="btnSwitchMode" type="button"><i class="fas fa-moon"></i></button>
+  </div>
 
-<script src="js/moi-webapp.js"></script>
-<script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <!-- Date &amp; Time Live-->
+  <script src="js/Time/timejs.js"></script>
+  <!-- Date &amp; Time Live-->
+  <script src="js/Datepicker/bootstrap-datepicker.js"></script>
+  <!-- Multiselect -->
+  <script src="js/Multiselect/Multiselect.js"></script>
+  <!-- Include Data Table smartWizard source -->
+  <script src="js/dataTables-4/jquery.dataTables.js"></script>
+  <script src="js/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.js"></script>
+  <script src="js/jquery.smartWizard.js"></script>
+  <!-- Include jQuery Validator plugin -->
+  <script src="js/Validator/validator.js"></script>
+  <script src="js/HS/Beneficiary.js"></script>
+  <script src="js/HS/Addbuilding.js"></script>
+  <script src="js/HS/Property_1.js"></script>
+  <script src="js/builing.js"></script>
+  <script src="js/GIS.js"></script>
+  <!-- Include Smartwizard-HS plugin -->
+  <script src="js/smartwizardHS.js"></script>
+  <script src="js/validations.js"></script>
+
+  <script src="js/moi-webapp.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

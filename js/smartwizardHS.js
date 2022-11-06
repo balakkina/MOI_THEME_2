@@ -241,7 +241,7 @@ $(document).ready(function() {
       $("#benradio").hide();
       $("#benhide").show();
       //$("#samehide").show();
-      $("#Attorney_hide").hide();
+      $(".Attorney_hide").hide();
       $("#Munlic").show();
       $("#UpdateID").show();
       $("#sameowner").hide();
@@ -252,7 +252,7 @@ $(document).ready(function() {
       $("#benradio").hide();
       $("#benhide").show();
       //$("#samehide").show();
-      $("#Attorney_hide").show();
+      $(".Attorney_hide").show();
       $("#employeeDiv").hide();
       $("#Munlic").hide();
       $("#UpdateID").hide();
@@ -544,6 +544,14 @@ $("#renew_Type").change(function() {
       $("#reqTypeDiv").hide();
       $("#form-step-03").hide();
     }
+});
+//BPHS01
+$("#boardLicenseNumber").blur(function() {
+  if(this.value != "" && formNumber == 15 && ($('#request_type').val() == 7219)) {
+    $("#cancelModal").modal("show");
+  } else {
+    
+  }
 });
 //BPHS03
 //Ownership Type - Municipal License (New / Renew) / Shisha Permit (New/Renew) - BPHS03 - Strat

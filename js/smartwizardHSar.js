@@ -241,7 +241,7 @@ $(document).ready(function() {
       $("#benradio").hide();
       $("#benhide").show();
       //$("#samehide").show();
-      $("#Attorney_hide").hide();
+      $(".Attorney_hide").hide();
       $("#Munlic").show();
       $("#UpdateID").show();
       $("#sameowner").hide();
@@ -252,7 +252,7 @@ $(document).ready(function() {
       $("#benradio").hide();
       $("#benhide").show();
       //$("#samehide").show();
-      $("#Attorney_hide").show();
+      $(".Attorney_hide").show();
       $("#employeeDiv").hide();
       $("#Munlic").hide();
       $("#UpdateID").hide();
