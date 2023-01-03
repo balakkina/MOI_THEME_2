@@ -1,3 +1,6 @@
+/* $(window).bind('beforeunload', function() {
+  localStorage.setItem("buildingdata_localsg1", JSON.stringify(building_dataarray));
+ });*/
  //addbuilding Button
  function addbuilding() {
   $("#Building_show").show();

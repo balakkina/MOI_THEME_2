@@ -284,7 +284,7 @@ fieldset {
 /*..............................legend..............................*/
 legend {
 	display: block;
-	padding: 0;
+	padding: 0.5rem;
 	margin-bottom: 0px;
 	font-size: 14px;
 	line-height: inherit;

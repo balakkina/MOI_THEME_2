@@ -23166,7 +23166,7 @@ textarea[resize=horizontal] {
 .table thead th {
     padding-top: .75rem;
     padding-bottom: .75rem;
-    font-size: .75rem;
+    font-size: .975rem;
     text-transform: none;
     letter-spacing: 0;
     background-color: transparent;
@@ -23185,7 +23185,7 @@ textarea[resize=horizontal] {
 
 .table td,
 .table th {
-    font-size: .8125rem;
+    font-size: .9125rem;
     white-space: nowrap
 }
 
@@ -23670,7 +23670,7 @@ article p {
     position: fixed;
     bottom: 2rem;
     left: 2rem;
-    width: 300px;
+    width: auto;
     height: 60px;
     z-index: 200
 }
@@ -27315,9 +27315,10 @@ article p {
 }
 
 
-/* section.slice {
-	background-color: #f1f4f8;
-} */
+section.slice {
+	/* background-color: #f1f4f8; */
+	background-color: #fff;
+}
 
 .slice {
     position: relative;

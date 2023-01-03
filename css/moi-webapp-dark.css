@@ -242,7 +242,8 @@ th {
 
 label {
     display: inline-block;
-    margin-bottom: .5rem
+    margin-bottom: .5rem;
+    color: #fff !important;
 }
 
 button {
@@ -332,7 +333,8 @@ legend {
     font-size: 1.5rem;
     line-height: inherit;
     color: inherit;
-    white-space: normal
+    white-space: normal;
+    color: rgb(206 161 44) !important;
 }
 
 @media (max-width:1200px) {
@@ -23167,7 +23169,7 @@ textarea[resize=horizontal] {
 .table thead th {
     padding-top: .75rem;
     padding-bottom: .75rem;
-    font-size: .75rem;
+    font-size: .975rem;
     text-transform: none;
     letter-spacing: 0;
     background-color: transparent;
@@ -23186,7 +23188,7 @@ textarea[resize=horizontal] {
 
 .table td,
 .table th {
-    font-size: .8125rem;
+    font-size: .9125rem;
     white-space: nowrap
 }
 
@@ -23671,7 +23673,7 @@ article p {
     position: fixed;
     bottom: 2rem;
     left: 2rem;
-    width: 300px;
+    width: auto;
     height: 60px;
     z-index: 200
 }
@@ -27317,9 +27319,9 @@ article p {
 }
 
 
-/* section.slice {
-	background-color: #1f2d3d
-} */
+section.slice {
+	background-color: #253649;
+}
 
 .slice {
     position: relative;

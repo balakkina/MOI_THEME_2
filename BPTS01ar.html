@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache"/>
+<META name="robots" content="follow,index"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="keywords" content="oman Municipality, Oman Municipality eServices" />
+<meta name="description" content="Official Portal for Oman Municipality" />
+<meta name="author" content="oman Government, oman Municipality" />
+<meta name="generator" content="ITON oman" />
+<link rel="shortcut icon" href="images/Khanjar.png">
+<title>طلب إباحة بناء كبرى ( جديد / تجديد / اضافة / تعليه / تعديل / إيقاف (مؤقت)/ الغاء الإيقاف )</title>
+<script src="js/jquery-3.3.1.js"></script>
+<!--Start CSS English / Arabic files-->
+<link rel="stylesheet" href="css/bootstrap.min.ar.css" />
+<link rel="stylesheet" href="css/Datepicker/bootstrap-datepicker3.ar.css">
+<!-- Header-->
+<link rel="stylesheet" href="css/headerar.css">
+<!-- Header-->
+
+<!-- Top Menu -->
+<link rel="stylesheet" href="css/top-menu_ar.css"/>
+<!-- Top Menu -->
+
+<!-- Homepage Main Content -->
+<link rel="stylesheet" href="css/homepage-main-content_ar.css"/>
+<!-- Homepage Main Content -->
+
+<link rel="stylesheet" href="css/scrollToTop_ar.css" />
+
+<!-- side-nav Services -->
+<link rel="stylesheet" href="css/side-nav.ar.css">
+<!-- End side-nav Services -->
+
+<!-- LOAD smart_wizard CSS -->
+<link rel="stylesheet" href="css/smart_wizard_ar.css" />
+
+<!-- LOAD DataTables CSS -->
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.ar.css">
+<!--End CSS English / Arabic files-->
+
+<!-- ........................................................................................................................ -->
+
+<!--Start Common CSS files-->
+<!--text resize assets -->
+<link rel="stylesheet" href="css/text-resize.css" />
+<!-- End text resize assets -->
+
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--font-awesome-4.1.0-->
+<link rel="stylesheet" href="css/blue.css" id="colorstyle">
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--Footer assets -->
+<link rel="stylesheet" href="css/footer.css" />
+<!-- End Footer assets -->
+
+<!--scrolling assets -->
+<link rel="stylesheet" href="css/scroll.css" />
+<link rel="stylesheet" href="css/mobile-app.css"/>
+<!-- End scrolling assets -->
+
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/mrm.css">
+<!--End Common CSS files-->
+</head>
+<!--  Modified by ITON | MITECH | OMAN -->
+<!--  Modified Date 05/03/2017 -->
+<body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+<div dir="rtl">
+<div class="dm-welcome-msg"> <span>مرحباً بك في بوابة الخدمات البلدية والمائية</span> </div>
+  <header>
+    <div class="enjaz-logo">
+      <div class="dm-Logo"> <a href="indexar.html" title="Enjaz"> <img src="images/Enjaz.svg" alt="Enjaz"></a> </div>
+    </div>
+    <div class="dg-Logo"> <a href="indexar.html" rel="nofollow" title="Ministry of Regional Municipality & Water Resources"> 
+      <img src="images/omanar.png" alt="Ministry of Regional Municipality & Water Resources"></a>
+      <ul class="gettime">
+        <li id="date"></li>
+        <li class="menu-separator">|</li>
+        <li id="time"></li>
+      </ul>
+    </div>
+  </header>
+
+<!--  Modified by Balarama krishna --> 
+<!--  Modified Date 10/03/2017 --> 
+
+<!--Top Menu-->
+<div class="top-menu">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-9">
+      <nav class="navbar navbar-default navbar-dm-theme" role="navigation"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="emarat-logo-menu" href="#" rel="nofollow" target="_blank" title="eService Portal"> <img src="" alt=""  width="100" height="20"> </a> </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <!--class="active"-->
+            <li><a href="index.html" accesskey="0"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;الرئيسية</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;عن الوزارة</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="media.html"><i class="fa fa-medium" aria-hidden="true"></i>&nbsp;مركز الوسائط</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="Tenders.html"><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;المناقصات </a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="Downloads.html"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;التحميل</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="Track.html"><i class="fa fa-crosshairs" aria-hidden="true"></i>&nbsp;متابعة الطلب</a></li>
+            <li class="menu-separator">|</li>
+            <li><a href="contactus.html"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;اتصل بنا</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Zoom"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="font-change" id="lnkDecrease" title="Zoomout" href="JavaScript:Void(0)">A-</a></li>
+                <li><a class="font-change" id="lnkNormal"  title="Normalview" href="javascript:window.location.reload();">A</a></li>
+                <li><a class="font-change" id="lnkIncrease" title="Zoomin" href="JavaScript:Void(0)">A+</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Change Color"> <i class="fa fa-paint-brush" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li id="demo-lunar"   class="btn demo-lunar ccolor" title="lunar"></li>
+                <li id="demo-blue"    class="btn demo-blue ccolor" title="Blue"></li>
+                <li id="demo-green"   class="btn demo-green ccolor" title="Green"></li>
+                <li id="demo-red"     class="btn demo-red ccolor" title="Red"></li>
+                <li id="demo-orange"  class="btn demo-orange ccolor" title="Orange"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-3">
+      <div class="search-div transparent-white-background">
+        <div class="row">
+          <div class="col-xs-10 col-sm-10 col-md-10">
+            <form method="GET" target="_self" action="" class="pure-form pure-form-stacked" >
+              <input type="search" name="q" id="tags" placeholder="بحث" maxlength="256" value=""/>
+              <div class="theme-dark-red"><a title="بحث" href="javascript:;" onclick="document.forms[0].submit();"> 
+                <span class="fa fa-search" aria-hidden="true"></span> <span class="sr-only">بحث</span></a></div>
+            </form>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2">
+            <div class="langL pull-right bold" style="">
+              <?xml version="1.0" encoding="ISO-8859-1" ?>
+              <!-- <a href="BPTS01.html" hreflang="ar">&#1593;&#1585;&#1576;&#1610;</a> --> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Top Menu-->
+
+<div class="container main-content-top-margin"> 
+  <!--Main content-->
+  <div class="row transparent-white-background">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="panel panel-default panel-dm-theme">
+        <div class="panel-head-services header-with-image" style="background: rgb(184, 150, 87);">
+          <div class="panel-title"> <img src="images/Services/TSicon1ar.svg" alt="طلب إباحة بناء كبرى ( جديد / تجديد / اضافة / تعليه / تعديل / إيقاف (مؤقت)/ الغاء الإيقاف )">‎طلب إباحة بناء كبرى ( جديد / تجديد / اضافة / تعليه / تعديل / إيقاف (مؤقت)/ الغاء الإيقاف )
+            <ul class="pull-right" style="list-style: none;display: inline-flex;">
+              <li><a href="#" class="helprint">مساعدة <i class="fa fa-question" aria-hidden="true"></i>&nbsp;</a> </li>
+              <li><a class="helprint" id="btn1"> طباعة <i class="fa fa-print" aria-hidden="true"></i>&nbsp;</a> </li>
+              <li><a href="TServices.html" class="helprint">رجوع <i class="fa fa-chevron-left" aria-hidden="true"></i></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Main content--> 
+  
+  <!--Section start from here--> 
+  <!--Inner Pages Start -->
+  <form accept-charset="utf-8" action="#" data-toggle="validator" id="BPTS01" method="post" name="BPTS01" novalidate>
+    <div class="inner-pages transparent-white-background">
+      <div class="row"> 
+        <!-- SmartWizard html -->
+        <div id="smartwizard">
+          <ul id="credit">
+            <li data-interest = "1"><a href="#ApplicantDetails"><i class="fa fa-user fa-fw"></i>بيانات المكتب الإستشاري</a></li>
+            <li data-interest = "3"><a href="#BeneficiaryDetails"><i class="fa fa-users fa-fw"></i> بيانات المستفيد</a></li>
+            <li data-interest = "4"><a href="#BuildingsDetails"><i class="fa fa-building-o fa-fw"></i>بيانات المبنى</a></li>
+            <li data-interest = "6"><a href="#Attachment"><i class="fa fa-paperclip fa-fw"></i>المرفقات</a></li>
+            <li data-interest = "8"><a href="#others"><i class="fa fa-check-square-o fa-fw"></i>تعليقات</a></li>
+            <li data-interest = "7"><a href="#LicenseDetails"><i class="fa fa-credit-card fa-fw"></i>الدفع والمخرجات</a></li>
+          </ul>
+          <div>
+            <div id="ApplicantDetails">
+              <div class="form-group">
+                <div class="row">
+                  <div class="padtopbot">
+                    <div id="reqtypeDetails_Err" class="Error">يرجى تعبئة جميع الحقول المطلوبة من تفاصيل الطلب </div>
+                  </div>
+                  <fieldset>
+                    <legend>تفاصيل نوع الطلب</legend>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="Request_ser" class="required">نوع الطلب</label>
+                      <select name="Request_ser" id="Request_ser" class="form-control">
+                        <option value="1000">الرجاء تحديد</option>
+                        <option value="162" selected>جديد</option>
+                        <option value="163">تجديد</option>
+                        <option value="164">اضافة</option>
+                        <option value="165">تعلية</option>
+                        <option value="166">تعديل</option>
+                        <!-- <option value="167">ايقاف</option>
+                        <option value="168">الغاء الايقاف</option> -->
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3" id="lichide">
+                      <label for="PermitNo">رقم الإباحة </label>
+                      <input type="number" class="form-control numeric" id="PermitNo" placeholder="رقم الإباحة" />
+                    </div>
+                    <div class="form-group top-25">
+                      <button type="button" class="btn btn-ts">ايقاف</button>
+                      <button type="button" class="btn btn-ts">الغاء الايقاف</button>
+                    </div>
+                  </fieldset>
+                </div> <!-- .row --> 
+              </div> <!-- .form-group -->
+              
+              <div class="form-group">
+                <div class="row">
+                  <div class="padtopbot">
+                    <div id="appDetails_Err" class="Error">الرجاء تعبئة جميع حقول بيانات مقدم الطلب</div>
+                  </div>
+                  <fieldset>
+                    <legend>تفاصيل الإستشاري المصمم</legend>
+                    <div class="row">
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                        <label for="aid" class="required">الرقم المدني للمهندس</label>
+                        <input type="text" class="form-control" id="aid" placeholder="الرقم المدني للمهندس">
+                      </div>
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                        <label for="applcntEpiryDate" class="required">تاريخ انتهاء صلاحية البطاقة المدنيه</label>
+                        <div class="date">
+                          <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy"/>
+                          <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> 
+                        </div>
+                      </div>
+                      <div class="form-group  col-sm-5 col-md-4 col-lg-3 haserror">
+                        <label for="aname" class="required">اسم المهندس</label>
+                        <input type="text" class="form-control" id="aname" placeholder="اسم المهندس">
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3 haserror">
+                        <label for="address_app" class="required">العنوان</label>
+                        <input type="text" class="form-control" id="address_app" placeholder="العنوان">
+                      </div>
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                        <label for="Phnumber_app" class="required">رقم الهاتف</label>
+                        <input type="text" class="form-control numeric" id="Phnumber_app" placeholder="رقم الهاتف" maxlength="8">
+                        <div id="Ph_Error" style="color:red">الرجاء إدخال رقم جوال مكون من 8 أرقام</div>
+                      </div>
+                      <div class="form-group col-sm-5 col-md-4 col-lg-3">
+                        <label for="eMail">البريد الإلكتروني</label>
+                        <input type="text" class="form-control" id="eMail" placeholder="البريد الإلكتروني">
+                        <div class="col-sm-12 col-md-12 col-lg-12" id="email_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
+                      </div>
+                      <div class="form-group pull-right top-25">
+                        <button type="button" class="btn btn-ts" onclick="App_Cons()" id="AppConsid"><i class="fa fa-plus fa-fw"></i>إضافة</button>
+                      </div>
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                      <div class="table-responsive">
+                        <table id="AppConsu_table" class="table table-striped table-bordered">
+                          <thead class="ts-thead">
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div> <!-- row -->
+                  </fieldset>
+                </div> <!-- .row --> 
+              </div>  <!-- .form-group -->
+              
+              <div class="form-group">
+                <div class="row">
+                  <div class="padtopbot">
+                    <div id="serDetails_Err" class="Error">الرجاء إدخال جميع حقول بيانات الطلب </div>
+                  </div>
+                  <fieldset>
+                    <legend>بيانات الخدمة</legend>
+                    <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                      <label for="Application Status">حالة الطلب</label>
+                      <input type="text" class="form-control" id="astatus" placeholder="حالة الطلب" value="In Progress" readonly>
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="Service Request Name" class="required">اسم الخدمة المطلوبة</label>
+                      <input type="text" class="form-control" id="srname" placeholder="Service Request Name" value="طلب اباحة بناء كبرى ( جديدة / تجديد / اضافة / تعليه / تعديل / الغاء )" readonly>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="srdate">تاريخ تقديم الطلب</label>
+                      <div class="date">
+                        <input type="text" class="form-control" id="srdate" placeholder="يوم/شهر/سنة" disabled/>
+                        <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="sdate">تاريخ تسليم الطلب</label>
+                      <div class="date">
+                        <input type="text" class="form-control" id="sdate" placeholder="يوم/شهر/سنة" disabled />
+                        <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                    </div>
+                    <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                      <label for="region_ser" class="required">المحافظة</label>
+                      <select name="region_ser" id="region_ser" class="form-control">
+                        <option value="0">الرجاء الإختيار</option>
+                        <option value="1">ولاية صحار</option>
+                        <option value="2">محافظة الظاهرة</option>
+                        <option value="3">محافظة مسندم</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-5 col-md-4 col-lg-3">
+                      <label for="Willayat_ser" class="required">الولاية</label>
+                      <select name="Willayat_ser" id="Willayat_ser" class="form-control">
+                        <option value="0">الرجاء الإختيار</option>
+                        <option value="1">ولاية صحار </option>
+                        <option value="2">ولاية صحم</option>
+                        <option value="3">ولاية ابرا</option>
+                        <option value="3">ولاية نزوى</option>
+                        <option value="3">ولاية نخل</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="Municiplity_ser" class="required">البلدية</label>
+                      <select name="Municiplity_ser" id="Municiplity_ser" class="form-control">
+                        <option value="0">الرجاء الإختيار</option>
+                        <option value="461">بلدية صحار</option>
+                        <option value="463">بلدية صحم</option>
+                        <option value="464">بلدية إبرا</option>
+                        <option value="465">بلدية الدقم</option>
+                        <option value="466">بلدية نزوى</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                </div>
+                <!-- .row --> 
+              </div>
+              <!-- .form-group --> 
+            </div>
+            <!-- ApplicantDetails -->
+            
+            <div id="BeneficiaryDetails" class="">
+              <div class="form-group">
+                <div class="row">
+                  <div class="padtopbot">
+                    <div id="BenfDetails_Err" class="Error">الرجاء ادخال جميع الحقول في بيانات المستفيد </div>
+                  </div>
+                  <fieldset>
+                    <legend>بيانات المستفيد</legend>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="Beneficiary_select" class="required">المستفيد</label>
+                      <select name="Beneficiary_select" id="Beneficiary_select" class="form-control">
+                        <option value="1000">الرجاء الأختيار...</option>
+                        <option value="Owner" selected>المالك</option>
+                        <option value="Investor">مستثمر</option>
+                        <option value="Usufructer">منتفع</option>
+                        <option value="Attorney">الوكيل الشرعي</option>
+                        <option value="Heirs">ورثة</option>
+                        <option value="waqf">وقف</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizationNo">
+                      <label for="Authorization_No" class="required">رقم التوكيل</label>
+                      <input type="text" class="form-control numeric" id="Authorization_No" placeholder="رقم التوكيل" />
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3" id="InvestorNo">
+                      <label for="Investor_No" class="required">رقم عقد الاستثمار</label>
+                      <input type="text" class="form-control numeric" id="Investor_No" placeholder="رقم عقد الاستثمار" />
+                    </div>
+                    <div id="benradio1">
+                      <div class="form-group col-sm-6 col-md-4 col-lg-3" id="benradio">
+                        <label for="optradio" class="required">نوع المستفيد</label>
+                        <div class="form-control" id="orgtypeID">
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio" value="Individual" checked>
+                            فرد </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio" value="Organization">
+                            مؤسسة </label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
+                        <label for="optradio1" class="required">نفس مقدم الطلب</label>
+                        <div class="form-control">
+                          <label class="radio-inline"> <input type="radio" name="optradio1" value="Yes"> نعم </label>
+                          <label class="radio-inline"> <input type="radio" name="optradio1" value="No" checked> لا</label>
+                        </div>
+                      </div> -->
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3" id="GCC_div">
+                        <label for="gccRadio1" class="required">هو المقيم الخليجي</label>
+                        <div class="form-control">
+                          <label class="radio-inline"> <input type="radio" id="gccRadio1" name="gccRadio" value="True" />  نعم </label> 
+                          <label class="radio-inline"> <input type="radio" id="gccRadio2" name="gccRadio" checked="checked" value="False" />  لا</label>
+                        </div>
+                      </div>
+                    <div class="row">
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
+                        <label for="optradio2">نوع المستفيد </label>
+                        <input type="text" class="form-control" id="optradio2" placeholder="نوع المستفيد" readonly>
+                      </div>
+                      <div id="benType" class="">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="BeneficiaryID" class="required">الرقم المدني للمستفيد</label>
+                          <input type="text" class="form-control numeric" id="BeneficiaryID" placeholder="الرقم المدني للمستفيد">
+                        </div>
+                        <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                          <label for="Bendate" class="required">تاريخ انتهاء صلاحية البطاقة المدنيه</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy"/>
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span> 
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bname">أسم المستفيد </label>
+                          <input type="text" class="form-control" id="Bname" placeholder="أسم المستفيد">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benId">
+                          <label for="Baddress" class="required">عنوان المستفيد</label>
+                          <input type="text" class="form-control" id="Baddress" placeholder="عنوان المستفيد">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bph" class="required">رقم الهاتف</label>
+                          <input type="text" class="form-control numeric" id="Bph" placeholder="رقم الهاتف" maxlength="8">
+                          <div id="Ph_BenfError" style="color:red">الرجاء إدخال رقم الهاتف مكون من 8 أرقام</div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bemail">البريد الالكتروني</label>
+                          <input type="text" class="form-control" id="Bemail" placeholder="البريد الالكتروني">
+                          <div id="Bemail_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="waqf_Name">
+                          <label for="waqfName">اسم الوقف</label>
+                          <input type="text" class="form-control" id="waqfName" placeholder="اسم الوقف">
+                        </div>
+                      </div>
+                      <!-- End Beneficiary Details -->
+                      
+                      <div id="OrganizationDetails" class="">
+                        <div class="row">
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="crid" class="required">رقم السجل التجاري</label>
+                            <input type="text" class="form-control" id="crid" placeholder="رقم السجل التجاري">
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="cname">الإسم التجاري</label>
+                            <input type="text" class="form-control" id="cname" placeholder="الإسم التجاري" readonly>
+                          </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                            <label for="Phnumber">رقم الهاتف </label>
+                            <input type="text" class="form-control numeric" id="Phnumber" placeholder="رقم الهاتف"  maxlength="8" readonly>
+                          </div>
+                          <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                            <label for="E-mail">البريد الالكتروني</label>
+                            <input type="text" class="form-control" id="E-mail" placeholder="البريد الالكتروني">
+                            <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
+                          </div>
+                        </div>
+                        <!-- .row --> 
+                      </div>
+                      <!-- OrganizationDetails -->
+                      <div class="form-group pull-right top-25">
+                        <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit"><i class="fa fa-plus"></i>&nbsp;اضافة مستفيد</button>
+                      </div>
+                    </div>
+                    <!-- .row -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="table-responsive">
+                          <table id="Beneficiary1" class="table table-striped table-bordered" width="100%">
+                            <thead class="ts-thead">
+                            </thead>
+                            <tbody>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- End table-responsive --> 
+                      </div>
+                    </div>
+                    <!-- End row -->
+                  </fieldset>
+                </div>
+                <!-- .row --> 
+              </div>
+              <!-- .form-group -->
+              
+              <div class="form-group">
+                <div class="row">
+                  <div class="padtopbot">
+                    <div id="PlotDetails_Err" class="Error">الرجاء إدخال جميع حقول بيانات قطعة الأرض </div>
+                  </div>
+                  <fieldset>
+                    <legend>بيانات قطعة الأرض</legend>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="PSN_Plot" class="required">الرقم المتسلسل لقطعة الأرض </label>
+                      <input type="text" class="form-control" id="PSN_Plot" placeholder="الرقم المتسلسل لقطعة الأرض">
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="PSN" class="required">رقم قطعة الأرض</label>
+                      <input type="number" class="form-control numeric" id="PSN" placeholder="رقم قطعة الأرض" min="0">
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="region_Ld" class="required">المحافظة </label>
+                      <select name="region_Ld" id="region_Ld" class="form-control">
+                        <option value="0">الرجاء الإختيار</option>
+                        <option value="1">بركاء</option>
+                        <option value="2">محافظة الظاهرة</option>
+                        <option value="3">محافظة مسندم</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="Willayat_Ld" class="required">الولاية</label>
+                      <select name="Willayat_Ld" id="Willayat_Ld" class="form-control">
+                        <option value="0">الرجاءالإختيار</option>
+                        <option value="1">بركاء</option>
+                        <option value="2">ولاية صحم</option>
+                        <option value="3">ولاية ابرا</option>
+                        <option value="3">ولاية نزوى</option>
+                        <option value="3">ولاية نخل</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="village_Ld" class="required">القرية</label>
+                      <select name="village_Ld" id="village_Ld" class="form-control">
+                        <option value="0">الرجاء الإختيار</option>
+                        <option value="461">بركاء</option>
+                        <option value="463">العقر</option>
+                        <option value="464"> حي العين</option>
+                        <option value="465">سعال </option>
+                        <option value="466"> دارس </option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="square_Ld" class="required">المربع</label>
+                      <input type="number" class="form-control numeric" id="square_Ld" placeholder="المربع" min="0" />
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="Plotsurface_Ld" class="required">مساحة الأرض </label>
+                      <input type="number" class="form-control numeric" id="Plotsurface_Ld" placeholder="مساحة الأرض" min="0">
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="StreetNumber_Ld" class="required">اسم الشارع</label>
+                      <input type="number" class="form-control numeric" id="StreetNumber_Ld" placeholder="اسم الشارع" min="0">
+                    </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <label for="typeUse_Ld" class="required">نوع الاستعمال </label>
+                      <select name="" id="typeUse_Ld" class="form-control">
+                        <option value="0">الرجاء الأختيار</option>
+                        <option value="461">الإسكان</option>
+                        <option value="463">بلدية صحم</option>
+                        <option value="464">بلدية إبرا</option>
+                        <option value="465">بلدية الدقم</option>
+                        <option value="466">بلدية نزوى</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                  <div class="padtopbot">
+                    <div id="GISCoords_Err" class="Error">الرجاء إدخال جميع حقول بيانات إحداثيات نظم المعلومات الجغرافية</div>
+                  </div>
+                  <fieldset>
+                    <!-- Note message --> 
+                    <div class="alert alert-danger"><strong>ملاحظه :- </strong>&nbsp;الرجاء إضافة ٣ نقاط إحداثية على الاقل لاظهار موقع قطعة الارض</div>
+                    <!-- Note message -->
+                    <legend>إحداثيات نظم المعلومات الجغرافية</legend>
+                    <div class="row">
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3 hidden">
+                        <label for="Point">Point</label>
+                        <input type="number" class="form-control" id="Point" placeholder="Point" value="1" />
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Eastings" class="required">شرقي</label>
+                        <input type="text" class="form-control numeric" id="Eastings" placeholder="شرقي" title="Please enter valid numbers" />
+                      </div>
+                      <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                        <label for="Northings" class="required">شمالي</label>
+                        <input type="text" class="form-control numeric" id="Northings" placeholder="شمالي" title="Please enter valid numbers" />
+                      </div>
+                      <div class="form-group pull-right top-25">
+                        <button type="button" class="btn btn-ts" onclick="GIS()" id="GISid">إضافة إحداثيات</button>
+                      </div>
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                      <div class="table-responsive">
+                        <table id="GIS_table" class="table table-striped table-bordered">
+                          <thead class="ts-thead">
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- row -->
+                  </fieldset>
+                </div>
+                <!-- .row --> 
+              </div>
+              <!-- .form-group --> 
+            </div>
+            <!-- BeneficiaryDetails --> 
+            
+            <!-- ......... BuildingsDetails ......... -->
+            <div id="BuildingsDetails" class="">
+              <div class="row">
+                <fieldset>
+                  <legend>بيانات المبنى المراد تنفيذه</legend>
+                  <div class="form-group col-sm-6 col-md-6 col-lg-6"> 
+                    <!-- <label for="optradio5">Existing Buildings Details Type <span style="color:red">*</span></label> -->
+                    <div class="form-control">
+                      <label class="radio-inline"> <input type="radio" name="optradio5" value="Vacant"> لا يوجد</label>
+                      <label class="radio-inline"> <input type="radio" name="optradio5" value="Occupied" checked> يوجد</label>
+                      <label class="radio-inline"> <input type="radio" name="optradio5" value="Regularization"> إعادة تسجيل الإباحات القديمة</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- End row -->
+              <div class="form-group">
+                <div class="row">
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="padtopbot"> 
+                      <!--//validations added for Units & storeys-Kiran 9/5/2017-->
+                      <div id="ExtBuildingDetails_Err" class="Error">الرجاء إدخال جميع حقول بيانات المبنى القائم </div>
+                      <div id="ExtBuilding_UnitsDetails_Err" class="Error">Please Add Units under Existing building Details </div>
+                      <div id="ExtBuilding_StoreyssDetails_Err" class="Error">Please Add Storeys under Existing building Details </div>
+                    </div>
+                    <div class="panel panel-default" id="Existinghide">
+                      <div class="panel-heading" role="tab" id="headingOne" style="background: rgb(184, 150, 87);">
+                        <h4 class="panel-title"> <a role="button" id="buildheader" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i class="more-less glyphicon glyphicon-chevron-down pull-right"></i>بيانات المبنى القائم </a> </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <fieldset>
+                            <!-- <legend>بيانات المبنى القائم </legend> -->
+                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <label for="Building Number" class="required">رقم المبنى</label>
+                              <input type="number" class="form-control numeric" id="BuildingNo" placeholder="رقم المبنى" min="0" />
+                            </div>
+                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <label for="Building name" class="required">اسم المبنى</label>
+                              <input type="text" class="form-control" id="Buildingname" placeholder="اسم المبنى" />
+                            </div>
+                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <label for="Type of use" class="required">نوع الاستعمال</label>
+                              <select name="" id="Btype" class="form-control">
+                                <option value="0">الرجاءالأختيار</option>
+                                <option value="461">سكني</option>
+                                <option value="463">تجاري</option>
+                                <option value="464">سكني تجاري</option>
+                                <option value="465">صناعي</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <label for="Building status" class="required">حالة المبنى</label>
+                              <select name="" id="Bstatus" class="form-control">
+                                <option value="0">الرجاء الأختيار</option>
+                                <option value="1">جديد</option>
+                                <option value="2">تمت الموافقة على البدء في البناء</option>
+                                <option value="3">تم الإنتهاء من البناء</option>
+                                <option value="4">تم البدء في البناء</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <label for="Number of units" class="required">عدد الوحدات</label>
+                              <input type="number" class="form-control numeric" id="BuildingNumberofunits" placeholder="عدد الوحدات" min="0" />
+                            </div>
+                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <label for="Number of floors" class="required">عدد الطوابق</label>
+                              <input type="number" class="form-control numeric" id="BuildingNumberoffloors" placeholder="عدد الطوابق"/>
+                            </div>
+                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <label for="Building total area (m2)" class="required">مساحة البناء بالمتر المربع</label>
+                              <input type="number" class="form-control numeric" id="Buildingtotalarea" placeholder="مساحة البناء بالمتر المربع"/>
+                            </div>
+                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                              <label for="Footprint (m2)">مساحة الأرض بالمتر المربع</label>
+                              <input type="number" class="form-control numeric" id="Footprint_ExBld" placeholder="مساحة الأرض بالمتر المربع"/>
+                            </div>
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Power load (kW)">سعة الطاقة بالكيلووات</label>
+                                <input type="number" class="form-control numeric" id="Powerlaod" placeholder="سعة الطاقة بالكيلووات"/>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Car park capacity">سعة مواقف السيارات</label>
+                                <input type="number" class="form-control numeric" id="Carparkcapacity" placeholder="سعة مواقف السيارات"/>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Bcolortype">نوعية الطلاء</label>
+                                <select id="Bcolortype" class="form-control">
+                                  <option value="1000">الرجاء الإختيار</option>
+                                  <option value="101">لون المبنى</option>
+                                  <option value="102">حجر</option>
+                                  <option value="103">الومنيوم</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3" id="Bcolorhide">
+                                <label for="Bcolor">لون المبنى</label>
+                                <select id="Bcolor" class="form-control">
+                                  <option value="0">الرجاء الإختيار</option>
+                                  <option value="461">أبيض</option>
+                                  <option value="463">بني</option>
+                                  <option value="464">رمادي</option>
+                                  <option value="465">أخضر</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="outcolor">اللون الخارجي</label>
+                                <select id="outcolor" class="form-control">
+                                  <option value="0">الرجاء الإختيار</option>
+                                  <option value="461">أبيض</option>
+                                  <option value="463">بني</option>
+                                  <option value="464">رمادي</option>
+                                  <option value="465">أخضر</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Street">الشارع</label>
+                                <input type="text" class="form-control" id="Street_Exbld" placeholder="الشارع" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Alley">السكة</label>
+                                <input type="text" class="form-control" id="Alley_Exbld" placeholder="السكة" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="will be demolished">سيتم هدمها ؟</label>
+                                <div class="form-control" id="WillDemolish">
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optradio3" value="Yes">
+                                    نعم</label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optradio3" value="No" checked>
+                                    لا</label>
+                                </div>
+                              </div>
+                              <div class="form-group pull-right top-25">
+                                <button type="button" class="btn btn-ts" onclick="addbuilding()" id="addbuildingid"> إضافة مبنى </button>
+                              </div>
+                            </div>
+                            <!-- End row -->
+                            
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="table-responsive">
+                                  <table id="building_details_table" class="table table-striped table-bordered" width="100%">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- row -->
+                            
+                            <div class="row">
+                              <div class="col-md-6 col-xs-12">
+                                <div class="table-responsive">
+                                  <table id="storeys_table"  class="table table-hover table-bordered">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- End Storeys --> 
+                              </div>
+                              <!-- col-md-6 --> 
+                              
+                              <!-- .........................* Units Modal Start *......................... --> 
+                              <!-- Modal for storeys-->
+                              <div class="modal fade" id="addstoreysModal" role="dialog">
+                                <div class="modal-dialog modal-lg"> 
+                                  
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">بيانات الطوابق</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>الطوابق</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="SBuildingNo">رقم المبنى</label>
+                                          <input type="number" class="form-control" id="SBuildingNo"  placeholder="رقم المبنى" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="SstoreyNo" class="required">رقم الطابق</label>
+                                          <input type="number" class="form-control numeric" id="SstoreyNo" placeholder="رقم الطابق">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="Storeytype" class="required">نوع الطابق </label>
+                                          <select name="Storeytype" id="Storeytype" class="form-control">
+                                            <option value="0">الرجاء الإختيار</option>
+                                            <option value="461">شقق</option>
+                                            <option value="463">مكاتب</option>
+                                            <option value="464">محلات تجارية</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="unitsitmno" class="required">رقم الوحدة</label>
+                                          <input type="number" class="form-control numeric" id="unitsitmno" placeholder="رقم الوحدة">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="SurfaceM2">البناء على السطح بالمتر2</label>
+                                          <input type="number" class="form-control numeric" id="SurfaceM2" placeholder="البناء على السطح بالمتر2">
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" onclick="addstrfunction()">حفظ</button>
+                                      <button type="button" class="btn btn-ts" onclick="addstrfunction1()">حفظ وإضافة طابق</button>
+                                    </div>
+                                  </div>
+                                  <!-- Modal content--> 
+                                </div>
+                              </div>
+                              <!-- End Storeys Modal --> 
+                              
+                              <!-- Modal for Edit storeys-->
+                              <div class="modal fade" tabindex="-1" id="editstoreysModal" role="dialog">
+                                <div class="modal-dialog modal-lg"> 
+                                  
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;" >بيانات الطوابق</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>الطوابق</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editSBuildingNo">رقم المبنى</label>
+                                          <input type="number" class="form-control" id="editSBuildingNo"  placeholder="رقم المبنى" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editSstoreyNo" class="required">رقم الطابق</label>
+                                          <input type="number" class="form-control numeric" id="editSstoreyNo" placeholder="رقم الطابق">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editStoreytype" class="required">نوع الطابق</label>
+                                          <select name="" id="editStoreytype" class="form-control">
+                                            <option value="0">الرجاء الإختيار</option>
+                                            <option value="461">شقق</option>
+                                            <option value="463">مكاتب</option>
+                                            <option value="464">محلات تجارية</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editunitsitmno" class="required">نوع الوحدة</label>
+                                          <input type="number" class="form-control numeric" id="editunitsitmno" placeholder="نوع الوحدة">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editSurfaceM2">البناء على السطح بالمتر2</label>
+                                          <input type="number" class="form-control numeric" id="editSurfaceM2" placeholder="البناء على السطح بالمتر2">
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" id="editstrfunctionid" onclick="editstrfunction()">تحديث</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Edit Storeys Modal --> 
+                              <!-- .........................* Storey Modal End *......................... -->
+                              
+                              <div class="col-md-6 col-xs-12">
+                                <div class="table-responsive">
+                                  <table id="units_detailstable"  class="table table-hover table-bordered" style="width: 100%;">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- End Units --> 
+                              </div>
+                              <!-- .col-md-6 --> 
+                              
+                              <!-- .........................* Units Modal Start *......................... --> 
+                              <!-- Modal for Units -->
+                              <div class="modal fade" id="addunitsModal" role="dialog">
+                                <div class="modal-dialog modal-lg"> 
+                                  
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size:18px;">بيانات الوحدات</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>الوحدات</legend>
+                                        <div class="row">
+                                          <div class="form-group col-sm-3">
+                                            <label for="Building Number">رقم المبنى</label>
+                                            <input type="number" class="form-control" id="UBuildingNo"  placeholder="رقم المبنى" readonly>
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="auIdnumber" class="required">رقم الطابق</label>
+                                            <input type="text" class="form-control" id="auIdnumber" placeholder="رقم الطابق" readonly />
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="auNumberofunits">عدد الوحدات</label>
+                                            <input type="number" class="form-control numeric" id="auNumberofunits" placeholder="عدد الوحدات">
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="untstype" class="required">نوع الوحدة</label>
+                                            <select name="untstype" id="untstype" class="form-control">
+                                              <option value="0">الرجاء الأختيار</option>
+                                              <option value="461">سكني</option>
+                                              <option value="463">تجاري</option>
+                                              <option value="464">سكني تجاري</option>
+                                              <option value="465">صناعي</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <!-- End row -->
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" onclick="addunitsfunction()">حفظ</button>
+                                      <button type="button" class="btn btn-ts" onclick="addunitsfunction1()">حفظ وإضافة وحدة</button>
+                                    </div>
+                                  </div>
+                                  <!-- Modal content--> 
+                                </div>
+                              </div>
+                              <!-- End Modal Units --> 
+                              
+                              <!-- Modal for Edit Units -->
+                              <div class="modal fade" id="editunitsModal" role="dialog">
+                                <div class="modal-dialog modal-lg"> 
+                                  
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-size: 18px;font-weight: bold;">بيانات الوحدات</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>الوحدات</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="Building Number">رقم المبنى</label>
+                                          <input type="number" class="form-control" id="editUBuildingNo"  placeholder="رقم المبنى" readonly />
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editauIdnumber" class="required">رقم الطابق</label>
+                                          <input type="text" class="form-control" id="editauIdnumber" placeholder="رقم الطابق" readonly />
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editauNumberofunits">عدد الوحدات</label>
+                                          <input type="number" class="form-control numeric" id="editauNumberofunits" placeholder="عدد الوحدات">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="edituntstype" class="required">نوع الوحدة</label>
+                                          <select name="edituntstype" id="edituntstype" class="form-control">
+                                            <option value="0">الرجاء الأختيار</option>
+                                            <option value="461">سكني</option>
+                                            <option value="463">تجاري</option>
+                                            <option value="464">سكني تجاري</option>
+                                            <option value="465">صناعي</option>
+                                          </select>
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" id="editunitsfunctionid" onclick="editunitsfunction()">تحديث</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Modal --> 
+                              <!-- .........................* Units Modal End *......................... --> 
+                            </div>
+                            <!-- row -->
+                          </fieldset>
+                        </div>
+                        <!-- panel-body --> 
+                      </div>
+                      <!-- collapseOne --> 
+                    </div>
+                    <!-- collapseOne main panel END Here --> 
+                    
+                    <!-- Proposed Buildings Details -->
+                    <div class="padtopbot"> 
+                      <!--//validations added for Units & storeys-Kiran 9/5/2017-->
+                      <div id="PrpBuildingDetails_Err" class="Error">الرجاء إدخال جميع حقول بيانات المباني المقدم لها الطلب </div>
+                      <div id="PrpBuilding_UnitsDetails_Err" class="Error">Please Add Units under Proposed building Details </div>
+                      <div id="PrpBuilding_StoreysDetails_Err" class="Error">Please Add Storeys under Proposed building Details </div>
+                    </div>
+                    <div class="panel panel-default" id="Proposedhide">
+                      <div class="panel-heading" role="tab" id="headingTwo" style="background: rgb(184, 150, 87);">
+                        <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="more-less glyphicon glyphicon-chevron-left pull-right"></i> بيانات المباني المقدم لها الطلب </a> </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          <fieldset>
+                            <!-- <legend>بيانات المبنى المقدم له الطلب</legend> -->
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Building Number" class="required">رقم المبنى</label>
+                                <input type="number" class="form-control numeric" id="PBuildingNo" placeholder="رقم المبنى">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Building name" class="required">اسم المبنى</label>
+                                <input type="text" class="form-control" id="PBuildingname" placeholder="اسم المبنى">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Type of use" class="required">نوع الاستعمال</label>
+                                <select name="" id="Ptype" class="form-control">
+                                  <option value="0">الرجاء الأختيار</option>
+                                  <option value="461">سكني</option>
+                                  <option value="463">تجاري</option>
+                                  <option value="464">سكني تجاري</option>
+                                  <option value="465">صناعي</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Building status" class="required">حالة البناء</label>
+                                <select name="" id="Pstatus" class="form-control">
+                                  <option value="0">الرجاء الأختيار</option>
+                                  <option value="1">جديد</option>
+                                  <option value="2">تمت الموافقة على البدء في البناء</option>
+                                  <option value="3">تم الإنتهاء من البناء</option>
+                                  <option value="4">تم البدء في البناء</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- End row -->
+                            
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Number of units" class="required">عدد الوحدات</label>
+                                <input type="number" class="form-control numeric" id="PNumberofunits" placeholder="عدد الوحدات">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Number of floors" class="required">عدد الطوابق</label>
+                                <input type="number" class="form-control numeric" id="PNumberoffloors" placeholder="عدد الطوابق">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Building total area (m2)" class="required">مساحة البناء بالمتر المربع</label>
+                                <input type="number" class="form-control numeric" id="Ptotalarea" placeholder="مساحة البناء بالمتر المربع">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Footprint (m2)">مساحة الأرض بالمتر المربع</label>
+                                <input type="text" class="form-control" id="PFootprint" placeholder="مساحة الأرض بالمتر المربع">
+                              </div>
+                            </div>
+                            <!-- End row -->
+                            
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PPowerlaod">سعة الطاقة بالكيلووات</label>
+                                <input type="number" class="form-control numeric" id="PPowerlaod" placeholder="سعة الطاقة بالكيلووات">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PCarparkcapacity">سعة مواقف السيارات</label>
+                                <input type="number" class="form-control numeric" id="PCarparkcapacity" placeholder="سعة مواقف السيارات">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Pcolortype">نوعية الطلاء</label>
+                                <select id="Pcolortype" class="form-control">
+                                  <option value="1000">الرجاء الإختيار</option>
+                                  <option value="101">لون المبنى</option>
+                                  <option value="102">حجر</option>
+                                  <option value="103">الومنيوم</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3" id="Pcolorhide">
+                                <label for="Pcolor">لون المبنى</label>
+                                <select name="Pcolor" id="Pcolor" class="form-control">
+                                  <option value="0">الرجاء الإختيار</option>
+                                  <option value="461">أبيض</option>
+                                  <option value="463">بني</option>
+                                  <option value="464">رمادي</option>
+                                  <option value="465">أخضر</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Poutcolor">اللون الخارجي</label>
+                                <select id="Poutcolor" class="form-control">
+                                  <option value="0">الرجاء الإختيار</option>
+                                  <option value="461">أبيض</option>
+                                  <option value="463">بني</option>
+                                  <option value="464">رمادي</option>
+                                  <option value="465">أخضر</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PStreet">الشارع</label>
+                                <input type="text" class="form-control" id="PStreet" placeholder="الشارع">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PAlley">السكة</label>
+                                <input type="text" class="form-control" id="PAlley" placeholder="السكة">
+                              </div>
+                              <div class="form-group pull-right top-25">
+                                <button type="button" class="btn btn-ts" onclick="addProposed()" id="addProposedid"> إضافة مبنى</button>
+                              </div>
+                            </div>
+                            <!-- End row -->
+                            
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="table-responsive">
+                                  <table id="Proposed_details_table" class="table table-striped table-bordered" style="width: 100%;">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- row -->
+                            
+                            <div class="row">
+                              <div class="col-md-6 col-xs-12">
+                                <div class="table-responsive">
+                                  <table id="storeys_Proposed"  class="table table-hover table-bordered" style="width:100%;">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- End Storeys --> 
+                              </div>
+                              <!-- .col-md-6 --> 
+                              <!-- .........................* Storey Modal Start *......................... --> 
+                              <!-- Modal for storeys-->
+                              <div class="modal fade" id="addPstoreysModal" role="dialog">
+                                <div class="modal-dialog modal-lg"> 
+                                  
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">بيانات الطوابق</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>الطوابق</legend>
+                                        <div class="row">
+                                          <div class="form-group col-sm-3">
+                                            <label for="PSBuildingNo">رقم المبنى</label>
+                                            <input type="number" class="form-control" id="PSBuildingNo"  placeholder="رقم المبنى" readonly>
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="PSstoreyNo" class="required">عدد الطوابق</label>
+                                            <input type="number" class="form-control numeric" id="PSstoreyNo" placeholder="عدد الطوابق">
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="PStoreytype" class="required">نوع الطوابق</label>
+                                            <select name="PStoreytype" id="PStoreytype" class="form-control">
+                                              <option value="0">الرجاء الإختيار</option>
+                                              <option value="461">شقق</option>
+                                              <option value="463">مكاتب</option>
+                                              <option value="464">محلات تجارية</option>
+                                            </select>
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="Punitsitmno" class="required">عدد الوحدات</label>
+                                            <input type="number" class="form-control numeric" id="Punitsitmno" placeholder="عدد الوحدات">
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="PSurfaceM2">المساحة المبنية في السطح بالمتر 2</label>
+                                            <input type="number" class="form-control numeric" id="PSurfaceM2" placeholder="المساحة المبنية في السطح بالمتر 2">
+                                          </div>
+                                        </div>
+                                        <!-- End row -->
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" onclick="addPstrfunction()">حفظ</button>
+                                      <button type="button" class="btn btn-ts" onclick="addPstrfunction1()">حفظ وإضافة طابق</button>
+                                    </div>
+                                  </div>
+                                  <!-- Modal content--> 
+                                </div>
+                              </div>
+                              <!-- End Storeys Modal --> 
+                              
+                              <!-- Modal for Edit storeys-->
+                              <div class="modal fade" id="editPstoreysModal" role="dialog">
+                                <div class="modal-dialog modal-lg"> 
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">بيانات الطوابق</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>الطوابق</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPSBuildingNo">رقم المبنى</label>
+                                          <input type="number" class="form-control" id="editPSBuildingNo"  placeholder="رقم المبنى" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPSstoreyNo" class="required">عدد الطوابق</label>
+                                          <input type="number" class="form-control numeric" id="editPSstoreyNo" placeholder="عدد الطوابق">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPStoreytype" class="required">نوع الطوابق</label>
+                                          <select name="editPStoreytype" id="editPStoreytype" class="form-control">
+                                            <option value="0">الرجاء الإختيار</option>
+                                            <option value="461">شقق</option>
+                                            <option value="463">مكاتب</option>
+                                            <option value="464">محلات تجارية</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPunitsitmno" class="required">عدد الوحدات</label>
+                                          <input type="number" class="form-control numeric" id="editPunitsitmno" placeholder="عدد الوحدات">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPSurfaceM2">المساحة المبنية في السطح بالمتر 2</label>
+                                          <input type="number" class="form-control numeric" id="editPSurfaceM2" placeholder="المساحة المبنية في السطح بالمتر 2">
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" id="editPstr" onclick="editPstrfunction()">تحديث</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Storeys Modal --> 
+                              <!-- .........................* Storey Modal End *......................... -->
+                              
+                              <div class="col-md-6 col-xs-12">
+                                <div class="table-responsive">
+                                  <table id="units_Proposed" class="table table-hover table-bordered" width="100%">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- End Units --> 
+                              </div>
+                              <!-- .col-md-6 --> 
+                              <!-- .........................* Units Modal Start *......................... --> 
+                              <!-- Modal for Units -->
+                              <div class="modal fade" id="addPunitsModal" role="dialog">
+                                <div class="modal-dialog modal-lg"> 
+                                  
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">بيانت الوحدات</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>الوحدات</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="PUBuildingNo">رقم المبنى</label>
+                                          <input type="number" class="form-control" id="PUBuildingNo"  placeholder="رقم المبنى" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="PauIdnumber" class="required">رقم التعريف</label>
+                                          <input type="text" class="form-control" id="PauIdnumber" placeholder="رقم التعريف" readonly />
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="PauNumberofunits">عدد الوحدات</label>
+                                          <input type="number" class="form-control numeric" id="PauNumberofunits" placeholder="عدد الوحدات">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="Puntstype" class="required">نوع الوحدات</label>
+                                          <select name="Puntstype" id="Puntstype" class="form-control">
+                                            <option value="0">الرجاء الأختيار</option>
+                                            <option value="461">سكني</option>
+                                            <option value="463">تجاري</option>
+                                            <option value="464">سكني تجاري</option>
+                                            <option value="465">صناعي</option>
+                                          </select>
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" onclick="addPunitsfunction()">حفظ</button>
+                                      <button type="button" class="btn btn-ts" onclick="addPunitsfunction1()">حفظ وإضافة وحدة</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Modal --> 
+                              
+                              <!-- Modal for Edit Units -->
+                              <div class="modal fade" id="editPunitsModal" role="dialog">
+                                <div class="modal-dialog modal-lg"> 
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">بيانت الوحدات</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>الوحدات</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPUBuildingNo">رقم المبنى</label>
+                                          <input type="number" class="form-control" id="editPUBuildingNo"  placeholder="رقم المبنى" readonly />
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPauIdnumber" class="required">رقم التعريف </label>
+                                          <input type="text" class="form-control" id="editPauIdnumber" placeholder="رقم التعريف" readonly />
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPauNumberofunits">عدد الوحدات</label>
+                                          <input type="number" class="form-control numeric" id="editPauNumberofunits" placeholder="عدد الوحدات">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPuntstype" class="required">نوع الوحدات</label>
+                                          <select name="editPuntstype" id="editPuntstype" class="form-control">
+                                            <option value="0">الرجاء الأختيار</option>
+                                            <option value="461">سكني</option>
+                                            <option value="463">تجاري</option>
+                                            <option value="464">سكني تجاري</option>
+                                            <option value="465">صناعي</option>
+                                          </select>
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" id="editPunits" onclick="editPunitsfunction()">تحديث</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Modal --> 
+                              <!-- .........................* Units Modal End *......................... --> 
+                            </div>
+                            <!-- End row -->
+                          </fieldset>
+                        </div>
+                        <!-- panel-body --> 
+                      </div>
+                      <!-- collapsetwo --> 
+                    </div>
+                    <!-- collapsetwo main panel END Here --> 
+                  </div>
+                  <!-- panel-group --> 
+                </div>
+                <!-- .row --> 
+              </div>
+              <!-- .form-group --> 
+            </div> <!-- End BuildingsDetails -->
+
+            <div id="Attachment" class="">
+              <div class="form-group">
+                <div class="row"> 
+                  <!-- Note message -->
+                  <div class="alert alert-danger"><strong>ملحوظة :- </strong>&nbsp;يرجى إرفاق الملفات فقط بصيغة (.pdf و .jpg و .png) فقط.</div>
+                  <!-- Note message -->
+                  <fieldset>
+                    <legend>المرفقات</legend>
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>المرفقات</th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>سند الملكية <i class="fa fa-question-circle" aria-hidden="true" title="سند الملكية " data-toggle="modal" data-target="#Deed"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          <!-- Ownership document ( Mulkiya ) Modal -->
+                          <div class="modal fade" id="Deed" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">سند الملكية </h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>سند الملكية </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Ownership ( Mulkiya ) and Survey Sketch ( Krooki ) -->
+                        
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>الرسم المساحي<i class="fa fa-question-circle" aria-hidden="true" title="الرسم المساحي" data-toggle="modal" data-target="#Detailed"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          
+                          <!-- TDrawing of Structural and Architectural & Structural Schemas Modal -->
+                          <div class="modal fade" id="Detailed" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">الرسم المساحي</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>الرسم المساحي</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Drawing of Structural and Architectural & Structural Schemas Modal -->
+                          
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>الخرائط التفصيلية المصدقة للمخططات المعمارية  <i class="fa fa-question-circle" aria-hidden="true" title="الخرائط التفصيلية المصدقة للمخططات المعمارية" data-toggle="modal" data-target="#Structural"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          
+                          <!-- TDrawing of Structural and Architectural & Structural Schemas Modal -->
+                          <div class="modal fade" id="Structural" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">الخرائط التفصيلية المصدقة للمخططات المعمارية</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>نسخة كاملة من المخططات المعمارية(الخرائط التفصيلية للبناء مصدق عليها من المكتب الاستشاري المصمم)</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Drawing of Structural and Architectural & Structural Schemas Modal -->
+                          
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>الخرائط التفصيلية المصدقة للمخططات الإنشائية <i class="fa fa-question-circle" aria-hidden="true" title="الخرائط التفصيلية المصدقة للمخططات الإنشائية" data-toggle="modal" data-target="#SOIL"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          <!-- SOIL Test Report Modal -->
+                          <div class="modal fade" id="SOIL" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">الخرائط التفصيلية المصدقة للمخططات الإنشائية</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>نسخة كاملة من المخططات الإنشائية (كتيب الحسابات الإنشائية)</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End SOIL Test Report Modal -->
+                          
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>موافقة الجهات المعنية : شركات الإتصالات، الكهرباء والمياه<i class="fa fa-question-circle" aria-hidden="true" title="موافقة الجهات المعنية : شركات الإتصالات، الكهرباء والمياه" data-toggle="modal" data-target="#Approvals"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          
+                          <!-- Approvals Modal -->
+                          <div class="modal fade" id="Approvals" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">موافقة الجهات المعنية : شركات الإتصالات، الكهرباء والمياه</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>موافقة الجهات المعنية : شركات الإتصالات، الكهرباء والمياه</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Approvals Modal -->
+                          
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>اعتماد الخرائط من الهيئات المطلوبة <i class="fa fa-question-circle" aria-hidden="true" title="Aاعتماد الخرائط من الهيئات المطلوبة" data-toggle="modal" data-target="#PACDA"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          <!-- PACDA Modal -->
+                          <div class="modal fade" id="PACDA" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">اعتماد الخرائط من الهيئات المطلوبة</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>اعتماد الخرائط من الهيئة العامة للدفاع المدني والإسعاف للمباني الحكومية والصناعية والسياحية، المباني السكنية والسكنية التجارية والسياحية وقاعات الأفراح والمباني التعليمية التي تتعدى مساحة أي طابق فيها (350) مترا مربعا أو كان الطابق الارضي مستغلا لأغراض تجارية وكانت مساحة المحل الواحد تتجاوز (60) مترا مربعا</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End PACDA Modal -->
+                          
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>تقرير فحص التربة<i class="fa fa-question-circle" aria-hidden="true" title="تقرير فحص التربة" data-toggle="modal" data-target="#SOIL"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          <!-- Govt.Bodies Approval Modal -->
+                          <div class="modal fade" id="SOIL" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">تقرير فحص التربة</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>تقرير فحص التربة من إحدى المعامل المتخصصة (من داخل السلطنة) للمباني التي يزيد ارتفاعها عن ثلاثة طوابق ، و يجوز الاكتفاء بتقديم تقرير الفحص من الاستشاري المصمم إذا كان عدد الطوابق ثلاثة فأقل</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End SOIL Test Report Modal -->
+
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>موافقات الجهات الحكومية<i class="fa fa-question-circle" aria-hidden="true" title="موافقات الجهات الحكومية" data-toggle="modal" data-target="#Govt"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          <!-- Govt.Bodies Approval Modal -->
+                          <div class="modal fade" id="Govt" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">موافقات الجهات الحكومية</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>موافقات بعض الجهات الحكومية وفق طبيعة المشروع (وزارة الإسكان، الدفاع المدني، وزارة السياحة، وزارة البيئة والشؤون المناخية، وزارة التراث والثقافة، وزارة الأوقاف والشؤون الدينية)...الخ</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Govt.Bodies Approval Modal -->
+
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>شهادة أحمال<i class="fa fa-question-circle" aria-hidden="true" title="شهادة أحمال" data-toggle="modal" data-target="#Stability"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          <!-- Stability  Approval Modal -->
+                          <div class="modal fade" id="Stability" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">شهادة أحمال</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>شهادة أحمال</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Stability Approval Modal -->
+
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>كتيب الحسابات الإنشائية<i class="fa fa-question-circle" aria-hidden="true" title="كتيب الحسابات الإنشائية" data-toggle="modal" data-target="#Design"></i></td>
+                            <td><input type="file" name=""></td>
+                            <td><a href="javascript:;" class="text-red"><i class="fa fa-trash fa-fw"></i></a></td>
+                          </tr>
+                          <!-- Stability  Approval Modal -->
+                          <div class="modal fade" id="Design" role="dialog">
+                            <div class="modal-dialog"> 
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">كتيب الحسابات الإنشائية</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <p>كتيب الحسابات الإنشائية</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Stability Approval Modal -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div> <!-- .row --> 
+              </div> <!-- .form-group --> 
+            </div> <!-- Attachment -->
+            
+            <div id="others" class="">
+              <div class="form-group">
+                <div class="row">
+                  <fieldset>
+                    <legend>التوضيحات</legend>
+                    <div class="table-responsive">
+                      <table id="example2"  class="table table-hover table-bordered">
+                        <thead class="ts-thead">
+                          <tr>
+                            <th>التاريخ</th>
+                            <th>الرسالة</th>
+                            <th>آخر تاريخ لتوفيرها</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div> <!-- .row --> 
+              </div> <!-- .form-group -->
+              <div class="form-group">
+                <div class="row">
+                  <fieldset>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="Commentxt">تعليقات</label>
+                      <textarea class="form-control" id="Commentxt" placeholder="تعليقات" rows="5"></textarea>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3" id="Freezehide">
+                      <label for="CommentFreeze">Freeze Comments &amp; Unfreeze</label>
+                      <textarea class="form-control" id="CommentFreeze" placeholder="Freeze Comments and Unfreeze" rows="5"></textarea>
+                    </div>
+                  </fieldset>
+                </div> <!-- .row --> 
+              </div> <!-- .form-group --> 
+            </div> <!--End others -->
+            
+            <div id="LicenseDetails" class="">
+              <div class="form-group">
+                <div class="row">
+                  <fieldset>
+                    <legend>الدفع</legend>
+                    <div class="table-responsive">
+                      <table id="example2"  class="table table-hover table-bordered">
+                        <thead class="ts-thead">
+                          <tr>
+                            <th>نوع الرسوم</th>
+                            <th>القيمة</th>
+                            <th>آخر تاريخ للدفع</th>
+                            <th>نوع الدفع</th>
+                            <th>الرقم المرجعي</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div> <!-- .row --> 
+              </div> <!-- .form-group -->
+              
+              <div class="form-group">
+                <div class="row">
+                  <fieldset>
+                    <legend>المخرجات</legend>
+                    <div class="table-responsive">
+                      <table id="example2" class="table table-bordered">
+                        <thead class="ts-thead">
+                          <tr>
+                            <th>الرقم المتسلسل</th>
+                            <th>تاريخ البداية</th>
+                            <th>تاريخ الإنتهاء</th>
+                            <th>تاريخ الإصدار</th>
+                            <th>تحميل الترخيص</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-download"></span></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div>
+                <!-- .row --> 
+              </div>
+              <!-- .form-group --> 
+            </div>
+            <!-- End LicenseDetails --> 
+            
+          </div>
+          <!-- End Empty div --> 
+        </div>
+        <!-- End SmartWizard html --> 
+      </div>
+      <!-- End row --> 
+    </div>
+    <!--End Inner Pages -->
+  </form>
+</div>
+<!-- End container --> 
+
+<br />
+<!-- Modal window start Here -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header modalHeaderSpace">
+        <h4 class="modal-title modaltitle" id="myModalLabel">تنبيه إحداثيات نظم المعلومات الجغرافية</h4>
+      </div>
+      <div class="modal-body modalbodycss">
+        <p>الرجاء تعبئة حقول شمالي وشرقي</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>--> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="ExtBuilding" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header modalHeaderSpace">
+        <h4 class="modal-title modaltitle" id="myModalLabel">تنبيه بيانات المبنى القائم</h4>
+      </div>
+      <div class="modal-body modalbodycss">
+        <p>الرجاء تعبئة جميع الحقول المطلوبة</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>--> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="PrpBuilding" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header modalHeaderSpace">
+        <h4 class="modal-title modaltitle" id="myModalLabel">تنبيه بيانات المبنى  المقدم له الطلب</h4>
+      </div>
+      <div class="modal-body modalbodycss">
+        <p>الرجاء تعبئة جميع الحقول المطلوبة</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>--> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal window End Here --> 
+
+<!-- FOOTER START -->
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-unstyled list-inline">
+          <li><a href="indexar.html">الرئيسية</a></li>
+          <li>|</li>
+          <li><a href="#">الأسئلة الشائعة</a></li>
+          <li>|</li>
+          <li><a href="usefullinksar.html" title="روابط هامة">روابط هامة</a></li>
+          <li>|</li>
+          <li><a href="#">خريطة الموقع</a></li>
+          <li>|</li>
+          <li><a href="#">سياسة الموقع</a></li>
+          <li>|</li>
+          <li><a href="#">العلامات التجارية</a></li>
+          <li>|</li>
+          <li><a href="#">سياسة مكافحة الفساد</a></li>
+          <li>|</li>
+          <li><a href="#">سياسة المشاركات الإلكترونية</a></li>
+          <li>|</li>
+          <li><a href="#">سياسة الوصول </a></li>
+          <li>|</li>
+          <li><a href="#">سياسة التحول للحكومة الإلكترونية</a></li>
+          <li>|</li>
+          <li><a href="#">سياسة البيانات المفتوحة</a></li>
+          <li>|</li>
+          <li><a href="#"> عمان الرقمية</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="list-unstyled list-inline social-icons">
+          <li><a href="#"> <img src="images/store/google-play-badge.png" alt="Get it on Google Play" style="width: 120px;"></a></li>
+          <li><a href="#"> <img src="images/store/badge-download-on-the-app-store.svg" alt="Download on the App Store" style="width: 120px;"></a> </li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center"> 
+        <!-- <h4>Follow with us</h4> -->
+        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+          <li> <a href="https://www.facebook.com/mrmwr/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li> <a href="https://www.instagram.com/mrmwr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li> <a href="https://www.youtube.com/user/youtubmrmwr" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          <li> <a href="https://twitter.com/mrmwroman/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <p class="pull-right"> <a class="pull-right ml101" href="http://www.w3.org/" target="_blank"> <img id="w3cImage" src="images/w3c-logo.png" class="trustwave" alt="W3C" title="W3C" style="width: 37px;height: 37px;margin-top: 5px;"> </a> <a class="pull-right" href="http://www.oman.om/" target="_blank"> <img src="images/oman-logo.png" class="trustwave" alt="Oman" title="Oman" style="width: 37px;height: 37px;margin-top: 5px;"></a> </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-unstyled list-inline text-center">
+          <li>حقوق الطبع محفوظة &copy; لوزارة البلديات الإقليمية وموارد المياه</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End container --> 
+</section>
+<!-- FOOTER END --> 
+
+<!--Scrolling top--> 
+<a class="scrollup" href="#" title="للأعلى" style="display: inline;"> <span class="fa fa-angle-double-up fa-22px"></span><br />
+للأعلى</a> 
+<!-- end scrolling top--> 
+
+<!-- Side Nav top-->
+<div class="login-anmi wow fadeInDown">
+  <ul>
+    <li><a class="lnk-social social-facebook social-rounded" href="loginar.html"><img src="images/sidenav/loginside.png"> تسجيل الدخول</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/track.png">متابعة الطلب</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/about.png">عن الوزارة</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/Tender.png">المناقصات</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/newside.png">النشرة الإخبارية</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/library.png">المكتبة الإلكترونية</a></li>
+    <li><a class="lnk-social social-facebook social-rounded" href="#"><img src="images/sidenav/anreport.png">التقارير السنوية</a></li>
+  </ul>
+</div>
+<!-- end Side Nav top--> 
+
+<script src="js/bootstrap.min.js"></script> 
+<!-- Date &amp; Time Live--> 
+<script src="js/Time/timejsar.js"></script> 
+<!-- Date &amp; Time Live--> 
+<script src="js/Datepicker/bootstrap-datepicker.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/demo.js"></script> 
+<!-- Include Data Table smartWizard source --> 
+<script src="js/jquery.dataTables.min.ar.js"></script> 
+<script src="js/dataTables.bootstrap.js"></script> 
+<script src="js/jquery.smartWizard.min.ar.js"></script> 
+<script src="js/validations.js"></script> 
+<script src="js/TS/smartwizardTSar.js"></script> 
+<script src="js/TS/App_Consar.js"></script> 
+<script src="js/HS/Beneficiaryar.js"></script> 
+<script src="js/GISar.js"></script> 
+<script src="js/builingar.js"></script> 
+<script src="js/Proposedbuildingsar.js"></script> 
+<script>
+  $(document).ready(function() {
+    var org_type, cons_detail, AppType_BND, ConsType_Value, Building_Type;
+    var selectedList = $('ul#credit').find('li.active').data('interest');
+    $("#OrganizationDetails_Id").hide();
+    $("#Consultant_ID").hide();
+    $("#reqtypeDetails_Err").hide();
+    $("#appDetails_Err").hide();
+    $("#serDetails_Err").hide();
+    $("#orgDetails_Err").hide();
+    $("#BenfDetails_Err").hide();
+    $("#PlotDetails_Err").hide();
+    $("#GISCoords_Err").hide();
+    //validations added for Units & storeys-Kiran 9/5/2017-->
+    $("#ExtBuildingDetails_Err").hide();
+    $("#ExtBuilding_UnitsDetails_Err").hide(); //for Units & storeys-Kiran 9/5/2017
+    $("#ExtBuilding_StoreyssDetails_Err").hide(); //for Units & storeys-Kiran 9/5/2017
+    $("#PrpBuildingDetails_Err").hide();
+    $("#PrpBuilding_UnitsDetails_Err").hide(); //for Units & storeys-Kiran 9/5/2017
+    $("#PrpBuilding_StoreysDetails_Err").hide(); //for Units & storeys-Kiran 9/5/2017
+    $("#consDetails_Err").hide();
+    $("#email_Error").hide(); //For Email Validation on Kiran 18/04/2017
+    $("#Bemail_Error").hide(); //For Email Validation on Kiran 18/04/2017
+    //kiran-2/5/2017
+    $("#Ph_Error").hide();
+    $("#Ph_OrgError").hide();
+    $("#Ph_BenfError").hide();
+    $("#benType").hide();
+    $(this).on('keyup keypress blur change ready', function() {
+      $("#OrganizationDetails_Id").hide();
+      $("#Consultant_ID").hide();
+      $("#appDetails_Err").hide();
+      $("#serDetails_Err").hide();
+      $("#orgDetails_Err").hide();
+      $("#BenfDetails_Err").hide();
+      $("#PlotDetails_Err").hide();
+      $("#GISCoords_Err").hide();
+      //validations added for Units & storeys-Kiran 9/5/2017-->
+      $("#ExtBuildingDetails_Err").hide();
+      $("#ExtBuilding_UnitsDetails_Err").hide(); //for Units & storeys-Kiran 9/5/2017
+      $("#ExtBuilding_StoreyssDetails_Err").hide(); //for Units & storeys-Kiran 9/5/2017
+      $("#PrpBuildingDetails_Err").hide();
+      $("#PrpBuilding_UnitsDetails_Err").hide(); // for Units & storeys-Kiran 9/5/2017
+      $("#PrpBuilding_StoreysDetails_Err").hide(); //for Units & storeys-Kiran 9/5/2017
+      $("#consDetails_Err").hide();
+      $("#email_Error").hide(); //For Email Validation on Kiran 18/04/2017
+      $("#Bemail_Error").hide(); //For Email Validation on Kiran 18/04/2017
+    });
+  });
+</script>
+</body>
+</html>

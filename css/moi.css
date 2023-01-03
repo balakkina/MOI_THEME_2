@@ -311,7 +311,14 @@ Features Style
     border-top-left-radius: 50px;
     padding: 10px 0px 85px 0px;
 }
-
+label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: auto;
+    font-weight: bold;
+    color: #000;
+}
 .skill-item {
     text-align: center;
 }
@@ -727,8 +734,8 @@ fieldset {
 
 legend {
     width: auto;
-    font-size: 1.2rem;
-    color: #1a51a0 !important;
+    font-size: 1rem !important;
+    color: #1a51a0;
 }
 
 
@@ -818,9 +825,9 @@ legend {
     margin: 0 10px;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
+/* .table-striped tbody tr:nth-of-type(odd) {
     background-color: #f5f7f9;
-}
+} */
 
 .required:after {
     content: "*";
@@ -1039,16 +1046,23 @@ img#navbar-logo {
 	border: medium none;
     border-radius: 3px;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.11);
-    height: 3.75rem;
+    min-height: 3.75rem;
 }
-.panel-head-services:hover {
+/* .panel-head-services:hover {
 	background-color: rgb(40, 113, 149);
-}
+} */
 .panel-head-services img {
 	height: 39px;
 }
+.ts-panel img {
+    height: 4.5rem;
+}
 .panel-title, .helprint {
     color: #fff !important;
+}
+.card-header h4>a, .panel-title>a {
+    color: #fff;
+    font-size: 1rem;
 }
 .header-hs, .hs-thead{
     color: #fff;
@@ -1139,4 +1153,17 @@ img#navbar-logo {
 }
 .hidden {
     display: none;
+}
+.ts-panel {
+    background: rgb(213, 184, 111);
+}
+#credit li {
+    margin: 10px 10px 10px 0px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 4px 10px !important;
+    vertical-align: middle;
+}
+#BuildingsDetails .card-header {
+    padding: 1.25rem 1.75rem;
 }

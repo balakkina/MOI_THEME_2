@@ -1,3 +1,6 @@
+ $(window).bind('beforeunload', function() {
+   localStorage.setItem("buildingdata_localsg1", JSON.stringify(building_dataarray));
+ });
  //GIS Button
  //Kiran-28-4-2017
  var regexNumber = /^[0-9]+([\.][0-9]+)?/;
