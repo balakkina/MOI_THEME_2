@@ -1167,3 +1167,6 @@ img#navbar-logo {
 #BuildingsDetails .card-header {
     padding: 1.25rem 1.75rem;
 }
+.transparent-background {
+    background-color: transparent !important;
+}
