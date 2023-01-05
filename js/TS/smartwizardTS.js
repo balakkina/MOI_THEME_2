@@ -442,9 +442,9 @@ $(document).bind('input', function() {
 *******************************/
  function toggleIcon(e) {
        $(e.target)
-           .prev('.panel-heading')
+           .prev('.card-header')
            .find(".more-less")
-           .toggleClass('glyphicon glyphicon-chevron-down glyphicon glyphicon-chevron-right');
+           .toggleClass('fal fa-chevron-down fal fa-chevron-right');
    }
    $('.accordion').on('hidden.bs.collapse', toggleIcon);
    $('.accordion').on('shown.bs.collapse', toggleIcon);
@@ -796,7 +796,7 @@ $(document).ready(function() {
      
    }
  });
- $("#renew_building_table, #renew_storeysTable, #renew_unitsTable").DataTable({
+ $("#renew_building_table, #renew_storeysTable, #renew_unitsTable, #appTable, #BeneficiaryTable, #GISTable").DataTable({
    "filter": false,
  });
 });

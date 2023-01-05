@@ -26,9 +26,9 @@
     margin-left: 0;
 }
 /* SmartWizard Theme: White */
-.sw-theme-default {
-    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);*/
-}
+/* .sw-theme-default {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+} */
 .sw-theme-default .sw-container {
     min-height: 250px;
 }
@@ -89,7 +89,7 @@
     /*background-image: url('../img/spirte_icons.png') !important;*/
     border: none !important;
     transition: transform 0.3s;
-    color: #3cc753 !important;
+    color: #3cc753;
     font-weight: bold;
     position: relative;
 }

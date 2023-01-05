@@ -800,7 +800,7 @@ $(document).ready(function() {
      
    }
  });
- $("#renew_building_table, #renew_storeysTable, #renew_unitsTable").DataTable({
+ $("#renew_building_table, #renew_storeysTable, #renew_unitsTable, #appTable, #BeneficiaryTable, #GISTable").DataTable({
    "filter": false,
  });
 });

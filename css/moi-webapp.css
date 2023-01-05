@@ -21513,10 +21513,12 @@ textarea[resize=horizontal] {
 
 .nav-tabs .nav-link {
     padding: 15px 0;
-    border-bottom: 1px solid transparent;
+    border-bottom: 3px solid transparent;
     border-left-width: 0;
     border-right-width: 0;
-    border-top-width: 0
+    border-top-width: 0;
+    display: flex;
+    align-items: center;
 }
 
 .nav-tabs .nav-link:not(.active) {
@@ -30053,6 +30055,12 @@ span.flatpickr-weekday {
 .list-group a {
     color: #000;
 }
-
+.dashboard-SR-img {
+    background-image: url(../img/Services/SR-gray.svg);
+    height: 62px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
 /*# sourceMappingURL=quick-website.css.map */

@@ -30055,6 +30055,12 @@ span.flatpickr-weekday {
 .list-group a {
     color: #fff;
 }
-
+.dashboard-SR-img {
+    background-image: url(../img/Services/SR.svg);
+    height: 62px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
 /*# sourceMappingURL=quick-website-dark.css.map */

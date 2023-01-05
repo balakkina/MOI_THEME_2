@@ -60,7 +60,7 @@
     outline-style: none;
     background: transparent !important;
     border: none !important;
-    padding: 0.5rem 0.5rem !important;
+    padding: 0.5rem 0.5rem;
 }
 .sw-theme-default > ul.step-anchor > li.clickable > a:hover {
     color: #008bae !important;
@@ -90,7 +90,7 @@
     /*background-image: url('../img/spirte_icons.png') !important;*/
     border: none !important;
     transition: transform 0.3s;
-    color: #3cc753 !important;
+    color: #3cc753;
     font-weight: 400;
     position: relative;
 }
