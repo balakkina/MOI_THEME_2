@@ -167,211 +167,6 @@ $(document).ready(function() {
      $(".Civilno").show(); //Add code on 3/05/2017 by Balaram
      $('#Address_cons').val('Applicant');
    }
-   //General Services - Request Type - BPTS13 - select box
-   if($('#conLN').val() == '180') {
-     $("#others_hide").show();
-     $("#Generalhide").hide();
-   } else {
-     $("#others_hide").hide();
-     $("#Generalhide").show();
-   }
-
-   if ($('#conLN').val() == '1301') {
-     $('#legendlabel').text('Planting outside the Home');
-     $('#Landid').show();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1302') {
-     $('#legendlabel').text('Demolition Permit');
-     $('#Landid').hide();
-     $('#Permitid').show();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1303') {
-     $('#legendlabel').text('Mount Cutting Permit');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').show();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1304') {
-     $('#legendlabel').text('Installation of a bulletin Board');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').show();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1305') {
-     $('#legendlabel').text('Installation of Interlocking Tile');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').show();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1306') {
-     $('#legendlabel').text('Temporary labor accommodation');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').show();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').show();
-   } else if ($('#conLN').val() == '1307') {
-     $('#legendlabel').text('Car Parking Shed Outside the Home');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').show();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1308') {
-     $('#legendlabel').text('Installation of billboard / billboard beside the road');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').show();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1309') {
-     $('#legendlabel').text('Land levelling');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').show();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1310') {
-     $('#legendlabel').text('Building breaking speed');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').show();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1311') {
-     $('#legendlabel').text('Paving of internal Roads / Parkings');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').show();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   } else if ($('#conLN').val() == '1312') {
-     $('#legendlabel').text('Lighting of Internal Roads');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').show();
-     $('#1310').hide();
-   } else {
-     $('#legendlabel').text('');
-     $('#Landid').hide();
-     $('#Permitid').hide();
-     $('#mountid').hide();
-     $('#signid').hide();
-     $('#installationid').hide();
-     $('#laborid').hide();
-     $('#Carid').hide();
-     $('#Advid').hide();
-     $('#levellingid').hide();
-     $('#Roadid').hide();
-     $('#Pavingid').hide();
-     $('#Lightingid').hide();
-     $('#1310').hide();
-   }
   });
   // ..................................smartwizard code start here...........................................//
  // Step show event 
@@ -834,3 +629,202 @@ $("#buildingType").on('change', function() {
 	}
 });
 // Building types - BPTS08 - End
+//General Services - Request Type - BPTS13 - select box
+$("#RequestType").change(function() {
+  var legendTitle = $("#RequestType option:selected").text();
+  //alert("legendTitle = "+legendTitle);
+  //start if
+  var reqTypeId = $("#RequestType option:selected").val();
+  //alert('reqTypeId: '+reqTypeId);
+  $('#legendlabel').text(legendTitle);
+  if (reqTypeId == '180') {
+    $("#others_hide").show();
+    $("#Generalhide").hide();
+  } else {
+    $("#others_hide").hide();
+    $("#Generalhide").show();
+  }
+  if (reqTypeId == '676') {
+    //$('#legendlabel').text('Planting outside the Home');
+    $('#Landid').show();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '655') {
+    //$('#legendlabel').text('Demolition Permit');
+    $('#Landid').hide();
+    $('#Permitid').show();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '656') {
+    //$('#legendlabel').text('Mount Cutting Permit');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').show();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '659') {
+    //$('#legendlabel').text('Car Parking Shed Outside the Home');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').show();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '658') {
+    //$('#legendlabel').text('Installation of interlocking tiles');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').show();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '674') {
+    //$('#legendlabel').text('Building Breaking Speed');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').show();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '677') {
+    //$('#legendlabel').text('Installation of a bulletin Board');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').show();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '649') {
+    //$('#legendlabel').text('Land levelling');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').show();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '675') {
+    //$('#legendlabel').text('Installation of Billboard / Billboard Beside The Road');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').show();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '651') {
+    //$('#legendlabel').text('Paving of Internal Roads / Parkings');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').show();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '660') {
+    //$('#legendlabel').text('Temporary Labor Accommodation');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').show();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  } else if (reqTypeId == '652') {
+    //$('#legendlabel').text('Lighting of Internal Roads');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').show();
+  } else {
+    //$('#legendlabel').text('');
+    $('#Landid').hide();
+    $('#Permitid').hide();
+    $('#mountid').hide();
+    $('#signid').hide();
+    $('#installationid').hide();
+    $('#laborid').hide();
+    $('#Carid').hide();
+    $('#Advid').hide();
+    $('#levellingid').hide();
+    $('#Roadid').hide();
+    $('#Pavingid').hide();
+    $('#Lightingid').hide();
+  }
+});

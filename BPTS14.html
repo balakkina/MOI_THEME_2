@@ -133,7 +133,7 @@
                       </div>
                     </div>
                     <fieldset>
-                      <legend>Request Type Details</legend>
+                      <legend>Study Type Details</legend>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
                         <label for="Study_type" class="required">Study Type</label>
                         <input class="form-control" id="Study_type" placeholder="Study Type" type="text">
@@ -150,11 +150,11 @@
                       <div id="appDetails_Err" class="Error">Please fill all required fields of Applicant Details </div>
                     </div>
                     <fieldset>
-                      <legend>Consultant Details</legend>
+                      <legend>Consultant Designer Details</legend>
                       <div class="row">
                         <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                          <label for="aid" class="required">Consultant ID</label>
-                          <input type="text" class="form-control" id="aid" placeholder="Consultant ID">
+                          <label for="aid" class="required">Engineer ID</label>
+                          <input type="text" class="form-control" id="aid" placeholder="Engineer ID">
                         </div>
                         <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
                           <label for="applcntEpiryDate" class="required">Expiry Date</label>
@@ -165,8 +165,8 @@
                           </div>
                         </div>
                         <div class="form-group  col-sm-5 col-md-4 col-lg-3 haserror">
-                          <label for="aname" class="required">Consultant Name</label>
-                          <input type="text" class="form-control" id="aname" placeholder="Consultant Name">
+                          <label for="aname" class="required">Engineer Name</label>
+                          <input type="text" class="form-control" id="aname" placeholder="Engineer Name">
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3 haserror">
                           <label for="address_app" class="required">Address</label>
@@ -316,15 +316,17 @@
                         <div class="form-group col-sm-6 col-md-4 col-lg-3 benradio1" id="benradio">
                           <label for="optradio" class="required">Beneficiary Type</label>
                           <div class="form-control" id="orgtypeID">
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio" value="Individual" checked>
-                              Individual </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio" value="Organization">
-                              Organization </label>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="optradio" id="inlineRadio1" value="Individual" checked>
+                              <label class="form-check-label" for="inlineRadio1">Individual</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="optradio" id="inlineRadio2" value="Organization">
+                              <label class="form-check-label" for="inlineRadio2">Organization</label>
+                            </div>
                           </div>
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
+                        <!-- <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
                           <label for="Same as Applicant" class="required">Same as Applicant</label>
                           <div class="form-control">
                             <label class="radio-inline">
@@ -334,7 +336,7 @@
                               <input type="radio" name="optradio1" value="No" checked>
                               No</label>
                           </div>
-                        </div>
+                        </div> -->
                         <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
                           <label for="optradio2">Beneficiary Type </label>
                           <input type="text" class="form-control" id="optradio2" placeholder="Beneficiary Type"
@@ -407,11 +409,15 @@
                           <!-- .row -->
                         </div>
                         <!-- OrganizationDetails -->
-
-                        <div class="form-group pull-right">
-                          <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit"><i
-                              class="fa fa-plus"></i>&nbsp;Add Beneficiary</button>
-                        </div>
+                        
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="form-group d-flex align-items-center justify-content-end">
+                              <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit"><i
+                                class="fa fa-plus"></i>&nbsp;Add Beneficiary</button>
+                            </div>
+                          </div>
+                        </div> <!-- /.row -->
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                           <div class="table-responsive">
@@ -526,8 +532,9 @@
                           <input class="form-control numeric" id="Northings" placeholder="Northings"
                             title="Please enter valid numbers" type="text">
                         </div>
-                        <div class="form-group pull-right top-25">
-                          <button type="button" class="btn btn-ts" id="GISid" onclick="GIS()">Add GIS</button>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-6 mt-5">
+                          <button type="button" class="btn btn-ts" onclick="GIS()" id="GISid">
+                            <i class="fal fa-plus fa-fw"></i>Add GIS</button>
                         </div>
                       </div>
                       <!-- End row -->

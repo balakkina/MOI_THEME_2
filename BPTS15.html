@@ -112,16 +112,18 @@
         <!-- SmartWizard html -->
         <div id="smartwizard">
           <ul id="credit">
-            <li data-interest="1"><a href="#ApplicantDetails"><i class="fa fa-user fa-fw"></i>Applicant Details</a></li>
-            <li data-interest="2" id="Generalhide"><a href="#General"><i class="fa fa-gear fa-fw"></i>General
+            <li data-interest="1"><a href="#ApplicantDetails"><i class="fal fa-user fa-fw"></i>Applicant Details</a></li>
+            <li data-interest="2" id="Generalhide"><a href="#General"><i class="fal fa-cog fa-fw"></i>General
                 Services</a></li>
-            <li data-interest="3"><a href="#BeneficiaryDetails"><i class="fa fa-users fa-fw"></i>Beneficiary /
+            <li data-interest="3"><a href="#BeneficiaryDetails"><i class="fal fa-users fa-fw"></i>Beneficiary /
                 Request</a></li>
-            <li data-interest="4"><a href="#ConsultantDetails"><i class="fa fa-user-secret fa-fw"></i>Consultant /
+            <li data-interest="4"> <a href="#BuildingsDetails"><i class="fal fa-building fa-fw"></i>Buildings
+                  Details</a> </li>
+            <li data-interest="4"><a href="#ConsultantDetails"><i class="fal fa-user-secret fa-fw"></i>Consultant /
                 Contractor Details</a></li>
-            <li data-interest="5"><a href="#Attachment"><i class="fa fa-paperclip fa-fw"></i>Required Documents</a></li>
-            <li data-interest="6"><a href="#others"><i class="fa fa-check-square-o fa-fw"></i>Others</a></li>
-            <li data-interest="7"><a href="#LicenseDetails"><i class="fa fa-credit-card fa-fw"></i>Payments and
+            <li data-interest="5"><a href="#Attachment"><i class="fal fa-paperclip fa-fw"></i>Required Documents</a></li>
+            <li data-interest="6"><a href="#others"><i class="fal fa-comment-alt-lines fa-fw"></i>Others</a></li>
+            <li data-interest="7"><a href="#LicenseDetails"><i class="fal fa-credit-card fa-fw"></i>Payments and
                 Licenses</a></li>
           </ul>
           <div>
@@ -129,31 +131,36 @@
               <div class="form-group">
                 <div class="row">
                   <div class="padtopbot">
-                    <div id="RequestDetails_Err" class="Error">Please fill all required fields of Request Details </div>
+                    <div id="RequestDetails_Err" class="Error">Please fill all required fields of Request Type Details </div>
                   </div>
                   <fieldset>
-                    <legend>Request Details</legend>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="PermitNo" class="required">License Number </label>
-                      <input type="number" class="form-control numeric" id="PermitNo" placeholder="License Number" />
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="conLN" class="required">Request Type</label>
-                      <select name="conLN" id="conLN" class="form-control">
-                        <option value="1000">Please select</option>
-                        <option value="1301">Planting outside the Home</option>
-                        <option value="1305">Installation of Interlocking Tile</option>
-                        <option value="1303">mount cutting permit</option>
-                        <option value="1307">Car Parking Shed Outside the Home</option>
-                        <option value="1302">Demolition Permit</option>
-                        <option value="1304">Installation of a bulletin Board</option>
-                        <option value="1309">Land levelling</option>
-                        <!-- <option value="1312">Lighting of internal roads</option>
-                        <option value="1311">Paving of internal roads / Parkings</option> -->
-                        <option value="1306">Temporary labor accommodation</option>
-                        <option value="1310">Building breaking speed</option>
-                        <option value="1308">Installation of billboard / billboard beside the road</option>
-                      </select>
+                    <legend>Request Type Details</legend>
+                    <div class="row">
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="PermitNo" class="required">Permit Number </label>
+                        <input type="number" class="form-control numeric" id="PermitNo" placeholder="Permit Number" />
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="RequestType" class="required">Request Type</label>
+                        <select name="RequestType" id="RequestType" class="form-control">
+                          <option value="1000">Please select</option>
+                          <option value="649">Land levelling</option>
+                          <option value="651">Paving of internal roads / Parkings</option>
+                          <option value="652">Lighting of internal roads</option>
+                          <option value="655">Demolition Permit</option>
+                          <option value="656">mount cutting permit</option>
+                          <option value="658">Installation of Interlocking Tile</option>
+                          <option value="659">Car Parking Shed Outside the Home</option>
+                          <option value="660">Temporary labor accommodation</option>
+                          <option value="674">Building breaking speed</option>
+                          <option value="675">Installation of billboard / billboard beside the road</option>
+                          <option value="676">Planting outside the Home</option>
+                          <option value="677">Installation of a bulletin Board</option>
+                          <option value="736">Landscape works</option>
+                          <option value="737">Advertisement Board</option>
+                          <option value="738">Placement sign Board / Advertising board Top of building</option>
+                        </select>
+                      </div>
                     </div>
                   </fieldset>
                 </div> <!-- /.row -->
@@ -166,36 +173,38 @@
                   </div>
                   <fieldset>
                     <legend>Applicant Details</legend>
-                    <div class="form-group col-sm-3 col-md-4 col-lg-3">
-                      <label for="aid" class="required">Applicant ID</label>
-                      <input type="text" class="form-control" id="aid" placeholder="Applicant ID">
-                    </div>
-                    <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                      <label for="applcntEpiryDate" class="required">Expiry Date</label>
-                      <div class="date">
-                        <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy" />
-                        <span class="input-group-addon" style="display: none;"><i
-                            class="glyphicon glyphicon-calendar"></i></span>
+                    <div class="row">
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                        <label for="aid" class="required">Applicant ID</label>
+                        <input type="text" class="form-control" id="aid" placeholder="Applicant ID">
                       </div>
-                    </div>
-                    <div class="form-group col-sm-5 col-md-4 col-lg-3">
-                      <label for="aname" class="required">Applicant Name</label>
-                      <input type="text" class="form-control" id="aname" placeholder="Applicant Name">
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="address_app" class="required">Address</label>
-                      <input type="text" class="form-control" id="address_app" placeholder="Address">
-                    </div>
-                    <div class="form-group col-sm-3 col-md-4 col-lg-3">
-                      <label for="Phnumber_app" class="required">Mobile Number</label>
-                      <input type="text" class="form-control numeric" id="Phnumber_app" placeholder="Mobile Number">
-                      <div id="Ph_Error" style="color:red">Please enter a 8-digits Mobile Number</div>
-                    </div>
-                    <div class="form-group col-sm-5 col-md-4 col-lg-3">
-                      <label for="eMail">Email</label>
-                      <input type="text" class="form-control" id="eMail" placeholder="Email">
-                      <div class="col-sm-12 col-md-12 col-lg-12" id="email_Error" style="color:red">Please Enter Valid
-                        Email</div>
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                        <label for="applcntEpiryDate" class="required">Expiry Date</label>
+                        <div class="date">
+                          <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy" />
+                          <span class="input-group-addon" style="display: none;"><i
+                              class="glyphicon glyphicon-calendar"></i></span>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-5 col-md-4 col-lg-3">
+                        <label for="aname" class="required">Applicant Name</label>
+                        <input type="text" class="form-control" id="aname" placeholder="Applicant Name">
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="address_app" class="required">Address</label>
+                        <input type="text" class="form-control" id="address_app" placeholder="Address">
+                      </div>
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                        <label for="Phnumber_app" class="required">Mobile Number</label>
+                        <input type="text" class="form-control numeric" id="Phnumber_app" placeholder="Mobile Number">
+                        <div id="Ph_Error" style="color:red">Please enter a 8-digits Mobile Number</div>
+                      </div>
+                      <div class="form-group col-sm-5 col-md-4 col-lg-3">
+                        <label for="eMail">Email</label>
+                        <input type="text" class="form-control" id="eMail" placeholder="Email">
+                        <div class="col-sm-12 col-md-12 col-lg-12" id="email_Error" style="color:red">Please Enter Valid
+                          Email</div>
+                      </div>
                     </div>
                   </fieldset>
                 </div> <!-- /.row -->
@@ -208,62 +217,64 @@
                   </div>
                   <fieldset>
                     <legend>Service Details</legend>
-                    <div class="form-group col-sm-3 col-md-4 col-lg-3">
-                      <label for="Application Status">Application Status</label>
-                      <input type="text" class="form-control" id="astatus" placeholder="Application Status"
-                        value="In Progress" readonly>
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Service Request Name">Service Request Name </label>
-                      <input type="text" class="form-control" id="srname" placeholder="Service Request Name"
-                        value="Application for general services outside the boundaries of the plot" readonly>
-                    </div>
-                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                      <label for="srdate">Service Request Date</label>
-                      <div class="date">
-                        <input type="text" class="form-control" id="srdate" placeholder="dd/mm/yyyy" disabled />
-                        <span class="input-group-addon" style="display: none;"><i
-                            class="glyphicon glyphicon-calendar"></i></span>
+                    <div class="row">
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                        <label for="Application Status">Application Status</label>
+                        <input type="text" class="form-control" id="astatus" placeholder="Application Status"
+                          value="In Progress" readonly>
                       </div>
-                    </div>
-                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                      <label for="sdate">Submission Date</label>
-                      <div class="date">
-                        <input type="text" class="form-control" id="sdate" placeholder="DD/MM/YYYY" disabled />
-                        <span class="input-group-addon" style="display: none;"><i
-                            class="glyphicon glyphicon-calendar"></i></span>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Service Request Name">Service Request Name </label>
+                        <input type="text" class="form-control" id="srname" placeholder="Service Request Name"
+                          value="Application for general services outside the boundaries of the plot" readonly>
                       </div>
-                    </div>
-                    <div class="form-group col-sm-3 col-md-4 col-lg-3">
-                      <label for="region_ser" class="required">Governorate</label>
-                      <select name="region_ser" id="region_ser" class="form-control">
-                        <option value="1000">Please select</option>
-                        <option value="1">Alshaqiya Governorate</option>
-                        <option value="2">Aldhahira Governorate</option>
-                        <option value="3">Mosandam Governorate</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-sm-5 col-md-4 col-lg-3">
-                      <label for="Willayat_ser" class="required">Willayat</label>
-                      <select name="Willayat_ser" id="Willayat_ser" class="form-control">
-                        <option value="1000">Please select</option>
-                        <option value="1">Suhar </option>
-                        <option value="2">Nizwa</option>
-                        <option value="3">Ibra</option>
-                        <option value="3">Saham</option>
-                        <option value="3">Nakhal</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Municiplity_ser" class="required">Municipality</label>
-                      <select name="Municiplity_ser" id="Municiplity_ser" class="form-control">
-                        <option value="1000">Please select</option>
-                        <option value="461">Sohar Municipality</option>
-                        <option value="463">Saham Municipality</option>
-                        <option value="464">Ibra Municipality</option>
-                        <option value="465">Duqum Municipality</option>
-                        <option value="466">Nizwa Municipality</option>
-                      </select>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="srdate">Service Request Date</label>
+                        <div class="date">
+                          <input type="text" class="form-control" id="srdate" placeholder="dd/mm/yyyy" disabled />
+                          <span class="input-group-addon" style="display: none;"><i
+                              class="glyphicon glyphicon-calendar"></i></span>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="sdate">Submission Date</label>
+                        <div class="date">
+                          <input type="text" class="form-control" id="sdate" placeholder="DD/MM/YYYY" disabled />
+                          <span class="input-group-addon" style="display: none;"><i
+                              class="glyphicon glyphicon-calendar"></i></span>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-3 col-md-4 col-lg-3">
+                        <label for="region_ser" class="required">Governorate</label>
+                        <select name="region_ser" id="region_ser" class="form-control">
+                          <option value="1000">Please select</option>
+                          <option value="1">Alshaqiya Governorate</option>
+                          <option value="2">Aldhahira Governorate</option>
+                          <option value="3">Mosandam Governorate</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-5 col-md-4 col-lg-3">
+                        <label for="Willayat_ser" class="required">Willayat</label>
+                        <select name="Willayat_ser" id="Willayat_ser" class="form-control">
+                          <option value="1000">Please select</option>
+                          <option value="1">Suhar </option>
+                          <option value="2">Nizwa</option>
+                          <option value="3">Ibra</option>
+                          <option value="3">Saham</option>
+                          <option value="3">Nakhal</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Municiplity_ser" class="required">Municipality</label>
+                        <select name="Municiplity_ser" id="Municiplity_ser" class="form-control">
+                          <option value="1000">Please select</option>
+                          <option value="461">Sohar Municipality</option>
+                          <option value="463">Saham Municipality</option>
+                          <option value="464">Ibra Municipality</option>
+                          <option value="465">Duqum Municipality</option>
+                          <option value="466">Nizwa Municipality</option>
+                        </select>
+                      </div>
                     </div>
                   </fieldset>
                 </div> <!-- /.row -->
@@ -274,155 +285,171 @@
               <div class="form-group">
                 <div class="row">
                   <fieldset>
-                    <legend id="legendlabel">Landescape works</legend>
+                    <legend id="legendlabel">Landscape works </legend>
                     <div class="row" id="Landid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Distance_No" class="required">Distance between house &amp; street</label>
-                        <input type="text" class="form-control" id="Distance_No"
-                          placeholder="Distance between house &amp; street" />
-                      </div>
-                      <div class="form-group col-sm-4 col-md-3 col-lg-3">
-                        <label for="Afforestation_site" class="required">Afforestation site</label>
-                        <select multiple="multiple" id="Afforestation_site">
-                          <option value="1">In front</option>
-                          <option value="2">side</option>
-                          <option value="3">behind</option>
-                        </select>
-                        <textarea class="hidden" id="comment" rows="3" style="width:100%;"></textarea>
+                        <label for="Distance_No" class="required">Distance between house and street </label>
+                        <input class="form-control" id="Distance_No" placeholder="Distance between house and street" />
                       </div>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Tiling_loc" class="required">Tiling Location: (existing, not found, under
-                          construction)</label>
-                        <select class="form-control" id="Tiling_loc">
+                        <label for="afforestationsite" class="required">Afforestation site</label>
+                        <select id="afforestationsite" class="form-control" selected="selected">
                           <option value="1000">Please select</option>
-                          <option value="1">existing</option>
-                          <option value="2">not found</option>
-                          <option value="3">under construction</option>
+                          <option value="In front of">In front of</option>
+                          <option value="Side">Side</option>
+                          <option value="Behind">Behind</option>
                         </select>
                       </div>
-                    </div> <!-- /.row -->
-                    <div class="row" id="installationid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Area_pav" class="required">Area of interlocking(m2)</label>
-                        <input type="text" class="form-control" id="Area_pav" placeholder="Area of interlocking(m2)" />
-                      </div>
-                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Distance_house" class="required">distance from house to street</label>
-                        <input type="text" class="form-control" id="Distance_house"
-                          placeholder="distance from house to street" />
-                      </div>
-                      <div class="form-group col-sm-4 col-md-3 col-lg-3">
-                        <label for="Inter_locking" class="required">Interlocking Site</label>
-                        <select multiple="multiple" id="Inter_locking">
-                          <option value="1">In front</option>
-                          <option value="2">side</option>
-                          <option value="3">behind</option>
+                        <label for="GS_Beneficiary_select" class="required">Tiling Location</label>
+                        <select id="GS_Beneficiary_select" class="form-control" selected="selected">
+                          <option value="1000">Please select</option>
+                          <option value="Existing">Existing</option>
+                          <option value="Not Found">Not Found</option>
+                          <option value="Under Construction">Under Construction</option>
                         </select>
-                        <textarea class="hidden" id="comment1" rows="3" style="width:100%;"></textarea>
                       </div>
-                    </div> <!-- /.row -->
-                    <div class="row" id="mountid">
-                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Purpose_cut" class="required">Purpose of cutting</label>
-                        <input type="text" class="form-control" id="Purpose_cut" placeholder="Purpose of cutting" />
-                      </div>
-                    </div> <!-- /.row -->
+                    </div> <!-- End row -->
+                    
                     <div class="row" id="Permitid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Contractor_no" class="required">Construction to be demolished</label>
-                        <input type="text" class="form-control" id="Contractor_no"
-                          placeholder="Construction to be demolished" />
+                        <label for="Contractor_no" class="required">Contractors data</label> 
+                        <input class="form-control" id="Contractor_no" placeholder="Contractors data" />
                       </div>
-                    </div> <!-- /.row -->
+                    </div> <!-- End row -->
+                    
+                    <div class="row" id="mountid">
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">Purpose of cutting</label>
+                        <input class="form-control" id="Purpose_cut" placeholder="Purpose of cutting" />
+                      </div>
+                    </div> <!-- End row -->
+                    
                     <div class="row" id="signid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
                         <label for="Length_No" class="required">Length</label>
-                        <input type="text" class="form-control" id="Length_No" placeholder="Length" />
+                        <input class="form-control" id="Length_No" placeholder="Length" />
                       </div>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
                         <label for="Display_No" class="required">Display</label>
-                        <input type="text" class="form-control" id="Display_No" placeholder="Display" />
+                        <input class="form-control" id="Display_No" placeholder="Display" />
                       </div>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Height_No" class="required">Height</label>
-                        <input type="text" class="form-control" id="Height_No" placeholder="Height" />
+                        <label for="Height_No" class="required">Height  </label>
+                        <input class="form-control" id="Height_No" placeholder="Height" />
                       </div>
-                    </div> <!-- /.row -->
+                    </div>  <!-- End row -->
+                    
+                    <div class="row" id="installationid">
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Area_pav" class="required">Area of paving(m2) </label>
+                        <input class="form-control" id="Area_pav" placeholder="Area of paving(m2)" />
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Distance_house" class="required">Distance from house to street </label>
+                        <input class="form-control" id="Distance_house" placeholder="Distance from house to street" />
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Interlocking_Site" class="required">interlocking site </label>
+                        <input class="form-control" id="Interlocking_Site" placeholder="interlocking site" />
 
+                      </div>
+                    </div>
+                    <!-- End row -->
                     <div class="row" id="laborid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="license_No" class="required">license number or Dig prmit</label>
-                        <input type="text" class="form-control" id="license_No"
-                          placeholder="license number or Dig prmit" />
+                        <label for="Project_Name" class="required">Project Name</label>
+                        <input class="form-control" id="Project_Name" placeholder="Project Name" />
                       </div>
-                    </div> <!-- /.row -->
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Details_Project" class="required">Details of the Project</label>
+                        <input class="form-control" id="Details_Project" placeholder="Details of the Project" />
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="startDate_req" class="required">Dig Period From</label>
+                        <div class="date">
+                          <input class="form-control" id="startDate_req" placeholder="dd/MMM/yyyy" />
+                          <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="endDate_req" class="required">Dig Period To </label>
+                        <div class="date">
+                          <input class="form-control" id="endDate_req" placeholder="dd/MMM/yyyy" />
+                          <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End row -->
                     <div class="row" id="Carid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="distance_str" class="required">The distance between the street and the house</label>
-                        <input type="text" class="form-control" id="distance_str"
-                          placeholder="The distance between the street and the house" />
+                        <label for="distance_str" class="required">The distance between the street and the house </label>
+                        <input class="form-control" id="distance_str" placeholder="The distance between the street and the house" />
                       </div>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Parking_No" class="required">Number of Parking</label>
-                        <input type="text" class="form-control" id="Parking_No" placeholder="Number of Parking" />
+                        <label for="Parking_No" class="required">Number of Parking </label>
+                        <input class="form-control" id="Parking_No" placeholder="Number of Parking" />
                       </div>
-                    </div> <!-- /.row -->
+                      
+                    </div>
+                    <!-- End row -->
+
                     <div class="row" id="Advid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="distance_board" class="required">The distance between the board and the
-                          house</label>
-                        <input type="text" class="form-control" id="distance_board"
-                          placeholder="The distance between the board and the house" />
+                        <label for="distance_board" class="required">Distance between the board and house</label>
+                        <input class="form-control" id="distance_board" placeholder="Distance between the board and house" />
                       </div>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="ALength_No" class="required">Length</label>
-                        <input type="text" class="form-control" id="ALength_No" placeholder="Length" />
+                        <label for="Length_No_Adv" class="required">Length </label>
+                        <input class="form-control" id="Length_No_Adv" placeholder="Length" />
                       </div>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="ADisplay_No" class="required">Display</label>
-                        <input type="text" class="form-control" id="ADisplay_No" placeholder="Display" />
+                        <label for="Display_No_Adv" class="required">Display</label>
+                        <input class="form-control" id="Display_No_Adv" placeholder="Display" />
                       </div>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="AHeight_No" class="required">Height</label>
-                        <input type="text" class="form-control" id="AHeight_No" placeholder="Height" />
+                        <label for="Height_No_Adv" class="required">Height</label>
+                        <input class="form-control" id="Height_No_Adv" placeholder="Height" />
                       </div>
-                    </div> <!-- /.row -->
+                    </div>
+                    <!-- End row -->
                     <div class="row" id="levellingid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Block_No" class="required">Purpose of the Settlement</label>
-                        <input type="text" class="form-control" id="Block_No" placeholder="Purpose of the Settlement" />
+                        <label for="Purpose_Settlement" class="required">Purpose of the Settlement</label>
+                        <input class="form-control" id="Purpose_Settlement" placeholder="Purpose of the Settlement" />
                       </div>
-                    </div> <!-- /.row -->
+                    </div>
+                    <!-- End row -->
                     <div class="row" id="Roadid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Road_Bumps" class="required">Number of Breaking Speed</label>
-                        <input type="text" class="form-control" id="Road_Bumps"
-                          placeholder="Number of Breaking Speed" />
+                        <label for="Number_Breaking_Speed" class="required">Number of breaking speed</label>
+                        <input class="form-control" id="Number_Breaking_Speed" placeholder="Number of breaking speed" />
                       </div>
-                    </div> <!-- /.row -->
+                    </div> <!-- End row -->
                     <div class="row" id="Pavingid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
                         <label for="Road_Lengt" class="required">Road Length</label>
-                        <input type="text" class="form-control" id="Road_Lengt" placeholder="Road Length" />
+                        <input class="form-control" id="Road_Lengt" placeholder="Road Length" />
                       </div>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
                         <label for="Parking_Area" class="required">Parking Area</label>
-                        <input type="text" class="form-control" id="Parking_Area" placeholder="Parking Area" />
+                        <input class="form-control" id="Parking_Area" placeholder="Parking Area" />
                       </div>
-                    </div> <!-- /.row -->
+                    </div> <!-- End row -->
+                    
                     <div class="row" id="Lightingid">
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
                         <label for="Lengt_Road" class="required">Road Length</label>
-                        <input type="text" class="form-control" id="Lengt_Road" placeholder="Road Length" />
+                        <input class="form-control" id="Lengt_Road" placeholder="Road Length" />
                       </div>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Light_Poles" class="required">Number of Light Poles</label>
-                        <input type="text" class="form-control" id="Light_Poles" placeholder="Number of Light Poles" />
+                        <label for="Light_Poles" class="required">Number of Light Poles </label>
+                        <input class="form-control" id="Light_Poles" placeholder="Number of Light Poles" />
                       </div>
-                    </div> <!-- /.row -->
+                    </div> <!-- End row -->
+
                   </fieldset>
                 </div> <!-- End form-group -->
-              </div> <!-- /.row -->
+              </div> <!-- End row -->
             </div> <!-- End #General -->
 
             <div id="BeneficiaryDetails" class="">
@@ -458,73 +485,75 @@
                   </div>
                   <fieldset>
                     <legend>Plot Data</legend>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Plot Serial Number">Plot Serial Number <span style="color:red">*</span></label>
-                      <input type="text" class="form-control" id="PSN_Plot" placeholder="Plot Serial Number">
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Plot Number">Plot Number <span style="color:red">*</span></label>
-                      <input type="number" class="form-control numeric" id="PSN" placeholder="Plot Number" min="0">
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Region">Governorate <span style="color:red">*</span></label>
-                      <select name="" id="region_Ld" class="form-control">
-                        <option value="1000">Please select</option>
-                        <option value="1">Alshaqiya Governorate</option>
-                        <option value="2">Aldhahira Governorate</option>
-                        <option value="3">Mosandam Governorate</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Willayat">Willayat <span style="color:red">*</span></label>
-                      <select name="" id="Willayat_Ld" class="form-control">
-                        <option value="1000">Please select</option>
-                        <option value="1">Suhar </option>
-                        <option value="2">Nizwa</option>
-                        <option value="3">Ibra</option>
-                        <option value="3">Saham</option>
-                        <option value="3">Nakhal</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Village">Village <span style="color:red">*</span></label>
-                      <select name="" id="village_Ld" class="form-control">
-                        <option value="1000">Please select</option>
-                        <option value="461">Hay elain</option>
-                        <option value="463">Suaal</option>
-                        <option value="464">Karsha</option>
-                        <option value="465">Eliqir</option>
-                        <option value="466">Daris</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Square">Block <span style="color:red">*</span></label>
-                      <input type="number" class="form-control numeric" id="square_Ld" placeholder="Block" min="0" />
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Plot Area">Plot Area <span style="color:red">*</span></label>
-                      <input type="number" class="form-control numeric" id="Plotsurface_Ld" placeholder="Plot Area"
-                        min="0">
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="StreetNumber_Ld">Street Name <span style="color:red">*</span></label>
-                      <input type="number" class="form-control numeric" id="StreetNumber_Ld" placeholder="Street Name"
-                        min="0">
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="Type of use">Type of Use <span style="color:red">*</span></label>
-                      <select name="typeUse_Ld" id="typeUse_Ld" class="form-control">
-                        <option value="1000">Please select</option>
-                        <option value="463">Residential</option>
-                        <option value="461">Residential Commercial</option>
-                        <option value="464">Industrial</option>
-                        <option value="465">Commercial</option>
-                      </select>
+                    <div class="row">
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Plot Serial Number">Plot Serial Number <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="PSN_Plot" placeholder="Plot Serial Number">
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Plot Number">Plot Number <span style="color:red">*</span></label>
+                        <input type="number" class="form-control numeric" id="PSN" placeholder="Plot Number" min="0">
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Region">Governorate <span style="color:red">*</span></label>
+                        <select name="" id="region_Ld" class="form-control">
+                          <option value="1000">Please select</option>
+                          <option value="1">Alshaqiya Governorate</option>
+                          <option value="2">Aldhahira Governorate</option>
+                          <option value="3">Mosandam Governorate</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Willayat">Willayat <span style="color:red">*</span></label>
+                        <select name="" id="Willayat_Ld" class="form-control">
+                          <option value="1000">Please select</option>
+                          <option value="1">Suhar </option>
+                          <option value="2">Nizwa</option>
+                          <option value="3">Ibra</option>
+                          <option value="3">Saham</option>
+                          <option value="3">Nakhal</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Village">Village <span style="color:red">*</span></label>
+                        <select name="" id="village_Ld" class="form-control">
+                          <option value="1000">Please select</option>
+                          <option value="461">Hay elain</option>
+                          <option value="463">Suaal</option>
+                          <option value="464">Karsha</option>
+                          <option value="465">Eliqir</option>
+                          <option value="466">Daris</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Square">Block <span style="color:red">*</span></label>
+                        <input type="number" class="form-control numeric" id="square_Ld" placeholder="Block" min="0" />
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Plot Area">Plot Area <span style="color:red">*</span></label>
+                        <input type="number" class="form-control numeric" id="Plotsurface_Ld" placeholder="Plot Area"
+                          min="0">
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="StreetNumber_Ld">Street Name <span style="color:red">*</span></label>
+                        <input type="number" class="form-control numeric" id="StreetNumber_Ld" placeholder="Street Name"
+                          min="0">
+                      </div>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="Type of use">Type of Use <span style="color:red">*</span></label>
+                        <select name="typeUse_Ld" id="typeUse_Ld" class="form-control">
+                          <option value="1000">Please select</option>
+                          <option value="463">Residential</option>
+                          <option value="461">Residential Commercial</option>
+                          <option value="464">Industrial</option>
+                          <option value="465">Commercial</option>
+                        </select>
+                      </div>
                     </div>
                   </fieldset>
                 </div> <!-- /.row -->
               </div> <!-- .form-group -->
-              <div class="form-group" id="1310">
+              <!-- <div class="form-group" id="1310">
                 <div class="row">
                   <fieldset>
                     <legend>Request Details</legend>
@@ -555,8 +584,8 @@
                       </div>
                     </div>
                   </fieldset>
-                </div> <!-- /.row -->
-              </div> <!-- .form-group -->
+                </div> /.row
+              </div> .form-group -->
               <div class="form-group">
                 <div class="row">
                   <div class="padtopbot">
@@ -578,6 +607,819 @@
                 </div> <!-- /.row -->
               </div> <!-- /.form-group -->
             </div> <!-- BeneficiaryDetails -->
+
+            <!-- ......... BuildingsDetails ......... -->
+            <div id="BuildingsDetails" class="">
+              <div class="form-group">
+                <div class="row">
+                  <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="padtopbot">
+                      <!--//validations added for Units & storeys-Kiran 9/5/2017-->
+                      <div id="ExtBuildingDetails_Err" class="Error">Please fill all required fields of Existing
+                        Buildings Details </div>
+                      <div id="ExtBuilding_UnitsDetails_Err" class="Error">Please Add Units under Existing building
+                        Details </div>
+                      <div id="ExtBuilding_StoreyssDetails_Err" class="Error">Please Add Storeys under Existing
+                        building Details </div>
+                    </div>
+                    <div class="card border-0">
+                      <div class="card-header ts-panel" role="tab" id="headingOne">
+                        <h4 class="card-title"> <a role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i
+                              class="more-less fal fa-chevron-down float-right"></i>Existing Buildings
+                            Details </a> </h4>
+                      </div>
+                      <div id="collapseOne" class="accordion-collapse collapse show" role="tabpanel"
+                        aria-labelledby="headingOne">
+                        <div class="card-body p-0">
+                          <fieldset>
+                            <!-- <legend>Existing Buildings Details</legend> -->
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="BuildingNo" class="required">Building Number</label>
+                                <input type="number" class="form-control numeric" id="BuildingNo"
+                                  placeholder="Building Number" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Buildingname" class="required">Building Name</label>
+                                <input type="text" class="form-control" id="Buildingname" placeholder="Building Name" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Btype" class="required">Type of Use</label>
+                                <select name="Btype" id="Btype" class="form-control">
+                                  <option value="0">Please select...</option>
+                                  <option value="463">Residential</option>
+                                  <option value="461">Residential Commercial</option>
+                                  <option value="464">Industrial</option>
+                                  <option value="465">Commercial</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Bstatus" class="required">Building Status</label>
+                                <select name="Bstatus" id="Bstatus" class="form-control">
+                                  <option value="0">Please select...</option>
+                                  <option value="1">New</option>
+                                  <option value="2">Approved For Construction</option>
+                                  <option value="3">Final</option>
+                                  <option value="4">Construction Started</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="BuildingNumberofunits" class="required">Number of Units</label>
+                                <input type="number" class="form-control numeric" id="BuildingNumberofunits"
+                                  placeholder="Number of Units" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="BuildingNumberoffloors" class="required">Number of Floors</label>
+                                <input type="number" class="form-control numeric" id="BuildingNumberoffloors"
+                                  placeholder="Number of Floors" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Buildingtotalarea">Total Builtup Area(m2)</label>
+                                <input type="number" class="form-control numeric" id="Buildingtotalarea"
+                                  placeholder="Total Builtup Area(m2)" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Footprint_ExBld" class="required">Plot Area(m2)</label>
+                                <input type="number" class="form-control numeric" id="Footprint_ExBld"
+                                  placeholder="Plot Area(m2)" />
+                                <div id="Total_PlotError" style="color:red">Please enter less than Total Builtup
+                                  Area(m2)</div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Powerlaod">Power Load(kW)</label>
+                                <input type="number" class="form-control numeric" id="Powerlaod"
+                                  placeholder="Power Load(kW)" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Carparkcapacity">Car Park Capacity</label>
+                                <input type="number" class="form-control numeric" id="Carparkcapacity"
+                                  placeholder="Car Park Capacity" />
+                                <div id="Car_Error" style="color:red">Please enter less than Plot Area(m2)</div>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Bcolortype">Color Type</label>
+                                <select id="Bcolortype" class="form-control">
+                                  <option value="1000">Please select...</option>
+                                  <option value="101">Building Color</option>
+                                  <option value="102">Stone</option>
+                                  <option value="103">Aluminum</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3" id="Bcolorhide">
+                                <label for="Bcolor">Building Colour</label>
+                                <select id="Bcolor" class="form-control">
+                                  <option value="0">Please select...</option>
+                                  <option value="461">White</option>
+                                  <option value="463">Red</option>
+                                  <option value="464">Yellow</option>
+                                  <option value="465">Green</option>
+                                  <option value="466">Blue</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="outcolor">Outer Colour</label>
+                                <select id="outcolor" class="form-control">
+                                  <option value="0">Please select...</option>
+                                  <option value="461">White</option>
+                                  <option value="463">Red</option>
+                                  <option value="464">Yellow</option>
+                                  <option value="465">Green</option>
+                                  <option value="466">Blue</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Street_Exbld">Street</label>
+                                <input type="text" class="form-control" id="Street_Exbld" placeholder="Street" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Alley_Exbld">Way Number</label>
+                                <input type="text" class="form-control" id="Alley_Exbld" placeholder="Way Number" />
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="optradio3">will be Demolished?</label>
+                                <div class="form-control" id="WillDemolish">
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optradio3" value="Yes">
+                                    Yes</label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optradio3" value="No" checked>
+                                    No</label>
+                                </div>
+                              </div>
+                              <div class="form-group pull-right top-25">
+                                <button type="button" class="btn btn-ts" onclick="addbuilding()" id="addbuildingid">
+                                  Add Building </button>
+                              </div>
+                            </div>
+                            <!-- End row -->
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="table-responsive">
+                                  <table id="building_details_table" class="table table-striped table-bordered"
+                                    width="100%">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- row -->
+                            <div class="row">
+                              <div class="col-md-6 col-xs-12">
+                                <div class="table-responsive">
+                                  <table id="storeys_table" class="table table-hover table-bordered">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- End Storeys -->
+                              </div>
+                              <!-- col-md-6 -->
+
+                              <!-- .........................* Storey Modal Start *......................... -->
+                              <!-- Modal for storeys-->
+                              <div class="modal fade" id="addstoreysModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">Storeys</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>Storeys</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="SBuildingNo">Building Number</label>
+                                          <input type="number" class="form-control" id="SBuildingNo"
+                                            placeholder="Building Number" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="SstoreyNo" class="required">Storey Number</label>
+                                          <input type="number" class="form-control numeric" id="SstoreyNo"
+                                            placeholder="Storey Number">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="Storeytype" class="required">Storey Type</label>
+                                          <select name="Storeytype" id="Storeytype" class="form-control">
+                                            <option value="0">Please select...</option>
+                                            <option value="461">Flats</option>
+                                            <option value="463">Offices</option>
+                                            <option value="464">Shops</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="unitsitmno" class="required">No of Units</label>
+                                          <input type="number" class="form-control numeric" id="unitsitmno"
+                                            placeholder="No of Units">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="SurfaceM2">Storey Area(m2)</label>
+                                          <input type="number" class="form-control numeric" id="SurfaceM2"
+                                            placeholder="Storey Area(m2)">
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts"
+                                        onclick="addstrfunction()">Save</button>
+                                      <button type="button" class="btn btn-ts" onclick="addstrfunction1()">Save &amp;
+                                        Add Storey</button>
+                                    </div>
+                                  </div>
+                                  <!-- Modal content-->
+                                </div>
+                                <!-- End modal-lg -->
+                              </div>
+                              <!-- End Storeys Modal -->
+
+                              <!-- Modal for Edit storeys-->
+                              <div class="modal fade" tabindex="-1" id="editstoreysModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">Edit Storeys
+                                      </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>Storeys</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editSBuildingNo">Building Number</label>
+                                          <input type="number" class="form-control" id="editSBuildingNo"
+                                            placeholder="Building Number" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editSstoreyNo" class="required">Storey Number</label>
+                                          <input type="number" class="form-control numeric" id="editSstoreyNo"
+                                            placeholder="Storey Number">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editStoreytype" class="required">Storey Type</label>
+                                          <select name="" id="editStoreytype" class="form-control">
+                                            <option value="0">Please select...</option>
+                                            <option value="461">Flats</option>
+                                            <option value="463">Offices</option>
+                                            <option value="464">Shops</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editunitsitmno" class="required">No of Units</label>
+                                          <input type="number" class="form-control numeric" id="editunitsitmno"
+                                            placeholder="No of Units">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editSurfaceM2">Storey Area(m2)</label>
+                                          <input type="number" class="form-control numeric" id="editSurfaceM2"
+                                            placeholder="Storey Area(m2)">
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" id="editstrfunctionid"
+                                        onclick="editstrfunction()">Update</button>
+                                    </div>
+                                  </div>
+                                  <!-- Modal content-->
+                                </div>
+                                <!-- End modal-lg -->
+                              </div>
+                              <!-- End Edit Storeys Modal -->
+                              <!-- .........................* Storey Modal End *......................... -->
+
+                              <div class="col-md-6 col-xs-12">
+                                <div class="table-responsive">
+                                  <table id="units_detailstable" class="table table-hover table-bordered"
+                                    width="100%">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- End Units -->
+                              </div>
+                              <!-- .col-md-6 -->
+
+                              <!-- .........................* Units Modal Start *......................... -->
+                              <!-- Modal for Units -->
+                              <div class="modal fade" id="addunitsModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size:18px;">Units</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>Units</legend>
+                                        <div class="row">
+                                          <div class="form-group col-sm-3">
+                                            <label for="UBuildingNo">Building Number</label>
+                                            <input type="number" class="form-control" id="UBuildingNo"
+                                              placeholder="Building Number" readonly />
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="auIdnumber">Storey Number</label>
+                                            <input type="text" class="form-control" id="auIdnumber"
+                                              placeholder="Storey Number" readonly />
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="auNumberofunits">Unit Number</label>
+                                            <input type="number" class="form-control numeric" id="auNumberofunits"
+                                              placeholder="Unit Number">
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="untstype" class="required">Unit Type</label>
+                                            <select name="untstype" id="untstype" class="form-control">
+                                              <option value="0">Please select...</option>
+                                              <option value="463">Residential</option>
+                                              <option value="461">Residential Commercial</option>
+                                              <option value="464">Industrial</option>
+                                              <option value="465">Commercial</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <!-- End row -->
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts"
+                                        onclick="addunitsfunction()">Save</button>
+                                      <button type="button" class="btn btn-ts" onclick="addunitsfunction1()">Save
+                                        &amp; Add Unit</button>
+                                    </div>
+                                  </div>
+                                  <!-- Modal content-->
+                                </div>
+                                <!-- End modal-lg -->
+                              </div>
+                              <!-- End Modal Units -->
+
+                              <!-- Modal for Edit Units -->
+                              <div class="modal fade" id="editunitsModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-size: 18px;font-weight: bold;">Edit Units
+                                      </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>Units</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editUBuildingNo">Building Number</label>
+                                          <input type="number" class="form-control" id="editUBuildingNo"
+                                            placeholder="Building Number" readonly />
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editauIdnumber">Storey Number</label>
+                                          <input type="text" class="form-control" id="editauIdnumber"
+                                            placeholder="Storey Number" readonly />
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editauNumberofunits">Unit Number</label>
+                                          <input type="number" class="form-control numeric" id="editauNumberofunits"
+                                            placeholder="Unit Number">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="edituntstype" class="required">Unit Type</label>
+                                          <select name="edituntstype" id="edituntstype" class="form-control">
+                                            <option value="0">Please select...</option>
+                                            <option value="463">Residential</option>
+                                            <option value="461">Residential Commercial</option>
+                                            <option value="464">Industrial</option>
+                                            <option value="465">Commercial</option>
+                                          </select>
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" id="editunitsfunctionid"
+                                        onclick="editunitsfunction()">Update</button>
+                                    </div>
+                                  </div>
+                                  <!-- Modal content-->
+                                </div>
+                                <!-- End modal-lg -->
+                              </div>
+                              <!-- End Modal -->
+                              <!-- .........................* Units Modal End *......................... -->
+                            </div>
+                            <!-- row -->
+                          </fieldset>
+                        </div>
+                        <!-- panel-body -->
+                      </div>
+                      <!-- collapseOne -->
+                    </div>
+                    <!-- collapseOne main panel END Here -->
+
+                    <!-- Proposed Buildings Details -->
+                    <div class="padtopbot">
+                      <!--//validations added for Units & storeys-Kiran 9/5/2017-->
+                      <!-- <div id="PrpBuildingDetails_Err" class="Error">Please fill all required fields of Proposed
+                        building Details </div>
+                      <div id="PrpBuilding_UnitsDetails_Err" class="Error">Please Add Units under Proposed building
+                        Details </div>
+                      <div id="PrpBuilding_StoreysDetails_Err" class="Error">Please Add Storeys under Proposed
+                        building Details </div> -->
+                    </div>
+                    <div class="panel panel-default" hidden>
+                      <div class="panel-heading" role="tab" id="headingTwo" style="background: rgb(184, 150, 87);">
+                        <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+                            data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo"> <i
+                              class="more-less glyphicon glyphicon-chevron-right pull-right"></i> Proposed Buildings
+                            Details </a> </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                        aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          <fieldset>
+                            <!-- <legend>Proposed Buildings Details</legend> -->
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PBuildingNo" class="required">Building Number</label>
+                                <input type="number" class="form-control numeric" id="PBuildingNo"
+                                  placeholder="Building Number">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PBuildingname" class="required">Building Name</label>
+                                <input type="text" class="form-control" id="PBuildingname"
+                                  placeholder="Building Name">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Ptype" class="required">Type of Use</label>
+                                <select name="Ptype" id="Ptype" class="form-control">
+                                  <option value="0">Please select...</option>
+                                  <option value="463">Residential</option>
+                                  <option value="461">Residential Commercial</option>
+                                  <option value="464">Industrial</option>
+                                  <option value="465">Commercial</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Pstatus" class="required">Building Status</label>
+                                <select id="Pstatus" class="form-control">
+                                  <option value="0">Please select...</option>
+                                  <option value="1">New</option>
+                                  <option value="2">Approved for Construction</option>
+                                  <option value="3">Final</option>
+                                  <option value="4">Construction Started</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- End row -->
+
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PNumberofunits" class="required">Number of Units</label>
+                                <input type="number" class="form-control numeric" id="PNumberofunits"
+                                  placeholder="Number of Units">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PNumberoffloors" class="required">Number of Floors</label>
+                                <input type="number" class="form-control numeric" id="PNumberoffloors"
+                                  placeholder="Number of Floors">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Ptotalarea" class="required">Total Builtup Area(m2)</label>
+                                <input type="number" class="form-control numeric" id="Ptotalarea"
+                                  placeholder="Total Builtup Area(m2)">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PFootprint">Plot Area(m2)</label>
+                                <input type="text" class="form-control" id="PFootprint" placeholder="Plot Area(m2)">
+                                <div id="pTotal_PlotError" style="color:red">Please enter less than Total Builtup
+                                  Area(m2)</div>
+                              </div>
+                            </div>
+                            <!-- End row -->
+
+                            <div class="row">
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PPowerlaod">Power Load(kW)</label>
+                                <input type="number" class="form-control numeric" id="PPowerlaod"
+                                  placeholder="Power Load(kW)">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PCarparkcapacity">Car Park Capacity</label>
+                                <input type="number" class="form-control numeric" id="PCarparkcapacity"
+                                  placeholder="Car Park Capacity">
+                                <div id="pCar_Error" style="color:red">Please enter less than Plot Area(m2)</div>
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Pcolortype">Color Type</label>
+                                <input type="text" class="form-control" id="Pcolortype" placeholder="Color Type">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Pcolor">Building Colour</label>
+                                <input type="text" class="form-control" id="Pcolor" placeholder="Building Colour">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="Poutcolor">Outer Colour</label>
+                                <input type="text" class="form-control" id="Poutcolor" placeholder="Outer Colour">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PStreet">Street</label>
+                                <input type="text" class="form-control" id="PStreet" placeholder="Street">
+                              </div>
+                              <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                <label for="PAlley">Way Number</label>
+                                <input type="text" class="form-control" id="PAlley" placeholder="Way Number">
+                              </div>
+                              <div class="form-group pull-right top-25">
+                                <button type="button" class="btn btn-ts" onclick="addProposed()" id="addProposedid">
+                                  Add Proposed</button>
+                              </div>
+                            </div>
+                            <!-- End row -->
+
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="table-responsive">
+                                  <table id="Proposed_details_table" class="table table-striped table-bordered"
+                                    width="100%">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- row -->
+
+                            <div class="row">
+                              <div class="col-md-6 col-xs-12">
+                                <div class="table-responsive">
+                                  <table id="storeys_Proposed" class="table table-hover table-bordered" width="100%">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- End Storeys -->
+                              </div>
+                              <!-- .col-md-6 -->
+
+                              <!-- Modal for storeys-->
+                              <div class="modal fade" id="addPstoreysModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <!-- .........................* Storey Modal Start *......................... -->
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">Storeys</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>Storeys</legend>
+                                        <div class="row">
+                                          <div class="form-group col-sm-3">
+                                            <label for="PSBuildingNo">Building Number</label>
+                                            <input type="number" class="form-control" id="PSBuildingNo"
+                                              placeholder="Building Number" readonly>
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="PSstoreyNo" class="required">Storey No</label>
+                                            <input type="number" class="form-control numeric" id="PSstoreyNo"
+                                              placeholder="Storey No">
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="PStoreytype" class="required">Storey Type </label>
+                                            <select name="PStoreytype" id="PStoreytype" class="form-control">
+                                              <option value="0">Please select...</option>
+                                              <option value="461">Flats</option>
+                                              <option value="463">Offices</option>
+                                              <option value="464">Shops</option>
+                                            </select>
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="Punitsitmno" class="required">No of Units</label>
+                                            <input type="number" class="form-control numeric" id="Punitsitmno"
+                                              placeholder="No of Units">
+                                          </div>
+                                          <div class="form-group col-sm-3">
+                                            <label for="Storey Area(m2)">Storey Area(m2)</label>
+                                            <input type="number" class="form-control numeric" id="PSurfaceM2"
+                                              placeholder="Storey Area(m2)">
+                                          </div>
+                                        </div>
+                                        <!-- End row -->
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts"
+                                        onclick="addPstrfunction()">Save</button>
+                                      <button type="button" class="btn btn-ts" onclick="addPstrfunction1()">Save &amp;
+                                        Add Storey</button>
+                                    </div>
+                                  </div>
+                                  <!-- Modal content-->
+                                </div>
+                              </div>
+                              <!-- End Storeys Modal -->
+
+                              <!-- Modal for Edit storeys-->
+                              <div class="modal fade" id="editPstoreysModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">Edit Storeys
+                                      </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>Storeys</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPSBuildingNo">Building Number</label>
+                                          <input type="number" class="form-control" id="editPSBuildingNo"
+                                            placeholder="Building Number" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPSstoreyNo" class="required">Storey No </label>
+                                          <input type="number" class="form-control numeric" id="editPSstoreyNo"
+                                            placeholder="Storey No">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPStoreytype" class="required">Storey type</label>
+                                          <select name="editPStoreytype" id="editPStoreytype" class="form-control">
+                                            <option value="0">Please Select...</option>
+                                            <option value="461">Flats</option>
+                                            <option value="463">Offices</option>
+                                            <option value="464">Shops</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPunitsitmno" class="required">No of Units</label>
+                                          <input type="number" class="form-control numeric" id="editPunitsitmno"
+                                            placeholder="No of Units">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPSurfaceM2">Storey Area(m2)</label>
+                                          <input type="number" class="form-control numeric" id="editPSurfaceM2"
+                                            placeholder="Storey Area(m2)">
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" id="editPstr"
+                                        onclick="editPstrfunction()">Update</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Storeys Modal -->
+                              <!-- .........................* Storey Modal End *......................... -->
+
+                              <div class="col-md-6 col-xs-12">
+                                <div class="table-responsive">
+                                  <table id="units_Proposed" class="table table-hover table-bordered">
+                                    <thead class="ts-thead">
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- End Units -->
+                              </div>
+                              <!-- .col-md-6 -->
+                              <!-- .........................* Units Modal Start *......................... -->
+                              <!-- Modal for Units -->
+                              <div class="modal fade" id="addPunitsModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">Units</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>Units</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="PUBuildingNo">Building Number</label>
+                                          <input type="number" class="form-control" id="PUBuildingNo"
+                                            placeholder="Building Number" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="Identification Numbers">Storey Number</label>
+                                          <input type="text" class="form-control" id="PauIdnumber"
+                                            placeholder="Storey Number" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="PauNumberofunits">Unit Number</label>
+                                          <input type="number" class="form-control numeric" id="PauNumberofunits"
+                                            placeholder="Unit Number">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="Puntstype" class="required">Unit Type</label>
+                                          <select name="Puntstype" id="Puntstype" class="form-control">
+                                            <option value="0">Please select...</option>
+                                            <option value="463">Residential</option>
+                                            <option value="461">Residential Commercial</option>
+                                            <option value="464">Industrial</option>
+                                            <option value="465">Commercial</option>
+                                          </select>
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts"
+                                        onclick="addPunitsfunction()">Save</button>
+                                      <button type="button" class="btn btn-ts" onclick="addPunitsfunction1()">Save
+                                        &amp; Add Unit</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Modal -->
+
+                              <!-- Modal for Edit Units -->
+                              <div class="modal fade" id="editPunitsModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="background: rgb(184, 150, 87);color:#fff;">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title" style="font-weight: bold;font-size: 18px;">Edit Units
+                                      </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <fieldset>
+                                        <legend>Units</legend>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPUBuildingNo">Building Number</label>
+                                          <input type="number" class="form-control" id="editPUBuildingNo"
+                                            placeholder="Building Number" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPauIdnumber">Storey Number</label>
+                                          <input type="text" class="form-control" id="editPauIdnumber"
+                                            placeholder="Storey Number" readonly>
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPauNumberofunits">Unit Number</label>
+                                          <input type="number" class="form-control numeric" id="editPauNumberofunits"
+                                            placeholder="Unit Number">
+                                        </div>
+                                        <div class="form-group col-sm-3">
+                                          <label for="editPuntstype" class="required">Unit Type </label>
+                                          <select name="editPuntstype" id="editPuntstype" class="form-control">
+                                            <option value="0">Please select...</option>
+                                            <option value="463">Residential</option>
+                                            <option value="461">Residential Commercial</option>
+                                            <option value="464">Industrial</option>
+                                            <option value="465">Commercial</option>
+                                          </select>
+                                        </div>
+                                      </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-ts" id="editPunits"
+                                        onclick="editPunitsfunction()">Update</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Modal -->
+                              <!-- .........................* Units Modal End *......................... -->
+
+                            </div>
+                            <!-- End row -->
+                          </fieldset>
+                        </div>
+                        <!-- panel-body -->
+                      </div>
+                      <!-- collapsetwo -->
+                    </div>
+                    <!-- collapsetwo main panel END Here -->
+                  </div>
+                  <!-- panel-group -->
+                </div>
+                <!-- .row -->
+              </div>
+              <!-- .form-group -->
+            </div>
+            <!-- End BuildingsDetails -->
 
             <div id="ConsultantDetails">
               <div class="form-group">

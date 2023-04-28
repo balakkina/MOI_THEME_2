@@ -139,27 +139,30 @@
                       <legend>Request Details</legend>
                       <div class="row">
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                          <label for="conLN" class="required">Request Type</label>
-                          <select name="conLN" id="conLN" class="form-control">
+                          <label for="RequestType" class="required">Request Type</label>
+                          <select name="RequestType" id="RequestType" class="form-control">
                             <option value="1000">Please select</option>
-                            <option value="1301">Planting outside the Home</option>
-                            <option value="1305">Installation of Interlocking Tile</option>
-                            <option value="1303">mount cutting permit</option>
-                            <option value="1307">Car Parking Shed Outside the Home</option>
-                            <option value="1302">Demolition Permit</option>
-                            <option value="1304">Installation of a bulletin Board</option>
-                            <option value="1309">Land levelling</option>
-                            <!-- <option value="1312">Lighting of internal roads</option>
-                          <option value="1311">Paving of internal roads / Parkings</option> -->
-                            <option value="1306">Temporary labor accommodation</option>
-                            <option value="1310">Building breaking speed</option>
-                            <option value="1308">Installation of billboard / billboard beside the road</option>
+                            <option value="649">Land levelling</option>
+                            <option value="651">Paving of internal roads / Parkings</option>
+                            <option value="652">Lighting of internal roads</option>
+                            <option value="655">Demolition Permit</option>
+                            <option value="656">mount cutting permit</option>
+                            <option value="658">Installation of Interlocking Tile</option>
+                            <option value="659">Car Parking Shed Outside the Home</option>
+                            <option value="660">Temporary labor accommodation</option>
+                            <option value="674">Building breaking speed</option>
+                            <option value="675">Installation of billboard / billboard beside the road</option>
+                            <option value="676">Planting outside the Home</option>
+                            <option value="677">Installation of a bulletin Board</option>
+                            <option value="736">Landscape works</option>
+                            <option value="737">Advertisement Board</option>
+                            <option value="738">Placement sign Board / Advertising board Top of building</option>
                           </select>
                         </div>
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <!-- <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="PermitNo">License Number </label>
                           <input type="number" class="form-control numeric" id="PermitNo" placeholder="License Number" />
-                        </div>
+                        </div> -->
                       </div>
                     </fieldset>
                   </div> <!--  End .row -->
@@ -287,156 +290,168 @@
                 <div class="form-group">
                   <div class="row">
                     <fieldset>
-                      <legend id="legendlabel">Landescape works</legend>
+                      <legend id="legendlabel">Landscape works </legend>
                       <div class="row" id="Landid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Distance_No" class="required">Distance between house &amp; street</label>
-                          <input type="text" class="form-control" id="Distance_No"
-                            placeholder="Distance between house &amp; street" />
-                        </div>
-                        <div class="form-group col-sm-4 col-md-3 col-lg-3">
-                          <label for="Afforestation_site" class="required">Afforestation site</label>
-                          <select multiple="multiple" id="Afforestation_site">
-                            <option value="1">In front</option>
-                            <option value="2">side</option>
-                            <option value="3">behind</option>
-                          </select>
-                          <textarea class="hidden" id="comment" rows="3" style="width:100%;"></textarea>
+                          <label for="Distance_No" class="required">Distance between house and street </label>
+                          <input class="form-control" id="Distance_No" placeholder="Distance between house and street" />
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Tiling_loc" class="required">Tiling Location: (existing, not found, under
-                            construction)</label>
-                          <select class="form-control" id="Tiling_loc">
+                          <label for="afforestationsite" class="required">Afforestation site</label>
+                          <select id="afforestationsite" class="form-control" selected="selected">
                             <option value="1000">Please select</option>
-                            <option value="1">existing</option>
-                            <option value="2">not found</option>
-                            <option value="3">under construction</option>
+                            <option value="In front of">In front of</option>
+                            <option value="Side">Side</option>
+                            <option value="Behind">Behind</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="GS_Beneficiary_select" class="required">Tiling Location</label>
+                          <select id="GS_Beneficiary_select" class="form-control" selected="selected">
+                            <option value="1000">Please select</option>
+                            <option value="Existing">Existing</option>
+                            <option value="Not Found">Not Found</option>
+                            <option value="Under Construction">Under Construction</option>
                           </select>
                         </div>
                       </div> <!-- End row -->
-                      <div class="row" id="installationid">
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Area_pav" class="required">Area of interlocking(m2)</label>
-                          <input type="text" class="form-control" id="Area_pav"
-                            placeholder="Area of interlocking(m2)" />
-                        </div>
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Distance_house" class="required">distance from house to street</label>
-                          <input type="text" class="form-control" id="Distance_house"
-                            placeholder="distance from house to street" />
-                        </div>
-                        <div class="form-group col-sm-4 col-md-3 col-lg-3">
-                          <label for="Inter_locking" class="required">Interlocking Site</label>
-                          <select multiple="multiple" id="Inter_locking">
-                            <option value="1">In front</option>
-                            <option value="2">side</option>
-                            <option value="3">behind</option>
-                          </select>
-                          <textarea class="hidden" id="comment1" rows="3" style="width:100%;"></textarea>
-                        </div>
-                      </div> <!-- End row -->
-                      <div class="row" id="mountid">
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Purpose_cut" class="required">Purpose of cutting</label>
-                          <input type="text" class="form-control" id="Purpose_cut" placeholder="Purpose of cutting" />
-                        </div>
-                      </div> <!-- End row -->
+                      
                       <div class="row" id="Permitid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Contractor_no" class="required">Construction to be demolished</label>
-                          <input type="text" class="form-control" id="Contractor_no"
-                            placeholder="Construction to be demolished" />
+                          <label for="Contractor_no" class="required">Contractors data</label> 
+                          <input class="form-control" id="Contractor_no" placeholder="Contractors data" />
                         </div>
                       </div> <!-- End row -->
+                      
+                      <div class="row" id="mountid">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">Purpose of cutting</label>
+                          <input class="form-control" id="Purpose_cut" placeholder="Purpose of cutting" />
+                        </div>
+                      </div> <!-- End row -->
+                      
                       <div class="row" id="signid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="Length_No" class="required">Length</label>
-                          <input type="text" class="form-control" id="Length_No" placeholder="Length" />
+                          <input class="form-control" id="Length_No" placeholder="Length" />
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="Display_No" class="required">Display</label>
-                          <input type="text" class="form-control" id="Display_No" placeholder="Display" />
+                          <input class="form-control" id="Display_No" placeholder="Display" />
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Height_No" class="required">Height</label>
-                          <input type="text" class="form-control" id="Height_No" placeholder="Height" />
+                          <label for="Height_No" class="required">Height  </label>
+                          <input class="form-control" id="Height_No" placeholder="Height" />
                         </div>
-                      </div> <!-- End row -->
-
+                      </div>  <!-- End row -->
+                      
+                      <div class="row" id="installationid">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Area_pav" class="required">Area of paving(m2) </label>
+                          <input class="form-control" id="Area_pav" placeholder="Area of paving(m2)" />
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Distance_house" class="required">Distance from house to street </label>
+                          <input class="form-control" id="Distance_house" placeholder="Distance from house to street" />
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Interlocking_Site" class="required">interlocking site </label>
+                          <input class="form-control" id="Interlocking_Site" placeholder="interlocking site" />
+  
+                        </div>
+                      </div>
+                      <!-- End row -->
                       <div class="row" id="laborid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="license_No" class="required">license number or Dig prmit</label>
-                          <input type="text" class="form-control" id="license_No"
-                            placeholder="license number or Dig prmit" />
+                          <label for="Project_Name" class="required">Project Name</label>
+                          <input class="form-control" id="Project_Name" placeholder="Project Name" />
                         </div>
-                      </div> <!-- End row -->
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Details_Project" class="required">Details of the Project</label>
+                          <input class="form-control" id="Details_Project" placeholder="Details of the Project" />
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="startDate_req" class="required">Dig Period From</label>
+                          <div class="date">
+                            <input class="form-control" id="startDate_req" placeholder="dd/MMM/yyyy" />
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="endDate_req" class="required">Dig Period To </label>
+                          <div class="date">
+                            <input class="form-control" id="endDate_req" placeholder="dd/MMM/yyyy" />
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End row -->
                       <div class="row" id="Carid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="distance_str" class="required">The distance between the street and the
-                            house</label>
-                          <input type="text" class="form-control" id="distance_str"
-                            placeholder="The distance between the street and the house" />
+                          <label for="distance_str" class="required">The distance between the street and the house </label>
+                          <input class="form-control" id="distance_str" placeholder="The distance between the street and the house" />
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Parking_No" class="required">Number of Parking</label>
-                          <input type="text" class="form-control" id="Parking_No" placeholder="Number of Parking" />
+                          <label for="Parking_No" class="required">Number of Parking </label>
+                          <input class="form-control" id="Parking_No" placeholder="Number of Parking" />
                         </div>
-                      </div> <!-- End row -->
+                        
+                      </div>
+                      <!-- End row -->
+  
                       <div class="row" id="Advid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="distance_board" class="required">The distance between the board and the
-                            house</label>
-                          <input type="text" class="form-control" id="distance_board"
-                            placeholder="The distance between the board and the house" />
+                          <label for="distance_board" class="required">Distance between the board and house</label>
+                          <input class="form-control" id="distance_board" placeholder="Distance between the board and house" />
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="ALength_No" class="required">Length</label>
-                          <input type="text" class="form-control" id="ALength_No" placeholder="Length" />
+                          <label for="Length_No_Adv" class="required">Length </label>
+                          <input class="form-control" id="Length_No_Adv" placeholder="Length" />
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="ADisplay_No" class="required">Display</label>
-                          <input type="text" class="form-control" id="ADisplay_No" placeholder="Display" />
+                          <label for="Display_No_Adv" class="required">Display</label>
+                          <input class="form-control" id="Display_No_Adv" placeholder="Display" />
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="AHeight_No" class="required">Height</label>
-                          <input type="text" class="form-control" id="AHeight_No" placeholder="Height" />
+                          <label for="Height_No_Adv" class="required">Height</label>
+                          <input class="form-control" id="Height_No_Adv" placeholder="Height" />
                         </div>
-                      </div> <!-- End row -->
+                      </div>
+                      <!-- End row -->
                       <div class="row" id="levellingid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Block_No" class="required">Purpose of the Settlement</label>
-                          <input type="text" class="form-control" id="Block_No"
-                            placeholder="Purpose of the Settlement" />
+                          <label for="Purpose_Settlement" class="required">Purpose of the Settlement</label>
+                          <input class="form-control" id="Purpose_Settlement" placeholder="Purpose of the Settlement" />
                         </div>
-                      </div> <!-- End row -->
+                      </div>
+                      <!-- End row -->
                       <div class="row" id="Roadid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Road_Bumps" class="required">Number of Breaking Speed</label>
-                          <input type="text" class="form-control" id="Road_Bumps"
-                            placeholder="Number of Breaking Speed" />
+                          <label for="Number_Breaking_Speed" class="required">Number of breaking speed</label>
+                          <input class="form-control" id="Number_Breaking_Speed" placeholder="Number of breaking speed" />
                         </div>
                       </div> <!-- End row -->
                       <div class="row" id="Pavingid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="Road_Lengt" class="required">Road Length</label>
-                          <input type="text" class="form-control" id="Road_Lengt" placeholder="Road Length" />
+                          <input class="form-control" id="Road_Lengt" placeholder="Road Length" />
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="Parking_Area" class="required">Parking Area</label>
-                          <input type="text" class="form-control" id="Parking_Area" placeholder="Parking Area" />
+                          <input class="form-control" id="Parking_Area" placeholder="Parking Area" />
                         </div>
                       </div> <!-- End row -->
+                      
                       <div class="row" id="Lightingid">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="Lengt_Road" class="required">Road Length</label>
-                          <input type="text" class="form-control" id="Lengt_Road" placeholder="Road Length" />
+                          <input class="form-control" id="Lengt_Road" placeholder="Road Length" />
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Light_Poles" class="required">Number of Light Poles</label>
-                          <input type="text" class="form-control" id="Light_Poles"
-                            placeholder="Number of Light Poles" />
+                          <label for="Light_Poles" class="required">Number of Light Poles </label>
+                          <input class="form-control" id="Light_Poles" placeholder="Number of Light Poles" />
                         </div>
                       </div> <!-- End row -->
+  
                     </fieldset>
                   </div> <!-- End form-group -->
                 </div> <!-- End row -->
@@ -451,133 +466,127 @@
                     </div>
                     <fieldset>
                       <legend>Beneficiary Details</legend>
-                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <label for="Beneficiary_select" class="required">Beneficiary</label>
-                        <select name="Beneficiary_select" id="Beneficiary_select" class="form-control">
-                          <option value="1000">Please select</option>
-                          <option value="Owner" selected>Owner</option>
-                          <option value="Investor">Investor</option>
-                          <option value="Usufructer">Usufructer</option>
-                          <option value="Attorney">Power of Attorney</option>
-                          <option value="Heirs">Heirs</option>
-                          <option value="waqf">waqf</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizationNo">
-                        <label for="Authorization_No" class="required">Usufructer Number</label>
-                        <input type="text" class="form-control numeric" id="Authorization_No"
-                          placeholder="Usufructer Number" />
-                      </div>
-                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="InvestorNo">
-                        <label for="Investor_No" class="required">Investment Contract Number</label>
-                        <input type="text" class="form-control numeric" id="Investor_No"
-                          placeholder="Investment Contract Number" />
-                      </div>
-                      <div id="benradio1">
-                        <div class="form-group col-sm-6 col-md-4 col-lg-3" id="benradio">
+                      <div class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Beneficiary_select" class="required">Beneficiary</label>
+                          <select name="Beneficiary_select" id="Beneficiary_select" class="form-control">
+                            <option value="1000">Please select</option>
+                            <option value="Owner" selected>Owner</option>
+                            <option value="Investor">Investor</option>
+                            <option value="Usufructer">Usufructer</option>
+                            <option value="Attorney">Power of Attorney</option>
+                            <option value="Heirs">Heirs</option>
+                            <option value="waqf">waqf</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizationNo">
+                          <label for="Authorization_No" class="required">Usufructer Number</label>
+                          <input type="text" class="form-control numeric" id="Authorization_No" placeholder="Usufructer Number" />
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="InvestorNo">
+                          <label for="Investor_No" class="required">Investment Contract Number</label>
+                          <input type="text" class="form-control numeric" id="Investor_No" placeholder="Investment Contract Number" />
+                        </div>
+                        <div class="form-group col-sm-6 col-md-4 col-lg-3 benradio1" id="benradio">
                           <label for="optradio" class="required">Beneficiary Type</label>
                           <div class="form-control" id="orgtypeID">
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio" value="Individual" checked>
-                              Individual </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio" value="Organization">
-                              Organization </label>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="optradio" id="inlineRadio1" value="Individual" checked>
+                              <label class="form-check-label" for="inlineRadio1">Individual</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="optradio" id="inlineRadio2" value="Organization">
+                              <label class="form-check-label" for="inlineRadio2">Organization</label>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
-                        <label for="Same as Applicant" class="required">Same as Applicant</label>
-                        <div class="form-control">
-                          <label class="radio-inline">
-                            <input type="radio" name="optradio1" value="Yes">
-                            Yes </label>
-                          <label class="radio-inline">
-                            <input type="radio" name="optradio1" value="No" checked>
-                            No</label>
-                        </div>
-                      </div>
-                      <div class="row">
+                        <!-- <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
+                          <label for="Same as Applicant" class="required">Same as Applicant</label>
+                          <div class="form-control">
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio1" value="Yes">
+                              Yes </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio1" value="No" checked>
+                              No</label>
+                          </div>
+                        </div> -->
                         <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
                           <label for="optradio2">Beneficiary Type </label>
-                          <input type="text" class="form-control" id="optradio2" placeholder="Beneficiary Type"
-                            readonly>
-                        </div>
-                        <div id="benType" class="">
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="BeneficiaryID" class="required">Beneficiary ID</label>
-                            <input type="text" class="form-control numeric" id="BeneficiaryID"
-                              placeholder="Beneficiary ID">
-                          </div>
-                          <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                            <label for="Bendate" class="required">Expiry Date</label>
-                            <div class="date">
-                              <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy" />
-                              <span class="input-group-addon" style="display: none;"><i
-                                  class="glyphicon glyphicon-calendar"></i></span>
-                            </div>
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="Bname">Beneficiary Name </label>
-                            <input type="text" class="form-control" id="Bname" placeholder="Beneficiary Name">
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benId">
-                            <label for="Baddress" class="required">Beneficiary Address</label>
-                            <input type="text" class="form-control" id="Baddress" placeholder="Beneficiary Address">
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="Bph" class="required">Beneficiary Mobile Number</label>
-                            <input type="text" class="form-control numeric" id="Bph"
-                              placeholder="Beneficiary Mobile Number" onchange="return isNumberKey(event,this)"
-                              maxlength="8">
-                            <div id="Ph_BenfError" style="color:red">Please Enter a 8-Digits Mobile Number</div>
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="Bemail">Beneficiary Email Address</label>
-                            <input type="text" class="form-control" id="Bemail" placeholder="Beneficiary Email Address">
-                            <div id="Bemail_Error" style="color:red">Please Enter Valid Email</div>
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3" id="waqf_Name">
-                            <label for="waqfName">waqf Name</label>
-                            <input type="text" class="form-control" id="waqfName" placeholder="waqf Name">
-                          </div>
-                        </div>
-                        <!-- End Beneficiary Details -->
-
-                        <div id="OrganizationDetails" class="">
-                          <div class="row">
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="crid">Commerical Registration ID <span style="color:red">*</span></label>
-                              <input type="text" class="form-control" id="crid" placeholder="Commerical Registration ID"
-                                validate-group="form-step-03">
-                            </div>
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="cname">Commercial Name</label>
-                              <input type="text" class="form-control" id="cname" placeholder="Commercial Name">
-                            </div>
-                            <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                              <label for="Phnumber">Mobile Number</label>
-                              <input type="text" class="form-control numeric" id="Phnumber" placeholder="Mobile Number"
-                                maxlength="8">
-                              <div id="Ph_OrgError" style="color:red">Please Enter a 8-Digits Mobile Number</div>
-                            </div>
-                            <div class="form-group  col-sm-4 col-md-4 col-lg-3">
-                              <label for="Email">Email</label>
-                              <input type="text" class="form-control" id="E-mail" placeholder="Email">
-                              <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">Please
-                                Enter Valid Email</div>
-                            </div>
-                          </div>
-                          <!-- .row -->
-                        </div>
-                        <!-- OrganizationDetails -->
-
-                        <div class="form-group pull-right">
-                          <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit"><i
-                              class="fa fa-plus"></i>&nbsp;Add Beneficiary</button>
+                          <input type="text" class="form-control" id="optradio2" placeholder="Beneficiary Type" readonly>
                         </div>
                       </div>
-                      <!-- .row -->
+                      <div id="benType" class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="BeneficiaryID" class="required">Beneficiary ID</label>
+                          <input type="text" class="form-control numeric" id="BeneficiaryID" placeholder="Beneficiary ID">
+                        </div>
+                        <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
+                          <label for="Bendate" class="required">Expiry Date</label>
+                          <div class="date">
+                            <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy" />
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span>
+                          </div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bname">Beneficiary Name </label>
+                          <input type="text" class="form-control" id="Bname" placeholder="Beneficiary Name">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benId">
+                          <label for="Baddress" class="required">Beneficiary Address</label>
+                          <input type="text" class="form-control" id="Baddress" placeholder="Beneficiary Address">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bph" class="required">Beneficiary Mobile Number</label>
+                          <input type="text" class="form-control numeric" id="Bph" placeholder="Beneficiary Mobile Number"
+                            onchange="return isNumberKey(event,this)" maxlength="8">
+                          <div id="Ph_BenfError" style="color:red">Please Enter a 8-Digits Mobile Number</div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Bemail">Beneficiary Email Address</label>
+                          <input type="text" class="form-control" id="Bemail" placeholder="Beneficiary Email Address">
+                          <div id="Bemail_Error" style="color:red">Please Enter Valid Email</div>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="waqf_Name">
+                          <label for="waqfName">waqf Name</label>
+                          <input type="text" class="form-control" id="waqfName" placeholder="waqf Name">
+                        </div>
+                      </div>
+                      <!-- End Beneficiary Details -->
+                    
+                      <div id="OrganizationDetails" class="row">
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="crid" class="required">Commercial Registration ID</label>
+                          <input type="text" class="form-control" id="crid" placeholder="Commercial Registration ID"
+                            validate-group="form-step-03">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="cname">Commercial Name</label>
+                          <input type="text" class="form-control" id="cname" placeholder="Commercial Name">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <label for="Phnumber">Mobile Number</label>
+                          <input type="text" class="form-control numeric" id="Phnumber" placeholder="Mobile Number" maxlength="8">
+                          <div id="Ph_OrgError" style="color:red">Please Enter a 8-Digits Mobile Number</div>
+                        </div>
+                        <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                          <label for="Email">Email</label>
+                          <input type="text" class="form-control" id="E-mail" placeholder="Email">
+                          <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">Please
+                            Enter Valid Email</div>
+                        </div>
+                      </div>
+                      <!-- OrganizationDetails -->
+                    
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group d-flex align-items-center justify-content-end">
+                            <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit">
+                              <i class="fal fa-plus"></i>&nbsp;Add Beneficiary</button>
+                          </div>
+                        </div>
+                      </div> <!-- /.row -->
+                    
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                           <div class="table-responsive">
@@ -605,73 +614,76 @@
                     </div>
                     <fieldset>
                       <legend>Plot Data</legend>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                        <label for="Plot Serial Number">Plot Serial Number <span style="color:red">*</span></label>
-                        <input type="text" class="form-control" id="PSN_Plot" placeholder="Plot Serial Number">
-                      </div>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                        <label for="Plot Number">Plot Number <span style="color:red">*</span></label>
-                        <input type="number" class="form-control numeric" id="PSN" placeholder="Plot Number" min="0">
-                      </div>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                        <label for="Region">Governorate <span style="color:red">*</span></label>
-                        <select name="" id="region_Ld" class="form-control">
-                          <option value="0">Please select</option>
-                          <option value="1">Alshaqiya Governorate</option>
-                          <option value="2">Aldhahira Governorate</option>
-                          <option value="3">Mosandam Governorate</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                        <label for="Willayat">Willayat <span style="color:red">*</span></label>
-                        <select name="" id="Willayat_Ld" class="form-control">
-                          <option value="0">Please select</option>
-                          <option value="1">Suhar </option>
-                          <option value="2">Nizwa</option>
-                          <option value="3">Ibra</option>
-                          <option value="3">Saham</option>
-                          <option value="3">Nakhal</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                        <label for="Village">Village <span style="color:red">*</span></label>
-                        <select name="" id="village_Ld" class="form-control">
-                          <option value="0">Please select</option>
-                          <option value="461">Hay elain</option>
-                          <option value="463">Suaal</option>
-                          <option value="464">Karsha</option>
-                          <option value="465">Eliqir</option>
-                          <option value="466">Daris</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                        <label for="Square">Block <span style="color:red">*</span></label>
-                        <input type="number" class="form-control numeric" id="square_Ld" placeholder="Block" min="0" />
-                      </div>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                        <label for="Plot Area">Plot Area <span style="color:red">*</span></label>
-                        <input type="number" class="form-control numeric" id="Plotsurface_Ld" placeholder="Plot Area"
-                          min="0">
-                      </div>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                        <label for="StreetNumber_Ld">Street Name <span style="color:red">*</span></label>
-                        <input type="number" class="form-control numeric" id="StreetNumber_Ld" placeholder="Street Name"
-                          min="0">
-                      </div>
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                        <label for="Type of use">Type of Use <span style="color:red">*</span></label>
-                        <select name="" id="typeUse_Ld" class="form-control">
-                          <option value="0">Please select</option>
-                          <option value="463">Residential</option>
-                          <option value="461">Residential Commercial</option>
-                          <option value="464">Industrial</option>
-                          <option value="465">Commercial</option>
-                        </select>
+                      <div class="row">
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <label for="Plot Serial Number">Plot Serial Number <span style="color:red">*</span></label>
+                          <input type="text" class="form-control" id="PSN_Plot" placeholder="Plot Serial Number">
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <label for="Plot Number">Plot Number <span style="color:red">*</span></label>
+                          <input type="number" class="form-control numeric" id="PSN" placeholder="Plot Number" min="0">
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <label for="Region">Governorate <span style="color:red">*</span></label>
+                          <select name="" id="region_Ld" class="form-control">
+                            <option value="0">Please select</option>
+                            <option value="1">Alshaqiya Governorate</option>
+                            <option value="2">Aldhahira Governorate</option>
+                            <option value="3">Mosandam Governorate</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <label for="Willayat">Willayat <span style="color:red">*</span></label>
+                          <select name="" id="Willayat_Ld" class="form-control">
+                            <option value="0">Please select</option>
+                            <option value="1">Suhar </option>
+                            <option value="2">Nizwa</option>
+                            <option value="3">Ibra</option>
+                            <option value="3">Saham</option>
+                            <option value="3">Nakhal</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <label for="Village">Village <span style="color:red">*</span></label>
+                          <select name="" id="village_Ld" class="form-control">
+                            <option value="0">Please select</option>
+                            <option value="461">Hay elain</option>
+                            <option value="463">Suaal</option>
+                            <option value="464">Karsha</option>
+                            <option value="465">Eliqir</option>
+                            <option value="466">Daris</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <label for="Square">Block <span style="color:red">*</span></label>
+                          <input type="number" class="form-control numeric" id="square_Ld" placeholder="Block" min="0" />
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <label for="Plot Area">Plot Area <span style="color:red">*</span></label>
+                          <input type="number" class="form-control numeric" id="Plotsurface_Ld" placeholder="Plot Area"
+                            min="0">
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <label for="StreetNumber_Ld">Street Name <span style="color:red">*</span></label>
+                          <input type="number" class="form-control numeric" id="StreetNumber_Ld" placeholder="Street Name"
+                            min="0">
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <label for="Type of use">Type of Use <span style="color:red">*</span></label>
+                          <select name="" id="typeUse_Ld" class="form-control">
+                            <option value="0">Please select</option>
+                            <option value="463">Residential</option>
+                            <option value="461">Residential Commercial</option>
+                            <option value="464">Industrial</option>
+                            <option value="465">Commercial</option>
+                          </select>
+                        </div>
                       </div>
                     </fieldset>
                   </div> <!-- .row -->
                 </div> <!-- .form-group -->
-                <div class="form-group" id="1310">
+
+                <!-- <div class="form-group" id="1310">
                   <div class="row">
                     <fieldset>
                       <legend>Request Details</legend>
@@ -702,8 +714,9 @@
                         </div>
                       </div>
                     </fieldset>
-                  </div> <!-- .row -->
-                </div> <!-- .form-group -->
+                  </div> .row
+                </div> .form-group -->
+
                 <div class="form-group">
                   <div class="row">
                     <div class="padtopbot">
@@ -726,8 +739,8 @@
                           <input class="form-control numeric" id="Northings" placeholder="Northings"
                             title="Please enter valid numbers" type="text">
                         </div>
-                        <div class="form-group pull-right top-25">
-                          <button type="button" class="btn btn-ts" id="GISid" onclick="GIS()">Add GIS</button>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-6 mt-5">
+                          <button type="button" class="btn btn-ts" onclick="GIS()" id="GISid"><i class="fal fa-plus fa-fw"></i> Add GIS</button>
                         </div>
                       </div>
                       <!-- End row -->
@@ -1260,7 +1273,7 @@
                 </div>
                 <!-- .form-group -->
 
-                <div class="form-group hidden">
+                <div class="form-group">
                   <div class="row">
                     <div class="padtopbot">
                       <div id="ConsulSupervisorDetails_Err" class="Error">Please fill all required fields of Consulting
@@ -1313,6 +1326,41 @@
                   <!-- .row -->
                 </div>
                 <!-- .form-group -->
+                <fieldset>
+                  <legend>Account Detail</legend>
+                  <div class="row">
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="Account_No" class="required">Account Number</label>
+                      <input id="Account_No" name="accountNumber" placeholder="Account Number" type="text" class="form-control" value="">
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="Bank_Name" class="required">Bank Name</label>
+                      <select class="form-control" id="bank_name" name="bankName.idCltItem">
+                        <option value="1000">Please select</option>
+                        <option value="754">Abu Dhabi Bank</option>
+                        <option value="719">Ahli Bank</option>
+                        <option value="747">Ahli Bank</option>
+                        <option value="750">Ahli Islamic Bank</option>
+                        <option value="749">Al maysarah</option>
+                        <option value="720">Alizz Islamic Bank </option>
+                        <option value="721">Bank Dhofar</option>
+                        <option value="722">Bank Muscat</option>
+                        <option value="723">Bank Nizwa</option>
+                        <option value="739">Bank Sohar Islamic</option>
+                        <option value="724">Bank Sohar SAOG</option>
+                        <option value="752">Baroda Bank</option>
+                        <option value="725">Central Bank of Oman</option>
+                        <option value="753">Habib Bank</option>
+                        <option value="726">HSBC Oman</option>
+                        <option value="746">Meethaq</option>
+                        <option value="727">National Bank of Oman</option>
+                        <option value="728">Oman Arab Bank</option>
+                        <option value="755">QNB</option>
+                        <option value="748">Sohar Islamic Bank</option>
+                      </select>
+                    </div>
+                  </div> <!-- /.row -->
+                </fieldset>
               </div>
               <!-- End ConsultantDetails -->
 
@@ -1781,8 +1829,6 @@
   <script src="js/Time/timejs.js"></script>
   <!-- Date &amp; Time Live-->
   <script src="js/Datepicker/bootstrap-datepicker.js"></script>
-  <script src="js/owl.carousel.js"></script>
-  <script src="js/demo.js"></script>
   <!-- Include Data Table smartWizard source -->
   <script src="js/dataTables-4/jquery.dataTables.js"></script>
   <script src="js/dataTables.bootstrap4.js"></script>

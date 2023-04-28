@@ -132,9 +132,9 @@
                     <div id="reqtypeDetails_Err" class="Error">يرجى تعبئة جميع الحقول المطلوبة من تفاصيل الطلب </div>
                   </div>
                   <fieldset>
-                    <legend>تفاصيل نوع المستفيد</legend>
+                    <legend>تفاصيل نوع الدراسة</legend>
                     <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                      <label for="Study_type">نوع الدراسة<span style="color:red">*</span></label>
+                      <label for="Study_type" class="required">نوع الدراسة</label>
                       <input class="form-control" id="Study_type" placeholder="نوع الدراسة" type="text">
                     </div>
                   </fieldset>
@@ -149,14 +149,14 @@
                     <div id="appDetails_Err" class="Error">الرجاء تعبئة جميع حقول بيانات مقدم الطلب</div>
                   </div>
                   <fieldset>
-                    <legend>بيانات المكتب الإستشاري</legend>
+                    <legend>تفاصيل الإستشاري المصمم</legend>
                     <div class="row">
                       <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                        <label for="aid" class="required">الرقم المدني</label>
-                        <input type="text" class="form-control" id="aid" placeholder="الرقم المدني">
+                        <label for="aid" class="required">الرقم المدني للمهندس</label>
+                        <input type="text" class="form-control" id="aid" placeholder="الرقم المدني للمهندس">
                       </div>
                       <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                        <label for="applcntEpiryDate" class="required">تاريخ الانتهاء</label>
+                        <label for="applcntEpiryDate" class="required">تاريخ انتهاء صلاحية البطاقة المدنيه</label>
                         <div class="date">
                           <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy" />
                           <span class="input-group-addon" style="display: none;"><i
@@ -164,8 +164,8 @@
                         </div>
                       </div>
                       <div class="form-group  col-sm-5 col-md-4 col-lg-3 haserror">
-                        <label for="aname" class="required">اسم الاستشاري</label>
-                        <input type="text" class="form-control" id="aname" placeholder="اسم الاستشاري">
+                        <label for="aname" class="required">اسم المهندس</label>
+                        <input type="text" class="form-control" id="aname" placeholder="اسم المهندس">
                       </div>
                       <div class="form-group col-sm-4 col-md-4 col-lg-3 haserror">
                         <label for="address_app" class="required">العنوان</label>
@@ -310,17 +310,19 @@
                         <input type="text" class="form-control numeric" id="Investor_No"
                           placeholder="رقم عقد الاستثمار" />
                       </div>
-                        <div class="form-group col-sm-6 col-md-4 col-lg-3 benradio1" id="benradio">
-                          <label for="optradio" class="required">نوع المستفيد</label>
-                          <div class="form-control" id="orgtypeID">
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio" value="Individual" checked>
-                              فرد </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio" value="Organization">
-                              مؤسسة </label>
+                      <div class="form-group col-sm-6 col-md-4 col-lg-3 benradio1" id="benradio">
+                        <label for="optradio" class="required">نوع المستفيد</label>
+                        <div class="form-control" id="orgtypeID">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="optradio" id="inlineRadio1" value="Individual" checked>
+                            <label class="form-check-label" for="inlineRadio1">فرد</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="optradio" id="inlineRadio2" value="Organization">
+                            <label class="form-check-label" for="inlineRadio2">مؤسسة</label>
                           </div>
                         </div>
+                      </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
                           <label for="optradio2">نوع المستفيد </label>
                           <input type="text" class="form-control" id="optradio2" placeholder="نوع المستفيد" readonly>
@@ -397,10 +399,15 @@
                         <!-- .row -->
                       </div>
                       <!-- OrganizationDetails -->
-                      <div class="form-group pull-right top-25">
-                        <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit"><i
-                            class="fa fa-plus"></i>&nbsp;اضافة مستفيد</button>
-                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group d-flex align-items-center justify-content-end">
+                            <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit">
+                              <i class="fal fa-plus"></i>&nbsp;اضافة مستفيد</button>
+                          </div>
+                        </div>
+                      </div> <!-- /.row -->
+                      
                     <div class="row">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="table-responsive">
@@ -516,8 +523,9 @@
                         <input type="text" class="form-control numeric" id="Northings" placeholder="شمالي"
                           title="Please enter valid numbers" />
                       </div>
-                      <div class="form-group pull-right top-25">
-                        <button type="button" class="btn btn-ts" onclick="GIS()" id="GISid">إضافة إحداثيات</button>
+                      <div class="form-group col-sm-4 col-md-4 col-lg-6 mt-5">
+                        <button type="button" class="btn btn-ts" onclick="GIS()" id="GISid">
+                          <i class="fal fa-plus fa-fw"></i>إضافة إحداثيات</button>
                       </div>
                     </div>
                     <!-- End row -->
