@@ -17,7 +17,7 @@
   <title>Lease Contract New / Renew</title>
   <script src="js/jquery-3.6.0.js"></script>
   <link rel=icon href="img/Khanjar.png" type=image/png />
-  <!-- fontawesome -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="css/fontawesome.6.3.0/fontawesome.6.3.0.css" />
   <link rel="stylesheet" href="css/moi-webapp.css?v.1.0" id=stylesheet>
   <link rel="stylesheet" href="css/moi.css" />
@@ -229,7 +229,7 @@
                             <input type="text" class="form-control numeric" id="Contact_old"
                               placeholder="Lease Contract Number" validate-group="form-step-03">
                           </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                          <!-- <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="contractType" class="required">Lease Contract Type</label>
                             <select class="form-control" id="contractType" validate-group="form-step-03">
                               <option value="1000">Please select</option>
@@ -247,9 +247,9 @@
                               <span class="input-group-addon" style="display: none;"><i
                                   class="glyphicon glyphicon-calendar"></i></span>
                             </div>
-                          </div>
+                          </div> -->
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="expiryDate_old" class="required">Lease contract Expiry date</label>
+                            <label for="expiryDate_old" class="required">Old Lease contract Expiry date</label>
                             <div class="date">
                               <input type="text" class="form-control" id="expiryDate_old" placeholder="dd/MMM/yyyy"
                                 validate-group="form-step-03" readonly>
@@ -258,13 +258,13 @@
                             </div>
                           </div>
                         </div> <!-- .row -->
-                        <div class="row">
+                        <!-- <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="lateFee_old" class="required">Late Fee</label>
                             <input type="text" class="form-control numeric" id="lateFee_old" placeholder="Late Fee"
                               validate-group="form-step-03" readonly>
                           </div>
-                        </div> <!-- /.row -->
+                        </div> /.row -->
                       </fieldset>
                     </div> <!-- .row -->
                   </div> <!-- .form-group -->
@@ -487,9 +487,6 @@
                                   class="glyphicon glyphicon-calendar"></i></span>
                             </div>
                           </div>
-                        </div> <!-- .row -->
-
-                        <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="sdate">Submission Date</label>
                             <div class="date">
@@ -498,10 +495,12 @@
                                   class="glyphicon glyphicon-calendar"></i></span>
                             </div>
                           </div>
+                        </div> <!-- .row -->
+
+                        <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="region_ser" class="required">Governorate</label>
-                            <select name="region_ser" id="region_ser" class="form-control" required
-                              validate-group="form-step-05">
+                            <select name="region_ser" id="region_ser" class="form-control" required validate-group="form-step-05">
                               <option value="1000">Please select</option>
                               <option value="1">Alshaqiya Governorate</option>
                               <option value="2">Aldhahira Governorate</option>
@@ -510,8 +509,7 @@
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Willayat_ser" class="required">Willayat</label>
-                            <select name="Willayat_ser" id="Willayat_ser" class="form-control" required
-                              validate-group="form-step-05">
+                            <select name="Willayat_ser" id="Willayat_ser" class="form-control" required validate-group="form-step-05">
                               <option value="1000">Please select</option>
                               <option value="1">Suhar</option>
                               <option value="2">Nizwa</option>
@@ -607,9 +605,9 @@
                         </div> <!-- /.row -->
                         <div class="row">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="paymentDay_req" class="required">Rent Payment Day</label>
+                            <label for="paymentDay_req">Rent Payment Day</label>
                             <input type="text" class="form-control" id="paymentDay_req" placeholder="Rent Payment Day"
-                              required validate-group="form-step-11">
+                              validate-group="form-step-11">
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Amount_req" class="required">Amount (OMR)</label>
@@ -617,14 +615,14 @@
                               required validate-group="form-step-11">
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="AmountPaid_req" class="required">Amount Paid in Advance</label>
+                            <label for="AmountPaid_req">Amount Paid in Advance</label>
                             <input type="number" class="form-control numeric" id="AmountPaid_req" value="0"
-                              placeholder="Amount Paid in Advance" required validate-group="form-step-11">
+                              placeholder="Amount Paid in Advance" validate-group="form-step-11">
                           </div>
                           <div class="form-group col-sm-6 col-md-12 col-lg-12">
-                            <label for="comment_req" class="required">Comments</label>
-                            <textarea rows="5" class="form-control border" id="comment_req" placeholder="Comments"
-                              required validate-group="form-step-11"></textarea>
+                            <label for="comment_req" class="">Additional Requirements</label>
+                            <textarea rows="5" class="form-control border" id="comment_req" placeholder="Additional Requirements"
+                              validate-group="form-step-11"></textarea>
                           </div>
                         </div> <!-- /.row -->
                       </fieldset>
@@ -683,6 +681,13 @@
                             <input type="text" class="form-control" id="secondPartyID" placeholder="" required
                               validate-group="form-step-12">
                           </div>
+                          <div class="form-group col-sm-6 col-md-3 col-lg-3" id="secondPartyExpDate">
+                            <label for="secondPartyExpiryDate" class="required">ID Expiry Date</label>
+                            <div class="form-group date">
+                              <input class="form-control" id="secondPartyExpiryDate" name="secondPartyExpiryDate" type="text" placeholder="dd/mm/yyyy" validate-group="form-step-12" readonly /> 
+                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                            </div>
+                          </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="sName" id="Civilname">Name</label>
                             <input type="text" class="form-control" placeholder="" id="sName">
@@ -699,7 +704,7 @@
                             <input type="text" class="form-control numeric" id="secondPartyMobileNumber"
                               placeholder="Mobile Number" onchange="return isNumberKey(event,this)" maxlength="8"
                               required validate-group="form-step-12">
-                            <div id="SParty_Error" style="color:red">Please Enter a 8-digits Mobile Number</div>
+                            <div id="SParty_Error" class="text-danger">Please Enter a 8-digits Mobile Number</div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="secondPartyEmail">Email</label>
@@ -707,9 +712,10 @@
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizedUser">
                             <label for="Authorized_User" class="required">Authorized User</label>
-                            <select name="Authorized_User" id="Beneficiary_select" class="form-control">
+                            <input type="text" class="form-control" id="Authorized_User" placeholder="Authorized User" readonly>
+                            <!-- <select name="Authorized_User" id="Authorized_User" class="form-control">
                               <option value="1000">Please select</option>
-                            </select>
+                            </select> -->
                           </div>
                         </div> <!-- /.row -->
                         <div class="row" id="Individual_Sponsor">
@@ -849,8 +855,9 @@
                                 </div>
                                 <div class="form-group col-sm-6 col-md-3 col-lg-3">
                                   <label for="Owner_name">Owner</label>
-                                  <textarea class="form-control" id="Owner_name" placeholder="Owner"
-                                    rows="2"></textarea>
+                                  <!-- <textarea class="form-control" id="Owner_name" placeholder="Owner"
+                                    rows="2"></textarea> -->
+                                  <input type="text" class="form-control" id="Owner_name" placeholder="Owner">
                                 </div>
                               </div>
                               <div class="row">
@@ -1261,7 +1268,7 @@
                     <div class="row">
                       <fieldset>
                         <legend>GIS Coordinates Details</legend>
-                        <div class="row">
+                        <!-- <div class="row">
                           <div class="form-group col-sm-4 col-md-4 col-lg-3 hidden">
                             <label for="Point">Point</label>
                             <input type="number" class="form-control" id="Point" placeholder="Point" value="1" />
@@ -1276,14 +1283,15 @@
                             <input type="number" class="form-control numeric" name="Northings" id="Northings"
                               placeholder="Northings" title="Please enter valid numbers" />
                           </div>
-                        </div> <!-- /.row -->
+                        </div> /.row -->
                         <div class="row">
                           <div class="text-right">
-                            <button type="button" class="btn btn-hs" onclick="GIS()" id="GISid">Add GIS</button>
+                            <!-- <button type="button" class="btn btn-hs" onclick="GIS()" id="GISid">Add GIS</button> -->
                             <button type="button" class="btn btn-hs" id="GISGoogleMap"><i
                                 class="fa fa-map fa-fw"></i>Show Map</button>
                           </div>
-                        </div>
+                        </div> <!-- /.row -->
+
                         <div class="row">
                           <div class="form-group">
                             <div class="row">

@@ -130,11 +130,11 @@
                 <div class="form-group">
                   <div class="row">
                     <div class="padtopbot">
-                      <div id="RequestDetails_Err" class="Error">Please fill all required fields of Request Details
+                      <div id="RequestDetails_Err" class="Error">Please fill all required fields of Request Type Details
                       </div>
                     </div>
                     <fieldset>
-                      <legend>Request Details</legend>
+                      <legend>Request Type Details</legend>
                       <div class="row">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="Request_ser" class="required">Request Type</label>
@@ -167,9 +167,9 @@
                           <input type="text" class="form-control" id="aid" placeholder="Applicant ID" />
                         </div>
                         <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                          <label for="applcntEpiryDate" class="required">Expiry Date</label>
+                          <label for="applcntEpiryDate" class="required">ID Expiry Date</label>
                           <div class="date">
-                            <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy" />
+                            <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy" readonly />
                             <span class="input-group-addon" style="display: none;"><i
                                 class="glyphicon glyphicon-calendar"></i></span>
                           </div>
@@ -408,7 +408,7 @@
                 </div>
                 <!-- .form-group -->
 
-                <div class="form-group">
+                <div class="form-group hidden">
                   <div class="row">
                     <div class="padtopbot">
                       <div id="PlotDetails_Err" class="Error">Please fill all required fields of Plot Data </div>
@@ -486,7 +486,7 @@
                 </div>
                 <!-- .form-group -->
 
-                <div class="form-group">
+                <div class="form-group hidden">
                   <div class="row">
                     <div class="padtopbot">
                       <div id="GISCoords_Err" class="Error">Please fill all required fields of GIS Coordinates </div>

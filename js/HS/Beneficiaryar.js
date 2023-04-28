@@ -131,13 +131,13 @@ $(document).ready(function() {
         { "mDataProp": "msno", sTitle: "الرقم المتسلسل", sType: "string", "defaultContent": "text" }, 
         { "mDataProp": "CBeneficiary_select", sTitle: "المستفيد", sType: "string" }, 
         { "mDataProp": "Coptradio", sTitle: "نوع المستفيد", sType: "string" }, 
-        { "mDataProp": "CBeneficiaryID", sTitle: "الرقم المدني للمستفيد/رقم السجل التجاري", sType: "string" }, 
+        { "mDataProp": "CBeneficiaryID", sTitle: "\u0627\u0644\u0631\u0642\u0645 \u0627\u0644\u0645\u062F\u0646\u064A \u0644\u0644\u0645\u0633\u062A\u0641\u064A\u062F/\u0631\u0642\u0645 \u0627\u0644\u0633\u062C\u0644 \u0627\u0644\u062A\u062C\u0627\u0631\u064A", sType: "string" }, 
         { "mDataProp": "CBendate", sTitle: "تاريخ الانتهاء", sType: "string" }, 
         { "mDataProp": "CBname", sTitle: "أسم المستفيد/الإسم التجاري", sType: "string" }, 
         { "mDataProp": "CBaddress", sTitle: "عنوان المستفيد", sType: "string" }, 
         { "mDataProp": "CBph", sTitle: "رقم الهاتف", sType: "string" }, 
-        { "mDataProp": "CBemail", sTitle: "البريد الالكتروني", sType: "string" }, 
-        { "mDataProp": "CInvestor_No", sTitle: "رقم عقد الاستثمار", sType: "string" }, 
+        { "mDataProp": "CBemail", sTitle: "\u0627\u0644\u0628\u0631\u064A\u062F \u0627\u0644\u0627\u0644\u0643\u062A\u0631\u0648\u0646\u064A", sType: "string" }, 
+        //{ "mDataProp": "CInvestor_No", sTitle: "رقم عقد الاستثمار", sType: "string" }, 
         { "mDataProp": "Actions", sTitle: "الاجراء", sType: "string", "defaultContent": "<a id = 'editgisdetails' href='javascript:void(0)' data-toggle='tooltip' data-placement='bottom' title='Edit' class='text-green'><i class='fa fa-edit'></i></a> <a id = 'removegisdetails' href='javascript:void(0)' data-toggle='tooltip' data-placement='bottom' title='Delete' class='text-red'><i class='fa fa-times'></i></a>" }
     ];
     var coldef_firstParty_Table = [

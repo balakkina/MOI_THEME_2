@@ -100,10 +100,12 @@ $(document).ready(function() {
       $("#AuthorizedUser").hide();
       $("#Civilid").text('الرقم المدني');
       $("#Civilname").text('الأسم');
+      $("#secondPartyExpDate").show();
       $("#secondPartyID").attr("placeholder", $("#Civilid").html());
       $("#sName").attr("placeholder", $("#Civilname").html());
     } else {
       $("#Individual_Sponsor").hide();
+      $("#secondPartyExpDate").hide();
       $("#AuthorizedUser").show();
       $("#Civilid").text('رقم السجل التجاري');
       $("#Civilname").text('الإسم التجاري')

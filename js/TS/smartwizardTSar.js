@@ -155,16 +155,16 @@ $(document).ready(function() {
      $("#Proposedhide").show();
    }
    if (ConsType_Value == "180") {
-     $("#CommericalRegistrationID_val").show();
+     $(".CommericalRegistrationID_val").show();
      $("#commrcialname").show(); //Add code on 3/05/2017 by Balaram
      $("#approved").hide(); //Add code on 3/05/2017 by Balaram
-     $("#Civilno").hide(); //Add code on 3/05/2017 by Balaram
+     $(".Civilno").hide(); //Add code on 3/05/2017 by Balaram
      $('#Address_cons').val('Other');
    } else {
-     $("#CommericalRegistrationID_val").hide();
+     $(".CommericalRegistrationID_val").hide();
      $("#commrcialname").hide(); //Add code on 3/05/2017 by Balaram
      $("#approved").show(); //Add code on 3/05/2017 by Balaram
-     $("#Civilno").show(); //Add code on 3/05/2017 by Balaram
+     $(".Civilno").show(); //Add code on 3/05/2017 by Balaram
      $('#Address_cons').val('Applicant');
    }
    //General Services - Request Type - BPTS13 - select box
@@ -822,3 +822,15 @@ $("#Request_ser").change(function() {
    } 
 });
 // Request_Type - BPTS01 -select box for building details header change - End
+
+// Building types - BPTS08 - Start
+$("#licenseDiv").hide();
+$("#buildingType").on('change', function() {
+	//alert( this.value );
+	if (this.value == '763' || this.value == '768' || this.value == '770') {
+		$("#licenseDiv").show();
+	} else {
+		$("#licenseDiv").hide();
+	}
+});
+// Building types - BPTS08 - End

@@ -100,10 +100,12 @@ $(document).ready(function() {
       $("#AuthorizedUser").hide();
       $("#Civilid").text('Civil ID');
       $("#Civilname").text('Name');
+      $("#secondPartyExpDate").show();
       $("#secondPartyID").attr("placeholder", $("#Civilid").html());
       $("#sName").attr("placeholder", $("#Civilname").html());
     } else {
       $("#Individual_Sponsor").hide();
+      $("#secondPartyExpDate").hide();
       $("#AuthorizedUser").show();
       $("#Civilid").text('Commerical ID');
       $("#Civilname").text('Commerical Name')

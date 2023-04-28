@@ -86,7 +86,7 @@
         <div class="panel panel-default panel-dm-theme">
           <div class="panel-head-services d-flex align-items-center justify-content-between ts-panel">
             <div class="panel-title mt-0 d-flex align-items-center">
-              <img src="img/Services/ts-new-white.svg" class="mr-2" alt="Technical Services">
+              <img src="img/New_sub_services_icons/Existing-Building-Characterization-Certificate.svg" class="mr-2" alt="Technical Services">
               <span id="requestTypeChange">طلب شهادة وصف مبنى قائم</span>
             </div>
             <div>
@@ -127,27 +127,16 @@
               <div class="form-group">
                 <div class="row">
                   <div class="padtopbot">
-                    <div id="RequestDetails_Err" class="Error">الرجاء تعبئة جميع البيانات المطلوبة</div>
-                  </div>
-                  <fieldset>
-                    <legend>بيانات الطلب</legend>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                      <label for="conLN" class="required">رقم إباحة البناء</label>
-                      <input type="text" name="ConstructionLicenseNumber" class="form-control" id="conLN"
-                        placeholder="رقم إباحة البناء">
-                    </div>
-                  </fieldset>
-                </div> <!-- End row -->
-              </div> <!-- End form-group -->
-
-              <div class="form-group">
-                <div class="row">
-                  <div class="padtopbot">
                     <div id="appDetails_Err" class="Error">الرجاء تعبئة جميع حقول بيانات مقدم الطلب</div>
                   </div>
                   <fieldset>
                     <legend>بيانات مقدم الطلب</legend>
                     <div class="row">
+                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <label for="conLN" class="required">رقم شهادة</label>
+                        <input type="text" name="ConstructionLicenseNumber" class="form-control" id="conLN"
+                          placeholder="رقم شهادة">
+                      </div>
                       <div class="form-group col-sm-3 col-md-4 col-lg-3">
                         <label for="aid" class="required">الرقم المدني</label>
                         <input type="text" class="form-control" id="aid" placeholder="الرقم المدني">
@@ -266,115 +255,117 @@
                   </div>
                   <fieldset>
                     <legend>بيانات المستفيد</legend>
-                    <!-- <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                      <label for="Beneficiary_select" class="required">المستفيد</label>
-                      <select name="Beneficiary_select" id="Beneficiary_select" class="form-control">
-                        <option value="1000">الرجاء الأختيار...</option>
-                        <option value="Owner" selected>المالك</option>
-                        <option value="Investor">مستثمر</option>
-                        <option value="Usufructer">منتفع</option>
-                        <option value="Attorney">الوكيل الشرعي</option>
-                        <option value="Heirs">ورثة</option>
-                        <option value="waqf">وقف</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizationNo">
-                      <label for="Authorization_No" class="required">رقم التوكيل</label>
-                      <input type="text" class="form-control numeric" id="Authorization_No" placeholder="رقم التوكيل" />
-                    </div>
-                    <div class="form-group col-sm-6 col-md-3 col-lg-3" id="InvestorNo">
-                      <label for="Investor_No" class="required">رقم عقد الاستثمار</label>
-                      <input type="text" class="form-control numeric" id="Investor_No" placeholder="رقم عقد الاستثمار" />
-                    </div>
-                    <div id="benradio1">
-                      <div class="form-group col-sm-6 col-md-4 col-lg-3" id="benradio">
+                    <div class="row">
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Beneficiary_select" class="required">المستفيد</label>
+                        <select name="Beneficiary_select" id="Beneficiary_select" class="form-control">
+                          <option value="1000">الرجاء الأختيار...</option>
+                          <option value="Owner" selected>المالك</option>
+                          <option value="Investor">مستثمر</option>
+                          <option value="Usufructer">منتفع</option>
+                          <option value="Attorney">الوكيل الشرعي</option>
+                          <option value="Heirs">ورثة</option>
+                          <option value="waqf">وقف</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizationNo">
+                        <label for="Authorization_No" class="required">رقم التوكيل</label>
+                        <input type="text" class="form-control numeric" id="Authorization_No" placeholder="رقم التوكيل" />
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="InvestorNo">
+                        <label for="Investor_No" class="required">رقم عقد الاستثمار</label>
+                        <input type="text" class="form-control numeric" id="Investor_No" placeholder="رقم عقد الاستثمار" />
+                      </div>
+                      <div class="form-group col-sm-6 col-md-4 col-lg-3 benradio1" id="benradio">
                         <label for="optradio" class="required">نوع المستفيد</label>
                         <div class="form-control" id="orgtypeID">
-                          <label class="radio-inline"> <input type="radio" name="optradio" value="Individual" checked> فرد </label>
-                          <label class="radio-inline"> <input type="radio" name="optradio" value="Organization"> مؤسسة </label>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="optradio" id="inlineRadio1" value="Individual" checked>
+                            <label class="form-check-label" for="inlineRadio1">فرد</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="optradio" id="inlineRadio2" value="Organization">
+                            <label class="form-check-label" for="inlineRadio2">مؤسسة</label>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
-                      <label for="optradio1" class="required">نفس مقدم الطلب</label>
-                      <div class="form-control">
-                        <label class="radio-inline"> <input type="radio" name="optradio1" value="Yes"> نعم </label>
-                        <label class="radio-inline"> <input type="radio" name="optradio1" value="No" checked> لا</label>
-                      </div>
-                    </div> -->
-                    <div class="row" hidden>
+                      <!-- <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
+                        <label for="optradio1" class="required">نفس مقدم الطلب</label>
+                        <div class="form-control">
+                          <label class="radio-inline"> <input type="radio" name="optradio1" value="Yes"> نعم </label>
+                          <label class="radio-inline"> <input type="radio" name="optradio1" value="No" checked> لا</label>
+                        </div>
+                      </div> -->
                       <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
                         <label for="optradio2">نوع المستفيد </label>
                         <input type="text" class="form-control" id="optradio2" placeholder="نوع المستفيد" readonly>
                       </div>
-                      <div id="benType" class="">
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="BeneficiaryID" class="required">الرقم المدني للمستفيد</label>
-                          <input type="text" class="form-control numeric" id="BeneficiaryID"
-                            placeholder="الرقم المدني للمستفيد">
-                        </div>
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Bname">أسم المستفيد </label>
-                          <input type="text" class="form-control" id="Bname" placeholder="أسم المستفيد">
-                        </div>
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benId">
-                          <label for="Baddress" class="required">عنوان المستفيد</label>
-                          <input type="text" class="form-control" id="Baddress" placeholder="عنوان المستفيد">
-                        </div>
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Bph" class="required">رقم الهاتف</label>
-                          <input type="text" class="form-control numeric" id="Bph" placeholder="رقم الهاتف"
-                            maxlength="8">
-                          <div id="Ph_BenfError" style="color:red">الرجاء إدخال رقم الهاتف مكون من 8 أرقام</div>
-                        </div>
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Bemail">البريد الالكتروني</label>
-                          <input type="text" class="form-control" id="Bemail" placeholder="البريد الالكتروني">
-                          <div id="Bemail_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
-                        </div>
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="waqf_Name">
-                          <label for="waqfName">اسم الوقف</label>
-                          <input type="text" class="form-control" id="waqfName" placeholder="اسم الوقف">
-                        </div>
+                    </div> <!-- /.row -->
+                  
+                    <div id="benType" class="row">
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="BeneficiaryID" class="required">الرقم المدني للمستفيد</label>
+                        <input type="text" class="form-control numeric" id="BeneficiaryID" placeholder="الرقم المدني للمستفيد">
                       </div>
-                      <!-- End Beneficiary Details -->
-
-                      <div id="OrganizationDetails" class="">
-                        <div class="row">
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="crid" class="required">رقم السجل التجاري</label>
-                            <input type="text" class="form-control" id="crid" placeholder="رقم السجل التجاري">
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="cname">الإسم التجاري</label>
-                            <input type="text" class="form-control" id="cname" placeholder="الإسم التجاري" readonly>
-                          </div>
-                          <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                            <label for="Phnumber">رقم الهاتف </label>
-                            <input type="text" class="form-control numeric" id="Phnumber" placeholder="رقم الهاتف"
-                              maxlength="8" readonly>
-                          </div>
-                          <div class="form-group  col-sm-4 col-md-4 col-lg-3">
-                            <label for="E-mail">البريد الالكتروني</label>
-                            <input type="text" class="form-control" id="E-mail" placeholder="البريد الالكتروني">
-                            <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">الرجاء إدخال
-                              البريد الإلكتروني</div>
-                          </div>
-                        </div>
-                        <!-- .row -->
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Bname">أسم المستفيد </label>
+                        <input type="text" class="form-control" id="Bname" placeholder="أسم المستفيد">
                       </div>
-                      <!-- OrganizationDetails -->
-
-                      <div class="form-group pull-right top-25">
-                        <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit"><i
-                            class="fa fa-plus"></i>&nbsp;اضافة مستفيد</button>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benId">
+                        <label for="Baddress" class="required">عنوان المستفيد</label>
+                        <input type="text" class="form-control" id="Baddress" placeholder="عنوان المستفيد">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Bph" class="required">رقم الهاتف</label>
+                        <input type="text" class="form-control numeric" id="Bph" placeholder="رقم الهاتف" maxlength="8">
+                        <div id="Ph_BenfError" style="color:red">الرجاء إدخال رقم الهاتف مكون من 8 أرقام</div>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Bemail">البريد الالكتروني</label>
+                        <input type="text" class="form-control" id="Bemail" placeholder="البريد الالكتروني">
+                        <div id="Bemail_Error" style="color:red">الرجاء إدخال البريد الإلكتروني</div>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3" id="waqf_Name">
+                        <label for="waqfName">اسم الوقف</label>
+                        <input type="text" class="form-control" id="waqfName" placeholder="اسم الوقف">
+                      </div>
+                    </div> <!-- /.Beneficiary Details -->
+                  
+                    <div id="OrganizationDetails" class="row">
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="crid" class="required">رقم السجل التجاري</label>
+                        <input type="text" class="form-control" id="crid" placeholder="رقم السجل التجاري">
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="cname">الإسم التجاري</label>
+                        <input type="text" class="form-control" id="cname" placeholder="الإسم التجاري" readonly>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <label for="Phnumber">رقم الهاتف </label>
+                        <input type="text" class="form-control numeric" id="Phnumber" placeholder="رقم الهاتف" maxlength="8" readonly>
+                      </div>
+                      <div class="form-group  col-sm-4 col-md-4 col-lg-3">
+                        <label for="E-mail">البريد الالكتروني</label>
+                        <input type="text" class="form-control" id="E-mail" placeholder="البريد الالكتروني">
+                        <div class="col-sm-12 col-md-12 col-lg-12" id="Cemail_Error" style="color:red">الرجاء إدخال
+                          البريد الإلكتروني</div>
                       </div>
                     </div>
-                    <!-- .row -->
+                    <!-- OrganizationDetails -->
+                  
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group d-flex align-items-center justify-content-end">
+                          <button type="button" class="btn btn-ts" onclick="Beneficiary1()" id="form1Submit">
+                            <i class="fal fa-plus"></i>&nbsp;اضافة مستفيد</button>
+                        </div>
+                      </div>
+                    </div> <!-- /.row -->
+                  
                     <div class="row">
                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="table-responsive">
-                          <table id="Beneficiary1" class="table table-striped table-bordered" width="100%">
+                          <table id="Beneficiary1" class="table table-striped table-bordered w-100">
                             <thead class="ts-thead">
                             </thead>
                             <tbody>

@@ -411,37 +411,38 @@
                     <div id="RequestDetails_Err" class="Error">الرجاء تعبئة جميع البيانات المطلوبة</div>
                   </div>
                   <fieldset>
-                    <legend>بيانات الطلب</legend>
+                    <legend>بيانات الإباحة</legend>
                     <div class="row">
                       <div class="form-group col-sm-4 col-md-3 col-lg-3">
-                        <label for="AuthType" class="required">نوع الإباحة</label>
+                        <label for="AuthType" class="required">نوع الخدمة</label>
                         <select name="AuthType" id="AuthType" class="form-control">
-                          <option value="0">اختر</option>
-                          <option value="1">Value1</option>
-                          <option value="2">Value1</option>
-                          <option value="3">Value1</option>
+                          <option value="1000"> الرجاء الأختيار</option>
+                          <option value="217">كهرباء</option>
+                          <option value="218">ماء</option>
+                          <option value="219">كهرباء - ماء </option>
+                          <option value="220">بدون خدمة</option>
                         </select>
                       </div>
-                      <div class="form-group col-sm-4 col-md-3 col-lg-3">
+                      <!-- <div class="form-group col-sm-4 col-md-3 col-lg-3">
                         <label for="Project_RD" class="required">اسم المشروع</label>
                         <input type="text" class="form-control" id="Project_RD" placeholder="رقم إباحة البناء">
-                      </div>
+                      </div> -->
                       <div class="form-group col-sm-4 col-md-3 col-lg-3">
                         <label for="StartDate" class="required">تاريخ البدء</label>
                         <div class="date">
-                          <input type="text" class="form-control" id="StartDate" placeholder="dd/MM/yyyy">
-                          <span class="input-group-addon" style="display: none;"><i
-                              class="glyphicon glyphicon-calendar"></i></span>
+                          <input type="text" class="form-control" id="StartDate" placeholder="dd/MM/yyyy" readonly>
+                          <span class="input-group-addon" style="display: none;">
+                            <i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
                       </div>
-                      <div class="form-group col-sm-4 col-md-3 col-lg-3">
+                      <!-- <div class="form-group col-sm-4 col-md-3 col-lg-3">
                         <label for="CompletionDate" class="required">تاريخ الإنتهاء</label>
                         <div class="date">
-                          <input type="text" class="form-control" id="CompletionDate" placeholder="dd/MM/yyyy">
-                          <span class="input-group-addon" style="display: none;"><i
-                              class="glyphicon glyphicon-calendar"></i></span>
+                          <input type="text" class="form-control" id="CompletionDate" placeholder="dd/MM/yyyy" readonly>
+                          <span class="input-group-addon" style="display: none;">
+                            <i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </fieldset>
                 </div>
@@ -1112,6 +1113,84 @@
                 <!-- .row -->
               </div>
               <!-- .form-group -->
+              
+              <fieldset>
+                <legend>تفاصيل الحساب</legend>
+                <div class="row">
+                  <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                    <label class="required" for="Account_No">رقم حساب</label> 
+                    <input class="form-control" id="Account_No" name="accountNumber" placeholder="رقم حساب" type="text" value="">
+                  </div>
+                  <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                    <label class="required" for="Bank_Name">اسم البنك</label> 
+                    <select class="form-control" id="bank_name" name="bankName.idCltItem">
+                      <option value="1000">
+                        الرجاء الأختيار
+                      </option>
+                      <option value="754">
+                        بنك أبو ظبي
+                      </option>
+                      <option value="719">
+                        البنك الأهلي
+                      </option>
+                      <option value="747">
+                        بنك الاهلي
+                      </option>
+                      <option value="750">
+                        الأهلي الإسلامي
+                      </option>
+                      <option value="749">
+                        بنك الميسرة
+                      </option>
+                      <option value="720">
+                        بنك العز الإسلامي
+                      </option>
+                      <option value="721">
+                        بنك ظفار
+                      </option>
+                      <option value="722">
+                        بنك مسقط
+                      </option>
+                      <option value="723">
+                        بنك نزوى
+                      </option>
+                      <option value="739">
+                        بنك صحار الإسلامي
+                      </option>
+                      <option value="724">
+                        بنك صحار
+                      </option>
+                      <option value="752">
+                        بنك برودا
+                      </option>
+                      <option value="725">
+                        البنك المركزي العماني
+                      </option>
+                      <option value="753">
+                        حبيب بنك
+                      </option>
+                      <option value="726">
+                        البنك البريطاني العماني
+                      </option>
+                      <option value="746">
+                        ميثاق
+                      </option>
+                      <option value="727">
+                        البنك الوطني العماني
+                      </option>
+                      <option value="728">
+                        بنك عمان العربي
+                      </option>
+                      <option value="755">
+                        بنك قطر الوطني
+                      </option>
+                      <option value="748">
+                        بنك صحار الإسلامي
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
             </div>
             <!-- End ConsultantDetails -->
 

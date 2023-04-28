@@ -401,42 +401,41 @@
                     <fieldset>
                       <legend>Request Details</legend>
                       <div class="row">
-                        <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                        <!-- <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="LicType" class="required">License Type</label>
                           <input type="text" class="form-control" id="LicType" placeholder="License Type">
-                        </div>
+                        </div> -->
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="LicRDate">License Release Date </label>
                           <div class="date">
                             <input class="form-control" id="LicRDate" placeholder="DD/MM/YYYY" type="text">
-                            <span class="input-group-addon" style="display: none;"><i
-                                class="glyphicon glyphicon-calendar"></i></span>
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span>
                           </div>
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="EndedStage" class="required">Ended Stage</label>
                           <select name="EndedStage" id="EndedStage" class="form-control">
-                            <option value="0">Please select...</option>
-                            <option value="1">Alshaqiya Governorate</option>
-                            <option value="2">Aldhahira Governorate</option>
-                            <option value="3">Mosandam Governorate</option>
+                            <option value="0">Please select</option>
+                            <option value="114">Footing</option>
+                            <option value="159">Plenty beam</option>
+                            <option value="160">Concrete Floor</option>
+                            <option value="161">Building Completion</option>
                           </select>
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="NextStage" class="required">Next Stage</label>
                           <select name="NextStage" id="NextStage" class="form-control">
-                            <option value="0">Please select...</option>
-                            <option value="1">Suhar </option>
-                            <option value="2">Nizwa</option>
-                            <option value="3">Ibra</option>
-                            <option value="3">Saham</option>
-                            <option value="3">Nakhal</option>
+                            <option value="0">Please select</option>
+                            <option value="114">Footing</option>
+                            <option value="159">Plenty beam</option>
+                            <option value="160">Concrete Floor</option>
+                            <option value="161">Building Completion</option>
                           </select>
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="DateofImplementation" class="required">Date of Implementation</label>
                           <div class="date">
-                            <input class="form-control" id="DateofImplementation" placeholder="DD/MM/YYYY" type="text">
+                            <input class="form-control" id="DateofImplementation" placeholder="DD/MM/YYYY" type="text" readonly>
                             <span class="input-group-addon" style="display: none;"><i
                                 class="glyphicon glyphicon-calendar"></i></span>
                           </div>
@@ -444,7 +443,7 @@
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="DateofConsultantReport" class="required">Date of Consultant Report</label>
                           <div class="date">
-                            <input class="form-control" id="DateofConsultantReport" placeholder="DD/MM/YYYY" type="text">
+                            <input class="form-control" id="DateofConsultantReport" placeholder="DD/MM/YYYY" type="text" readonly>
                             <span class="input-group-addon" style="display: none;"><i
                                 class="glyphicon glyphicon-calendar"></i></span>
                           </div>
@@ -464,7 +463,7 @@
                       </div>
                     </div>
                     <fieldset>
-                      <legend>Supervisor Consultant Details</legend>
+                      <legend>Consultant Details</legend>
                       <!-- <div class="form-group col-sm-5 col-md-4 col-lg-3">
                     <label for="Consultant">Consultant</label>
                     <div class="form-control" id="consultant_cons">
@@ -490,7 +489,7 @@
                   </div> -->
                       <div class="row">
                         <div class="table-responsive">
-                          <table id="Consu_table" class="table table-bordered table-hover" width="100%">
+                          <table id="Cont_table" class="table table-bordered table-hover" width="100%">
                             <thead class="ts-thead">
                             </thead>
                             <tbody>
@@ -530,7 +529,7 @@
                       </div> --> <!-- End row -->
                       <div class="row">
                         <div class="table-responsive">
-                          <table id="Cont_table" class="table table-bordered table-hover" width="100%">
+                          <table id="Consul_table" class="table table-bordered table-hover" width="100%">
                             <thead class="ts-thead">
                             </thead>
                             <tbody>

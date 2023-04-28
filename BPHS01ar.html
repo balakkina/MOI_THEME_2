@@ -193,11 +193,11 @@
                           </div>
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3" id="renewTypeDiv">
-                          <label for="Contact_req" class="required">Renew Type</label>
+                          <label for="Contact_req" class="required">نوع التجديد</label>
                           <select class="form-control" id="renew_Type" validate-group="form-step-02">
                             <option value="1000">الرجاء الأختيار</option>
-                            <option value="2000">Old License</option>
-                            <Option value="2022">Enjaz License</Option>
+                            <option value="2000">عقد ايجار قديم</option>
+                            <Option value="2022">ترخيص صدر من قبل نظام انجاز</Option>
                           </select>
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3" id="reqTypeDiv">
@@ -216,14 +216,13 @@
                       <div id="form-step-03-err" class="Error">Please fill all required fields of Request Type </div>
                     </div>
                     <fieldset>
-                      <legend>Old Lease contract Details</legend>
+                      <legend>تفاصيل عقد الإيجار القديم</legend>
                       <div class="row">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="Contact_old" class="required">رقم عقد الإيجار </label>
-                          <input type="text" class="form-control numeric" id="Contact_old"
-                            placeholder="رقم عقد الإيجار " validate-group="form-step-03">
+                          <input type="text" class="form-control numeric" id="Contact_old" placeholder="رقم عقد الإيجار " validate-group="form-step-03">
                         </div>
-                        <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                        <!-- <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="contractType" class="required">Lease Contract Type</label>
                           <select class="form-control" id="contractType" validate-group="form-step-03">
                             <option value="1000">الرجاء الأختيار</option>
@@ -241,9 +240,9 @@
                             <span class="input-group-addon" style="display: none;"><i
                                 class="glyphicon glyphicon-calendar"></i></span>
                           </div>
-                        </div>
+                        </div> -->
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="expiryDate_old" class="required">Lease contract Expiry date</label>
+                          <label for="expiryDate_old" class="required">تاريخ انتهاء عقد الإيجار</label>
                           <div class="date">
                             <input type="text" class="form-control" id="expiryDate_old" placeholder="dd/MMM/yyyy"
                               validate-group="form-step-03" readonly>
@@ -252,13 +251,13 @@
                           </div>
                         </div>
                       </div> <!-- .row -->
-                      <div class="row">
+                      <!-- <div class="row">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="lateFee_old" class="required">Late Fee</label>
                           <input type="text" class="form-control numeric" id="lateFee_old" placeholder="Late Fee"
                             validate-group="form-step-03" readonly>
                         </div>
-                      </div> <!-- /.row -->
+                      </div> /.row -->
                     </fieldset>
                   </div> <!-- .row -->
                 </div> <!-- .form-group -->
@@ -471,9 +470,6 @@
                                 class="glyphicon glyphicon-calendar"></i></span>
                           </div>
                         </div>
-                      </div> <!-- /.row -->
-
-                      <div class="row">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="sdate">تاريخ تسليم الطلب</label>
                           <div class="date">
@@ -482,6 +478,9 @@
                                 class="glyphicon glyphicon-calendar"></i></span>
                           </div>
                         </div>
+                      </div> <!-- /.row -->
+
+                      <div class="row">
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="region_ser">المحافظة<span style="color:red">*</span></label>
                           <select name="region_ser" id="region_ser" class="form-control">
@@ -585,19 +584,19 @@
                           <input type="text" class="form-control" id="paymentDay_req" placeholder="يوم دفع الإيجار">
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="Amount_req">المبلغ (ريال عماني) <span style="color:red">*</span></label>
+                          <label for="Amount_req" class="required">المبلغ (ريال عماني) </label>
                           <input type="number" class="form-control numeric" id="Amount_req"
                             placeholder="المبلغ (ريال عماني)">
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                          <label for="AmountPaid_req">المبلغ المدفوع مقدما <span style="color:red">*</span></label>
+                          <label for="AmountPaid_req">المبلغ المدفوع مقدما</label>
                           <input type="number" class="form-control numeric" id="AmountPaid_req" value="0"
                             placeholder="المبلغ المدفوع مقدما">
                         </div>
                         <div class="form-group col-sm-6 col-md-12 col-lg-12">
-                          <label for="comment_req" class="required">Comments</label>
-                          <textarea rows="5" class="form-control border" id="comment_req" placeholder="Comments"
-                            required validate-group="form-step-11"></textarea>
+                          <label for="comment_req" class="required">إشتراطات إضافية</label>
+                          <textarea rows="5" class="form-control border" id="comment_req" placeholder="إشتراطات إضافية"
+                            validate-group="form-step-11"></textarea>
                         </div>
                       </div> <!-- /.row -->
                     </fieldset>
@@ -661,6 +660,13 @@
                           <label for="secondPartyID" id="Civilid" class="required">الرقم المدني</label>
                           <input type="text" class="form-control" id="secondPartyID" required>
                         </div>
+                        <div class="form-group col-sm-6 col-md-3 col-lg-3" id="secondPartyExpDate">
+                          <label for="secondPartyExpiryDate" class="required">تاريخ انتهاء صلاحية البطاقة المدنيه</label>
+                          <div class="form-group date">
+                            <input class="form-control" id="secondPartyExpiryDate" name="secondPartyExpiryDate" type="text" placeholder="dd/mm/yyyy" validate-group="form-step-12" readonly /> 
+                            <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                          </div>
+                        </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3">
                           <label for="sName" id="Civilname">اسم</label>
                           <input type="text" class="form-control" placeholder="" id="sName">
@@ -685,9 +691,10 @@
                         </div>
                         <div class="form-group col-sm-6 col-md-3 col-lg-3" id="AuthorizedUser">
                           <label for="Authorized_User" class="required">الشخص المخول</label>
-                          <select name="Authorized_User" id="Beneficiary_select" class="form-control">
+                          <input type="text" class="form-control" id="Authorized_User" placeholder="الشخص المخول" readonly>
+                          <!-- <select name="Authorized_User" id="Authorized_User" class="form-control">
                             <option value="1000">الرجاء الأختيار</option>
-                          </select>
+                          </select> -->
                         </div>
                         <div class="row" id="Individual_Sponsor">
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
@@ -824,7 +831,7 @@
                               </div>
                               <div class="form-group col-sm-6 col-md-3 col-lg-3">
                                 <label for="Owner_name">المالك</label>
-                                <textarea class="form-control" id="Owner_name" placeholder="المالك" rows="2"></textarea>
+                                <input type="text" class="form-control" id="Owner_name" placeholder="المالك"/>
                               </div>
                             </div> <!-- /.row -->
                           </fieldset>
@@ -1134,13 +1141,16 @@
                           <input type="number" class="form-control numeric" name="Northings" id="Northings"
                             placeholder="شمالي" />
                         </div>
-                        <div class="form-group pull-right top-25">
-                          <button type="button" class="btn btn-hs" onclick="GIS()" id="GISid">إضافة إحداثيات</button>
+                      </div> <!-- /.row -->
+
+                      <div class="row">
+                        <div class="text-right">
+                          <!-- <button type="button" class="btn btn-hs" onclick="GIS()" id="GISid">إضافة إحداثيات</button> -->
                           <button type="button" class="btn btn-hs" id="GISGoogleMap"><i class="fa fa-map fa-fw"></i>عرض
                             الخريطة</button>
                         </div>
-                      </div>
-                      <!-- end row -->
+                      </div> <!-- /.row -->
+
                       <div class="row">
                         <div class="form-group">
                           <div class="row">

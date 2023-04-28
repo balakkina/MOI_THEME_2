@@ -131,13 +131,13 @@ $(document).ready(function() {
         { "mDataProp": "msno", sTitle: "S.No", sType: "string", "defaultContent": "text" }, 
         { "mDataProp": "CBeneficiary_select", sTitle: "Beneficiary", sType: "string" }, 
         { "mDataProp": "Coptradio", sTitle: "Beneficiary Type", sType: "string" }, 
-        { "mDataProp": "CBeneficiaryID", sTitle: "Beneficiary ID/Commercial ID", sType: "string" }, 
+        { "mDataProp": "CBeneficiaryID", sTitle: "Beneficiary ID / CR Number", sType: "string" }, 
         { "mDataProp": "CBendate", sTitle: "Expiry Date", sType: "string" }, 
         { "mDataProp": "CBname", sTitle: "Beneficiary Name/Commercial Name", sType: "string" }, 
         { "mDataProp": "CBaddress", sTitle: "Address", sType: "string" }, 
         { "mDataProp": "CBph", sTitle: "Mobile Number", sType: "string" }, 
-        { "mDataProp": "CBemail", sTitle: "Email", sType: "string" }, 
-        { "mDataProp": "CInvestor_No", sTitle: "Investment Contract Number", sType: "string" }, 
+        { "mDataProp": "CBemail", sTitle: "Email Address", sType: "string" }, 
+        //{ "mDataProp": "CInvestor_No", sTitle: "Investment Contract Number", sType: "string" }, 
         { "mDataProp": "Actions", sTitle: "Actions", sType: "string",  "defaultContent": "<a id = 'editgisdetails' href='javascript:void(0)' data-toggle='tooltip' data-placement='bottom' title='Edit' class='text-green'><i class='fa fa-edit'></i></a> <a id = 'removegisdetails' href='javascript:;' data-toggle='tooltip' data-placement='bottom' title='Delete' class='text-red'><i class='fa fa-times'></i></a>" }
     ];
     var coldef_firstParty_Table = [
@@ -174,7 +174,7 @@ $(document).ready(function() {
     $(".page").keyup(function() {
         //table.page.len(eval($(".page").val())).draw();
     });
-    /* auto increament */
+    /* auto increment */
     table.on('order.dt search.dt', function() {
         table.column(1, {
             search: 'applied',

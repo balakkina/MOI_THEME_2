@@ -547,7 +547,7 @@
                             <th>Building Number</th>
                             <th>Building Name</th>
                             <th>Plot Area</th>
-                            <th>Total Builtup Area</th>
+                            <th>Total Buildup Area</th>
                             <th>No.Of Floors</th>
                             <th>No.Of Units</th>
                             <th></th>
@@ -958,12 +958,12 @@
                       <div class="form-group top-25">
                         <div class="row">
                           <fieldset>
-                            <legend>Advertisement Board Details</legend>
+                            <legend>Project Board Details</legend>
                             <div class="row">
                               <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                 <label for="Board_Type" class="required">Board Type</label>
                                 <select name="Board_Type" id="Board_Type" class="form-control">
-                                  <option value="1000">Please select...</option>
+                                  <option value="1000">Please select</option>
                                   <option value="463">With Image</option>
                                   <option value="461">Without Image</option>
                                 </select>
@@ -1431,8 +1431,8 @@
                       <legend>Contractor Data</legend>
                       <div class="row">
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                          <label for="CommericalID" class="required">Commercial ID</label>
-                          <input type="text" class="form-control" id="CommericalID" placeholder="Commercial ID" />
+                          <label for="CommericalID" class="required">Commercial Registration ID</label>
+                          <input type="text" class="form-control" id="CommericalID" placeholder="Commercial Registration ID" />
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="ContCommercialName" class="required">Commercial Name</label>
@@ -1444,8 +1444,8 @@
                           <input type="text" class="form-control" id="ContEmailAddress" placeholder="Email Address" />
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                          <label for="ContFax" class="required">Fax</label>
-                          <input type="text" class="form-control" id="ContFax" placeholder="Fax" />
+                          <label for="ContFax" class="required">Mobile Number</label>
+                          <input type="text" class="form-control" id="ContFax" placeholder="Mobile Number" />
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="ContDegree" class="required">Degree</label>
@@ -1484,8 +1484,8 @@
                       <legend>Supervising Consultant Details</legend>
                       <div class="row">
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                          <label for="ConsCommericalID" class="required">Commercial ID</label>
-                          <input type="text" class="form-control" id="ConsCommericalID" placeholder="Commercial ID" />
+                          <label for="ConsCommericalID" class="required">Commercial Registration ID</label>
+                          <input type="text" class="form-control" id="ConsCommericalID" placeholder="Commercial Registration ID" />
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="ConsCommercialName" class="required">Commercial Name</label>
@@ -1497,8 +1497,8 @@
                           <input type="text" class="form-control" id="ConsEmailAddress" placeholder="Email Address" />
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                          <label for="ConsFax" class="required">Fax</label>
-                          <input type="text" class="form-control" id="ConsFax" placeholder="Fax" />
+                          <label for="ConsFax" class="required">Mobile Number</label>
+                          <input type="text" class="form-control" id="ConsFax" placeholder="Mobile Number" />
                         </div>
                         <div class="form-group col-sm-4 col-md-4 col-lg-3">
                           <label for="ConsDegree" class="required">Degree</label>
@@ -1526,6 +1526,42 @@
                   <!-- .row -->
                 </div>
                 <!-- .form-group -->
+
+                <fieldset>
+                  <legend>Account Details</legend>
+                  <div class="row">
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="Account_No" class="required">Account Number</label>
+                      <input id="Account_No" name="accountNumber" placeholder="Account Number" type="text" class="form-control" value="">
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3 col-lg-3">
+                      <label for="Bank_Name" class="required">Bank Name</label>
+                      <select class="form-control" id="bank_name" name="bankName.idCltItem">
+                        <option value="1000">Please select</option>
+                        <option value="754">Abu Dhabi Bank</option>
+                        <option value="719">Ahli Bank</option>
+                        <option value="747">Ahli Bank</option>
+                        <option value="750">Ahli Islamic Bank</option>
+                        <option value="749">Al maysarah</option>
+                        <option value="720">Alizz Islamic Bank </option>
+                        <option value="721">Bank Dhofar</option>
+                        <option value="722">Bank Muscat</option>
+                        <option value="723">Bank Nizwa</option>
+                        <option value="739">Bank Sohar Islamic</option>
+                        <option value="724">Bank Sohar SAOG</option>
+                        <option value="752">Baroda Bank</option>
+                        <option value="725">Central Bank of Oman</option>
+                        <option value="753">Habib Bank</option>
+                        <option value="726">HSBC Oman</option>
+                        <option value="746">Meethaq</option>
+                        <option value="727">National Bank of Oman</option>
+                        <option value="728">Oman Arab Bank</option>
+                        <option value="755">QNB</option>
+                        <option value="748">Sohar Islamic Bank</option>
+                      </select>
+                    </div>
+                  </div> <!-- /.row -->
+               </fieldset>
               </div>
               <!-- End ConsultantDetails -->
 

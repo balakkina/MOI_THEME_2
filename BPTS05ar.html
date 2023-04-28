@@ -404,11 +404,11 @@
                   <fieldset>
                     <legend>تفاصيل الطلب</legend>
                     <div class="row">
-                      <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                      <!-- <div class="form-group col-sm-4 col-md-4 col-lg-3">
                         <label for="LicType" class="required">نوع الترخيص</label>
                         <input type="text" class="form-control" name="License Type" id="LicType"
                           placeholder="نوع الترخيص">
-                      </div>
+                      </div> -->
                       <div class="form-group col-sm-4 col-md-4 col-lg-3">
                         <label for="LicRDate" class="required">تاريخ إصدار الترخيص </label>
                         <div class="date">
@@ -421,26 +421,26 @@
                         <label for="EndedStage" class="required">المرحلة المنتهية</label>
                         <select name="EndedStage" id="EndedStage" class="form-control">
                           <option value="0">الرجاء الأختيار</option>
-                          <option value="1">محافظة الشرقية</option>
-                          <option value="2">محافظة الظاهرة</option>
-                          <option value="3">محافظة مسندم</option>
+                          <option value="114">القواعد</option>
+                          <option value="159">الجسور الارضية</option>
+                          <option value="160">خرسانة الطابق</option>
+                          <option value="161">أكتمال المبنى </option>
                         </select>
                       </div>
                       <div class="form-group col-sm-4 col-md-4 col-lg-3">
                         <label for="NextStage" class="required">المرحلة التالية</label>
                         <select name="NextStage" id="NextStage" class="form-control">
                           <option value="0">الرجاء الأختيار</option>
-                          <option value="1">صحار </option>
-                          <option value="2">نزوى</option>
-                          <option value="3">ابراء</option>
-                          <option value="3">صحم</option>
-                          <option value="3">نخل</option>
+                          <option value="114">القواعد</option>
+                          <option value="159">الجسور الارضية</option>
+                          <option value="160">خرسانة الطابق</option>
+                          <option value="161">أكتمال المبنى </option>
                         </select>
                       </div>
                       <div class="form-group col-sm-4 col-md-4 col-lg-3">
                         <label for="DateofImplementation" class="required">تاريخ التنفيذ</label>
                         <div class="date">
-                          <input class="form-control" id="DateofImplementation" placeholder="DD/MM/YYYY" type="text">
+                          <input class="form-control" id="DateofImplementation" placeholder="DD/MM/YYYY" type="text" readonly>
                           <span class="input-group-addon" style="display: none;"><i
                               class="glyphicon glyphicon-calendar"></i></span>
                         </div>
@@ -448,7 +448,7 @@
                       <div class="form-group col-sm-4 col-md-4 col-lg-3">
                         <label for="DateofConsultantReport" class="required">تاريخ تقرير الاستشاري</label>
                         <div class="date">
-                          <input class="form-control" id="DateofConsultantReport" placeholder="DD/MM/YYYY" type="text">
+                          <input class="form-control" id="DateofConsultantReport" placeholder="DD/MM/YYYY" type="text" readonly>
                           <span class="input-group-addon" style="display: none;"><i
                               class="glyphicon glyphicon-calendar"></i></span>
                         </div>
@@ -465,7 +465,7 @@
                     <div id="ConsulDetails_Err" class="Error">الرجاء إدخال جميع حقول بيانات المكتب الإستشاري </div>
                   </div>
                   <fieldset>
-                    <legend>بيانات الاستشاري المشرف</legend>
+                    <legend>بيانات الاستشاري</legend>
                     <!-- <div class="form-group col-sm-5 col-md-4 col-lg-3">
                         <label for="optradio4">استشاري</label>
                         <div class="form-control" id="consultant_cons">
@@ -491,7 +491,7 @@
                       </div> -->
                     <div class="row">
                       <div class="table-responsive">
-                        <table id="Consu_table" class="table table-bordered table-hover" width="100%">
+                        <table id="Cont_table" class="table table-bordered table-hover" width="100%">
                           <thead class="ts-thead">
                           </thead>
                           <tbody>
@@ -528,7 +528,7 @@
                     </div> -->
                     <div class="row">
                       <div class="table-responsive">
-                        <table id="Cont_table" class="table table-bordered table-hover" width="100%">
+                        <table id="Consul_table" class="table table-bordered table-hover" width="100%">
                           <thead class="ts-thead">
                           </thead>
                           <tbody>

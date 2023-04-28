@@ -92,7 +92,7 @@
             <div class="panel-head-services d-flex align-items-center justify-content-between ts-panel">
               <div class="panel-title mt-0 d-flex align-items-center">
                 <img src="img/New_sub_services_icons/Minor-building-permit.svg" class="mr-2" alt="Technical Services">
-                <span id="requestTypeChange">Application for Minor Building Permit (new / renew / cease / cancelation of cease)</span>
+                <span id="requestTypeChange">Application for Minor Building Permit (new / renew / cease / cancellation of cease)</span>
               </div>
               <div>
                 <ul class="d-flex mb-0" style="list-style: none;">
@@ -116,19 +116,13 @@
             <!-- SmartWizard html -->
             <div id="smartwizard">
               <ul id="credit">
-                <li data-interest="1"><a href="#ApplicantDetails"><i class="fa fa-user fa-fw"></i>Applicant Details</a>
-                </li>
-                <li data-interest="3"><a href="#BeneficiaryDetails"><i class="fa fa-users fa-fw"></i>Beneficiary /
-                    Request</a></li>
-                <li data-interest="4"><a href="#BuildingsDetails"><i class="fa fa-building-o fa-fw"></i>Buildings
-                    Details</a></li>
-                <li data-interest="5"><a href="#ConsultantDetails"><i class="fa fa-user-secret fa-fw"></i>Consultant
-                    Details</a></li>
-                <li data-interest="6"><a href="#Attachment"><i class="fa fa-paperclip fa-fw"></i>Required Documents</a>
-                </li>
-                <li data-interest="8"><a href="#others"><i class="fa fa-check-square-o fa-fw"></i>Comments</a></li>
-                <li data-interest="7"><a href="#LicenseDetails"><i class="fa fa-credit-card fa-fw"></i>Payments &amp;
-                    Licenses</a></li>
+                <li data-interest="1"><a href="#ApplicantDetails"><i class="fal fa-user fa-fw"></i>Applicant Details</a></li>
+                <li data-interest="3"><a href="#BeneficiaryDetails"><i class="fal fa-users fa-fw"></i>Beneficiary / Request</a></li>
+                <li data-interest="4"><a href="#BuildingsDetails"><i class="fal fa-building fa-fw"></i>Buildings Details</a></li>
+                <li data-interest="5"><a href="#ConsultantDetails"><i class="fal fa-user-secret fa-fw"></i>Consultant Details</a></li>
+                <li data-interest="6"><a href="#Attachment"><i class="fal fa-paperclip fa-fw"></i>Required Documents</a> </li>
+                <li data-interest="8"><a href="#others"><i class="fal fa-comment-alt-lines fa-fw"></i>Comments</a></li>
+                <li data-interest="7"><a href="#LicenseDetails"><i class="fal fa-credit-card fa-fw"></i>Payments &amp; Licenses</a></li>
               </ul>
               <div>
                 <div id="ApplicantDetails">
@@ -144,7 +138,7 @@
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Request_ser">Request Type<span style="color:red">*</span></label>
                             <select name="Request_ser" id="Request_ser" class="form-control">
-                              <option value="1000">Please select...</option>
+                              <option value="1000">Please select</option>
                               <option value="162">New</option>
                               <option value="163">Renew</option>
                               <option value="166">Modification</option>
@@ -158,16 +152,16 @@
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Minor_Permit" class="required">Type of Minor Permit</label>
                             <select name="Minor_Permit" id="Minor_Permit" class="form-control">
-                              <option value="1000">Please select...</option>
+                              <option value="1000">Please select</option>
                               <option value="169">Fencing</option>
                               <option value="170">Maintenance &amp; Restoration</option>
                               <option value="171">Simple Addition</option>
                             </select>
                           </div>
-                          <div class="form-group top-25">
+                          <!-- <div class="form-group top-25">
                             <button type="button" class="btn btn-ts">Freeze</button>
                             <button type="button" class="btn btn-ts">Unfreeze</button>
-                          </div>
+                          </div> -->
                         </div>
                       </fieldset>
                     </div> <!-- .row -->
@@ -187,7 +181,7 @@
                             <input type="text" class="form-control" id="aid" placeholder="Applicant ID">
                           </div>
                           <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                            <label for="applcntEpiryDate" class="required">Expiry Date</label>
+                            <label for="applcntEpiryDate" class="required">ID Expiry Date</label>
                             <div class="date">
                               <input type="text" class="form-control" id="applcntEpiryDate" placeholder="dd/mm/yyyy" />
                               <span class="input-group-addon" style="display: none;"><i
@@ -258,7 +252,7 @@
                           <div class="form-group col-sm-3 col-md-4 col-lg-3">
                             <label for="region_ser" class="required">Governorate</label>
                             <select name="region_ser" id="region_ser" class="form-control">
-                              <option value="0">Please select...</option>
+                              <option value="0">Please select</option>
                               <option value="1">Alshaqiya Governorate</option>
                               <option value="2">Aldhahira Governorate</option>
                               <option value="3">Mosandam Governorate</option>
@@ -267,7 +261,7 @@
                           <div class="form-group col-sm-5 col-md-4 col-lg-3">
                             <label for="Willayat_ser" class="required">Willayat</label>
                             <select name="Willayat_ser" id="Willayat_ser" class="form-control">
-                              <option value="0">Please select...</option>
+                              <option value="0">Please select</option>
                               <option value="1">Suhar </option>
                               <option value="2">Nizwa</option>
                               <option value="3">Ibra</option>
@@ -278,7 +272,7 @@
                           <div class="form-group col-sm-4 col-md-4 col-lg-3">
                             <label for="Municiplity_ser" class="required">Municipality</label>
                             <select name="Municiplity_ser" id="Municiplity_ser" class="form-control">
-                              <option value="0">Please select...</option>
+                              <option value="0">Please select</option>
                               <option value="461">Sohar Municipality</option>
                               <option value="463">Saham Municipality</option>
                               <option value="464">Ibra Municipality</option>
@@ -308,7 +302,7 @@
                           <div class="form-group col-sm-6 col-md-3 col-lg-3">
                             <label for="Beneficiary_select" class="required">Beneficiary</label>
                             <select name="Beneficiary_select" id="Beneficiary_select" class="form-control">
-                              <option value="1000">Please select...</option>
+                              <option value="1000">Please select</option>
                               <option value="Owner" selected>Owner</option>
                               <option value="Investor">Investor</option>
                               <option value="Usufructer">Usufructer</option>
@@ -330,32 +324,40 @@
                             <div class="form-group col-sm-6 col-md-4 col-lg-3 benradio1" id="benradio">
                               <label for="optradio" class="required">Beneficiary Type</label>
                               <div class="form-control" id="orgtypeID">
-                                <label class="radio-inline">
-                                  <input type="radio" name="optradio" value="Individual" checked>
-                                  Individual </label>
-                                <label class="radio-inline">
-                                  <input type="radio" name="optradio" value="Organization">
-                                  Organization </label>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="optradio" id="inlineRadio1" value="Individual" checked>
+                                  <label class="form-check-label" for="inlineRadio1">Individual</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="optradio" id="inlineRadio2" value="Organization">
+                                  <label class="form-check-label" for="inlineRadio2">Organization</label>
+                                </div>
                               </div>
                             </div>
                           <div class="form-group col-sm-4 col-md-4 col-lg-3" id="samehide">
                             <label for="optradio1" class="required">Same as Applicant</label>
                             <div class="form-control">
-                              <label class="radio-inline">
-                                <input type="radio" name="optradio1" value="Yes">
-                                Yes </label>
-                              <label class="radio-inline">
-                                <input type="radio" name="optradio1" value="No" checked>
-                                No</label>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optradio1" id="inlineRadio3" value="Yes" >
+                                <label class="form-check-label" for="inlineRadio3">Yes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optradio1" id="inlineRadio4" value="No" checked>
+                                <label class="form-check-label" for="inlineRadio4">No</label>
+                              </div>
                             </div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3" id="GCC_div">
-                            <label for="gccRadio1" class="required">Is GCC Resident</label>
+                            <label for="gccRadio1" class="required">GCC Resident / Public Lands</label>
                             <div class="form-control">
-                              <label class="radio-inline"> <input type="radio" id="gccRadio1" name="gccRadio"
-                                  value="True" /> Yes</label>
-                              <label class="radio-inline"> <input type="radio" id="gccRadio2" name="gccRadio"
-                                  checked="checked" value="False" /> No</label>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gccRadio" id="gccRadio1" value="True">
+                                <label class="form-check-label" for="gccRadio1">Yes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gccRadio" id="gccRadio2" value="False" checked>
+                                <label class="form-check-label" for="gccRadio2">No</label>
+                              </div>
                             </div>
                           </div>
                           <div class="form-group col-sm-6 col-md-3 col-lg-3" id="benhide">
@@ -372,7 +374,7 @@
                                 placeholder="Beneficiary ID">
                             </div>
                             <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                              <label for="Bendate" class="required">Expiry Date</label>
+                              <label for="Bendate" class="required">ID Expiry Date</label>
                               <div class="date">
                                 <input type="text" class="form-control" id="Bendate" placeholder="dd/mm/yyyy" />
                                 <span class="input-group-addon" style="display: none;"><i
@@ -474,7 +476,7 @@
                           <div class="form-group col-sm-4 col-md-4 col-lg-3">
                             <label for="Region">Governorate <span style="color:red">*</span></label>
                             <select name="" id="region_Ld" class="form-control">
-                              <option value="0">Please select...</option>
+                              <option value="0">Please select</option>
                               <option value="1">Alshaqiya Region</option>
                               <option value="2">Aldhahira Region</option>
                               <option value="3">Mosandam Region</option>
@@ -483,7 +485,7 @@
                           <div class="form-group col-sm-4 col-md-4 col-lg-3">
                             <label for="Willayat">Willayat <span style="color:red">*</span></label>
                             <select name="" id="Willayat_Ld" class="form-control">
-                              <option value="0">Please select...</option>
+                              <option value="0">Please select</option>
                               <option value="1">Suhar </option>
                               <option value="2">Nizwa</option>
                               <option value="3">Ibra</option>
@@ -494,7 +496,7 @@
                           <div class="form-group col-sm-4 col-md-4 col-lg-3">
                             <label for="Village">Village <span style="color:red">*</span></label>
                             <select name="" id="village_Ld" class="form-control">
-                              <option value="0">Please select...</option>
+                              <option value="0">Please select</option>
                               <option value="461">Hay elain</option>
                               <option value="463">Suaal</option>
                               <option value="464">Karsha</option>
@@ -520,7 +522,7 @@
                           <div class="form-group col-sm-4 col-md-4 col-lg-3">
                             <label for="Type of use">Type of Use <span style="color:red">*</span></label>
                             <select name="" id="typeUse_Ld" class="form-control">
-                              <option value="0">Please select...</option>
+                              <option value="0">Please select</option>
                               <option value="463">Residential</option>
                               <option value="461">Residential Commercial</option>
                               <option value="464">Industrial</option>
@@ -580,17 +582,16 @@
                     <fieldset>
                       <legend>Existing Buildings Details Type</legend>
                       <div class="form-group col-sm-6 col-md-3 col-lg-3">
-                        <!-- <label for="optradio5">Existing Buildings Details Type <span style="color:red">*</span></label> -->
-                        <div class="form-control">
-                          <label class="radio-inline">
-                            <input type="radio" name="optradio5" value="Vacant">
-                            Vacant</label>
-                          <label class="radio-inline">
-                            <input type="radio" name="optradio5" value="Occupied" checked>
-                            Occupied</label>
-                          <label class="radio-inline">
-                            <input type="radio" name="optradio5" value="Regularization">
-                            Regularization</label>
+                        <!-- <label for="optradio5" class="required">Existing Buildings Details Type</label> -->
+                        <div class="">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="optradio5" id="GCC1" value="Vacant">
+                            <label class="form-check-label" for="GCC1">Vacant</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="optradio5" id="GCC2" value="Occupied" checked>
+                            <label class="form-check-label" for="GCC2">Occupied</label>
+                          </div>
                         </div>
                       </div>
                     </fieldset>
@@ -608,86 +609,77 @@
                           <div id="ExtBuilding_StoreyssDetails_Err" class="Error">Please Add Storeys under Existing
                             building Details </div>
                         </div>
-                        <div class="panel panel-default" id="Existinghide">
-                          <div class="panel-heading" role="tab" id="headingOne" style="background: rgb(184, 150, 87);">
-                            <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion"
-                                href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i
-                                  class="more-less glyphicon glyphicon-chevron-down pull-right"></i>Existing Buildings
-                                Details </a> </h4>
+                        <div class="card border-0" id="Existinghide">
+                          <div class="card-header ts-panel" role="tab" id="headingOne">
+                            <h4 class="card-title"> 
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                                <i class="more-less fal fa-chevron-down float-right"></i>Existing Buildings Details </a> </h4>
                           </div>
-                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                            aria-labelledby="headingOne">
-                            <div class="panel-body">
+                          <div id="collapseOne" class="accordion-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="card-body p-0">
                               <fieldset>
                                 <!-- <legend>Existing Buildings Details</legend> -->
-                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="BuildingNo" class="required">Building Number</label>
-                                  <input type="number" class="form-control numeric" id="BuildingNo"
-                                    placeholder="Building Number" />
-                                </div>
-                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="Buildingname" class="required">Building Name</label>
-                                  <input type="text" class="form-control" id="Buildingname"
-                                    placeholder="Building Name" />
-                                </div>
-                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="Btype" class="required">Type of Use</label>
-                                  <select name="Btype" id="Btype" class="form-control">
-                                    <option value="0">Please select...</option>
-                                    <option value="463">Residential</option>
-                                    <option value="461">Residential Commercial</option>
-                                    <option value="464">Industrial</option>
-                                    <option value="465">Commercial</option>
-                                  </select>
-                                </div>
-                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="Bstatus" class="required">Building Status</label>
-                                  <select name="Bstatus" id="Bstatus" class="form-control">
-                                    <option value="0">Please select...</option>
-                                    <option value="1">New</option>
-                                    <option value="2">Approved For Construction</option>
-                                    <option value="3">Final</option>
-                                    <option value="4">Construction Started</option>
-                                  </select>
-                                </div>
-                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="BuildingNumberofunits" class="required">Number of Units</label>
-                                  <input type="number" class="form-control numeric" id="BuildingNumberofunits"
-                                    placeholder="Number of Units" />
-                                </div>
-                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="BuildingNumberoffloors" class="required">Number of Floors</label>
-                                  <input type="number" class="form-control numeric" id="BuildingNumberoffloors"
-                                    placeholder="Number of Floors" />
-                                </div>
-                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="Buildingtotalarea">Total Builtup Area(m2)</label>
-                                  <input type="number" class="form-control numeric" id="Buildingtotalarea"
-                                    placeholder="Total Builtup Area(m2)" />
-                                </div>
-                                <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                                  <label for="Footprint_ExBld" class="required">Plot Area(m2)</label>
-                                  <input type="number" class="form-control numeric" id="Footprint_ExBld"
-                                    placeholder="Plot Area(m2)" />
-                                  <div id="Total_PlotError" style="color:red">Please enter less than Total Builtup
-                                    Area(m2)</div>
-                                </div>
                                 <div class="row">
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                    <label for="BuildingNo" class="required">Building Number</label>
+                                    <input type="number" class="form-control numeric" id="BuildingNo" placeholder="Building Number" />
+                                  </div>
+                                  <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                    <label for="Buildingname" class="required">Building Name</label>
+                                    <input type="text" class="form-control" id="Buildingname" placeholder="Building Name" />
+                                  </div>
+                                  <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                    <label for="Btype" class="required">Type of Use</label>
+                                    <select name="Btype" id="Btype" class="form-control">
+                                      <option value="0">Please select</option>
+                                      <option value="463">Residential</option>
+                                      <option value="461">Residential Commercial</option>
+                                      <option value="464">Industrial</option>
+                                      <option value="465">Commercial</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                    <label for="Bstatus" class="required">Building Status</label>
+                                    <select name="Bstatus" id="Bstatus" class="form-control">
+                                      <option value="0">Please select</option>
+                                      <option value="1">New</option>
+                                      <option value="2">Approved For Construction</option>
+                                      <option value="3">Final</option>
+                                      <option value="4">Construction Started</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                    <label for="BuildingNumberofunits" class="required">Number of Units</label>
+                                    <input type="number" class="form-control numeric" id="BuildingNumberofunits" placeholder="Number of Units" />
+                                  </div>
+                                  <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                    <label for="BuildingNumberoffloors" class="required">Number of Floors</label>
+                                    <input type="number" class="form-control numeric" id="BuildingNumberoffloors" placeholder="Number of Floors" />
+                                  </div>
+                                  <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                    <label for="Buildingtotalarea">Total Buildup Area(m2)</label>
+                                    <input type="number" class="form-control numeric" id="Buildingtotalarea" placeholder="Total Buildup Area(m2)" />
+                                  </div>
+                                  <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                                    <label for="Footprint_ExBld" class="required">Plot Area(m2)</label>
+                                    <input type="number" class="form-control numeric" id="Footprint_ExBld" placeholder="Plot Area(m2)" />
+                                    <div id="Total_PlotError" class="text-danger">Please enter less than Total Buildup
+                                      Area(m2)</div>
+                                  </div>
+                                
+                                  <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Powerlaod">Power Load(kW)</label>
-                                    <input type="number" class="form-control numeric" id="Powerlaod"
-                                      placeholder="Power Load(kW)" />
+                                    <input type="number" class="form-control numeric" id="Powerlaod" placeholder="Power Load(kW)" />
                                   </div>
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Carparkcapacity">Car Park Capacity</label>
-                                    <input type="number" class="form-control numeric" id="Carparkcapacity"
-                                      placeholder="Car Park Capacity" />
+                                    <input type="number" class="form-control numeric" id="Carparkcapacity" placeholder="Car Park Capacity" />
                                     <div id="Car_Error" style="color:red">Please enter less than Plot Area(m2)</div>
                                   </div>
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Bcolortype">Color Type</label>
                                     <select id="Bcolortype" class="form-control">
-                                      <option value="1000">Please select...</option>
+                                      <option value="1000">Please select</option>
                                       <option value="101">Building Color</option>
                                       <option value="102">Stone</option>
                                       <option value="103">Aluminum</option>
@@ -696,7 +688,7 @@
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3" id="Bcolorhide">
                                     <label for="Bcolor">Building Colour</label>
                                     <select id="Bcolor" class="form-control">
-                                      <option value="0">Please select...</option>
+                                      <option value="0">Please select</option>
                                       <option value="461">White</option>
                                       <option value="463">Red</option>
                                       <option value="464">Yellow</option>
@@ -707,7 +699,7 @@
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="outcolor">Outer Colour</label>
                                     <select id="outcolor" class="form-control">
-                                      <option value="0">Please select...</option>
+                                      <option value="0">Please select</option>
                                       <option value="461">White</option>
                                       <option value="463">Red</option>
                                       <option value="464">Yellow</option>
@@ -726,20 +718,26 @@
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="optradio3">will be Demolished?</label>
                                     <div class="form-control" id="WillDemolish">
-                                      <label class="radio-inline">
-                                        <input type="radio" name="optradio3" value="Yes">
-                                        Yes</label>
-                                      <label class="radio-inline">
-                                        <input type="radio" name="optradio3" value="No" checked>
-                                        No</label>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="optradio3" id="Demolished1" value="Yes">
+                                        <label class="form-check-label" for="Demolished1">Yes</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="optradio3" id="Demolished2" value="No" checked>
+                                        <label class="form-check-label" for="Demolished2">No</label>
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="form-group pull-right top-25">
-                                    <button type="button" class="btn btn-ts" onclick="addbuilding()" id="addbuildingid">
-                                      Add Building </button>
+                                </div> <!-- /.row -->
+
+                                <div class="row">
+                                  <div class="col-12">
+                                    <div class="form-group d-flex justify-content-end">
+                                      <button type="button" class="btn btn-ts" onclick="addbuilding()" id="addbuildingid">
+                                        Add Building </button>
+                                    </div>
                                   </div>
-                                </div>
-                                <!-- End row -->
+                                </div> <!-- /.row -->
 
                                 <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -796,7 +794,7 @@
                                             <div class="form-group col-sm-3">
                                               <label for="Storeytype" class="required">Storey Type</label>
                                               <select name="Storeytype" id="Storeytype" class="form-control">
-                                                <option value="0">Please select...</option>
+                                                <option value="0">Please select</option>
                                                 <option value="461">Flats</option>
                                                 <option value="463">Offices</option>
                                                 <option value="464">Shops</option>
@@ -853,7 +851,7 @@
                                             <div class="form-group col-sm-3">
                                               <label for="editStoreytype" class="required">Storey Type</label>
                                               <select name="" id="editStoreytype" class="form-control">
-                                                <option value="0">Please select...</option>
+                                                <option value="0">Please select</option>
                                                 <option value="461">Flats</option>
                                                 <option value="463">Offices</option>
                                                 <option value="464">Shops</option>
@@ -929,7 +927,7 @@
                                               <div class="form-group col-sm-3">
                                                 <label for="untstype" class="required">Unit Type</label>
                                                 <select name="untstype" id="untstype" class="form-control">
-                                                  <option value="0">Please select...</option>
+                                                  <option value="0">Please select</option>
                                                   <option value="463">Residential</option>
                                                   <option value="461">Residential Commercial</option>
                                                   <option value="464">Industrial</option>
@@ -984,7 +982,7 @@
                                             <div class="form-group col-sm-3">
                                               <label for="edituntstype" class="required">Unit Type</label>
                                               <select name="edituntstype" id="edituntstype" class="form-control">
-                                                <option value="0">Please select...</option>
+                                                <option value="0">Please select</option>
                                                 <option value="463">Residential</option>
                                                 <option value="461">Residential Commercial</option>
                                                 <option value="464">Industrial</option>
@@ -1024,17 +1022,15 @@
                           <div id="PrpBuilding_StoreysDetails_Err" class="Error">Please Add Storeys under Proposed
                             building Details </div>
                         </div>
-                        <div class="panel panel-default" id="Proposedhide">
-                          <div class="panel-heading" role="tab" id="headingTwo" style="background: rgb(184, 150, 87);">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
-                                data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo"> <i
-                                  class="more-less glyphicon glyphicon-chevron-right pull-right"></i> Proposed Buildings
+                        <div class="card border-0" id="Proposedhide">
+                          <div class="card-header ts-panel" role="tab" id="headingTwo">
+                            <h4 class="card-title"> 
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
+                                <i class="more-less fal fa-chevron-right float-right"></i> Proposed Buildings
                                 Details </a> </h4>
                           </div>
-                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                            aria-labelledby="headingTwo">
-                            <div class="panel-body">
+                          <div id="collapseTwo" class="accordion-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="card-body p-0">
                               <fieldset>
                                 <!-- <legend>Proposed Buildings Details</legend> -->
                                 <div class="row">
@@ -1051,7 +1047,7 @@
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Ptype" class="required">Type of Use</label>
                                     <select name="Ptype" id="Ptype" class="form-control">
-                                      <option value="0">Please select...</option>
+                                      <option value="0">Please select</option>
                                       <option value="463">Residential</option>
                                       <option value="461">Residential Commercial</option>
                                       <option value="464">Industrial</option>
@@ -1061,7 +1057,7 @@
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Pstatus" class="required">Building Status</label>
                                     <select id="Pstatus" class="form-control">
-                                      <option value="0">Please select...</option>
+                                      <option value="0">Please select</option>
                                       <option value="1">New</option>
                                       <option value="2">Approved for Construction</option>
                                       <option value="3">Final</option>
@@ -1111,7 +1107,7 @@
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Pcolortype">Color Type</label>
                                     <select id="Pcolortype" class="form-control">
-                                      <option value="1000">Please select...</option>
+                                      <option value="1000">Please select</option>
                                       <option value="101">Building Color</option>
                                       <option value="102">Stone</option>
                                       <option value="103">Aluminum</option>
@@ -1120,7 +1116,7 @@
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3" id="Pcolorhide">
                                     <label for="Pcolor">Building Colour</label>
                                     <select name="Pcolor" id="Pcolor" class="form-control">
-                                      <option value="0">Please select...</option>
+                                      <option value="0">Please select</option>
                                       <option value="461">White</option>
                                       <option value="463">Red</option>
                                       <option value="464">Yellow</option>
@@ -1131,7 +1127,7 @@
                                   <div class="form-group col-sm-4 col-md-4 col-lg-3">
                                     <label for="Poutcolor">Outer Colour</label>
                                     <select id="Poutcolor" class="form-control">
-                                      <option value="0">Please select...</option>
+                                      <option value="0">Please select</option>
                                       <option value="461">White</option>
                                       <option value="463">Red</option>
                                       <option value="464">Yellow</option>
@@ -1147,18 +1143,21 @@
                                     <label for="PAlley">Way Number</label>
                                     <input type="text" class="form-control" id="PAlley" placeholder="Way Number">
                                   </div>
-                                  <div class="form-group pull-right top-25">
-                                    <button type="button" class="btn btn-ts" onclick="addProposed()" id="addProposedid">
-                                      Add Proposed</button>
+                                </div> <!-- /.row -->
+
+                                <div class="row">
+                                  <div class="col-12">
+                                    <div class="form-group d-flex justify-content-end">
+                                      <button type="button" class="btn btn-ts" onclick="addProposed()" id="addProposedid">
+                                        Add Proposed</button>
+                                    </div>
                                   </div>
-                                </div>
-                                <!-- End row -->
+                                </div> <!-- /.row -->
 
                                 <div class="row">
                                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="table-responsive">
-                                      <table id="Proposed_details_table" class="table table-striped table-bordered"
-                                        width="100%">
+                                      <table id="Proposed_details_table" class="table table-striped table-bordered w-100">
                                         <thead class="ts-thead">
                                         </thead>
                                         <tbody>
@@ -1172,8 +1171,7 @@
                                 <div class="row">
                                   <div class="col-md-6 col-xs-12">
                                     <div class="table-responsive">
-                                      <table id="storeys_Proposed" class="table table-hover table-bordered"
-                                        width="100%">
+                                      <table id="storeys_Proposed" class="table table-hover table-bordered w-100">
                                         <thead class="ts-thead">
                                         </thead>
                                         <tbody>
@@ -1212,7 +1210,7 @@
                                               <div class="form-group col-sm-3">
                                                 <label for="PStoreytype" class="required">Storey Type </label>
                                                 <select name="PStoreytype" id="PStoreytype" class="form-control">
-                                                  <option value="0">Please select...</option>
+                                                  <option value="0">Please select</option>
                                                   <option value="461">Flats</option>
                                                   <option value="463">Offices</option>
                                                   <option value="464">Shops</option>
@@ -1270,7 +1268,7 @@
                                             <div class="form-group col-sm-3">
                                               <label for="editPStoreytype" class="required">Storey type</label>
                                               <select name="editPStoreytype" id="editPStoreytype" class="form-control">
-                                                <option value="0">Please Select...</option>
+                                                <option value="0">Please select</option>
                                                 <option value="461">Flats</option>
                                                 <option value="463">Offices</option>
                                                 <option value="464">Shops</option>
@@ -1341,7 +1339,7 @@
                                             <div class="form-group col-sm-3">
                                               <label for="Puntstype" class="required">Unit Type</label>
                                               <select name="Puntstype" id="Puntstype" class="form-control">
-                                                <option value="0">Please select...</option>
+                                                <option value="0">Please select</option>
                                                 <option value="463">Residential</option>
                                                 <option value="461">Residential Commercial</option>
                                                 <option value="464">Industrial</option>
@@ -1392,7 +1390,7 @@
                                             <div class="form-group col-sm-3">
                                               <label for="editPuntstype" class="required">Unit Type </label>
                                               <select name="editPuntstype" id="editPuntstype" class="form-control">
-                                                <option value="0">Please select...</option>
+                                                <option value="0">Please select</option>
                                                 <option value="463">Residential</option>
                                                 <option value="461">Residential Commercial</option>
                                                 <option value="464">Industrial</option>
@@ -1442,29 +1440,36 @@
                           <div class="form-group col-sm-5 col-md-4 col-lg-3">
                             <label for="optradio4">Consultant</label>
                             <div class="form-control">
-                              <label class="radio-inline"> <input type="radio" name="optradio4" value="179"> Same as
-                                Applicant</label>
-                              <label class="radio-inline"> <input type="radio" name="optradio4" value="180" checked>
-                                Other</label>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optradio4" id="Applicant" value="179" checked>
+                                <label class="form-check-label" for="Applicant">Applicant</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optradio4" id="Other" value="180">
+                                <label class="form-check-label" for="Other">Other</label>
+                              </div>
                             </div>
                           </div>
-                          <div id="CommericalRegistrationID_val">
-                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
-                              <label for="CommericalRegistrationID" class="required">Commercial Registration ID </label>
-                              <input type="text" class="form-control" id="CommericalRegistrationID"
-                                placeholder="Commercial Registration ID" />
-                            </div>
-                            <div class="form-group col-sm-3 col-md-4 col-lg-3" id="commrcialname">
-                              <label for="ComName" class="required">Commercial Name</label>
-                              <input type="text" class="form-control" id="ComName" placeholder="Commercial Name" />
+                          <div class="form-group col-sm-4 col-md-4 col-lg-3 CommericalRegistrationID_val">
+                            <label for="CommericalRegistrationID" class="required">Commercial Registration ID </label>
+                            <input type="text" class="form-control" id="CommericalRegistrationID" placeholder="Commercial Registration ID" />
+                          </div>
+                          <div class="form-group col-sm-3 col-md-4 col-lg-3 CommericalRegistrationID_val" id="commrcialname">
+                            <label for="ComName" class="required">Commercial Name</label>
+                            <input type="text" class="form-control" id="ComName" placeholder="Commercial Name" />
+                          </div>
+                          <div class="form-group col-sm-5 col-md-4 col-lg-3 Civilno">
+                            <label for="CivilIDNumber" class="required">Civil Number</label>
+                            <input type="text" class="form-control" id="CivilIDNumber" placeholder="Civil Number" />
+                          </div>
+                          <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror Civilno">
+                            <label for="Consuldate" class="required">ID Expiry Date</label>
+                            <div class="date">
+                              <input type="text" class="form-control" id="Consuldate" placeholder="dd/mm/yyyy" />
+                              <span class="input-group-addon" style="display: none;"><i class="glyphicon glyphicon-calendar"></i></span>
                             </div>
                           </div>
-                          <div id="Civilno">
-                            <div class="form-group col-sm-5 col-md-4 col-lg-3">
-                              <label for="CivilIDNumber" class="required">Civil Number</label>
-                              <input type="text" class="form-control" id="CivilIDNumber" placeholder="Civil Number" />
-                            </div>
-                            <div class="form-group col-sm-4 col-md-4 col-lg-3">
+                          <!-- <div class="form-group col-sm-4 col-md-4 col-lg-3">
                               <label for="NameofApprovedEngineer" class="required">Name of Authorized Engineer</label>
                               <input type="text" class="form-control" id="NameofApprovedEngineer"
                                 placeholder="Name of Authorized Engineer" />
@@ -1472,21 +1477,13 @@
                             <div class="form-group col-sm-3 col-md-4 col-lg-3 hidden">
                               <label for="Address_cons">Address</label>
                               <input type="text" class="form-control" id="Address_cons" placeholder="Address" />
-                            </div>
-                            <div class="form-group col-sm-3 col-md-4 col-lg-3 haserror">
-                              <label for="Consuldate" class="required">Expiry Date</label>
-                              <div class="date">
-                                <input type="text" class="form-control" id="Consuldate" placeholder="dd/mm/yyyy" />
-                                <span class="input-group-addon" style="display: none;"><i
-                                    class="glyphicon glyphicon-calendar"></i></span>
-                              </div>
-                            </div>
+                            </div> -->
+                          <div class="form-group col-sm-3 col-md-4 col-lg-3 d-flex align-items-end justify-content-end">
+                            <button type="button" class="btn btn-ts" onclick="Cons_fn()" id="Consid">
+                              <i class="fal fa-plus fa-fw"></i>Add</button>
                           </div>
-                          <div class="form-group pull-right top-25">
-                            <button type="button" class="btn btn-ts" onclick="Cons_fn()" id="Consid"><i
-                                class="fa fa-plus fa-fw"></i>Add</button>
-                          </div>
-                        </div> <!-- End row -->
+                        </div> <!-- /.row -->
+
                         <div class="row">
                           <div class="table-responsive">
                             <table id="Consu_table" class="table table-bordered table-hover" width="100%">
